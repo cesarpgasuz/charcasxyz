@@ -1,0 +1,925 @@
+:root{
+	--azulp: #0A191F;
+	--azuls: #0D2128;
+	--naranjap: #FF1B00;
+	--naranjas: #FF7D7A;
+	--cyanp: #005749;
+	--cyans: #00DCBB;
+	--textof: #111111;
+	--textom: #505050;
+	--rojof: #b52429;
+	--grisf: #848484;
+	--grisb: #dddddd;
+	--fuentep: 'Poppins', sans-serif;
+	--marr: #D31F25;
+}
+
+.disable{
+	display: none;
+}
+.scroll{
+	overflow: hidden;
+}
+.sombra{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.45);
+	top: 0;
+	z-index: 300;
+	display: none;
+  	transition-duration: 0.4s;
+}
+
+.modall {
+	position: fixed;
+	height: 80vh;
+	width: 100%;
+	background: #f2f2f2;
+	bottom: -80vh;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	z-index: 400;
+	padding: 6% 2%;
+	justify-content: center;
+	align-content: center;
+	font-family: var(--fuentep);
+	display: none;
+	transition-duration: 0.5s;
+}
+.modall i{
+	position: absolute;
+    font-size: 36px;
+    top: 0;
+    color: var(--azulp);
+    padding-left: 30%;
+    padding-right: 30%;
+
+}
+.modall .horario .content h4 {
+	margin-top: 20%;
+	margin-bottom: 10%;
+	text-align: center;
+	font-size: 28px;
+	color: var(--azulp);
+	font-weight: 600;
+}
+.modall .horario .content ul li{
+	line-height: 35px;
+	font-size: 14px;
+	color: var(--textom);
+}
+.modall .horario .content ul li.day{
+	color: var(--textof);
+	font-weight: 600;
+}
+
+.visible{
+	bottom: 0;
+	transition-duration: 0.5s;
+}
+.visible-som{
+	display: block;
+}
+#horario{
+	background: var(--grisb);
+	position: absolute;
+	bottom: -3%;
+	right: 4%;
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	text-align: center;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	line-height: 0;
+	-webkit-box-shadow: 0px 10px 19px 0px rgba(10,25,31,0.28);
+	-moz-box-shadow: 0px 10px 19px 0px rgba(10,25,31,0.28);
+	box-shadow: 0px 10px 19px 0px rgba(10,25,31,0.28);
+}
+#horario i{
+	font-size: 28px;
+	color: var(--azulp);
+}
+
+.navv{
+	background: var(--azuls);
+	width: 100%;
+	height: auto;
+	position: relative;
+	position: fixed;
+	top: 0;
+	z-index: 5000;
+	display: flex;
+	align-items: center;
+	
+
+}
+
+.flot-reverse{
+	font-size: 32px;
+	color: var(--grisb);
+}
+.flot-reverse:hover{
+	cursor: pointer;
+}
+.azul{
+	color: var(--azulp);
+}
+
+.blanca{
+	background: #f9f9f9;
+	border-bottom: 1px solid #ececec;
+	transition: background 0.2s ease-out;
+	/*-webkit-box-shadow: 0px 10px 16px -8px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 10px 16px -8px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 10px 16px -8px rgba(0, 0, 0, 0.1);
+	*/
+}
+
+.p-no {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: -2;
+	font-size: 18px;
+	line-height: 45px;
+	display: none;
+	font-family: var(--fuentep);
+	color: var(--azulp);
+	font-weight: 600;
+	font-style: italic;
+}
+.visible{
+	display: block;
+}
+
+
+
+
+.banner{
+	width: 100%;
+	min-height: 400px;
+	background: url(../images/pizza_b.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.banner:before{
+	content: "";
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(10,25,31,1);
+	background: -moz-linear-gradient(left, rgba(10,25,31,1) 0%, rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(10,25,31,1)), color-stop(100%, rgba(255,255,255,0)));
+	background: -webkit-linear-gradient(left, rgba(10,25,31,1) 0%, rgba(255,255,255,0) 100%);
+	background: -o-linear-gradient(left, rgba(10,25,31,1) 0%, rgba(255,255,255,0) 100%);
+	background: -ms-linear-gradient(left, rgba(10,25,31,1) 0%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(to right, rgba(10,25,31,1) 0%, rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a191f', endColorstr='#ffffff', GradientType=1 );
+}
+.banner .content{
+	z-index: 5;
+	position: relative;
+	height: auto;
+	width: auto;
+	display: block;
+}
+.banner .content h1{
+	color: #fff;
+	font-family: var(--fuentep);
+	text-transform: uppercase;
+	font-size: 38px;
+}
+.banner .content h1 span.pizzerias{
+	font-size: 60px;
+	font-weight: 700;
+	font-style: italic;
+	
+}
+.banner .content h1 span.doctor{
+	font-weight: 400;
+}
+.banner .content p{
+	font-size: 18px;
+	color: yellow;
+	font-family: var(--fuentep);
+	font-weight: 400;
+}
+.banner img.pana{
+	display: none;
+}
+
+.rest{
+	height: auto;
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.tarjeta{
+	background: #fff;
+	display: flex;
+	align-items: center;
+	padding: 40px;
+	margin-bottom: 60px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(221,221,221,0.7);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(221,221,221,0.7);
+	box-shadow: 0px 0px 40px 0px rgba(221,221,221,0.7);
+}
+.tarjeta .imagen{
+	margin-right: 50px;
+	flex-shrink: 0;
+}
+.tarjeta .contenido ul{
+	margin-bottom: 0;
+}
+.tarjeta .contenido ul li{
+	font-family: var(--fuentep);
+	line-height: 32px;
+	color: var(--textf);
+	font-size: 16px;
+}
+.tarjeta .contenido ul li h5{
+	font-size: 30px;
+	color: var(--azulp);
+	font-weight: 700;
+}
+.tarjeta .contenido ul li:nth-child(3){
+	color: var(--cyans);
+	font-size: 18px;
+	font-weight: 700;
+}
+.tarjeta .contenido ul li:last-child{
+	margin-top: 10px;
+}
+a:visited.boton-menu{
+	color: #fff;
+}
+a:link.boton{
+	background: var(--naranjap);
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	font-family: var(--fuentep);
+	border-radius: 50px;
+	
+}
+.boton-menu{
+	padding: 4px 30px;
+	font-size: 16px;
+	font-weight: 400;
+}
+a:visited.boton-register{
+	color: #fff;
+}
+.boton-register{
+	padding: 10px 35px;
+	font-size: 24px;
+	font-weight: 700;
+	font-style: italic;
+	display: inline-block;
+	-webkit-box-shadow: 0px 15px 15px 0px rgba(255,27,0,0.26);
+	-moz-box-shadow: 0px 15px 15px 0px rgba(255,27,0,0.26);
+	box-shadow: 0px 15px 15px 0px rgba(255,27,0,0.26);
+
+}
+
+
+.register{
+	width: 100%;
+	height: auto;
+	padding-bottom: 100px;
+	padding-top: 100px;
+	background: url(../images/pizzapng.png);
+	background-repeat: no-repeat;
+	background-position: 90% center;
+	background-size: contain;
+}
+.pizza-fondo{
+	
+}
+
+.register .contenido{
+	text-align: center;
+	font-family: var(--fuentep);
+}
+.register .contenido h3{
+	color: var(--azulp);
+	font-size: 36px;
+	font-weight: 700;
+}
+.register .contenido p{
+	font-size: 16px;
+	color: var(--textf);
+	line-height: 30px;
+	font-weight: 400;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.register .contenido h3 span{
+	color: var(--naranjap);
+}
+
+
+.register img.girl{
+		width: 165px;
+	}
+
+.contacto{
+	width: 100%;
+	height: auto;
+	padding: 80px 0px;
+	text-align: center;
+	background: var(--azuls);
+	margin-top: 30px;
+}
+.contacto a:visited{
+	border: 2px solid var(--grisb);
+	color: var(--grisb);
+}
+.contacto a:link{
+	text-decoration: none;
+	outline: none;
+	padding: 15px 60px;
+	border: 2px solid var(--grisb);
+	color: var(--grisb);
+	font-family: var(--fuentep);
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.dy{
+	background: var(--azulp);
+	padding: 20px 0px;
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+.dy h6{
+	color: var(--grisb);
+	font-family: var(--fuentep);
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 0px;
+}
+
+
+/* --- template ---- */
+.banner-r{
+	min-height: 450px;
+	width: 100%;
+	background: var(--azuls);
+	position: relative;
+}
+
+.banner-r .information img.log{
+	width: 100px;
+	margin-bottom: 15px;
+}
+
+.banner-r .information ul li{
+	line-height: 32px;
+	font-family: var(--fuentep);
+	color: var(--grisf);
+	font-size: 16px;
+	font-weight: 400;
+}
+.banner-r .information ul li h2{
+	font-size: 32px;
+	color: var(--grisb);
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.banner-r .information ul li.tel{
+	color: greenyellow;
+	margin-bottom: 20px;
+}
+.banner-r .information ul li.tel a:link{
+	color: greenyellow;
+	text-decoration: none;
+}
+.banner-r .information ul li.tel a:visited{
+	color: greenyellow;
+	text-decoration: none;
+}
+
+a:visited.boton-promo{
+	color: #fff;
+}
+a:link.boton-promo{
+	background: #FF2F2B;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	font-family: var(--fuentep);
+	border-radius: 50px;
+	padding: 4px 30px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.banner-r .horario{
+	background: var(--azulp);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	padding: 25px;
+	font-family: var(--fuentep);
+	border-radius: 10px;
+}
+.banner-r .horario .content h4{
+	font-size: 24px;
+	color: yellow;
+	margin-top: 10px;
+	font-weight: 600;
+}
+.banner-r .horario .content ul{
+	margin-bottom: 0px;
+}
+.banner-r .horario .content ul li{
+	line-height: 35px;
+	font-size: 16px;
+	color: var(--grisf);
+}
+.banner-r .horario .content ul li.day{
+	color: var(--grisb);
+	font-weight: 600;
+}
+
+
+.pady{
+	padding-top: 100px;
+}
+
+h4.subtitles{
+	font-size: 36px;
+	font-weight: 700;
+	font-style: italic;
+	color: var(--naranjap);
+	font-family: var(--fuentep);
+	text-align: center;
+	position: relative;
+	text-transform: uppercase;
+	margin-bottom: 80px;
+}
+h4.subtitles::before{
+	content: attr(data-heading);
+	font-family: var(--fuentep);
+	color: var(--grisb);
+	font-size: 100px;
+	font-weight: 700;
+	font-style: italic;
+	position: absolute;
+	line-height: 36px;
+	left: 0;
+	right: 0;
+	display: block;
+	z-index: -1;
+	text-transform: uppercase;
+	opacity: 25%;
+}
+
+
+.pizz{
+	width: 100%;
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(194,194,194,1);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(194,194,194,1);
+	box-shadow: 0px 0px 40px 0px rgba(194,194,194,1);
+	border-radius: 5px;
+	display: flex;
+	margin-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	min-height: 160px;
+	font-family: var(--fuentep);
+}
+.pizz .image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+	width: 35%;
+}
+.pizz .ingre{
+	margin-top: 40px;
+	width: 65%;
+}
+.pizz .ingre h5{
+	font-size: 18px;
+	color: var(--marr);
+	font-weight: 600;
+	text-transform: uppercase;
+	
+}
+.pizz .ingre p{
+	font-size: 14px;
+	color: var(--textf);
+	line-height: 25px;
+}
+.tamanos{
+	width: 100%;
+	height: auto;
+	padding-bottom: 200px;
+}
+.tarjet{
+	display: flex;
+	margin-bottom: 30px;
+	padding-right: 60px;
+	font-family: var(--fuentep);
+}
+.tarjet img{
+	margin-right: 20px;
+}
+.tarjet .content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: relative;
+}
+.tarjet .content::before{
+	border-bottom: 2px dotted var(--grisf);
+	content: "";
+	position: absolute;
+	width: 100%;
+	margin-top: 15px;
+	z-index: -1;
+}
+.tarjet .content .body{
+	background: #fff;
+}
+.tarjet .content .body span.name{
+	font-size: 24px;
+	font-weight: 700;
+	font-style: italic;
+	color: var(--marr);
+}
+.tarjet .content .body span.porcion{
+	color: #000;
+	font-weight: 700;
+	font-size: 18px;
+	font-style: italic;
+}
+.tarjet .content span.price{
+	font-size: 30px;
+	color: var(--cyans);
+	font-weight: 700;
+	font-style: italic;
+	background: #fff;
+}
+
+
+.relleno h5{
+	font-size: 24px;
+	font-family: var(--fuentep);
+	color: var(--azulp);
+	font-weight: 700;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	font-style: italic;
+}
+
+.extra{
+	padding-top: 60px;
+}
+.extra .content{
+	background: #f4f4f4;
+	display: flex;
+	padding: 20px 10px;
+	justify-content: space-evenly;
+	width: 100%;
+	border-radius: 5px;
+}
+.extra h5{
+	font-size: 18px;
+	font-family: var(--fuentep);
+	color: var(--azulp);
+	font-weight: 700;
+	text-align: center;
+	margin: 10px 0px;
+	font-style: italic;
+}
+.extra .content h6{
+	margin-bottom: 0px;
+	font-size: 18px;
+	font-family: var(--fuentep);
+	color: var(--azulp);
+	font-weight: 600;
+}
+.extra .content h6 span{
+	color: var(--naranjap);
+}
+/* ----- responsive ------*/
+
+@media screen and (max-width: 1199px){
+	.tarjet{
+		padding-right: 30px;
+	}
+	.tarjet .content .body span.name {
+    	font-size: 18px;
+	}
+	.tarjet .content .body span.porcion{
+		font-size: 16px;
+	}
+	.tarjet .content span.price{
+		font-size: 24px;
+	}
+	
+}
+
+
+@media screen and (max-width: 991px){
+	.banner{
+		min-height: 250px;
+	}
+	
+	
+	.register{
+		background: none;
+	}
+	.register img.girl{
+		width: 115px;
+	}
+	
+	
+	
+	.banner-r .information ul li h2 {
+    	font-size: 28px;
+	}
+	
+	
+	
+	.tarjet .content .body span.name {
+    	font-size: 24px;
+	}
+	.tarjet .content .body span.porcion{
+		font-size: 18px;
+	}
+	.tarjet .content span.price{
+		font-size: 30px;
+	}
+	
+	
+	
+	
+}
+
+
+
+
+@media screen and (max-width: 767px){
+	
+	.modall{
+		display: flex;
+	}
+	#horario{
+		display: flex;
+	}
+	
+	.banner .content h1{
+		font-size: 24px;
+	}
+	.banner .content h1 span.pizzerias{
+		font-size: 48px;
+	}
+
+	.banner .content p {
+    	font-size: 16px;
+	}
+	
+	.rest{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	
+	.tarjeta .imagen img{
+		width: 80px;
+	}
+	.tarjeta .contenido ul li h5 {
+    	font-size: 24px;
+	}
+	.register img.girl, .register img.boy{
+		display: none;
+	}
+	
+	.banner-r{
+		min-height: auto;
+		padding-top: 100px;
+		padding-bottom: 50px;
+	}
+	
+	.banner-r .information img.log {
+    	width: 70px;
+	}
+	
+	.banner-r .information{
+		padding-left: 25px;
+	}
+	.banner-r .information ul li h2{
+		margin-bottom: 0px;
+	}
+	.banner-r .horario{
+		display: none;
+	}
+	
+	
+	.pizz .image{
+		margin-right: 0px;
+	}
+	
+	
+}
+
+
+
+
+@media screen and (max-width: 575px){
+	.banner{
+		min-height: 180px;
+		background: var(--azuls);
+	}
+	.banner::before{
+		display: none;
+	}
+	
+	.banner img.pana{
+		display: block;
+		width: 120px;
+		position: absolute;
+		right: 10%;
+		bottom: 0;
+	}
+	
+	.banner .content h1{
+		font-size: 20px;
+	}
+	.banner .content h1 span.pizzerias{
+		font-size: 32px;
+	}
+	
+	
+	.banner .content p {
+    	font-size: 12px;
+		margin-right: 40%;
+	}
+	
+	
+	.tarjeta{
+		padding: 25px;
+		box-shadow: none;
+		border: 1px solid var(--grisb);
+		background: #FBFBFB;
+	}
+	.tarjeta .imagen img {
+		width: 60px;
+	}
+	.tarjeta .contenido ul li h5 {
+		font-size: 18px;
+	}
+	.tarjeta .contenido ul li{
+		font-size: 14px;
+	}
+	
+	.register{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.register .contenido h3 {
+    	font-size: 24px
+	}
+	.register .contenido p{
+		font-size: 14px;
+	}
+	.boton-register{
+		font-size: 16px;
+	}
+	
+	
+	.banner-r {
+		padding-top: 60px;
+		padding-bottom: 20px;
+	}
+	.banner-r .information img.log {
+    	width: 50px;
+	}
+	
+	
+	.banner-r .information ul li h2 {
+		font-size: 24px;
+	}
+	
+	
+	h4.subtitles{
+		margin-bottom: 40px;
+	}
+	h4.subtitles::before{
+		content: "";
+	}
+	.pizz{
+		box-shadow: none;
+		border: 1px solid var(--grisb);
+		background: #FBFBFB;
+	}
+	.pizz .image{
+		width: 30%;
+	}
+	.pizz .ingre{
+		width: 70%;
+		padding-left: 5%;
+	}
+	.pady{
+		padding-top: 50px;
+	}
+	
+	.tamanos{
+		padding-bottom: 100px;
+	}
+	
+	.tarjet img{
+		display: none;
+	}
+	
+	.tarjet {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	
+	.tarjet .content .body span.name {
+    	font-size: 18px;
+	}
+	.tarjet .content .body span.porcion{
+		font-size: 14px;
+	}
+	.tarjet .content span.price{
+		font-size: 16px;
+	}
+	
+	
+	.extra .content{
+		flex-direction: column;
+		align-items: center;
+		padding: 10px 0;
+	}
+	.extra .content h6{
+		margin: 10px 0px;
+		font-size: 14px;
+	}
+	
+	
+}
+
+
+@media screen and (max-width: 490px){
+	
+	.banner img.pana{
+		right: 5%;
+	}
+	
+	.tarjeta {
+		padding: 15px;
+		margin-bottom: 30px;
+	}
+	.tarjeta .imagen {
+		margin-right: 10px;
+		align-self: start;
+	}
+	.tarjeta .imagen img {
+		width: 30px;
+	}
+	.tarjeta .contenido ul li{
+		line-height: 25px;
+	}
+	.boton-menu{
+		font-size: 12px;
+	}
+	
+}
+
+
+
+@media screen and (max-width: 384px){
+	h4.subtitles::before{
+		content: "";
+	}
+	
+}
+
+@media screen and (max-width: 344px){
+	.banner img.pana{
+		width: 80px;
+	}
+}

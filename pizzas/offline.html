@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+
+<title>offline / cesarpgasuz</title>
+<link rel="shortcut icon" href="images/icon.png">
+
+<!-- fuente google space mono -->
+
+
+	
+<!-- PWA-->
+<meta name="theme-color" content="#000e16"> 
+	
+	<style>
+		
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.no-conection{
+			background: #000e16;
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			font-family: Arial;
+		}
+		.no-conection .content{
+			width: 100%;
+		}
+		.no-conection h5{
+			background: #f40c48;
+			padding: 1.2% 8%;
+			display: inline-block;
+			font-size: 42px;
+			margin-bottom: 4%;
+			color: #fff;
+			-webkit-box-shadow: 0px 10px 21px -9px rgba(244,12,72,1);
+			-moz-box-shadow: 0px 10px 21px -9px rgba(244,12,72,1);
+			box-shadow: 0px 10px 21px -9px rgba(244,12,72,1);
+		}
+		.no-conection p{
+			color: #bababa;
+			display: block;
+			font-size: 20px;
+			text-align: center;
+			margin-left: 10%;
+			margin-right: 10%;
+			line-height: 30px;
+		}
+		
+		@media screen and (max-width: 575px){
+		.no-conection p{
+			
+			font-size: 18px;
+			
+		}
+			
+		}
+	</style>
+
+</head>
+
+<body>
+	
+	<section class="no-conection">
+		<div class="content">
+			<h5>Oops!</h5>
+			<p>creo que no tienes Internet, verifica tu conexión.</p>
+		</div>
+	</section>
+		 
+		  
+    
+	<script>
+	
+	// This is the service worker with the combined offline experience (Offline page + Offline copy of pages)
+
+// Add this below content to your HTML page inside a <script type="module"> tag, or add the js file to your page at the very top to register service worker
+
+// This is the "Offline page" service worker
+
+// Add this below content to your HTML page inside a <script type="module"> tag, or add the js file to your page at the very top to register service worker
+
+	import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+	const el = document.createElement('pwa-update');
+	document.body.appendChild(el);
+	</script>
+
+
+</body>
+</html>
