@@ -159,6 +159,147 @@
 
 
 
+/* menu pagina inicio, acerca de, contacto, apk */
+.navegacion{
+	background: #f4f4f4;
+	height: auto;
+	width: 100%;
+	font-family: var(--fuentep);
+	display: flex;
+	justify-content: space-between;
+	padding: 1% 2%;
+}
+.navegacion .logocharcas{
+	display: inline-block;
+}
+.navegacion .menu-nav{
+	display: inline-block;
+}
+.navegacion .menu-nav ul{
+	list-style: none;
+	margin: 0;
+}
+.navegacion .menu-nav ul li{
+	display: inline;
+	margin-left: 24px;
+	font-size: 14px;
+}
+.navegacion .menu-nav ul li a:visited{
+	color: var(--azulp);
+}
+.navegacion .menu-nav ul li a:link{
+	text-decoration: none;
+	color: var(--azulp);
+}
+.navegacion .menu-nav ul li a:hover{
+	border-bottom: 2px solid var(--azulp);
+}
+
+.home{
+	height: auto;
+	width: 100%;
+	padding: 50px 10px;
+}
+.home .content{
+	text-align: center;
+}
+.home .content img{
+	width: 100px;
+}
+.home .content h1{
+	font-family: var(--fuentep);
+	color: var(--azulp);
+	font-size: 16px;
+	margin-top: 24px;
+}
+
+
+.categorias{
+	width: 100%;
+	height: auto;
+	
+}
+.content a:visited.tarjet-cat h3{
+	color: var(--azulp);
+}
+.content a:visited.tarjet-cat i{
+	color: var(--azuls);
+}
+.content a:link.tarjet-cat{
+	text-decoration: none;
+    display: flex;
+    margin-bottom: 25px;
+    padding: 15px 25px;
+    -webkit-box-shadow: 0px 0px 40px 0px rgba(221,221,221,0.7);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(221,221,221,0.7);
+	box-shadow: 0px 0px 40px 0px rgba(221,221,221,0.7);
+	border-radius: 5px;
+	align-items: center;
+	position: relative;
+	font-family: var(--fuentep);
+}
+	
+.content a:link.tarjet-cat img{
+	width: 50px;
+}
+.content a:link.tarjet-cat h3{
+	margin-bottom: 0px;
+	margin-left: 15px;
+	color: var(--azulp);
+	font-size: 18px;
+	font-weight: 400;
+
+}
+.content a:link.tarjet-cat i{
+	font-size: 24px;
+	position: absolute;
+	right: 25px;
+	color: var(--azuls);
+}
+
+.content a:hover.tarjet-cat{
+	background: var(--azuls);
+	
+}
+.content a:hover.tarjet-cat h3, .content a:hover.tarjet-cat i{
+	color: #fff;
+}
+
+.registro{
+	width: 100%;
+	height: auto;
+	padding: 40px 0px 0px 0px;
+	
+}
+.registro .content{
+	font-family: var(--fuentep);
+	color: var(--textom);
+	padding-top: 100px;
+}
+.registro .content h4{
+	font-size: 36px;
+	font-weight: 600;
+	font-style: italic;
+	color: var(--azulp);
+}
+.registro .content p{
+	font-size: 16px;
+	line-height: 35px;
+}
+.registro .content a:visited{
+	color: var(--azulp);
+}
+.registro .content a:link {
+	text-decoration: none;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #00F0FF;
+	font-size: 18px;
+	font-weight: 700;
+	color: var(--azulp);
+}
+
+/* ------------------templates---------------------------- */
+
 
 .banner{
 	width: 100%;
