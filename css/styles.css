@@ -149,13 +149,7 @@ a{
 	height: auto;
 	
 }
-.catergorias .content a:link,
-.catergorias .content a:hover,
-.catergorias .content a:visited,
-.catergorias .content a:focus,
-.catergorias .content a:active{
-	outline: none;
-}
+
 .content a:visited.tarjet-cat{
 	outline: none;
 	border: none;
@@ -313,10 +307,14 @@ a{
 	.btn-reg-home{
 		display: block;
 	}
+	.content a:visited.tarjet-cat{
+		outline: none;
+	}
 	.content a:link.tarjet-cat{
 		background: #FBFBFB;
 		border: 1px solid var(--grisb);
 		box-shadow: none;
+		outline: none;
 	}
 	.content a:hover.tarjet-cat{
 		background: #FBFBFB;
