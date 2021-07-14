@@ -16,6 +16,28 @@
 a{
 	outline: none;
 }
+
+#hambur{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 60px;
+	width: 60px;
+	text-align: center;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	line-height: 0;
+	
+}
+
+#hambur i{
+	font-size: 28px;
+	color: var(--azulp);
+}
+
+
+
 .disable{
 	display: none;
 }
@@ -58,7 +80,10 @@ a{
     padding-right: 30%;
 
 }
-.modall .horario .content h4 {
+.modall .content{
+	padding-top: 10%;
+}
+.modall .content h4 {
 	margin-top: 20%;
 	margin-bottom: 10%;
 	text-align: center;
@@ -66,15 +91,24 @@ a{
 	color: var(--azulp);
 	font-weight: 600;
 }
-.modall .horario .content ul li{
-	line-height: 35px;
+.modall .content ul{
+	text-align: center;
+}
+.modall .content ul li{
+	line-height: 50px;
 	font-size: 14px;
 	color: var(--textom);
 }
-.modall .horario .content ul li.day{
-	color: var(--textof);
-	font-weight: 600;
+.modall .content ul li a:visited{
+	color: var(--textom);
+	outline: none;
 }
+.modall .content ul li a:link{
+	text-decoration: none;
+	color: var(--textom);
+	outline: none;
+}
+
 
 .visible{
 	bottom: 0;
@@ -141,6 +175,15 @@ a{
 	color: var(--azulp);
 	font-size: 16px;
 	margin-top: 24px;
+}
+
+
+.home .content p {
+    font-family: var(--fuentep);
+    color: var(--azulp);
+    font-size: 14px;
+    margin-top: 30px;
+	line-height: 30px;
 }
 
 
@@ -328,6 +371,14 @@ a{
 	}
 	.content a:active.tarjet-cat{
 		background: var(--grisb);
+	}
+	
+	
+	.modall{
+		display: flex;
+	}
+	#hambur{
+		display: flex;
 	}
 	
 }
