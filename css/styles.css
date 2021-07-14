@@ -149,6 +149,13 @@ a{
 	height: auto;
 	
 }
+.catergorias .content a:link,
+.catergorias .content a:hover,
+.catergorias .content a:visited,
+.catergorias .content a:focus,
+.catergorias .content a:active{
+	outline: none;
+}
 .content a:visited.tarjet-cat{
 	outline: none;
 	border: none;
