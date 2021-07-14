@@ -13,7 +13,9 @@
 	--fuentep: 'Poppins', sans-serif;
 	--marr: #D31F25;
 }
-
+a{
+	outline: none;
+}
 .disable{
 	display: none;
 }
