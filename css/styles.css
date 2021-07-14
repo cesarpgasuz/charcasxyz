@@ -151,6 +151,8 @@ a{
 }
 .content a:visited.tarjet-cat{
 	outline: none;
+	border: none;
+	text-decoration: none;
 }
 .content a:visited.tarjet-cat h3{
 	color: var(--azulp);
@@ -193,6 +195,7 @@ a{
 
 .content a:hover.tarjet-cat{
 	background: var(--azuls);
+	outline: none;
 	
 }
 
