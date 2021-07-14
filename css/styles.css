@@ -306,6 +306,9 @@
 		border: 1px solid var(--grisb);
 		box-shadow: none;
 	}
+	.content a:hover.tarjet-cat{
+		background: #FBFBFB;
+	}
 	.content a:hover.tarjet-cat h3{
 	color: var(--azulp);
 	}
