@@ -117,6 +117,7 @@
 .navegacion .menu-nav ul li a:link{
 	text-decoration: none;
 	color: var(--azulp);
+	outline: none;
 }
 .navegacion .menu-nav ul li a:hover{
 	border-bottom: 2px solid var(--azulp);
@@ -164,6 +165,7 @@
 	align-items: center;
 	position: relative;
 	font-family: var(--fuentep);
+	outline: none;
 }
 	
 .content a:link.tarjet-cat img{
@@ -225,6 +227,7 @@
 	font-size: 18px;
 	font-weight: 700;
 	color: var(--azulp);
+	outline: none;
 }
 
 
