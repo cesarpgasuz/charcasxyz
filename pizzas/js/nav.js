@@ -20,6 +20,8 @@ var tope = $('.banner-r').innerHeight();
 
 
 
+
+
 $('#horario').on('click', function(){
 	$('.modall').toggleClass('visible');
 	$('body').toggleClass('scroll');
