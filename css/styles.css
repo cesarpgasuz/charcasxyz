@@ -309,6 +309,7 @@ a{
 	}
 	.content a:visited.tarjet-cat{
 		outline: none;
+		border: 1px solid var(--grisb);
 	}
 	.content a:link.tarjet-cat{
 		background: #FBFBFB;
