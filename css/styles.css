@@ -302,8 +302,8 @@
 		display: block;
 	}
 	.content a:link.tarjet-cat{
-		background: #f2f2f2;
-		border: 1px solid #eaeaea;
+		background: #FBFBFB;
+		border: 1px solid var(--grisb);
 		box-shadow: none;
 	}
 	.content a:hover.tarjet-cat h3{
