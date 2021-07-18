@@ -35,21 +35,21 @@
   <body>
    <div class="sombra"></div>
 	  
-	  <div id="hambur"><i class="bi bi-justify-right"></i></div>
+	  
 	  
 <nav class="navegacion">
   
-    	<div class="logocharcas">
-			<span>Charcas.xyz</span>
-	  	</div>
-	  	<div class="menu-nav">
+    	<span class="logocharcas">
+			Charcas.xyz
+	  	</span>
+	  	<div class="menu-nav ocultos">
 	  		<ul>
 				<li><a href="/">Inicio</a></li>
 				<li><a href="acerca.html">Acerca de</a></li>
 				<li><a href="mailto:dyxerteam@gmail.com">Contacto</a></li>
 			</ul>
 	  	</div>
- 
+ 	<div id="hambur"><i class="bi bi-justify-right"></i></div>
 </nav>
 	  
 	  
@@ -131,7 +131,7 @@
 	  </section>
 	  
 	  
-	  
+	  <!--
 	    <div class="modall">
 		  <i class="bi bi-chevron-compact-down" id="closeH"></i>
 			<div class="content">
@@ -142,7 +142,7 @@
 			</div>
 	  </div>
 	  
-	  
+	  -->
 	  
 	  
 	  
@@ -159,21 +159,24 @@
 
 	  
 	  <script>
-		  
+		 
 		  $('#hambur').on('click', function(){
-			$('.modall').toggleClass('visible');
+			$('.navegacion .menu-nav').toggleClass('visibles');
 			$('body').toggleClass('scroll');
 			$('.sombra').toggleClass('visible-som');
 		})
 
+		  
+		  
+		  
 		$('.sombra').on('click', function(){
-			$('.modall').removeClass('visible');
+			$('.navegacion .menu-nav').removeClass('visibles');
 			$('body').removeClass('scroll');
 			$('.sombra').removeClass('visible-som');
 		})
 
 		$('#closeH').on('click', function(){
-			$('.modall').removeClass('visible');
+			$('.menu-nav').removeClass('visibles');
 			$('body').removeClass('scroll');
 			$('.sombra').removeClass('visible-som');
 		})
