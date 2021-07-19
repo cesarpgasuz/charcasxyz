@@ -395,10 +395,11 @@ a:visited.boton-register{
 
 /* --- template ---- */
 .banner-r{
-	min-height: 450px;
+	
 	width: 100%;
-	background: var(--azuls);
+	background: var(--morado2);
 	position: relative;
+	padding-top: 100px;
 }
 
 .banner-r .information img.log{
@@ -419,13 +420,30 @@ a:visited.boton-register{
 	font-weight: 600;
 	margin-bottom: 20px;
 }
+
+.banner-r .information ul li.fb a:visited{
+	color: #fff;
+	outline: none;
+}
+.banner-r .information ul li.fb a:link{
+	text-decoration: none;
+	background: #1094F4;
+	border-radius: 50px;
+	padding: 5px 20px;
+	color: #fff;
+	outline: none;
+}
+.banner-r .information ul li.fb a:hover{
+	background: #0268E3;
+}
 .banner-r .information ul li.tel{
-	color: greenyellow;
 	margin-bottom: 20px;
 }
 .banner-r .information ul li.tel a:link{
-	color: greenyellow;
+	color: var(--morado1);
 	text-decoration: none;
+	font-weight: 700;
+	
 }
 .banner-r .information ul li.tel a:visited{
 	color: greenyellow;
@@ -480,167 +498,33 @@ a:link.boton-promo{
 
 .pady{
 	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
-h4.subtitles{
-	font-size: 36px;
-	font-weight: 700;
-	font-style: italic;
-	color: var(--naranjap);
-	font-family: var(--fuentep);
-	text-align: center;
-	position: relative;
-	text-transform: uppercase;
-	margin-bottom: 80px;
-}
-h4.subtitles::before{
-	content: attr(data-heading);
-	font-family: var(--fuentep);
-	color: var(--grisb);
-	font-size: 100px;
-	font-weight: 700;
-	font-style: italic;
-	position: absolute;
-	line-height: 36px;
-	left: 0;
-	right: 0;
-	display: block;
-	z-index: -1;
-	text-transform: uppercase;
-	opacity: 25%;
+.marca p.text{
+	font-size: 24px;
+    font-weight: 600;
+    color: var(--negro1);
+	margin-bottom: 40px;
 }
 
 
-.pizz{
+.carde{
 	width: 100%;
-	-webkit-box-shadow: 0px 0px 40px 0px rgba(194,194,194,1);
-	-moz-box-shadow: 0px 0px 40px 0px rgba(194,194,194,1);
-	box-shadow: 0px 0px 40px 0px rgba(194,194,194,1);
 	border-radius: 5px;
 	display: flex;
 	margin-bottom: 30px;
 	padding-left: 20px;
 	padding-right: 20px;
-	min-height: 160px;
 	font-family: var(--fuentep);
-}
-.pizz .image{
-	display: flex;
+	border: 1px solid var(--gris3);
+	align-items: center;
 	justify-content: center;
-	align-items: center;
-	margin-right: 20px;
-	width: 35%;
-}
-.pizz .ingre{
-	margin-top: 40px;
-	width: 65%;
-}
-.pizz .ingre h5{
-	font-size: 18px;
-	color: var(--marr);
-	font-weight: 600;
-	text-transform: uppercase;
-	
-}
-.pizz .ingre p{
-	font-size: 14px;
-	color: var(--textf);
-	line-height: 25px;
-}
-.tamanos{
-	width: 100%;
-	height: auto;
-	padding-bottom: 200px;
-}
-.tarjet{
-	display: flex;
-	margin-bottom: 30px;
-	padding-right: 60px;
-	font-family: var(--fuentep);
-}
-.tarjet img{
-	margin-right: 20px;
-}
-.tarjet .content{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	position: relative;
-}
-.tarjet .content::before{
-	border-bottom: 2px dotted var(--grisf);
-	content: "";
-	position: absolute;
-	width: 100%;
-	margin-top: 15px;
-	z-index: -1;
-}
-.tarjet .content .body{
-	background: #fff;
-}
-.tarjet .content .body span.name{
-	font-size: 24px;
-	font-weight: 700;
-	font-style: italic;
-	color: var(--marr);
-}
-.tarjet .content .body span.porcion{
-	color: #000;
-	font-weight: 700;
-	font-size: 18px;
-	font-style: italic;
-}
-.tarjet .content span.price{
-	font-size: 30px;
-	color: var(--cyans);
-	font-weight: 700;
-	font-style: italic;
-	background: #fff;
+	height: 100%;
 }
 
 
-.relleno h5{
-	font-size: 24px;
-	font-family: var(--fuentep);
-	color: var(--azulp);
-	font-weight: 700;
-	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 50px;
-	font-style: italic;
-}
 
-.extra{
-	padding-top: 60px;
-}
-.extra .content{
-	background: #f4f4f4;
-	display: flex;
-	padding: 20px 10px;
-	justify-content: space-evenly;
-	width: 100%;
-	border-radius: 5px;
-}
-.extra h5{
-	font-size: 18px;
-	font-family: var(--fuentep);
-	color: var(--azulp);
-	font-weight: 700;
-	text-align: center;
-	margin: 10px 0px;
-	font-style: italic;
-}
-.extra .content h6{
-	margin-bottom: 0px;
-	font-size: 18px;
-	font-family: var(--fuentep);
-	color: var(--azulp);
-	font-weight: 600;
-}
-.extra .content h6 span{
-	color: var(--naranjap);
-}
 /* ----- responsive ------*/
 
 @media screen and (max-width: 1199px){
@@ -693,7 +577,9 @@ h4.subtitles::before{
 	}
 	
 	
-	
+	.pady{
+		padding-top: 50px;
+	}
 	
 }
 
@@ -748,9 +634,7 @@ h4.subtitles::before{
     	width: 70px;
 	}
 	
-	.banner-r .information{
-		padding-left: 25px;
-	}
+	
 	.banner-r .information ul li h2{
 		margin-bottom: 0px;
 	}
@@ -759,8 +643,8 @@ h4.subtitles::before{
 	}
 	
 	
-	.pizz .image{
-		margin-right: 0px;
+	.banner-r .information ul li.fb{
+	margin-top: 15px;
 	}
 	
 	
@@ -846,64 +730,37 @@ h4.subtitles::before{
 		font-size: 24px;
 	}
 	
-	
-	h4.subtitles{
-		margin-bottom: 40px;
-	}
-	h4.subtitles::before{
-		content: "";
-	}
-	.pizz{
-		box-shadow: none;
-		border: 1px solid var(--grisb);
-		background: #FBFBFB;
-	}
-	.pizz .image{
-		width: 30%;
-	}
-	.pizz .ingre{
-		width: 70%;
-		padding-left: 5%;
-	}
+
 	.pady{
 		padding-top: 50px;
 	}
 	
-	.tamanos{
-		padding-bottom: 100px;
-	}
+
 	
-	.tarjet img{
-		display: none;
+	.marca p.text{
+		font-size: 18px;
 	}
-	
-	.tarjet {
-		padding-right: 10px;
-		padding-left: 10px;
-	}
-	
-	.tarjet .content .body span.name {
-    	font-size: 18px;
-	}
-	.tarjet .content .body span.porcion{
+	.banner-r .information ul li.fb a:link{
 		font-size: 14px;
 	}
-	.tarjet .content span.price{
-		font-size: 16px;
+	/*
+	.banner-r .information ul li.fb a:link{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		border-radius: 0px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
-	
-	
-	.extra .content{
-		flex-direction: column;
-		align-items: center;
-		padding: 10px 0;
-	}
-	.extra .content h6{
-		margin: 10px 0px;
+	*/
+	.p-no{
 		font-size: 14px;
 	}
-	
-	
+	.tarjeta .contenido ul li:nth-child(3){
+		font-size: 14px;
+	}
 }
 
 
@@ -936,9 +793,13 @@ h4.subtitles::before{
 
 
 @media screen and (max-width: 384px){
-	h4.subtitles::before{
-		content: "";
-	}
+	.tarjeta .contenido ul li h5 {
+    font-size: 14px;
+}
+	
+	.banner-r .information ul li h2 {
+	font-size: 18px;
+}
 	
 }
 
