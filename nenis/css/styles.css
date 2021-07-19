@@ -273,7 +273,7 @@
 	color: var(--negro1);
 	font-weight: 700;
 }
-.tarjeta .contenido ul li:nth-child(3){
+.tarjeta .contenido ul li.tel{
 	color: var(--morado1);
 	font-size: 18px;
 	font-weight: 700;
@@ -436,6 +436,12 @@ a:visited.boton-register{
 .banner-r .information ul li.fb a:hover{
 	background: #0268E3;
 }
+
+
+.banner-r .information ul li.fb-perfil{
+	display: none;
+}
+
 .banner-r .information ul li.tel{
 	margin-bottom: 20px;
 }
@@ -646,6 +652,12 @@ a:link.boton-promo{
 	.banner-r .information ul li.fb{
 	margin-top: 15px;
 	}
+	.banner-r .information ul li.fb-perfil{
+		display: block;
+	}
+	.banner-r .information ul li.fb-mes{
+		display: none;
+	}
 	
 	
 }
@@ -758,9 +770,7 @@ a:link.boton-promo{
 	.p-no{
 		font-size: 14px;
 	}
-	.tarjeta .contenido ul li:nth-child(3){
-		font-size: 14px;
-	}
+	
 }
 
 
@@ -793,9 +803,7 @@ a:link.boton-promo{
 
 
 @media screen and (max-width: 384px){
-	.tarjeta .contenido ul li h5 {
-    font-size: 14px;
-}
+	
 	
 	.banner-r .information ul li h2 {
 	font-size: 18px;
