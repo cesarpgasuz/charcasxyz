@@ -13,7 +13,25 @@
 	--fuentep: 'Poppins', sans-serif;
 	--marr: #D31F25;
 }
-
+a:link.btn-llamar{
+	display: none;
+	position: fixed;
+	bottom: 3%;
+	right: 4%;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	justify-content: center;
+	align-items: center;
+	z-index: 300;
+	background: var(--azulp);
+	color: greenyellow;
+	text-decoration: none;
+	border: 2px solid greenyellow;
+}
+a:visited.btn-llamar{
+	color: yellowgreen;
+}
 .disable{
 	display: none;
 }
@@ -266,7 +284,7 @@
 .tarjeta .contenido ul li{
 	font-family: var(--fuentep);
 	line-height: 32px;
-	color: var(--textf);
+	color: var(--textof);
 	font-size: 16px;
 }
 .tarjeta .contenido ul li h5{
@@ -276,7 +294,7 @@
 }
 .tarjeta .contenido ul li:nth-child(3){
 	color: var(--cyans);
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 700;
 }
 .tarjeta .contenido ul li:last-child{
@@ -427,6 +445,7 @@ a:visited.boton-register{
 .banner-r .information ul li.tel a:link{
 	color: greenyellow;
 	text-decoration: none;
+	border-bottom: 1px dotted;
 }
 .banner-r .information ul li.tel a:visited{
 	color: greenyellow;
@@ -702,7 +721,9 @@ h4.subtitles::before{
 
 
 @media screen and (max-width: 767px){
-	
+	a:link.btn-llamar{
+		display: flex;
+	}
 	.modall{
 		display: flex;
 	}
@@ -756,9 +777,25 @@ h4.subtitles::before{
 		display: none;
 	}
 	
+
+
+
+	/*--- seccion pizzas ---*/
+	.pizz{
+		min-height: auto;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		align-items: center;
+	}
 	
 	.pizz .image{
 		margin-right: 0px;
+	}
+	.pizz .ingre{
+		margin-top: 0px;
+	}
+	.pizz .ingre h5, .pizz .ingre p{
+		margin-bottom: 0px;
 	}
 	
 	
@@ -858,10 +895,10 @@ h4.subtitles::before{
 		background: #FBFBFB;
 	}
 	.pizz .image{
-		width: 30%;
+		width: 20%;
 	}
 	.pizz .ingre{
-		width: 70%;
+		width: 80%;
 		padding-left: 5%;
 	}
 	.pady{
