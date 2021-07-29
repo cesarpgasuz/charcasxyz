@@ -1,0 +1,698 @@
+
+a:link.btn-llamar{
+	display: none;
+	position: fixed;
+	bottom: 3%;
+	right: 4%;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	justify-content: center;
+	align-items: center;
+	z-index: 300;
+	
+	
+	text-decoration: none;
+	
+}
+
+.disable{
+	display: none;
+}
+.scroll{
+	overflow: hidden;
+}
+.sombra{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.45);
+	top: 0;
+	z-index: 300;
+	display: none;
+  	transition-duration: 0.4s;
+}
+
+.modall {
+	position: fixed;
+	height: 80vh;
+	width: 100%;
+	background: #f4f4f4;
+	bottom: -80vh;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	z-index: 400;
+	padding: 6% 2%;
+	justify-content: center;
+	align-content: center;
+	font-family: var(--fuentep);
+	display: none;
+	transition-duration: 0.5s;
+}
+.modall i{
+	position: absolute;
+    font-size: 36px;
+    top: 0;
+    color: var(--azulp);
+    padding-left: 30%;
+    padding-right: 30%;
+
+}
+.modall .horario{
+	width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+.modall .horario .content h4 {
+	margin-top: 15%;
+	margin-bottom: 8%;
+	text-align: center;
+	font-size: 28px;
+	color: var(--cgris1);
+	font-weight: 600;
+}
+.modall .horario .content ul li{
+	line-height: 35px;
+	font-size: 14px;
+	color: var(--cgris3);
+	display: flex;
+	justify-content: space-between;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.modall .horario .content ul li:nth-child(odd){
+	background: var(--cgris4);
+}
+.modall .horario .content ul li span.day {
+	color: var(--cgris1);
+	font-weight: 600;
+}
+.modall .horario .content ul li span.time{
+	color: var(--cgris1);
+}
+
+.visible{
+	bottom: 0;
+	transition-duration: 0.5s;
+}
+.visible-som{
+	display: block;
+}
+#horario{
+
+	position: absolute;
+	bottom: -3%;
+	right: 4%;
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	text-align: center;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	line-height: 0;
+	
+}
+#horario i{
+	font-size: 28px;
+	
+}
+
+
+
+.navv {
+    
+    width: 100%;
+    height: auto;
+    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 5000;
+    display: flex;
+    align-items: center;
+ 
+    
+}
+
+
+/* estilos para el nombre en la barra de arriba cuando se hace scroll */
+.p-no {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: -2;
+	font-size: 18px;
+	line-height: 45px;
+	display: none;
+	font-family: var(--fuentep);
+	color: #000;
+	font-weight: 600;
+	font-style: italic;
+}
+.visible{
+	display: block;
+}
+
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////*/
+/* /////////////////////////// seccion banner //////////////////*/
+/* /////////////////////////////////////////////////////////////*/
+
+.banner{
+	width: 100%;
+	min-height: 400px;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.banner .content{
+	z-index: 5;
+	position: relative;
+	height: auto;
+	width: auto;
+	display: block
+}
+
+.banner .content h1{
+	color: #fff;
+	font-family: var(--fuentep);
+	text-transform: uppercase;
+	font-size: 38px;
+	font-size: 20px ;
+}
+
+.banner .content p{
+	font-size: 18px;
+	font-family: var(--fuentep);
+	font-weight: 400;
+}
+
+/* ---- icono que aparece en el banner en version movil -----*/
+/* se desaparece el fondo y entra el icono */
+.banner img.pana{
+	display: none;
+}
+
+
+
+
+/* ----------------------------- horario ---------------------------------*/
+/* ----------------------------- horario ---------------------------------*/
+/* ----------------------------- horario ---------------------------------*/
+
+
+
+
+/* -----------------------------------------------------------------------*/
+/* ----------------------------- negocios tarjetas -----------------------*/
+/* -----------------------------------------------------------------------*/
+.neg{
+	height: auto;
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.neg .tarjeta{
+	background: #fff;
+	display: flex;
+	align-items: center;
+	padding: 40px;
+	margin-bottom: 60px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(221,221,221,0.7);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(221,221,221,0.7);
+	box-shadow: 0px 0px 40px 0px rgba(221,221,221,0.7);
+}
+.neg .tarjeta .imagen{
+	margin-right: 50px;
+	flex-shrink: 0;
+}
+.neg .tarjeta .contenido ul{
+	margin-bottom: 0;
+}
+.neg .tarjeta .contenido ul li{
+	font-family: var(--fuentep);
+	line-height: 32px;
+	font-size: 16px;
+}
+.neg .tarjeta .contenido ul li.title{
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.neg .tarjeta .contenido ul li.telefono{
+	font-size: 16px;
+	font-weight: 700;
+}
+.neg .tarjeta .contenido ul li:last-child{
+	margin-top: 10px;
+}
+/* -- clase para los links que tengan la clase boton --  */
+a:link.boton{
+	text-decoration: none;
+	outline: none;
+	font-family: var(--fuentep);
+	border-radius: 50px;
+	
+}
+/* --- tamaño y espaciado para el boton de las tarjetas ---*/
+a:link.boton.boton-menu{
+	padding: 4px 30px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+
+
+/* ---- boton grande de registro -----*/
+
+a:link.boton.boton-register{
+	padding: 10px 35px;
+	font-size: 24px;
+	font-weight: 700;
+	font-style: italic;
+	display: inline-block;
+}
+
+
+
+
+
+.divider{
+	width: 100%;
+	height: 100px;
+}
+/* ----------------------------------------------------------------*/
+/* -------------------------- seccion registro --------------------*/
+/* ----------------------------------------------------------------*/
+
+
+.register{
+	width: 100%;
+	height: auto;
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+
+.register .contenido{
+	text-align: center;
+	font-family: var(--fuentep);
+}
+
+.register .contenido h3{
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.register .contenido p{
+	font-size: 16px;
+	color: var(--cgris1);
+	line-height: 30px;
+	font-weight: 400;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+
+/* -----------------------------------------------------------------*/
+/* --------------------------- contacto-----------------------------*/
+/* -----------------------------------------------------------------*/
+
+
+.contacto{
+	width: 100%;
+	height: auto;
+	padding: 80px 0px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.contacto a:link{
+	text-decoration: none;
+	outline: none;
+	padding: 15px 60px;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: var(--fuentep);
+}
+
+
+
+
+/* ------------------------------------------------------------------*/
+/* ------------------------------footer -----------------------------*/
+/* ------------------------------------------------------------------*/
+.dy{
+	padding: 20px 0px;
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+.dy h6{
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 0px;
+	font-family: var(--fuentep);
+}
+
+
+
+
+
+/* --- --------------------------------------------------------------- */
+/* --- ------------------------ template ----------------------------- */
+/* --- --------------------------------------------------------------- */
+
+.banner-r{
+	min-height: 450px;
+	width: 100%;
+	position: relative;
+}
+.banner-r .information img.log{
+	width: 100px;
+	margin-bottom: 15px;
+}
+
+.banner-r .information ul li{
+	line-height: 32px;
+	font-family: var(--fuentep);
+	font-size: 16px;
+	font-weight: 400;
+}
+.banner-r .information ul li.title{
+	font-weight: 600;
+	margin-bottom: 20px;
+	font-size: 32px;
+}
+
+.banner-r .information ul li.tel a:link{
+	border-bottom: 1px dotted;
+	text-decoration: none;
+	margin-bottom: 20px;
+}
+
+
+/* --- horario ----*/
+.banner-r .horario{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	padding: 25px;
+	font-family: var(--fuentep);
+	border-radius: 10px;
+}
+.banner-r .horario .content {
+	width: 100%;
+}
+
+.banner-r .horario .content h4{
+	font-size: 24px;
+	margin-top: 10px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 25px;
+}
+.banner-r .horario .content ul{
+	margin-bottom: 0px;
+}
+.banner-r .horario .content ul li{
+	line-height: 35px;
+	font-size: 16px;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.banner-r .horario .content ul li span.day{
+	font-weight: 400;
+}
+
+.banner-r .horario .content ul li span.time{
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.pady{
+	padding-top: 100px;
+}
+
+h4.subtitles{
+	font-size: 36px;
+	font-weight: 700;
+	font-style: italic;
+	font-family: var(--fuentep);
+	text-align: center;
+	position: relative;
+	text-transform: uppercase;
+	margin-bottom: 80px;
+}
+h4.subtitles::before{
+	content: attr(data-heading);
+	font-family: var(--fuentep);
+	font-size: 100px;
+	font-weight: 700;
+	font-style: italic;
+	position: absolute;
+	line-height: 36px;
+	left: 0;
+	right: 0;
+	display: block;
+	z-index: -1;
+	text-transform: uppercase;
+	opacity: 25%;
+}
+
+
+
+/* ----------------------------------------------------------responsive ------------------------------------------------*/
+/* ----------------------------------------------------------responsive ------------------------------------------------*/
+/* ----------------------------------------------------------responsive ------------------------------------------------*/
+/* ----------------------------------------------------------responsive ------------------------------------------------*/
+
+
+@media screen and (max-width: 1199px){
+	
+	
+}
+
+
+@media screen and (max-width: 991px){
+	
+	.banner{
+		min-height: 250px;
+		padding-top: 50px;
+	}
+
+	.banner-r .information ul li.title {
+    	font-size: 28px;
+	}
+	
+	
+}
+
+
+
+
+@media screen and (max-width: 767px){
+	
+	a:link.btn-llamar{
+		display: flex;
+	}
+	.modall{
+		display: flex;
+	}
+	#horario{
+		display: flex;
+	}
+	
+	.banner .content p {
+    	font-size: 16px;
+	}
+
+
+
+	/* ------tarjetas negocios -------*/
+	.neg{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.neg .tarjeta{
+		margin-bottom: 30px;
+	}
+	
+	.neg .tarjeta .imagen img{
+		width: 80px;
+	}
+	.neg .tarjeta .contenido ul li.title {
+    	font-size: 24px;
+	}
+
+
+	/* -------page templates .----- paginas ---*/
+	.banner-r{
+		min-height: auto;
+		padding-top: 100px;
+		padding-bottom: 50px;
+	}
+	
+	.banner-r .information img.log {
+    	width: 70px;
+	}
+	
+	.banner-r .information{
+		padding-left: 10px;
+	}
+	.banner-r .information ul li.title{
+		margin-bottom: 0px;
+	}
+	.banner-r .horario{
+		display: none;
+	}
+	
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 575px){
+	
+	.banner{
+		min-height: 200px;
+	}
+	.banner img.pana{
+		display: block;
+		width: 120px;
+		position: absolute;
+		right: 10%;
+		bottom: 0;
+	}
+
+	/* ------tarjetas negocios -------*/
+	.neg .tarjeta{
+		padding: 25px;
+		box-shadow: none;
+	}
+	.neg .tarjeta .imagen img {
+		width: 60px;
+	}
+	.neg .tarjeta .contenido ul li.title{
+		font-size: 18px;
+		margin-bottom: 0px;
+	}
+	.neg .tarjeta .contenido ul li{
+		font-size: 14px;
+	}
+
+
+
+	/* --------- seccion registro --------*/
+	.register{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.register .contenido h3 {
+    	font-size: 24px
+	}
+	.register .contenido p{
+		font-size: 14px;
+	}
+	.boton-register{
+		font-size: 16px;
+	}
+	
+
+	/* -------secion templates ----pages -------- */
+	.banner-r {
+		padding-top: 60px;
+		padding-bottom: 20px;
+	}
+	.banner-r .information img.log {
+    	width: 50px;
+	}
+	
+	
+	.banner-r .information ul li.title {
+		font-size: 24px;
+	}
+	
+
+
+	.pady{
+		padding-top: 50px;
+		padding-bottom: 100px;
+	}
+
+	
+}
+
+
+@media screen and (max-width: 490px){
+	
+	.banner img.pana{
+		right: 5%;
+	}
+	
+	.neg .tarjeta {
+		padding: 15px;
+		margin-bottom: 30px;
+	}
+	.neg .tarjeta .imagen {
+		margin-right: 10px;
+		align-self: start;
+	}
+	.neg .tarjeta .imagen img {
+		width: 30px;
+	}
+	.neg .tarjeta .contenido ul li{
+		line-height: 25px;
+	}
+
+	a:link.boton.boton-menu{
+		font-size: 12px;
+	}
+	
+}
+
+
+
+@media screen and (max-width: 384px){
+
+	.neg .tarjeta .contenido ul li{
+		font-size: 12px;
+	}
+	
+}
+
+@media screen and (max-width: 344px){
+	.banner img.pana{
+		width: 80px;
+	}
+}
+
+
+
+
+
+
