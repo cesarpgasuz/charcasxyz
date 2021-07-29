@@ -641,10 +641,10 @@ h4.subtitles::before{
 
 	.pady{
 		padding-top: 50px;
-		padding-bottom: 100px;
+		padding-bottom:0px;
 	}
 	.divider {
-	    height: 0px;
+	    height: 30px;
 	}
 	
 }
