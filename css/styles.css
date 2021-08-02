@@ -95,6 +95,7 @@ a{
 .navegacion .menu-nav ul li{
 	display: inline;
 	margin-left: 24px;
+	margin-right: 24px;
 	font-size: 14px;
 }
 .navegacion .menu-nav ul li a:visited{
@@ -107,6 +108,9 @@ a{
 }
 .navegacion .menu-nav ul li a:hover{
 	border-bottom: 2px solid var(--azulp);
+}
+.navegacion .menu-nav ul li a i{
+	display: none;
 }
 
 .home{
@@ -342,8 +346,12 @@ a{
 		padding-left: 0;
 	}
 	.navegacion .menu-nav ul li{
-		margin-left: 0;
+		
 	}
+	.navegacion .menu-nav ul li a i{
+			display: block;
+			margin-right: 15px;
+		}
 	.navegacion .menu-nav ul li a:active{
 		background: var(--grisb);
 	}
@@ -352,11 +360,12 @@ a{
 		display: flex;
 		height: 50px;
 		align-items: center;
-		justify-content: center;
-		margin-bottom: 40px;
+		justify-content: start;
+		margin-bottom: 20px;
+		border-bottom: 1px solid var(--grisb);
 	}
 	.navegacion .menu-nav ul li a:hover{
-		border-bottom: none;
+		
 	}
 	#habur{
 		height: auto;
