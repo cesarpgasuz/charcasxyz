@@ -1,5 +1,4 @@
 :root{
-
 	--cp1: #0A191F; /* color principal 1 */
 	--cp2: #0D2128; /* color principal 2 */
 	--cs1: #FF1B00; /* color secundario 1 (--enlaces y botones) --*/
@@ -14,9 +13,7 @@
 	--cgris4: #dddddd;
 
 	--fuentep: 'Poppins', sans-serif;
-	
 }
-
 
 /* ------ boton flotante llamar  -----------*/
 
@@ -31,11 +28,11 @@ a:visited.btn-llamar{
 
 /* ------ fin boton flotante llamar  -----------*/
 
-
 /* -------- barra top fixed ----- */
 .navv{
 	background: var(--cp2);
 }
+
 
  /* se cambia la barra top fixed a color blanco con esta regla css */
 .blanca{
@@ -47,6 +44,7 @@ a:visited.btn-llamar{
 	box-shadow: 0px 10px 16px -8px rgba(0, 0, 0, 0.1);
 	*/
 }
+
 
 /* --- estilos para la flecha de retroceso en la barra top fixed  ---*/
 .flot-reverse{
@@ -69,6 +67,8 @@ a:visited.btn-llamar{
 	cursor: pointer;
 }
 
+
+
 /* --- colores para el boton de horario en version movil ---- */
 /* ---la estructura original esta en may.css --- */
 #horario{
@@ -86,15 +86,10 @@ a:visited.btn-llamar{
 
 
 
-
-
-
-
 /* --- seccion banner para todas las paginas con tarjetas --- */
 /* //// solo se agrega la imagen y la posicion, la estructa esta en my.css */
-
 .banner{
-	background: url(../images/pizza_b.jpg) center center no-repeat;
+	background: url(../images/torta.jpg) center center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -134,6 +129,7 @@ a:visited.btn-llamar{
 
 
 
+
 /* -----------------------------------  negocios personalizacion ------------------------------------- -------*/
 .neg .tarjeta .contenido ul li.title{
 	color: var(--cp1);
@@ -141,7 +137,7 @@ a:visited.btn-llamar{
 .neg .tarjeta .contenido ul li.telefono{
 	color: var(--ct);
 }
-a:visited.boton.boton-menu{
+a:visited.boton-menu{
 	color: #fff;
 }
 /* -- color para los botones que tengan la clase .boton */
@@ -165,15 +161,8 @@ a:link.boton.boton-register{
 
 
 
-/* -----------------seccion registro -----------------*/
-/* aqui se agrego la imagen de pizza que esta al fondo  */
-.register{
-	background: url(../images/pizzapng.png);
-	background-repeat: no-repeat;
-	background-position: 90% center;
-	background-size: contain;
-}
 
+/* --------------- seccion registro -----------*/
 .register .contenido h3{
 	color: var(--cp1);
 }
@@ -184,14 +173,9 @@ a:link.boton.boton-register{
 	color: var(--cgris1);
 }
 
-/* --- imagen de mesera  */
-.register img.girl{
-		width: 165px;
-}
 
 
 /* -----------------seccion contacto ---------------*/
-
 .contacto{
 	background: var(--cp2);
 }
@@ -205,14 +189,16 @@ a:link.boton.boton-register{
 }
 
 
+
+
 /* ------------------seccion footer -------------------*/
 .dy{
 	background: var(--cp1);
 }
 .dy h6{
 	color: var(--cgris4);
+	font-family: var(--fuentep);
 }
-
 
 
 
@@ -227,23 +213,19 @@ a:link.boton.boton-register{
 	background: var(--cp2);
 }
 
+
 .banner-r .information ul li{
 	color: var(--cgris3);
 }
-
 .banner-r .information ul li.title{
 	color: var(--cgris4);
 }
-
+.banner-r .information ul li.tel a:visited{
+	color: greenyellow;
+}
 .banner-r .information ul li.tel a:link{
 	color: greenyellow;
 }
-.banner-r .information ul li.tel a:visited{
-	color: greenyellow;
-	text-decoration: none;
-}
-
-
 
 
 
@@ -251,7 +233,6 @@ a:link.boton.boton-register{
 .banner-r .horario{
 	background: var(--cp1);
 }
-
 .banner-r .horario .content h4{
 	color: yellow;
 }
@@ -260,8 +241,6 @@ a:link.boton.boton-register{
 }
 .banner-r .horario .content ul li span.day{
 	color: var(--cgris4);
-	
-	
 }
 
 
@@ -276,150 +255,80 @@ h4.subtitles::before{
 }
 
 
+/* -------------------------- seccion tortas -----------------------*/
 
-/* -----------------------seccion pizzas ----------------*/
-.pizz{
+h4.tipo{
+	font-family: var(--fuentep);
+    font-weight: 700;
+    margin-bottom: 35px;
+    text-align: center;
+	color: var(--cp1);
+}
+
+.torta .tarjeta{
 	width: 100%;
-	-webkit-box-shadow: 0px 0px 40px 0px rgba(194,194,194,1);
-	-moz-box-shadow: 0px 0px 40px 0px rgba(194,194,194,1);
-	box-shadow: 0px 0px 40px 0px rgba(194,194,194,1);
 	border-radius: 5px;
 	display: flex;
 	margin-bottom: 30px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	padding-left: 20px;
 	padding-right: 20px;
-	min-height: 160px;
+	height: 100%;
 	font-family: var(--fuentep);
+	border: 1px solid var(--cgris4);
+	box-shadow: none;
+	align-items: center;
+	position: relative;
 }
-.pizz .image{
+.torta .tarjeta .image{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-right: 20px;
-	width: 35%;
+	width: 30%;
 }
-.pizz .ingre{
-	margin-top: 40px;
-	width: 65%;
+.torta .tarjeta .ingre{
+	width: 70%;
 }
-.pizz .ingre h5{
-	font-size: 18px;
+.torta .tarjeta .ingre h5{
+	font-size: 16px;
 	color: var(--cc);
 	font-weight: 600;
 	text-transform: uppercase;
+	margin-bottom: 0px;
 	
 }
-.pizz .ingre p{
+.torta .tarjeta .ingre p{
 	font-size: 14px;
 	color: var(--cgris1);
-	line-height: 25px;
-}
-.tamanos{
-	width: 100%;
-	height: auto;
-	
-}
-.tarjet{
-	display: flex;
-	margin-bottom: 30px;
-	padding-right: 60px;
-	font-family: var(--fuentep);
-}
-.tarjet img{
-	margin-right: 20px;
-}
-.tarjet .content{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	position: relative;
-}
-.tarjet .content::before{
-	border-bottom: 2px dotted var(--cgris3);
-	content: "";
-	position: absolute;
-	width: 100%;
-	margin-top: 15px;
-	z-index: -1;
-}
-.tarjet .content .body{
-	background: #fff;
-}
-.tarjet .content .body span.name{
-	font-size: 24px;
-	font-weight: 700;
-	font-style: italic;
-	color: var(--cc);
-}
-.tarjet .content .body span.porcion{
-	color: #000;
-	font-weight: 700;
-	font-size: 18px;
-	font-style: italic;
-}
-.tarjet .content span.price{
-	font-size: 30px;
-	color: var(--ct);
-	font-weight: 700;
-	font-style: italic;
-	background: #fff;
-}
-
-
-.relleno h5{
-	font-size: 24px;
-	font-family: var(--fuentep);
-	color: var(--cp1);
-	font-weight: 700;
-	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 50px;
-	font-style: italic;
-}
-
-.extra{
-	padding-top: 60px;
-}
-.extra .content{
-	background: #f4f4f4;
-	display: flex;
-	padding: 20px 10px;
-	justify-content: space-evenly;
-	width: 100%;
-	border-radius: 5px;
-}
-.extra h5{
-	font-size: 18px;
-	font-family: var(--fuentep);
-	color: var(--cp1);
-	font-weight: 700;
-	text-align: center;
-	margin: 10px 0px;
-	font-style: italic;
-}
-.extra .content h6{
 	margin-bottom: 0px;
-	font-size: 18px;
-	font-family: var(--fuentep);
+}
+.torta .tarjeta .price{
+	position: absolute;
+	background: yellow;
+	height: 40px;
+	width: 40px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid var(--cs1);
+	right: -5px;
+	top: -15px;
 	color: var(--cp1);
+	font-size: 16px;
 	font-weight: 600;
 }
-.extra .content h6 span{
-	color: var(--cs1);
-}
 
 
 
-
-/* ----------------------------------------------------------responsive ------------------------------------------------*/
-/* ----------------------------------------------------------responsive ------------------------------------------------*/
-/* ----------------------------------------------------------responsive ------------------------------------------------*/
-/* ----------------------------------------------------------responsive ------------------------------------------------*/
+/* ---------------------------------------------------responsive ------------------------------------------------*/
+/* ---------------------------------------------------responsive ------------------------------------------------*/
+/* ---------------------------------------------------responsive ------------------------------------------------*/
+/* ---------------------------------------------------responsive ------------------------------------------------*/
 
 @media screen and (max-width: 1199px){
-
-	/*--- pizzas precios ---*/
 	.tarjet{
 		padding-right: 30px;
 	}
@@ -437,25 +346,8 @@ h4.subtitles::before{
 
 
 @media screen and (max-width: 991px){
-
-	.register{
-		background: none;
-	}
-	.register img.girl{
-		width: 115px;
-	}
 	
-	/*--- pizzas precios ---*/
 	
-	.tarjet .content .body span.name {
-    	font-size: 24px;
-	}
-	.tarjet .content .body span.porcion{
-		font-size: 18px;
-	}
-	.tarjet .content span.price{
-		font-size: 30px;
-	}
 	
 	
 	
@@ -468,13 +360,14 @@ h4.subtitles::before{
 @media screen and (max-width: 767px){
 	
 
+
+
 	.banner .content h1 span.title{
 		font-size: 48px;
 	}
 	.banner .content h1 span.title2{
 		font-size: 24px;
 	}
-	
 
 	
 	.register img.girl, .register img.boy{
@@ -486,21 +379,21 @@ h4.subtitles::before{
 
 
 
-	/*--- seccion pizzas ---*/
-	.pizz{
+	/*--- seccion tacos ---*/
+	/*.taco{
 		min-height: auto;
 		padding-top: 15px;
 		padding-bottom: 15px;
 		align-items: center;
-	}
+	}*/
 	
-	.pizz .image{
+	.torta .image{
 		margin-right: 0px;
 	}
-	.pizz .ingre{
+	.torta .ingre{
 		margin-top: 0px;
 	}
-	.pizz .ingre h5, .pizz .ingre p{
+	.torta .ingre h5, .pizz .ingre p{
 		margin-bottom: 0px;
 	}
 	
@@ -523,7 +416,6 @@ h4.subtitles::before{
 	
 	
 	
-	
 	.banner .content h1 span.title{
 		font-size: 32px;
 	}
@@ -531,17 +423,20 @@ h4.subtitles::before{
 		font-size: 20px;
 	}
 	
+	
 	.banner .content p {
     	font-size: 12px;
 		margin-right: 40%;
 	}
+
 	
 	/* ------tarjetas negocios -------*/
 	.neg .tarjeta{
 		border: 1px solid var(--cgris4);
 		background: #FBFBFB;
 	}
-		
+	
+	
 	
 	
 	
@@ -553,59 +448,46 @@ h4.subtitles::before{
 		content: "";
 	}
 
-	/* ---------- seccion pizzas -----------*/
-	.pizz{
+
+
+ /* ----- seccion tortas ------*/
+
+
+	.torta .tarjeta{
 		box-shadow: none;
-		border: 1px solid var(--cgris4);
 		background: #FBFBFB;
+		height: auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 0px;
+		margin-bottom: 0px;
+		
 	}
-	.pizz .image{
-		width: 20%;
+	.torta .tarjeta .image{
+		width: 25%;
+		margin-right: 0px;
 	}
-	.pizz .ingre{
-		width: 80%;
-		padding-left: 5%;
+	.torta .tarjeta .image img{
+		width: 40%;
 	}
-	
-	
-	
-	.tarjet img{
-		display: none;
-	}
-	
-	.tarjet {
-		padding-right: 10px;
-		padding-left: 10px;
-	}
-	
-	.tarjet .content .body span.name {
-    	font-size: 18px;
-	}
-	.tarjet .content .body span.porcion{
-		font-size: 14px;
-	}
-	.tarjet .content span.price{
-		font-size: 16px;
-	}
-	
-	
-	.extra .content{
-		flex-direction: column;
-		align-items: center;
-		padding: 10px 0;
-	}
-	.extra .content h6{
-		margin: 10px 0px;
-		font-size: 14px;
+	.torta .tarjeta .ingre{
+		width: 60%;
+		padding-left: 0%;
 	}
 
+
+	
+	.torta .tarjeta .price{
+		position: static;
+		width: 15%;
+	}
+	
 	
 	
 }
 
 
 @media screen and (max-width: 490px){
-	
 	
 	
 	
@@ -618,8 +500,9 @@ h4.subtitles::before{
 		content: "";
 	}
 
+	
 }
 
 @media screen and (max-width: 344px){
-
+	
 }

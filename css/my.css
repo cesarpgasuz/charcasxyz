@@ -82,7 +82,7 @@ a:link.btn-llamar{
 	padding-left: 20px;
 }
 .modall .horario .content ul li:nth-child(odd){
-	background: var(--cgris4);
+	background: #e8e7e7;
 }
 .modall .horario .content ul li span.day {
 	color: var(--cgris1);
@@ -479,7 +479,9 @@ h4.subtitles::before{
 	text-transform: uppercase;
 	opacity: 25%;
 }
+ /* --estilos para el tipo cuando se trata de tipo de comida */
 
+    
 
 
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
