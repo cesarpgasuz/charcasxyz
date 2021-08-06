@@ -461,6 +461,9 @@ a:link.boton.boton-register{
 	padding-top: 100px;
 }
 
+
+
+ /* --estilos para el tipo cuando se trata de tipo de comida */
 h4.subtitles{
 	font-size: 36px;
 	font-weight: 700;
@@ -486,7 +489,19 @@ h4.subtitles::before{
 	text-transform: uppercase;
 	opacity: 25%;
 }
- /* --estilos para el tipo cuando se trata de tipo de comida */
+
+
+ /* --estilos para el tipo cuando se trata de paquetes  */
+h4.subtitles-2{
+	font-size: 36px;
+	font-weight: 700;
+	font-family: var(--fuentep);
+	text-align: left;
+	position: relative;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
 
     
 
@@ -512,6 +527,9 @@ h4.subtitles::before{
 
 	.banner-r .information ul li.title {
     	font-size: 28px;
+	}
+	.register .contenido p{
+		line-height: 22px;
 	}
 	
 	
@@ -657,6 +675,15 @@ h4.subtitles::before{
 	    height: 30px;
 	}
 	
+	/* estilos para los subtitulos 2 */
+	h4.subtitles-2{
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+
+
+
+
 }
 
 
