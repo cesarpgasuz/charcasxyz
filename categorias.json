@@ -40,6 +40,12 @@
     "name": "microbus",
     "image": "microbus.svg",
     "link": "microbus/"
+  },
+  {
+    "id": 8,
+    "name": "Reparación de Celulares",
+    "image": "reparacioncelular.svg",
+    "link": "repacionceluar"
   }
  
 ]
