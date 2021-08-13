@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "name": "internet",
+    "image": "internet.svg",
+    "link": "internet/"
+  },
+  {
+    "id": 2,
+    "name": "tortas",
+    "image": "torta.svg",
+    "link": "tortas/"
+  },
+  {
+    "id": 3,
+    "name": "pizzas",
+    "image": "pizza.svg",
+    "link": "pizzas/"
+  },
+  {
+    "id": 4,
+    "name": "tacos",
+    "image": "taco.svg",
+    "link": "tacos/"
+  },
+  {
+    "id": 5,
+    "name": "taxi",
+    "image": "taxi.svg",
+    "link": "taxi/"
+  },
+  {
+    "id": 6,
+    "name": "nenis",
+    "image": "virgo.svg",
+    "link": "nenis/"
+  },
+  {
+    "id": 7,
+    "name": "microbus",
+    "image": "microbus.svg",
+    "link": "microbus/"
+  }
+ 
+]

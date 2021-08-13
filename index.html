@@ -70,44 +70,8 @@
 	  <section class="categorias">
 	  	<div class="container">
 		  	<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="content">
-
-
-						<a href="internet/" class="tarjet-cat">
-							<img src="images/internet.svg" class="img-fluid" alt="">
-							<h3>Internet</h3>
-							<i class="bi bi-chevron-right"></i>
-						</a>
-
-						<a href="tortas/" class="tarjet-cat">
-							<img src="images/torta.svg" class="img-fluid" alt="">
-							<h3>Tortas</h3>
-							<i class="bi bi-chevron-right"></i>
-						</a>
-
-						<a href="pizzas/" class="tarjet-cat">
-							<img src="images/pizza.svg" class="img-fluid" alt="">
-							<h3>Pizzas</h3>
-							<i class="bi bi-chevron-right"></i>
-						</a>
-						<a href="tacos/" class="tarjet-cat">
-							<img src="images/taco.svg" class="img-fluid" alt="">
-							<h3>Tacos</h3>
-							<i class="bi bi-chevron-right"></i>
-						</a>
-						<a href="#" class="tarjet-cat">
-							<img src="images/taxi.svg" class="img-fluid" alt="">
-							<h3>Taxi</h3>
-							<i class="bi bi-chevron-right"></i>
-						</a>
-						<a href="nenis" class="tarjet-cat">
-							<img src="images/virgo.svg" class="img-fluid" alt="">
-							<h3>Nenis</h3>
-							<i class="bi bi-chevron-right"></i>
-						</a>
-						
-					</div>
+				<div class="col-lg-6" id="categorias">
+					
 				
 				</div>
 			</div>
@@ -195,6 +159,36 @@
 			$('.sombra').removeClass('visible-som');
 		})
 		  
+
+
+
+		const contenido = document.querySelector('#categorias');
+		 function cargarCategorias(){
+		 	fetch('categorias.json')
+		 		.then(respuesta => respuesta.json())
+		 		.then(categorias => {
+		 			categorias.forEach(categoria =>{
+		 				const div = document.createElement('div');
+		 				div.classList.add('content');
+		 				div.innerHTML += `
+		 					<a href="${categoria.link}" class="tarjet-cat">
+								<img src="images/${categoria.image}" class="img-fluid" alt="">
+								<h3>${categoria.name}</h3>
+								<i class="bi bi-chevron-right"></i>
+							</a>
+
+		 				`;
+		 				contenido.appendChild(div);
+		 			});
+		 		})
+		 		.catch(error => console.log('hubo un error: ' + error.message))
+		 }
+
+		 cargarCategorias();
+
+
+
+
 	  </script>
 	  
 	  
