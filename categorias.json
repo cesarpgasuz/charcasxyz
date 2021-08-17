@@ -24,12 +24,6 @@
     "link": "tacos/"
   },
   {
-    "id": 5,
-    "name": "taxi",
-    "image": "taxi.svg",
-    "link": "taxi/"
-  },
-  {
     "id": 6,
     "name": "nenis",
     "image": "virgo.svg",
