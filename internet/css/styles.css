@@ -303,9 +303,14 @@ h4.subtitles-2{
 	margin-bottom: 0px;
 	font-size: 16px;
 }
-
+.paquetes .tarjeta.me2{
+	border-left: 6px solid #790bf1;
+}
 .paquetes .tarjeta.me3{
 	border-left: 6px solid #04AA91;
+}
+.paquetes .tarjeta.me4{
+	border-left: 6px solid #08bdf3;
 }
 .paquetes .tarjeta.me5{
 	border-left: 6px solid var(--cs1);
@@ -464,10 +469,17 @@ h4.subtitles-2{
 		font-size: 20px;
 		font-style: normal;
 	}
-
+	.paquetes .tarjeta.me2{
+		border-left: 0px;
+		background: #790bf1;
+	}
 	.paquetes .tarjeta.me3{
 		border-left: 0px;
 		background: #04AA91;
+	}
+	.paquetes .tarjeta.me4{
+		border-left: 0px;
+		background: #08bdf3;
 	}
 	.paquetes .tarjeta.me5 {
 		background: var(--cs1);

@@ -398,7 +398,9 @@ a{
 		outline: none;
 		border: 1px solid var(--grisb);
 	}
-	
+	.content a:hover.tarjet-cat{
+		background: #fbfbfb;
+	}
 	.content a:active.tarjet-cat{
 		background: var(--grisb);
 	}

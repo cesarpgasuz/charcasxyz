@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "name": "SIST NETWORKS",
+    "image": "sist.jpg",
+    "direccion": "Doctor Mora",
+    "telefono": "419 120 88 21",
+    "categoria": "internet"
+  },
+  {
+    "id": 2,
+    "name": "BJ TECNO",
+    "image": "bjtecno.jpg",
+    "direccion": "Avenida Hidalgo #64, Doctor Mora",
+    "telefono": "442 628 4765",
+    "categoria": "internet"
+  },
+  {
+    "id": 3,
+    "name": "Inttec",
+    "image": "inttec.jpg",
+    "direccion": "Doctor Mora",
+    "telefono": "419 123 7607",
+    "categoria": "internet"
+  },
+  {
+    "id": 4,
+    "name": "DMG.NET",
+    "image": "dmgnet.jpg",
+    "direccion": "Calle Silao #31, Doctor Mora",
+    "telefono": "419 128 7479",
+    "categoria": "internet"
+  },
+  {
+    "id": 5,
+    "name": "CAPA3Internet",
+    "image": "capa3.jpg",
+    "direccion": "Calle Ocampo #12, Doctor Mora",
+    "telefono": "419 120 8519",
+    "categoria": "internet"
+  },
+  {
+    "id": 6,
+    "name": "INTERCHEAP",
+    "image": "intercheap.jpg",
+    "direccion": "Calle Ocampo #53, Doctor Mora",
+    "telefono": "419 131 2046",
+    "categoria": "internet"
+  }
+  ,
+  {
+    "id": 7,
+    "name": "Tortas con Tradición",
+    "image": "cristo-rey.svg",
+    "direccion": "Bugambilias #24, El Paraiso, Doctor Mora",
+    "telefono": "419 122 5572",
+    "categoria": "tortas"
+  }
+ 
+]
+

@@ -67,7 +67,7 @@
 	  <section class="neg">
 	  	<div class="container">
 		  	<div class="row justify-content-center">
-				<div class="col-lg-8 col-md-12 col-sm-12">
+				<div class="col-lg-8 col-md-12 col-sm-12" id="negocioslista">
 					<div class="tarjeta">
 						<div class="imagen">
 							<img src="images/sist.jpg" class="img-fluid" alt="" width="120">
@@ -231,6 +231,57 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
     
 	  <script src="js/nav.js"></script>
+
+
+
+
+
+
+
+		<script>
+			
+			
+			
+
+
+				const listado = document.querySelector('#negocioslista');
+				function filtrarCategorias(){
+		 		fetch('../negocios.json')
+		 		.then(respuesta => respuesta.json())
+		 		.then(negocios =>{
+		 				negocios.filter(neg => neg.categoria === 'internet');
+			 			const div = document.createElement('div');
+							div.classList.add('tarjeta');
+							div.innerHTML += `
+
+
+									<div class="imagen">
+										<img src="images/${fil.image}" class="img-fluid" alt="" width="120">
+									</div>
+									<div class="contenido">
+										<ul class="list-unstyled">
+											<li class="title">${fil.name}</li>
+											<li class="direction"><i class="bi bi-geo-alt-fill"></i> ${fil.direccion}</li>
+											<li class="telefono"><i class="bi bi-telephone-fill"></i> ${fil.telefono}</li>
+											<li><a href="sist.html" class="boton boton-menu">Ver Paquetes</a></li>
+										</ul>
+									</div>
+		
+							`;
+							listado.appendChild(div);
+		 		})
+		 	}
+		 	filtrarCategorias();
+			//let aprov = categorias.filter(ccat => ccat.name === 'tacos');
+			//console.log(aprov);
+
+		</script>
+
+
+
+
+
+
 	 
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->

@@ -34,18 +34,7 @@
     "name": "nenis",
     "image": "virgo.svg",
     "link": "nenis/"
-  },
-  {
-    "id": 7,
-    "name": "microbus",
-    "image": "microbus.svg",
-    "link": "microbus/"
-  },
-  {
-    "id": 8,
-    "name": "Reparación de Celulares",
-    "image": "reparacioncelular.svg",
-    "link": "repacionceluar"
   }
  
 ]
+

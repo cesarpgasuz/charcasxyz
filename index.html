@@ -183,10 +183,25 @@
 		 		})
 		 		.catch(error => console.log('hubo un error: ' + error.message))
 		 }
-
 		 cargarCategorias();
 
 
+
+		 	function filtrarCategorias(){
+		 		fetch('categorias.json')
+		 		.then(respuesta => respuesta.json())
+		 		.then(categorias =>{
+		 			const fil = categorias.filter(cat => cat.name === 'pizzas');
+		 			console.log(fil)
+		 		})
+		 	}
+		 	filtrarCategorias();
+			//let aprov = categorias.filter(ccat => ccat.name === 'tacos');
+			//console.log(aprov);
+
+		
+
+		
 
 
 	  </script>
