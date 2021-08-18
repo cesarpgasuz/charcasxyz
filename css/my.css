@@ -75,7 +75,6 @@ a:link.btn-llamar{
 .modall .horario .content ul li{
 	line-height: 35px;
 	font-size: 14px;
-	color: var(--cgris3);
 	display: flex;
 	justify-content: space-between;
 	padding-right: 20px;
@@ -90,6 +89,10 @@ a:link.btn-llamar{
 }
 .modall .horario .content ul li span.time{
 	color: var(--cgris1);
+}
+.modall .horario .content ul li span.time ul li{
+	margin-right: 0px;
+	padding-right: 0px;
 }
 
 .visible{
@@ -446,7 +449,9 @@ a:link.boton.boton-register{
 	font-size: 14px;
 }
 
-
+.banner-r .horario .content ul li span.time ul li{
+	font-size: 14px;
+}
 
 
 
@@ -728,6 +733,18 @@ h4.subtitles-2{
 		font-size: 12px;
 	}
 	
+	.modall .horario .content ul li span.more-days{
+		font-size: 11px;
+	}
+	.modall .horario .content ul li span.time ul{
+		margin-left: 0px;
+		padding-left: 0px;
+		font-size: 10px;
+	}
+
+
+
+
 }
 
 @media screen and (max-width: 344px){

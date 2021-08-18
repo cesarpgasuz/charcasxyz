@@ -1,0 +1,524 @@
+:root{
+
+	--cp1: #0A191F; /* color principal 1 */
+	--cp2: #0D2128; /* color principal 2 */
+	--cs1: #095DCA; /* color secundario 1 (--enlaces y botones) --*/
+	
+
+	--ct: #00DCBB; /* color terciario cyan */
+	--cc: #D31F25; /* color cuarto marron*/
+
+	--cgris1: #111111; 
+	--cgris2: #505050;
+	--cgris3: #848484;
+	--cgris4: #dddddd;
+
+	--fuentep: 'Poppins', sans-serif;
+	
+}
+
+
+/* ------ boton flotante llamar  -----------*/
+
+a:link.btn-llamar{
+	background: var(--cp1);
+	color: greenyellow;
+	border: 2px solid greenyellow;
+}
+a:visited.btn-llamar{
+	color: yellowgreen;
+}
+
+/* ------ fin boton flotante llamar  -----------*/
+
+
+/* -------- barra top fixed ----- */
+.navv{
+	background: var(--cp2);
+}
+
+ /* se cambia la barra top fixed a color blanco con esta regla css */
+.blanca{
+	background: #f9f9f9;
+	border-bottom: 1px solid #ececec;
+	transition: background 0.2s ease-out;
+	/*-webkit-box-shadow: 0px 10px 16px -8px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 10px 16px -8px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 10px 16px -8px rgba(0, 0, 0, 0.1);
+	*/
+}
+
+/* --- estilos para la flecha de retroceso en la barra top fixed  ---*/
+.flot-reverse{
+	font-size: 32px;
+	color: var(--cgris4);
+}
+.flot-reverse:hover{
+	cursor: pointer;
+}
+
+.reverse-color{
+	color: var(--cp1);
+}
+
+.flot-anverse {
+    font-size: 32px;
+    color: #ffffff;
+}
+.flot-anverse:hover{
+	cursor: pointer;
+}
+
+/* --- colores para el boton de horario en version movil ---- */
+/* ---la estructura original esta en may.css --- */
+#horario{
+	background: var(--cgris4);
+	-webkit-box-shadow: 0px 10px 19px 0px rgba(10,25,31,0.28);
+	-moz-box-shadow: 0px 10px 19px 0px rgba(10,25,31,0.28);
+	box-shadow: 0px 10px 19px 0px rgba(10,25,31,0.28);
+}
+#horario i{
+	
+	color: var(--cp1);
+}
+
+
+
+
+
+
+
+
+
+/* --- seccion banner para todas las paginas con tarjetas --- */
+/* //// solo se agrega la imagen y la posicion, la estructa esta en my.css */
+
+.banner{
+	background: url(../images/laboratorio.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+}
+.banner:before{
+	content: "";
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(10,25,31,1);
+	background: -moz-linear-gradient(left, rgba(10,25,31,1) 0%, rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(10,25,31,1)), color-stop(100%, rgba(255,255,255,0)));
+	background: -webkit-linear-gradient(left, rgba(10,25,31,1) 0%, rgba(255,255,255,0) 100%);
+	background: -o-linear-gradient(left, rgba(10,25,31,1) 0%, rgba(255,255,255,0) 100%);
+	background: -ms-linear-gradient(left, rgba(10,25,31,1) 0%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(to right, rgba(10,25,31,1) 0%, rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a191f', endColorstr='#ffffff', GradientType=1 );
+}
+
+.banner .content h1 span.title{
+	font-size: 60px;
+	font-weight: 700;
+	font-style: italic;
+	
+}
+.banner .content h1 span.title2{
+	font-weight: 400;
+}
+.banner .content p{
+	color: #00ffb7;
+}
+
+
+
+
+/* -----------------------------------  negocios personalizacion ------------------------------------- -------*/
+
+.neg .tarjeta .imagen img{
+	border-radius: 100px;
+}
+
+
+.neg .tarjeta .contenido ul li.title{
+	color: var(--cp1);
+}
+.neg .tarjeta .contenido ul li.telefono{
+	color: var(--ct);
+}
+a:visited.boton.boton-menu{
+	color: #fff;
+}
+/* -- color para los botones que tengan la clase .boton */
+a:link.boton{
+	background: var(--cs1);
+	color: #fff;
+}
+
+
+/* ///////// boton grande de registro  /////// */
+/* --- color para el boton grande cuando se visita ---*/
+a:visited.boton.boton-register{
+	color: #fff;
+}
+/* color de la sombra */
+a:link.boton.boton-register{
+	-webkit-box-shadow: 0px 15px 15px 0px rgba(0, 88, 255, 0.4);
+	-moz-box-shadow: 0px 15px 15px 0px rgba(0, 88, 255, 0.4);
+	box-shadow: 0px 15px 15px 0px rgba(0, 88, 255, 0.4);
+}
+
+
+
+/* -----------------seccion registro -----------------*/
+/* aqui se agrego la imagen de pizza que esta al fondo  */
+
+
+.register .contenido h3{
+	color: var(--cp1);
+}
+.register .contenido h3 span{
+	color: var(--cs1);
+}
+.register .contenido p{
+	color: var(--cgris1);
+}
+
+
+
+/* -----------------seccion contacto ---------------*/
+
+.contacto{
+	background: var(--cp2);
+}
+.contacto a:visited{
+	border: 2px solid var(--cgris4);
+	color: var(--cgris3);
+}
+.contacto a:link{
+	border: 2px solid var(--cgris4);
+	color: var(--cgris4);
+}
+
+
+/* ------------------seccion footer -------------------*/
+.dy{
+	background: var(--cp1);
+}
+.dy h6{
+	color: var(--cgris4);
+}
+
+
+
+
+
+
+
+
+/* --- --------------------------------------------------------------- */
+/* --- ------------------------ template ----------------------------- */
+/* --- --------------------------------------------------------------- */
+.banner-r{
+	background: var(--cp2);
+}
+
+.banner-r .information ul li{
+	color: var(--cgris3);
+}
+
+.banner-r .information ul li.title{
+	color: var(--cgris4);
+}
+
+.banner-r .information ul li.tel a:link{
+	color: greenyellow;
+}
+.banner-r .information ul li.tel a:visited{
+	color: greenyellow;
+	text-decoration: none;
+}
+
+
+
+
+
+
+.banner-r .horario{
+	background: var(--cp1);
+}
+
+.banner-r .horario .content h4{
+	color: yellow;
+}
+.banner-r .horario .content ul li{
+	color: var(--cgris3);
+}
+.banner-r .horario .content ul li span.day{
+	color: var(--cgris4);
+	
+}
+
+
+
+
+
+h4.subtitles-2{
+	color: var(--cp1);
+}
+
+
+
+
+/* -----------------------seccion paquetes ----------------*/
+
+.paquetes .tarjeta{
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	padding: 15px 5px 15px 20px;
+	font-family: var(--fuentep);
+	background: #f2f2f2;
+	color: var(--cp1);
+	border: 1px solid #e1e1e1;
+	border-radius: 5px;
+}
+
+.paquetes .tarjeta i{
+	font-size: 38px;
+	margin-right: 20px;
+
+}
+
+.paquetes .tarjeta .contenido h6{
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 0px;
+}
+
+.paquetes .tarjeta .contenido p{
+	margin-bottom: 0px;
+	font-size: 16px;
+}
+.paquetes .tarjeta.me2{
+	border-left: 6px solid #790bf1;
+}
+.paquetes .tarjeta.me3{
+	border-left: 6px solid #04AA91;
+}
+.paquetes .tarjeta.me4{
+	border-left: 6px solid #08bdf3;
+}
+.paquetes .tarjeta.me5{
+	border-left: 6px solid var(--cs1);
+}
+.paquetes .tarjeta.me10{
+	border-left: 6px solid var(--cc);
+}
+
+
+
+.paquetes h5{
+	font-size: 24px;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.paquetes .tarjeta .contenido h6 span.bajada, .paquetes .tarjeta .contenido p.subida span{
+	font-size: 12px;
+	font-weight: 400;
+	margin-left: 5px;
+}
+
+.paquetes .tarjeta .contenido p.subida{
+	font-size: 16px;
+	font-weight: 700;
+}
+
+
+/* ----------------------------------------------------------responsive ------------------------------------------------*/
+/* ----------------------------------------------------------responsive ------------------------------------------------*/
+/* ----------------------------------------------------------responsive ------------------------------------------------*/
+/* ----------------------------------------------------------responsive ------------------------------------------------*/
+
+@media screen and (max-width: 1199px){
+
+	/*--- pizzas precios ---*/
+	.tarjet{
+		padding-right: 30px;
+	}
+	.tarjet .content .body span.name {
+    	font-size: 18px;
+	}
+	.tarjet .content .body span.porcion{
+		font-size: 16px;
+	}
+	.tarjet .content span.price{
+		font-size: 24px;
+	}
+	
+}
+
+
+@media screen and (max-width: 991px){
+
+	.register{
+		background: none;
+	}
+	.register img.girl{
+		width: 115px;
+	}
+	
+	
+	
+	/* clase especial para separar las tarjeta de bjtecno*/
+	.sepa{
+		margin-top: 30px;
+	}
+	.paquetes .tarjeta i.gi{
+		font-size: 38px;
+	}
+	
+	
+	
+}
+
+
+
+
+@media screen and (max-width: 767px){
+	
+
+	.banner .content h1 span.title{
+		font-size: 48px;
+	}
+	.banner .content h1 span.title2{
+		font-size: 24px;
+	}
+	
+
+	
+	
+	
+	
+
+	
+	
+}
+
+
+
+
+@media screen and (max-width: 575px){
+	/*.navv {
+    	background: var(--cp2);
+	}*/
+	.banner{
+		background: var(--cp2);
+	}
+	.banner::before{
+		display: none;
+	}
+	
+	
+	
+	
+	.banner .content h1 span.title{
+		font-size: 32px;
+	}
+	.banner .content h1 span.title2{
+		font-size: 20px;
+	}
+	
+	.banner .content p {
+    	font-size: 12px;
+		margin-right: 40%;
+	}
+	
+	/* ------tarjetas negocios -------*/
+	.neg .tarjeta{
+		border: 1px solid var(--cgris4);
+		background: #FBFBFB;
+	}
+		
+	
+	
+	.paquetes .tarjeta{
+		border-radius: 10px;
+		flex-direction: column;
+		padding: 10px 5px;
+		color: white;
+		border: none;
+		box-shadow: none;
+	}
+	.paquetes .tarjeta i{
+		font-size: 26px;
+		margin-right: 0px;
+	}
+	.paquetes .tarjeta .contenido{
+		text-align: center;
+	}
+	.paquetes .tarjeta .contenido h6, .paquetes .tarjeta .contenido p, .paquetes .tarjeta .contenido p.subida {
+		font-size: 12px;
+		font-weight: 400;
+	}
+	.paquetes h5{
+		font-size: 20px;
+		font-style: normal;
+	}
+	.paquetes .tarjeta.me2{
+		border-left: 0px;
+		background: #790bf1;
+	}
+	.paquetes .tarjeta.me3{
+		border-left: 0px;
+		background: #04AA91;
+	}
+	.paquetes .tarjeta.me4{
+		border-left: 0px;
+		background: #08bdf3;
+	}
+	.paquetes .tarjeta.me5 {
+		background: var(--cs1);
+		border-left: 0px;
+	}
+	.paquetes .tarjeta.me10 {
+		background: var(--cc);
+		border-left: 0px;
+	}
+	
+
+		/* clase especial para separar las tarjeta de bjtecno*/
+	.sepa{
+		height: 0%;
+		margin-top: 15px;
+		
+	}
+	.paquetes .tarjeta{
+		padding-bottom: 20px;
+	}
+
+
+	
+}
+
+
+@media screen and (max-width: 490px){
+	
+	
+	
+	
+}
+
+
+
+@media screen and (max-width: 384px){
+	
+
+}
+
+@media screen and (max-width: 344px){
+
+}

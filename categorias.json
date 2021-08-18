@@ -7,28 +7,35 @@
   },
   {
     "id": 2,
-    "name": "tortas",
-    "image": "torta.svg",
-    "link": "tortas/"
+    "name": "Laboratorios",
+    "image": "microscope.svg",
+    "link": "laboratorios/"
   },
   {
     "id": 3,
+    "name": "nenis",
+    "image": "virgo.svg",
+    "link": "nenis/"
+  },
+  {
+    "id": 4,
     "name": "pizzas",
     "image": "pizza.svg",
     "link": "pizzas/"
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "tacos",
     "image": "taco.svg",
     "link": "tacos/"
   },
   {
     "id": 6,
-    "name": "nenis",
-    "image": "virgo.svg",
-    "link": "nenis/"
+    "name": "tortas",
+    "image": "torta.svg",
+    "link": "tortas/"
   }
+  
  
 ]
 
