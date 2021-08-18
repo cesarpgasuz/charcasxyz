@@ -51,52 +51,6 @@
 
 
 
-<script>
-	
-	const contenido = document.querySelector('#categorias');
-		 function cargarCategorias(){
-		 	fetch('categorias.json')
-		 		.then(respuesta => respuesta.json())
-		 		.then(categorias => {
-		 			categorias.forEach(categoria =>{
-		 				const div = document.createElement('div');
-		 				div.classList.add('content');
-		 				div.innerHTML += `
-		 					<a href="${categoria.link}" class="tarjet-cat">
-								<img src="images/${categoria.image}" class="img-fluid" alt="" loading="lazy">
-								<h3>${categoria.name}</h3>
-								<i class="bi bi-chevron-right"></i>
-							</a>
-
-		 				`;
-		 				contenido.appendChild(div);
-		 			});
-		 		})
-		 		.catch(error => console.log('hubo un error: ' + error.message))
-		 }
-		 cargarCategorias();
-
-
-
-		 	function filtrarCategorias(){
-		 		fetch('categorias.json')
-		 		.then(respuesta => respuesta.json())
-		 		.then(categorias =>{
-		 			const fil = categorias.filter(cat => cat.name === 'pizzas');
-		 			console.log(fil)
-		 		})
-		 	}
-		 	filtrarCategorias();
-			//let aprov = categorias.filter(ccat => ccat.name === 'tacos');
-			//console.log(aprov);
-
-		
-
-	
-</script>
-
-
-
 
 
 
@@ -232,6 +186,53 @@
 			$('.sombra').removeClass('visible-som');
 		})
 		  
+
+
+
+	const contenido = document.querySelector('#categorias');
+		 function cargarCategorias(){
+		 	fetch('categorias.json')
+		 		.then(respuesta => respuesta.json())
+		 		.then(categorias => {
+		 			categorias.forEach(categoria =>{
+		 				const div = document.createElement('div');
+		 				div.classList.add('content');
+		 				div.innerHTML += `
+		 					<a href="${categoria.link}" class="tarjet-cat">
+								<img src="images/${categoria.image}" class="img-fluid" alt="" loading="lazy">
+								<h3>${categoria.name}</h3>
+								<i class="bi bi-chevron-right"></i>
+							</a>
+
+		 				`;
+		 				contenido.appendChild(div);
+		 			});
+		 		})
+		 		.catch(error => console.log('hubo un error: ' + error.message))
+		 }
+		 cargarCategorias();
+
+
+
+		 	function filtrarCategorias(){
+		 		fetch('categorias.json')
+		 		.then(respuesta => respuesta.json())
+		 		.then(categorias =>{
+		 			const fil = categorias.filter(cat => cat.name === 'pizzas');
+		 			console.log(fil)
+		 		})
+		 	}
+		 	filtrarCategorias();
+			//let aprov = categorias.filter(ccat => ccat.name === 'tacos');
+			//console.log(aprov);
+
+
+
+
+
+
+
+
 
 	  </script>
 	  
