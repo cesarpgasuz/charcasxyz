@@ -28,7 +28,7 @@ a:link.btn-llamar{
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.45);
 	top: 0;
-	z-index: 300;
+	z-index: 550;
 	display: none;
   	transition-duration: 0.4s;
 }
@@ -41,7 +41,7 @@ a:link.btn-llamar{
 	bottom: -80vh;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	z-index: 400;
+	z-index: 600;
 	padding: 6% 2%;
 	justify-content: center;
 	align-content: center;
@@ -131,7 +131,7 @@ a:link.btn-llamar{
     position: relative;
     position: fixed;
     top: 0;
-    z-index: 5000;
+    z-index: 500;
     display: flex;
     align-items: center;
  
@@ -257,7 +257,7 @@ a:link.btn-llamar{
 .neg .tarjeta .contenido ul li.direction{
 	line-height: 26px;
 }
-.neg .tarjeta .contenido ul li.telefono{
+.neg .tarjeta .contenido ul li.telefono, .neg .tarjeta .contenido ul li.whatsapp{
 	font-size: 16px;
 	font-weight: 700;
 }
@@ -402,7 +402,7 @@ a:link.boton.boton-register{
 	font-size: 32px;
 }
 
-.banner-r .information ul li.tel a:link{
+.banner-r .information ul li.tel a:link, .banner-r .information ul li.whatsapp a:link, .banner-r .information ul li.facebook a:link {
 	border-bottom: 1px dotted;
 	text-decoration: none;
 	margin-bottom: 20px;
