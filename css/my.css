@@ -35,10 +35,10 @@ a:link.btn-llamar{
 
 .modall {
 	position: fixed;
-	height: 80vh;
+	height: auto;
 	width: 100%;
 	background: #f4f4f4;
-	bottom: -80vh;
+	bottom: -100%;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	z-index: 600;
