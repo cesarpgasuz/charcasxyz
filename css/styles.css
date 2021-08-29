@@ -56,7 +56,7 @@ a{
 
 
 .ocultos{
-	bottom: -70vh;
+	bottom: -100%;
 	transition-duration: 0.5s;
 }
 .visibles{
@@ -321,7 +321,7 @@ a{
 	.navegacion .menu-nav{
 		position: fixed;
 		background: #fff;
-		height: 70vh;
+		height: auto;
 		width: 100vw;
 		z-index: 1500;
 		display: flex;
