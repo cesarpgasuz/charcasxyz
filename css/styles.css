@@ -183,7 +183,7 @@ a{
 	font-size: 18px;
 	font-weight: 400;
 	text-transform: capitalize;
-
+	margin-right: 30px;
 }
 .content a:link.tarjet-cat i{
 	font-size: 24px;
