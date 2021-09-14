@@ -34,6 +34,12 @@
     "name": "tortas",
     "image": "torta.svg",
     "link": "tortas/"
+  },
+  {
+    "id": 7,
+    "name": "Servicios Informaticos",
+    "image": "informatica.svg",
+    "link": "informatica/"
   }
   
  

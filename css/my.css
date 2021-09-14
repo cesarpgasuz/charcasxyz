@@ -1,4 +1,6 @@
-
+body{
+	font-family: var(--fuentep);
+}
 a:link.btn-llamar{
 	display: none;
 	position: fixed;
@@ -65,12 +67,15 @@ a:link.btn-llamar{
 
 }
 .modall .horario .content h4 {
-	margin-top: 15%;
+	margin-top: 10%;
 	margin-bottom: 8%;
 	text-align: center;
 	font-size: 28px;
 	color: var(--cgris1);
 	font-weight: 600;
+}
+.modall .horario .content p{
+	text-align: center
 }
 .modall .horario .content ul li{
 	line-height: 35px;
@@ -147,7 +152,7 @@ a:link.btn-llamar{
 	right: 0;
 	text-align: center;
 	z-index: -2;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 45px;
 	display: none;
 	font-family: var(--fuentep);
@@ -190,6 +195,8 @@ a:link.btn-llamar{
 	font-size: 38px;
 	font-size: 20px ;
 }
+
+
 
 .banner .content p{
 	font-size: 18px;
@@ -253,6 +260,10 @@ a:link.btn-llamar{
 	font-size: 30px;
 	font-weight: 700;
 	margin-bottom: 10px;
+}
+.neg .tarjeta .contenido ul li.title span{
+	font-size: 18px;
+    font-weight: 400;
 }
 .neg .tarjeta .contenido ul li.direction{
 	line-height: 26px;
@@ -401,6 +412,10 @@ a:link.boton.boton-register{
 	margin-bottom: 20px;
 	font-size: 32px;
 }
+.banner-r .information ul li.title span{
+	font-size: 18px;
+	font-weight: 400;
+}
 
 .banner-r .information ul li.tel a:link, .banner-r .information ul li.whatsapp a:link, .banner-r .information ul li.facebook a:link {
 	border-bottom: 1px dotted;
@@ -430,6 +445,9 @@ a:link.boton.boton-register{
 	font-weight: 600;
 	text-align: center;
 	margin-bottom: 25px;
+}
+.banner-r .horario .content p{
+	text-align: center;
 }
 .banner-r .horario .content ul{
 	margin-bottom: 0px;
@@ -634,6 +652,11 @@ h4.subtitles-2{
 		font-size: 18px;
 		margin-bottom: 0px;
 	}
+
+	.neg .tarjeta .contenido ul li.title span{
+		font-size: 12px;
+	}
+
 	.neg .tarjeta .contenido ul li{
 		font-size: 14px;
 	}
@@ -725,7 +748,11 @@ h4.subtitles-2{
 	
 }
 
-
+@media screen and (max-width: 434px){
+	.p-no.p-no-min{
+		font-size: 12px;  /* estilo para cambiar el tamaño del texto de la barra superior en modo movil*/
+	}
+}
 
 @media screen and (max-width: 384px){
 
@@ -742,8 +769,9 @@ h4.subtitles-2{
 		font-size: 10px;
 	}
 
-
-
+	.banner-r .information ul li.title span {
+    	font-size: 14px; /* cuanto el texto principal tiene una pequeña descripcion se le agrego un span y se le cambiara el tamaño para mejorar el ui e ex */
+	}
 
 }
 
