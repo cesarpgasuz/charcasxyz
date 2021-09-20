@@ -56,6 +56,15 @@
     "telefono": "419 122 5572",
     "categoria": "tortas"
   }
+  ,
+  {
+    "id": 8,
+    "name": "Vacunación COVID19",
+    "image": "vacuna.svg",
+    "direccion": "UMAPS, Doctor Mora",
+    "telefono": "",
+    "categoria": "salud"
+  }
  
 ]
 

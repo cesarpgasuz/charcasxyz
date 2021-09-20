@@ -41,6 +41,13 @@
     "image": "informatica.svg",
     "link": "informatica/"
   }
+  ,
+  {
+    "id": 7,
+    "name": "Vacunación COVID19",
+    "image": "vacuna.svg",
+    "link": "https://vacunaciondrmora.netlify.app/"
+  }
   
  
 ]
