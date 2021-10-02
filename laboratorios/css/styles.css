@@ -232,13 +232,14 @@ a:link.boton.boton-register{
 	color: var(--cgris4);
 }
 
-.banner-r .information ul li.tel a:link{
+.banner-r .information ul li.tel a:link, .banner-r .information ul li.whatsapp a:link, .banner-r .information ul li.facebook a:link{
 	color: greenyellow;
 }
-.banner-r .information ul li.tel a:visited{
+.banner-r .information ul li.tel a:visited, .banner-r .information ul li.whatsapp a:visited, .banner-r .information ul li.facebook a:visited{
 	color: greenyellow;
 	text-decoration: none;
 }
+
 
 
 
@@ -271,71 +272,45 @@ h4.subtitles-2{
 
 
 
-/* -----------------------seccion paquetes ----------------*/
-
-.paquetes .tarjeta{
-	display: flex;
-	align-items: center;
-	height: 100%;
-	width: 100%;
-	padding: 15px 5px 15px 20px;
-	font-family: var(--fuentep);
-	background: #f2f2f2;
-	color: var(--cp1);
-	border: 1px solid #e1e1e1;
-	border-radius: 5px;
-}
-
-.paquetes .tarjeta i{
-	font-size: 38px;
-	margin-right: 20px;
-
-}
-
-.paquetes .tarjeta .contenido h6{
-	font-size: 18px;
-	font-weight: 700;
-	margin-bottom: 0px;
-}
-
-.paquetes .tarjeta .contenido p{
-	margin-bottom: 0px;
-	font-size: 16px;
-}
-.paquetes .tarjeta.me2{
-	border-left: 6px solid #790bf1;
-}
-.paquetes .tarjeta.me3{
-	border-left: 6px solid #04AA91;
-}
-.paquetes .tarjeta.me4{
-	border-left: 6px solid #08bdf3;
-}
-.paquetes .tarjeta.me5{
-	border-left: 6px solid var(--cs1);
-}
-.paquetes .tarjeta.me10{
-	border-left: 6px solid var(--cc);
-}
+/* -----------------------seccion servicios ----------------*/
 
 
-
-.paquetes h5{
-	font-size: 24px;
-	font-weight: 700;
-	font-style: italic;
-}
-
-.paquetes .tarjeta .contenido h6 span.bajada, .paquetes .tarjeta .contenido p.subida span{
-	font-size: 12px;
+.services h5{
+	text-align: center;
+	font-size: 32px;
 	font-weight: 400;
-	margin-left: 5px;
+	color: var(--cp1);
+
+}
+.services .content{
+	display: flex;
+	justify-content: center;
+}
+.services .content ul.lista{
+	column-count: 2;
+	column-gap: 300px;
+	margin-top: 80px;
 }
 
-.paquetes .tarjeta .contenido p.subida{
-	font-size: 16px;
-	font-weight: 700;
+.services .content ul.lista > li{
+	margin-bottom: 30px;
 }
+.services .content ul.lista > li > img{
+	width: 40px;
+}
+
+.services .content ul.lista li ul.sublista{
+	margin-left: 25px;
+	line-height: 30px;
+}
+.services .content ul.lista li ul.sublista li{
+	list-style: disc;
+}
+
+
+
+
+
 
 
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
@@ -345,18 +320,8 @@ h4.subtitles-2{
 
 @media screen and (max-width: 1199px){
 
-	/*--- pizzas precios ---*/
-	.tarjet{
-		padding-right: 30px;
-	}
-	.tarjet .content .body span.name {
-    	font-size: 18px;
-	}
-	.tarjet .content .body span.porcion{
-		font-size: 16px;
-	}
-	.tarjet .content span.price{
-		font-size: 24px;
+	.services .content ul.lista {
+		column-gap: 200px;
 	}
 	
 }
@@ -372,13 +337,9 @@ h4.subtitles-2{
 	}
 	
 	
-	
-	/* clase especial para separar las tarjeta de bjtecno*/
-	.sepa{
-		margin-top: 30px;
-	}
-	.paquetes .tarjeta i.gi{
-		font-size: 38px;
+	/* servicios --- lista de pruebas --- */
+	.services .content ul.lista {
+		column-gap: 20px;
 	}
 	
 	
@@ -399,6 +360,10 @@ h4.subtitles-2{
 	}
 	
 
+	/* servicios --- lista de pruebas --- */
+	.services .content ul.lista {
+		column-count: 1;
+	}
 	
 	
 	
@@ -445,61 +410,15 @@ h4.subtitles-2{
 		
 	
 	
-	.paquetes .tarjeta{
-		border-radius: 10px;
-		flex-direction: column;
-		padding: 10px 5px;
-		color: white;
-		border: none;
-		box-shadow: none;
-	}
-	.paquetes .tarjeta i{
-		font-size: 26px;
-		margin-right: 0px;
-	}
-	.paquetes .tarjeta .contenido{
-		text-align: center;
-	}
-	.paquetes .tarjeta .contenido h6, .paquetes .tarjeta .contenido p, .paquetes .tarjeta .contenido p.subida {
-		font-size: 12px;
-		font-weight: 400;
-	}
-	.paquetes h5{
-		font-size: 20px;
-		font-style: normal;
-	}
-	.paquetes .tarjeta.me2{
-		border-left: 0px;
-		background: #790bf1;
-	}
-	.paquetes .tarjeta.me3{
-		border-left: 0px;
-		background: #04AA91;
-	}
-	.paquetes .tarjeta.me4{
-		border-left: 0px;
-		background: #08bdf3;
-	}
-	.paquetes .tarjeta.me5 {
-		background: var(--cs1);
-		border-left: 0px;
-	}
-	.paquetes .tarjeta.me10 {
-		background: var(--cc);
-		border-left: 0px;
-	}
 	
-
-		/* clase especial para separar las tarjeta de bjtecno*/
-	.sepa{
-		height: 0%;
-		margin-top: 15px;
+	/* --- estilos servicios listado pruebas */
+	.services h5{
+		font-size: 24px;
+	}
+	.services .content ul.lista{
+		margin-top: 50px;
+	}
 		
-	}
-	.paquetes .tarjeta{
-		padding-bottom: 20px;
-	}
-
 
 	
 }
@@ -507,7 +426,9 @@ h4.subtitles-2{
 
 @media screen and (max-width: 490px){
 	
-	
+	.services .content ul.lista{
+		font-size: 14px;
+	}
 	
 	
 }
@@ -520,5 +441,10 @@ h4.subtitles-2{
 }
 
 @media screen and (max-width: 344px){
+	
+	.services .content ul.lista{
+		font-size: 12px;
+	}
+	
 
 }
