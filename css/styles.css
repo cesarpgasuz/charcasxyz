@@ -270,7 +270,38 @@ a{
 	background: #0BA5AE;
 }
 
-
+.navbottom{
+	background: #f4f4f4;
+	height: 48px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid #e6e6e6;
+	display: none;
+}
+.navbottom ul{
+	list-style: none;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px;
+	padding: 0px;
+}
+.navbottom ul li a:link {
+	font-size: 26px;
+	text-decoration: none;
+	color: var(--azulp);
+	padding: 5px 50px;
+	border-radius: 5px;
+}
+.navbottom ul li a:visited{
+	color: var(--azulp);
+}
+.navbottom ul li a:active{
+	background: #d7d7d7;
+}
 
 /* ------------------templates---------------------------- */
 
@@ -420,6 +451,9 @@ a{
 	}
 	#hambur{
 		display: flex;
+	}
+	.navbottom{
+		display: block;
 	}
 	
 }
