@@ -3,27 +3,32 @@
 		{
 			"src": "./images/icon1024n.png",
 			"sizes": "1024x1024",
-			"type": "image/png"
+			"type": "image/png",
+			"purpose": "any maskable"
 		},
 		{
 			"src": "./images/icon512n.png",
 			"sizes": "512x512",
-			"type": "image/png"
+			"type": "image/png",
+			"purpose": "any maskable"
 		},
 		{
 			"src": "./images/icon256n.png",
 			"sizes": "256x256",
-			"type": "image/png"
+			"type": "image/png",
+			"purpose": "any maskable"
 		},
 		{
 			"src": "./images/icon192n.png",
 			"sizes": "192x192",
-			"type": "image/png"
+			"type": "image/png",
+			"purpose": "any maskable"
 		},
 		{
 			"src": "./images/icon128n.png",
 			"sizes": "128x128",
-			"type": "image/png"
+			"type": "image/png",
+			"purpose": "any maskable"
 		}
 	],
 	"name" : "Charcas.xyz",
