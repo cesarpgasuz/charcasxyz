@@ -1,6 +1,6 @@
 [{
         "relation": ["delegate_permission/common.handle_all_urls"],
-        "target" : { "namespace": "android_app", "package_name": "app.netlify.doctormoracharcas.twa",
-                     "sha256_cert_fingerprints": ["03:FB:7B:DB:B1:6A:75:15:20:31:73:8B:A2:9C:CC:14:51:39:A3:B6:1F:56:AF:34:DA:E6:B7:99:3C:D9:38:98"] }
+        "target" : { "namespace": "android_app", "package_name": "xyz.charcas.twa",
+                     "sha256_cert_fingerprints": ["57:E9:B8:77:A8:09:4A:37:21:99:EB:A7:12:2C:1F:A3:7E:12:E5:63:50:C2:ED:E5:24:BD:E8:46:55:FE:EE:28"] }
       }
 ]
