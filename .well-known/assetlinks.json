@@ -1,6 +1,6 @@
 [{
         "relation": ["delegate_permission/common.handle_all_urls"],
         "target" : { "namespace": "android_app", "package_name": "xyz.charcas.twa",
-                     "sha256_cert_fingerprints": ["49:77:A1:0A:AD:7E:D9:EF:81:69:0B:EA:9D:7B:F1:86:28:CB:0B:6D:08:69:29:F3:A0:3F:17:D5:8C:9E:C8:1B"] }
+                     "sha256_cert_fingerprints": ["3C:ED:2D:CC:9A:0A:42:81:A3:6C:05:E8:1F:98:17:96:25:0A:44:83:65:77:45:FA:FE:EC:E3:F4:67:16:77:B1"] }
       }
 ]
