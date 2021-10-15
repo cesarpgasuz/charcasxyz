@@ -1,5 +1,5 @@
 body{
-	font-family: var(--fuentep);
+	font-family: 'Poppins', sans-serif;
 }
 a:link.btn-llamar{
 	display: none;
