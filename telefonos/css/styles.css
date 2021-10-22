@@ -94,7 +94,7 @@ a:visited.btn-llamar{
 /* //// solo se agrega la imagen y la posicion, la estructa esta en my.css */
 
 .banner{
-	background: url(../images/informatica.jpg) center center no-repeat;
+	background: url(../images/mob.jpg) center center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -279,28 +279,40 @@ h4.subtitles-2{
 }
 .services h5{
 	font-size: 24px;
+	margin-bottom: 60px;
+	font-weight: 600;
+}
+.services h5.parrafo{
+	margin-bottom: 100px;
 }
 .services p strong{
 	border-bottom: 2px solid;
 }
-.services ul{
-	column-count: 2;
-	column-gap: 100px;
-	margin-top: 80px;
-}
 
-.services ul li{
+.services .listado{
 	display: flex;
-	margin-bottom: 30px;
+	justify-content: center;
+}
+.services .listado ul{
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 50px;
+	padding: 0px;
+}
+.services .listado ul li{
+	display: flex;
+	justify-content: start;
 	align-items: center;
 }
-.services ul li img{
-	width: 40px;
-	margin-right: 15px;
+.services .listado ul li img{
+	width: 65px;
+	margin-right: 10px;
 }
 
-
-
+.pie-text{
+	margin-top: 80px;
+}
 
 
 
@@ -332,7 +344,6 @@ h4.subtitles-2{
 	
 	
 	
-	
 }
 
 
@@ -350,11 +361,14 @@ h4.subtitles-2{
 	
 
 	
-	.services ul{
-		column-count: 1;
+	/* --- seccion servicios listado ---*/
+	.services .listado ul{
+		gap: 40px;
+		grid-template-columns: 1fr 1fr;
 	}
-	
-	
+	.services .listado ul li img{
+		width: 50px;
+	}
 
 	
 	
@@ -396,7 +410,7 @@ h4.subtitles-2{
 	}
 		
 	
-	
+	/* --- seccion servicios listado ---*/
 	/* estilos parrafos y titles */
 	
 	
@@ -405,12 +419,33 @@ h4.subtitles-2{
 		margin: 0px 1.5%;
 	}
 	.services h5{
-		font-size: 16px;
-		margin-bottom: 15px;
+		font-size: 18px;
+		margin-bottom: 50px;
+		border-bottom: 1px solid #ddd;
+		padding-bottom: 15px;
+		margin-right: 10%;
+		margin-left: 10%;
 	}
-	.services p, .services ul li{
+	.services h5.parrafo{
+		margin-bottom: 50px;
+	}
+	
+	.services .listado ul{
+		grid-template-columns: 1fr;
+	}
+	.services .listado ul li{
 		font-size: 14px;
 	}
+	.services .listado ul li img{
+		width: 50px;
+	}
+	
+	.services .pie-text{
+		margin-top: 50px;
+		font-size: 14px;
+	}
+	
+	
 	
 }
 
