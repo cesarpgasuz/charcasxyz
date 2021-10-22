@@ -707,6 +707,13 @@ ul.fil li.activeee a{
 	/* -----estilos botones filtro ----*/
 	ul.fil{
 		margin-bottom: 10px;
+		overflow-x: scroll;
+		scroll-snap-type: x mandatory;
+		justify-content: start;
+		gap: 18px;
+	}
+	ul.fil li{
+		flex-shrink: 0;
 	}
 
 
@@ -861,6 +868,13 @@ ul.fil li.activeee a{
 	.banner-r .information ul li.title span {
     	font-size: 14px; /* cuanto el texto principal tiene una pequeña descripcion se le agrego un span y se le cambiara el tamaño para mejorar el ui e ex */
 	}
+
+
+	/* ---estilos barra filtrado ----*/
+	ul.fil{
+		gap: 10px;
+	}
+
 
 }
 
