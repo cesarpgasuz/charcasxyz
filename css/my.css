@@ -31,7 +31,7 @@ body{
 a:link.btn-llamar{
 	display: none;
 	position: fixed;
-	bottom: 3%;
+	bottom: 60px;
 	right: 4%;
 	height: 50px;
 	width: 50px;
