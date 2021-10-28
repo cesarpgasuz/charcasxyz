@@ -284,14 +284,14 @@ h4.subtitles-2{
 	border-bottom: 2px solid;
 }
 .services ul{
-	column-count: 2;
-	column-gap: 100px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	margin-top: 80px;
+	gap: 50px;
 }
 
 .services ul li{
 	display: flex;
-	margin-bottom: 30px;
 	align-items: center;
 }
 .services ul li img{
@@ -351,7 +351,7 @@ h4.subtitles-2{
 
 	
 	.services ul{
-		column-count: 1;
+		grid-template-columns: 1fr;
 	}
 	
 	
@@ -407,6 +407,9 @@ h4.subtitles-2{
 	.services h5{
 		font-size: 16px;
 		margin-bottom: 15px;
+	}
+	.services ul{
+		gap: 30px;
 	}
 	.services p, .services ul li{
 		font-size: 14px;
