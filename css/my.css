@@ -3,28 +3,28 @@
 	src: url("../fonts/Poppins-Regular.woff2");
 	font-style: normal;
 	font-weight: 400;
-	font-display: swap;
+	font-display: optional;
 }
 @font-face{
 	font-family: 'Poppins';
 	src: url("../fonts/Poppins-SemiBold.woff2");
 	font-style: normal;
 	font-weight: 600;
-	font-display: swap;
+	font-display: optional;
 }
 @font-face{
 	font-family: 'Poppins';
 	src: url("../fonts/Poppins-Bold.woff2");
 	font-style: normal;
 	font-weight: 700;
-	font-display: swap;
+	font-display: optional;
 }
 @font-face{
 	font-family: 'Poppins';
 	src: url("../fonts/Poppins-BoldItalic.woff2");
 	font-style: italic;
 	font-weight: 700;
-	font-display: swap;
+	font-display: optional;
 }
 
 
@@ -281,6 +281,7 @@ a:link.btn-llamar{
 }
 .neg .tarjeta .imagen img{
 	width: 120px;
+	aspect-ratio: 1/1;
 }
 .neg .tarjeta .contenido ul{
 	margin-bottom: 0;
@@ -765,6 +766,7 @@ ul.fil li.activeee a{
 		position: absolute;
 		right: 10%;
 		bottom: 0;
+		aspect-ratio: 1/1;
 	}
 
 	/* ------tarjetas negocios -------*/

@@ -111,7 +111,7 @@ a{
 	font-family: var(--fuentep);
 	display: flex;
 	justify-content: space-between;
-	padding: 1% 2%;
+	padding: 10px;
 }
 .navegacion .logocharcas{
 	display: inline-block;
@@ -156,6 +156,7 @@ a{
 }
 .home .content img{
 	width: 100px;
+	aspect-ratio: 1/1;
 }
 .home .content h1{
 	font-family: var(--fuentep);
@@ -208,6 +209,7 @@ a{
 	
 .content a:link.tarjet-cat img{
 	width: 50px;
+	aspect-ratio: 1/1;
 }
 .content a:link.tarjet-cat h3{
 	margin-bottom: 0px;

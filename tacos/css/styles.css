@@ -277,6 +277,7 @@ h4.subtitles::before{
 	align-items: center;
 	margin-right: 20px;
 	width: 30%;
+	aspect-ratio: 1/1;
 }
 .taco .tarjeta .ingre{
 	width: 70%;
