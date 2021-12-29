@@ -433,6 +433,7 @@ a:link.boton.boton-register{
 .banner-r .information img.log{
 	width: 100px;
 	margin-bottom: 15px;
+	aspect-ratio: 1/1;
 }
 
 .banner-r .information ul li{
