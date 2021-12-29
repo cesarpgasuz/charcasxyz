@@ -3,28 +3,28 @@
 	src: url("../fonts/Poppins-Regular.woff2");
 	font-style: normal;
 	font-weight: 400;
-	font-display: optional;
+	font-display: swap;
 }
 @font-face{
 	font-family: 'Poppins';
 	src: url("../fonts/Poppins-SemiBold.woff2");
 	font-style: normal;
 	font-weight: 600;
-	font-display: optional;
+	font-display: swap;
 }
 @font-face{
 	font-family: 'Poppins';
 	src: url("../fonts/Poppins-Bold.woff2");
 	font-style: normal;
 	font-weight: 700;
-	font-display: optional;
+	font-display: swap;
 }
 @font-face{
 	font-family: 'Poppins';
 	src: url("../fonts/Poppins-BoldItalic.woff2");
 	font-style: italic;
 	font-weight: 700;
-	font-display: optional;
+	font-display: swap;
 }
 
 
