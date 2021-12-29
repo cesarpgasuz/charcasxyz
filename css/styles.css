@@ -111,7 +111,7 @@ a{
 	font-family: var(--fuentep);
 	display: flex;
 	justify-content: space-between;
-	padding: 10px;
+	padding: 15px;
 }
 .navegacion .logocharcas{
 	display: inline-block;
@@ -479,7 +479,6 @@ a{
 		justify-content: flex-end;
 		position: fixed;
 		top: 0;
-		padding: 2% 2%;
 		z-index: 400;
 	}
 	
