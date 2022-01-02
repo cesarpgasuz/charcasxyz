@@ -288,7 +288,7 @@ h4.tipo{
 	margin-right: 20px;
 	width: 30%;
 	flex-shrink: 0;
-	aspect-ratio: 1/1;
+	aspect-ratio: auto;
 }
 .torta .tarjeta .ingre{
 	width: 70%;

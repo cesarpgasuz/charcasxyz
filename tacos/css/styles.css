@@ -277,7 +277,7 @@ h4.subtitles::before{
 	align-items: center;
 	margin-right: 20px;
 	width: 30%;
-	aspect-ratio: 1/1;
+	aspect-ratio: auto;
 }
 .taco .tarjeta .ingre{
 	width: 70%;
@@ -294,6 +294,15 @@ h4.subtitles::before{
 	font-size: 14px;
 	color: var(--cgris1);
 	line-height: 25px;
+}
+
+
+h4.tipo {
+    font-family: var(--fuentep);
+    font-weight: 700;
+    margin-bottom: 35px;
+    text-align: center;
+    color: var(--cp1);
 }
 
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
