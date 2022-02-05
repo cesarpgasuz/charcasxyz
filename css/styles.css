@@ -220,6 +220,13 @@ a{
 	text-transform: capitalize;
 	margin-right: 30px;
 }
+.content a:link.tarjet-cat h3 span{
+	font-size: 12px;
+
+}
+.content a:link.tarjet-cat h3 span.fb-page{
+	color: #1b74e4;
+}
 .content a:link.tarjet-cat i{
 	font-size: 24px;
 	position: absolute;
@@ -436,6 +443,28 @@ a{
 .navbottom ul li a:active{
 	background: #d7d7d7;
 }
+
+
+
+.proyects_title{
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	font-weight: 700;
+	font-size: 18px;
+	font-family: var(--fuentep);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------------------templates---------------------------- */
 
