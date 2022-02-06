@@ -458,9 +458,23 @@ a{
 
 
 
+ .google-play h4{
+ 	text-align: center;
+ 	font-size: 24px;
+ 	font-weight: 700;
+ 	color: var(--azulp);
+ 	margin-top: 35px;
 
+ }
+.playlogo img{
+	height: 75px;
+	margin-top: 20px;
 
-
+}
+.playlogo{
+	text-align: center;
+	
+}
 
 
 
@@ -677,7 +691,9 @@ a{
 	.listado-registro-item.info{
 		white-space: normal;
 	}
-	
+	.google-play h4{
+		font-size: 18px;
+	}
 }
 
 
