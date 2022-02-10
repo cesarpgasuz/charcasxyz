@@ -281,7 +281,7 @@ a:link.btn-llamar{
 }
 .neg .tarjeta .imagen img{
 	width: 120px;
-	aspect-ratio: 1/1;
+	aspect-ratio: auto;
 }
 .neg .tarjeta .contenido ul{
 	margin-bottom: 0;
@@ -766,7 +766,7 @@ ul.fil li.activeee a{
 		position: absolute;
 		right: 10%;
 		bottom: 0;
-		aspect-ratio: 1/1;
+		aspect-ratio: auto;
 	}
 
 	/* ------tarjetas negocios -------*/
