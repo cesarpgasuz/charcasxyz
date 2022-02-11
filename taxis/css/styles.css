@@ -1,10 +1,11 @@
 :root{
+
 	--cp1: #0A191F; /* color principal 1 */
 	--cp2: #0D2128; /* color principal 2 */
-	--cs1: #FF1B00; /* color secundario 1 (--enlaces y botones) --*/
+	--cs1: #122627; /* color secundario 1 (--enlaces y botones) --*/
 	
 
-	--ct: #00DCBB; /* color terciario cyan */
+	--ct: #A49B1A; /* color terciario cyan */
 	--cc: #D31F25; /* color cuarto marron*/
 
 	--cgris1: #111111; 
@@ -13,7 +14,9 @@
 	--cgris4: #dddddd;
 
 	--fuentep: 'Poppins', sans-serif;
+	
 }
+
 
 /* ------ boton flotante llamar  -----------*/
 
@@ -28,11 +31,11 @@ a:visited.btn-llamar{
 
 /* ------ fin boton flotante llamar  -----------*/
 
+
 /* -------- barra top fixed ----- */
 .navv{
 	background: var(--cp2);
 }
-
 
  /* se cambia la barra top fixed a color blanco con esta regla css */
 .blanca{
@@ -44,7 +47,6 @@ a:visited.btn-llamar{
 	box-shadow: 0px 10px 16px -8px rgba(0, 0, 0, 0.1);
 	*/
 }
-
 
 /* --- estilos para la flecha de retroceso en la barra top fixed  ---*/
 .flot-reverse{
@@ -67,8 +69,6 @@ a:visited.btn-llamar{
 	cursor: pointer;
 }
 
-
-
 /* --- colores para el boton de horario en version movil ---- */
 /* ---la estructura original esta en may.css --- */
 #horario{
@@ -86,10 +86,15 @@ a:visited.btn-llamar{
 
 
 
+
+
+
+
 /* --- seccion banner para todas las paginas con tarjetas --- */
 /* //// solo se agrega la imagen y la posicion, la estructa esta en my.css */
+
 .banner{
-	background: url(../images/tacos2.jpg) center center no-repeat;
+	background: url(../images/taxi.jpg) center center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -123,27 +128,32 @@ a:visited.btn-llamar{
 	font-weight: 400;
 }
 .banner .content p{
-	color: yellow;
+	color: #fffc3c;
 }
 
 
 
 
-
 /* -----------------------------------  negocios personalizacion ------------------------------------- -------*/
+
+.neg .tarjeta .imagen img{
+	border-radius: 100px;
+}
+
+
 .neg .tarjeta .contenido ul li.title{
 	color: var(--cp1);
 }
 .neg .tarjeta .contenido ul li.telefono{
 	color: var(--ct);
 }
-a:visited.boton-menu{
+a:visited.boton.boton-menu{
 	color: #fff;
 }
 /* -- color para los botones que tengan la clase .boton */
 a:link.boton{
 	background: var(--cs1);
-	color: #fff;
+	color: #fffc3c;
 }
 
 
@@ -154,20 +164,22 @@ a:visited.boton.boton-register{
 }
 /* color de la sombra */
 a:link.boton.boton-register{
-	-webkit-box-shadow: 0px 15px 15px 0px rgba(255,27,0,0.26);
-	-moz-box-shadow: 0px 15px 15px 0px rgba(255,27,0,0.26);
-	box-shadow: 0px 15px 15px 0px rgba(255,27,0,0.26);
+	-webkit-box-shadow: 0px 15px 15px 0px rgb(202, 202, 202);
+	-moz-box-shadow: 0px 15px 15px 0px rgb(202, 202, 202);
+	box-shadow: 0px 15px 15px 0px rgb(202, 202, 202);
 }
 
 
 
+/* -----------------seccion registro -----------------*/
+/* aqui se agrego la imagen de pizza que esta al fondo  */
 
-/* --------------- seccion registro -----------*/
+
 .register .contenido h3{
 	color: var(--cp1);
 }
 .register .contenido h3 span{
-	color: var(--cs1);
+	color: #A49B1A;
 }
 .register .contenido p{
 	color: var(--cgris1);
@@ -176,6 +188,7 @@ a:link.boton.boton-register{
 
 
 /* -----------------seccion contacto ---------------*/
+
 .contacto{
 	background: var(--cp2);
 }
@@ -189,16 +202,14 @@ a:link.boton.boton-register{
 }
 
 
-
-
 /* ------------------seccion footer -------------------*/
 .dy{
 	background: var(--cp1);
 }
 .dy h6{
 	color: var(--cgris4);
-	font-family: var(--fuentep);
 }
+
 
 
 
@@ -213,13 +224,14 @@ a:link.boton.boton-register{
 	background: var(--cp2);
 }
 
-
 .banner-r .information ul li{
 	color: var(--cgris3);
 }
+
 .banner-r .information ul li.title{
 	color: var(--cgris4);
 }
+
 .banner-r .information ul li.tel a:link, .banner-r .information ul li.whatsapp a:link, .banner-r .information ul li.facebook a:link{
 	color: greenyellow;
 }
@@ -231,168 +243,119 @@ a:link.boton.boton-register{
 
 
 
+
+
+
 .banner-r .horario{
 	background: var(--cp1);
 }
+
 .banner-r .horario .content h4{
 	color: yellow;
 }
 .banner-r .horario .content ul li{
 	color: var(--cgris3);
 }
-.banner-r .horario .content ul li.day{
+.banner-r .horario .content ul li span.day{
 	color: var(--cgris4);
+	
 }
 
 
 
 
 
-h4.subtitles{
-	color: var(--cs1);
-}
-h4.subtitles::before{
-	color: var(--cgris4);
+h4.subtitles-2{
+	color: var(--cp1);
 }
 
 
-/* -------------------------- seccion tacos -----------------------*/
-.taco .tarjeta{
-	width: 100%;
+
+
+/* -----------------------seccion servicios ----------------*/
+
+
+.services h5{
+	text-align: center;
+	font-size: 28px;
+	font-weight: 700;
+	color: var(--cp1);
+
+}
+.services p{
+	text-align: center;
+	font-size: 18px;
+	color: var(--cp1);
+}
+.services-content{
+	display: grid;
+	gap: 30px;
+	padding: 50px 0px;
+}
+.services-p4{
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.service-item{
 	border-radius: 5px;
 	display: flex;
-	margin-bottom: 30px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
-	height: 100%;
-	font-family: var(--fuentep);
+	padding: 15px 20px;
 	border: 1px solid var(--cgris4);
 	box-shadow: none;
 	align-items: center;
 	position: relative;
 }
-.taco .tarjeta .image{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-right: 20px;
-	width: 30%;
-	aspect-ratio: auto;
-}
-.taco .tarjeta .ingre{
-	width: 70%;
-}
-.taco .tarjeta .ingre h5{
-	font-size: 16px;
-	color: var(--cc);
-	font-weight: 600;
-	text-transform: uppercase;
+.service-item figure{
 	margin-bottom: 0px;
 	
+	flex-shrink: 0;
 }
-.taco .tarjeta .ingre p{
-	font-size: 14px;
-	color: var(--cgris1);
-	line-height: 25px;
-}
-
-
-h4.tipo {
-    font-family: var(--fuentep);
-    font-weight: 700;
-    margin-bottom: 35px;
-    text-align: center;
-    color: var(--cp1);
-}
-
-
-
-.tacos-content{
-	display: grid;
-	gap: 30px;
-	padding-bottom: 50px;
-		
-}
-.grid_2{
-	grid-template-columns: 1fr 1fr;
-}
-.taco-item{
-	border-radius: 5px;
-	display: flex;
-	font-family: var(--fuentep);
-	border: 1px solid var(--cgris4);
-	padding: 20px;
-	align-items: center;
-	position: relative;
-}
-.taco-item img{
-	height: 100px;
-	width: 100px;
+.service-item figure img{
+	height: 60px;
+	width: 60px;
 	aspect-ratio: auto;
-}
-.taco-info{
-	padding-left: 25px;
-}
-.taco-info_title{
-	font-size: 18px;
-	font-weight: 700;
-	font-family: var(--fuentep);
-	color: var(--cc);
-	margin: 0;
-}
-
-.taco-info_description{
-	font-size: 14px;
-	font-family: var(--fuentep);
-	line-height: 180%;
-	margin: 10px 0px;
-}
-.price-taco{
-	  position: absolute;
-	  background: yellow;
-	  height: 40px;
-	  width: 40px;
-	  border-radius: 50px;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  border: 2px solid var(--cs1);
-	  right: -5px;
-	  top: -15px;
-	  color: var(--cp1);
-	  font-size: 16px;
-	  font-weight: 600;
 
 }
+
+.service-item h6{
+	font-size: 16px;
+	color: var(--cp1);
+	margin-bottom: 0px;
+	margin-left: 15px;
+}
+
+
+
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
 
 @media screen and (max-width: 1199px){
-	.tarjet{
-		padding-right: 30px;
-	}
-	.tarjet .content .body span.name {
-    	font-size: 18px;
-	}
-	.tarjet .content .body span.porcion{
-		font-size: 16px;
-	}
-	.tarjet .content span.price{
-		font-size: 24px;
+
+	.services .content ul.lista {
+		column-gap: 200px;
 	}
 	
 }
 
 
 @media screen and (max-width: 991px){
+
+	.register{
+		background: none;
+	}
+	.register img.girl{
+		width: 115px;
+	}
 	
 	
 	
 	
+	.services-t2{
+		grid-template-columns: 1fr 1fr;
+	}
 	
 	
 }
@@ -403,44 +366,25 @@ h4.tipo {
 @media screen and (max-width: 767px){
 	
 
-
-
 	.banner .content h1 span.title{
 		font-size: 48px;
 	}
 	.banner .content h1 span.title2{
 		font-size: 24px;
 	}
-
-	
-	.register img.girl, .register img.boy{
-		display: none;
-	}
-	
-	.grid_1{
-		grid-template-columns: 1fr;
-	}
 	
 
-
-
-	/*--- seccion tacos ---*/
-	/*.taco{
-		min-height: auto;
-		padding-top: 15px;
-		padding-bottom: 15px;
-		align-items: center;
-	}*/
+	/* servicios --- lista de pruebas --- */
+	.services h5{
+		font-size: 18px;
+	}
+	.services p{
+		font-size: 16px;
+	}
 	
-	.taco .image{
-		margin-right: 0px;
-	}
-	.taco .ingre{
-		margin-top: 0px;
-	}
-	.taco .ingre h5, .pizz .ingre p{
-		margin-bottom: 0px;
-	}
+	
+	
+
 	
 	
 }
@@ -461,6 +405,7 @@ h4.tipo {
 	
 	
 	
+	
 	.banner .content h1 span.title{
 		font-size: 32px;
 	}
@@ -468,88 +413,57 @@ h4.tipo {
 		font-size: 20px;
 	}
 	
-	
 	.banner .content p {
     	font-size: 12px;
 		margin-right: 40%;
 	}
-
 	
 	/* ------tarjetas negocios -------*/
 	.neg .tarjeta{
 		border: 1px solid var(--cgris4);
 		background: #FBFBFB;
 	}
+		
 	
 	
 	
-	
-	
-	
-	h4.subtitles{
-		margin-bottom: 40px;
+	/* --- estilos servicios listado pruebas */
+	.services h5{
+		font-size: 16px;
 	}
-	h4.subtitles::before{
-		content: "";
+	
+	.service-item h6, .services p{
+		font-size: 14px;
+	}
+	.service-item figure img{
+		height: 40px;
+		width: 40px;
 	}
 
-
-
- /* ----- seccion tacos ------*/
-
-
-	.taco .tarjeta{
-		box-shadow: none;
-		background: #FBFBFB;
-		height: auto;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		margin-bottom: 0px;
-	}
-	.taco .tarjeta .image{
-		width: 30%;
-		margin-right: 0px;
-	}
-	.taco .tarjeta .image img{
-		width: 40%;
-	}
-	.taco .tarjeta .ingre{
-		width: 70%;
-		padding-left: 0%;
-	}
-
-	.taco-item img{
-		width: 50px;
-		height: 50px;
-	}
-	.taco-info_description{
-		font-size: 12px;
-	}
 	
-	.taco-item{
-		background: #FBFBFB;
-	}
-	
+
 	
 }
 
 
 @media screen and (max-width: 490px){
 	
-	
+	.services-m1{
+		grid-template-columns: 1fr;
+	}
 	
 }
 
 
 
 @media screen and (max-width: 384px){
-	h4.subtitles::before{
-		content: "";
-	}
-
 	
+
 }
 
 @media screen and (max-width: 344px){
 	
+	
+	
+
 }
