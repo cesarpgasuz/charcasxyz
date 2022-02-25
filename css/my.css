@@ -158,7 +158,9 @@ a:link.btn-llamar{
 	
 }
 
-
+.mark{
+	background: #b5fcff;
+}
 
 .navv {
     
@@ -563,6 +565,9 @@ h4.subtitles-2{
 	margin-bottom: 40px;
 }
 
+h4.subtitles-2.paquetes-2{
+	margin-top: 35px;
+}
 
     
 
