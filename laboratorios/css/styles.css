@@ -297,6 +297,7 @@ h4.subtitles-2{
 }
 .services .content ul.lista > li > img{
 	width: 40px;
+	aspect-ratio: 1/1;
 }
 
 .services .content ul.lista li ul.sublista{

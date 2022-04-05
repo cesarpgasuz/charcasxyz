@@ -297,6 +297,7 @@ h4.subtitles-2{
 .services ul li img{
 	width: 40px;
 	margin-right: 15px;
+	aspect-ratio: 1/1;
 }
 
 

@@ -220,11 +220,12 @@ a:link.boton.boton-register{
 .banner-r .information ul li.title{
 	color: var(--cgris4);
 }
-.banner-r .information ul li.tel a:visited{
+.banner-r .information ul li.tel a:link, .banner-r .information ul li.whatsapp a:link, .banner-r .information ul li.facebook a:link{
 	color: greenyellow;
 }
-.banner-r .information ul li.tel a:link{
+.banner-r .information ul li.tel a:visited, .banner-r .information ul li.whatsapp a:visited, .banner-r .information ul li.facebook a:visited{
 	color: greenyellow;
+	text-decoration: none;
 }
 
 
@@ -270,6 +271,7 @@ h4.subtitles::before{
 	border: 1px solid var(--cgris4);
 	box-shadow: none;
 	align-items: center;
+	position: relative;
 }
 .taco .tarjeta .image{
 	display: flex;
@@ -277,6 +279,7 @@ h4.subtitles::before{
 	align-items: center;
 	margin-right: 20px;
 	width: 30%;
+	aspect-ratio: auto;
 }
 .taco .tarjeta .ingre{
 	width: 70%;
@@ -295,6 +298,74 @@ h4.subtitles::before{
 	line-height: 25px;
 }
 
+
+h4.tipo {
+    font-family: var(--fuentep);
+    font-weight: 700;
+    margin-bottom: 35px;
+    text-align: center;
+    color: var(--cp1);
+}
+
+
+
+.tacos-content{
+	display: grid;
+	gap: 30px;
+	padding-bottom: 50px;
+		
+}
+.grid_2{
+	grid-template-columns: 1fr 1fr;
+}
+.taco-item{
+	border-radius: 5px;
+	display: flex;
+	font-family: var(--fuentep);
+	border: 1px solid var(--cgris4);
+	padding: 20px;
+	align-items: center;
+	position: relative;
+}
+.taco-item img{
+	height: 100px;
+	width: 100px;
+	aspect-ratio: auto;
+}
+.taco-info{
+	padding-left: 25px;
+}
+.taco-info_title{
+	font-size: 18px;
+	font-weight: 700;
+	font-family: var(--fuentep);
+	color: var(--cc);
+	margin: 0;
+}
+
+.taco-info_description{
+	font-size: 14px;
+	font-family: var(--fuentep);
+	line-height: 180%;
+	margin: 10px 0px;
+}
+.price-taco{
+	  position: absolute;
+	  background: yellow;
+	  height: 40px;
+	  width: 40px;
+	  border-radius: 50px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  border: 2px solid var(--cs1);
+	  right: -5px;
+	  top: -15px;
+	  color: var(--cp1);
+	  font-size: 16px;
+	  font-weight: 600;
+
+}
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
@@ -346,7 +417,9 @@ h4.subtitles::before{
 		display: none;
 	}
 	
-	
+	.grid_1{
+		grid-template-columns: 1fr;
+	}
 	
 
 
@@ -445,9 +518,17 @@ h4.subtitles::before{
 		padding-left: 0%;
 	}
 
-
-
+	.taco-item img{
+		width: 50px;
+		height: 50px;
+	}
+	.taco-info_description{
+		font-size: 12px;
+	}
 	
+	.taco-item{
+		background: #FBFBFB;
+	}
 	
 	
 }

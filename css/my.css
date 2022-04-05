@@ -158,7 +158,9 @@ a:link.btn-llamar{
 	
 }
 
-
+.mark{
+	background: #b5fcff;
+}
 
 .navv {
     
@@ -281,6 +283,8 @@ a:link.btn-llamar{
 }
 .neg .tarjeta .imagen img{
 	width: 120px;
+	height: 120px;
+	aspect-ratio: auto;
 }
 .neg .tarjeta .contenido ul{
 	margin-bottom: 0;
@@ -433,6 +437,7 @@ a:link.boton.boton-register{
 .banner-r .information img.log{
 	width: 100px;
 	margin-bottom: 15px;
+	aspect-ratio: 1/1;
 }
 
 .banner-r .information ul li{
@@ -560,6 +565,9 @@ h4.subtitles-2{
 	margin-bottom: 40px;
 }
 
+h4.subtitles-2.paquetes-2{
+	margin-top: 35px;
+}
 
     
 
@@ -699,6 +707,7 @@ ul.fil li.activeee a{
 	}
 	.neg .tarjeta .imagen img{
 		width: 80px;
+		height: 80px;
 	}
 	.neg .tarjeta .contenido ul li.title {
     	font-size: 24px;
@@ -764,6 +773,7 @@ ul.fil li.activeee a{
 		position: absolute;
 		right: 10%;
 		bottom: 0;
+		aspect-ratio: auto;
 	}
 
 	/* ------tarjetas negocios -------*/
@@ -856,6 +866,7 @@ ul.fil li.activeee a{
 	
 	.neg .tarjeta .imagen img {
 		width: 70px;
+		height: 70px;
 	}
 	.neg .tarjeta .contenido ul li{
 		line-height: 25px;

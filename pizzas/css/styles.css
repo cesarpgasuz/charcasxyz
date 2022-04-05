@@ -297,6 +297,7 @@ h4.subtitles::before{
 	align-items: center;
 	margin-right: 20px;
 	width: 35%;
+	aspect-ratio: 1/1;
 }
 .pizz .ingre{
 	margin-top: 40px;
@@ -327,6 +328,7 @@ h4.subtitles::before{
 }
 .tarjet img{
 	margin-right: 20px;
+	aspect-ratio: 1/1;
 }
 .tarjet .content{
 	display: flex;
