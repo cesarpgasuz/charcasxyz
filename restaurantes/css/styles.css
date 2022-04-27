@@ -285,6 +285,7 @@ h4.subtitles::before{
 	line-height: 200%;
 	font-size: 16px;
  	color: var(--cp2);
+ 	padding-left: 16px;
 }
 
 .comidas-singles{
@@ -369,9 +370,16 @@ h4.subtitles::before{
 
 @media screen and (max-width: 991px){
 	
-	
-	
-	
+	.comidas-title{
+		font-size: 18px;
+	}
+	.comidas-items{
+		font-size: 14px;
+	}
+	.comidas-singles{
+		grid-template-columns: repeat(2 , 1fr);
+	}
+
 	
 	
 }
@@ -403,22 +411,15 @@ h4.subtitles::before{
 
 
 
-	/*--- seccion tacos ---*/
-	/*.taco{
-		min-height: auto;
-		padding-top: 15px;
-		padding-bottom: 15px;
-		align-items: center;
-	}*/
-	
-	.taco .image{
-		margin-right: 0px;
+	/*--- seccion comidas ---*/
+	.comidas-title{
+		font-size: 18px;
 	}
-	.taco .ingre{
-		margin-top: 0px;
+	.comidas-items{
+		font-size: 14px;
 	}
-	.taco .ingre h5, .pizz .ingre p{
-		margin-bottom: 0px;
+	.comidas, .comidas-singles{
+		grid-template-columns: 1fr;
 	}
 	
 	
@@ -474,38 +475,18 @@ h4.subtitles::before{
 
 
 
- /* ----- seccion tacos ------*/
-
-
-	.taco .tarjeta{
-		box-shadow: none;
-		background: #FBFBFB;
-		height: auto;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		margin-bottom: 0px;
+ /* ----- seccion comidas ------*/
+ 	/*--- seccion comidas ---*/
+	.comidas-title, .comidas-singles_item h4{
+		font-size: 16px;
 	}
-	.taco .tarjeta .image{
-		width: 30%;
-		margin-right: 0px;
-	}
-	.taco .tarjeta .image img{
-		width: 40%;
-	}
-	.taco .tarjeta .ingre{
-		width: 70%;
-		padding-left: 0%;
-	}
-
-	.taco-item img{
-		width: 50px;
-		height: 50px;
-	}
-	.taco-info_description{
+	.comidas-items{
 		font-size: 12px;
 	}
 	
-	.taco-item{
+	.comidas-card, .comidas-singles_item{
+		box-shadow: none;
+		border: 1px solid var(--cgris4);
 		background: #FBFBFB;
 	}
 	
