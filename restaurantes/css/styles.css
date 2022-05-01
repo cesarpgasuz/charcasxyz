@@ -89,7 +89,7 @@ a:visited.btn-llamar{
 /* --- seccion banner para todas las paginas con tarjetas --- */
 /* //// solo se agrega la imagen y la posicion, la estructa esta en my.css */
 .banner{
-	background: url(../images/hamburguesa.jpg) center center no-repeat;
+	background: url(../images/restaurante.jpg) center center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -114,7 +114,7 @@ a:visited.btn-llamar{
 }
 
 .banner .content h1 span.title{
-	font-size: 50px;
+	font-size: 60px;
 	font-weight: 700;
 	font-style: italic;
 	
@@ -220,11 +220,12 @@ a:link.boton.boton-register{
 .banner-r .information ul li.title{
 	color: var(--cgris4);
 }
-.banner-r .information ul li.tel a:visited, .banner-r .information ul li.whatsapp a:visited, .banner-r .information ul li.facebook a:visited {
-  color: greenyellow;
+.banner-r .information ul li.tel a:link, .banner-r .information ul li.whatsapp a:link, .banner-r .information ul li.facebook a:link{
+	color: greenyellow;
 }
-.banner-r .information ul li.tel a:link, .banner-r .information ul li.whatsapp a:link, .banner-r .information ul li.facebook a:link {
-  color: greenyellow;
+.banner-r .information ul li.tel a:visited, .banner-r .information ul li.whatsapp a:visited, .banner-r .information ul li.facebook a:visited{
+	color: greenyellow;
+	text-decoration: none;
 }
 
 
@@ -239,7 +240,7 @@ a:link.boton.boton-register{
 .banner-r .horario .content ul li{
 	color: var(--cgris3);
 }
-.banner-r .horario .content ul li span.day{
+.banner-r .horario .content ul li.day{
 	color: var(--cgris4);
 }
 
@@ -255,78 +256,100 @@ h4.subtitles::before{
 }
 
 
-/* -------------------------- seccion tortas -----------------------*/
+/* -------------------------- seccion comida -----------------------*/
 
-h4.tipo{
-	font-family: var(--fuentep);
-    font-weight: 700;
-    margin-bottom: 35px;
-    text-align: center;
-	color: var(--cp1);
+.comidas{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
 }
 
-.torta .tarjeta{
-	width: 100%;
+.comidas-card{
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(194,194,194,0.4);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(194,194,194,0.4);
+	box-shadow: 0px 0px 40px 0px rgba(194,194,194,0.4);
 	border-radius: 5px;
-	display: flex;
-	margin-bottom: 30px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
-	height: 100%;
-	font-family: var(--fuentep);
-	border: 1px solid var(--cgris4);
-	box-shadow: none;
-	align-items: center;
-	position: relative;
+	padding: 20px 30px;
 }
-.torta .tarjeta .image{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-right: 20px;
-	width: 30%;
+.comidas-card img{
+	width: 64px;
 }
-.torta .tarjeta .ingre{
-	width: 70%;
-}
-.torta .tarjeta .ingre h5{
-	font-size: 16px;
-	color: var(--cc);
-	font-weight: 600;
-	text-transform: uppercase;
-	margin-bottom: 0px;
-	
-}
-.torta .tarjeta .ingre p{
-	font-size: 14px;
-	color: var(--cgris1);
-	margin-bottom: 0px;
-}
-.torta .tarjeta .price{
-	position: absolute;
-	background: yellow;
-	height: 40px;
-	width: 40px;
-	border-radius: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 2px solid var(--cs1);
-	right: -5px;
-	top: -15px;
+.comidas-title{
+	font-weight: bold;
+	font-size: 24px;
 	color: var(--cp1);
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.comidas-items{
+	line-height: 200%;
 	font-size: 16px;
-	font-weight: 600;
+ 	color: var(--cp2);
+ 	padding-left: 16px;
+}
+
+.comidas-singles{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+	padding: 80px 0px;
+}
+.comidas-singles_item{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(219, 219, 219, 0.4);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(219, 219, 219, 0.4);
+	box-shadow: 0px 0px 40px 0px rgba(219, 219, 219, 0.4);
+	border-radius: 5px;
+}
+.comidas-singles_item img{
+	width: 48px;
+	margin-right: 20px;
+}
+.comidas-singles_item h4{
+	margin: 0;
+	font-size: 16px;
+	color: var(--cp1);
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 
 
-/* ---------------------------------------------------responsive ------------------------------------------------*/
-/* ---------------------------------------------------responsive ------------------------------------------------*/
-/* ---------------------------------------------------responsive ------------------------------------------------*/
-/* ---------------------------------------------------responsive ------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------responsive ------------------------------------------------*/
+/* ----------------------------------------------------------responsive ------------------------------------------------*/
+/* ----------------------------------------------------------responsive ------------------------------------------------*/
+/* ----------------------------------------------------------responsive ------------------------------------------------*/
 
 @media screen and (max-width: 1199px){
 	.tarjet{
@@ -347,11 +370,16 @@ h4.tipo{
 
 @media screen and (max-width: 991px){
 	
-	
-	.banner .content h1 span.title{
-		font-size: 40px;
+	.comidas-title{
+		font-size: 18px;
 	}
-	
+	.comidas-items{
+		font-size: 14px;
+	}
+	.comidas-singles{
+		grid-template-columns: repeat(2 , 1fr);
+	}
+
 	
 	
 }
@@ -362,10 +390,10 @@ h4.tipo{
 @media screen and (max-width: 767px){
 	
 
-	
+
 
 	.banner .content h1 span.title{
-		font-size: 30px;
+		font-size: 48px;
 	}
 	.banner .content h1 span.title2{
 		font-size: 24px;
@@ -376,27 +404,22 @@ h4.tipo{
 		display: none;
 	}
 	
-	
-	
-
-
-
-	/*--- seccion tacos ---*/
-	/*.taco{
-		min-height: auto;
-		padding-top: 15px;
-		padding-bottom: 15px;
-		align-items: center;
-	}*/
-	
-	.torta .image{
-		margin-right: 0px;
+	.grid_1{
+		grid-template-columns: 1fr;
 	}
-	.torta .ingre{
-		margin-top: 0px;
+	
+
+
+
+	/*--- seccion comidas ---*/
+	.comidas-title{
+		font-size: 18px;
 	}
-	.torta .ingre h5, .pizz .ingre p{
-		margin-bottom: 0px;
+	.comidas-items{
+		font-size: 14px;
+	}
+	.comidas, .comidas-singles{
+		grid-template-columns: 1fr;
 	}
 	
 	
@@ -419,7 +442,7 @@ h4.tipo{
 	
 	
 	.banner .content h1 span.title{
-		font-size: 25px;
+		font-size: 32px;
 	}
 	.banner .content h1 span.title2{
 		font-size: 20px;
@@ -452,38 +475,20 @@ h4.tipo{
 
 
 
- /* ----- seccion tortas ------*/
-
-
-	.torta .tarjeta{
+ /* ----- seccion comidas ------*/
+ 	/*--- seccion comidas ---*/
+	.comidas-title, .comidas-singles_item h4{
+		font-size: 16px;
+	}
+	.comidas-items{
+		font-size: 12px;
+	}
+	
+	.comidas-card, .comidas-singles_item{
 		box-shadow: none;
+		border: 1px solid var(--cgris4);
 		background: #FBFBFB;
-		height: auto;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		padding-left: 0px;
-		margin-bottom: 0px;
-		
 	}
-	.torta .tarjeta .image{
-		width: 25%;
-		margin-right: 0px;
-	}
-	.torta .tarjeta .image img{
-		width: 40%;
-	}
-	.torta .tarjeta .ingre{
-		width: 60%;
-		padding-left: 0%;
-	}
-
-
-	
-	.torta .tarjeta .price{
-		position: static;
-		width: 15%;
-	}
-	
 	
 	
 }
