@@ -274,34 +274,40 @@ h4.subtitles-2{
 
 
 /* -----------------------seccion services ----------------*/
-.services h5, .services p{
-	text-align: center;
-}
+
 .services h5{
 	font-size: 24px;
+	text-align: center;
+	font-weight: 600;
+
 }
-.services p strong{
-	border-bottom: 2px solid;
-}
-.services ul{
+.servicesDentista{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	margin-top: 80px;
-	gap: 50px;
+	gap: 30px;
+	padding: 80px 0px;
 }
-
-.services ul li{
-	display: flex;
-	align-items: center;
-}
-.services ul li img{
-	width: 40px;
+.servicesDentista__image{
+	height: 60px;
 	margin-right: 15px;
-	aspect-ratio: 1/1;
 }
-
-
-
+.servicesDentista__card{
+	display: flex;
+	padding: 20px 15px;
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(194,194,194,0.4);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(194,194,194,0.4);
+	box-shadow: 0px 0px 40px 0px rgba(194,194,194,0.4);
+	border-radius: 5px;
+}
+.servicesDentista__title{
+	font-size: 18px;
+	font-weight: 700;
+}
+.servicesDentista__parrafo{
+	line-height: 2em;
+	font-size: 14px;
+	margin: 0;
+}
 
 
 
@@ -351,8 +357,18 @@ h4.subtitles-2{
 	
 
 	
-	.services ul{
+	
+	.servicesDentista{
 		grid-template-columns: 1fr;
+	}
+
+	.servicesDentista__card{
+		border: 1px solid var(--cgris4);
+		background: #FBFBFB;
+		box-shadow: none;
+	}
+	.servicesDentista__title{
+		font-size: 16px;
 	}
 	
 	
@@ -409,16 +425,24 @@ h4.subtitles-2{
 		font-size: 16px;
 		margin-bottom: 15px;
 	}
-	.services ul{
-		gap: 30px;
+
+
+
+
+
+	.servicesDentista{
+		padding-top: 30px;
 	}
-	.services p, .services ul li{
+	.servicesDentista__title{
 		font-size: 14px;
 	}
 	
-	.banner img.pana{
-		bottom: -6px;
+	.servicesDentista__parrafo{
+		font-size: 12px;
 	}
+	
+
+	
 
 }
 
