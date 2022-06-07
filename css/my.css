@@ -81,21 +81,28 @@ a:link.btn-llamar{
 	font-family: var(--fuentep);
 	display: none;
 	transition-duration: 0.5s;
+	max-height: 100vh;
 }
 .modall i{
 	position: absolute;
     font-size: 36px;
     top: 0;
     color: var(--azulp);
-    padding-left: 30%;
-    padding-right: 30%;
+    background: #f4f4f4;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 
 }
 .modall .horario{
 	width: 100%;
     padding-left: 5%;
     padding-right: 5%;
-
+    overflow-y: auto;
 }
 .modall .horario .content h4 {
 	margin-top: 10%;
@@ -425,9 +432,9 @@ a:link.boton.boton-register{
 
 
 
-/* --- --------------------------------------------------------------- */
-/* --- ------------------------ template ----------------------------- */
-/* --- --------------------------------------------------------------- */
+/* --- ------------------------------------------------------------------------------------------- */
+/* --- --------------------------------------------------- template ----------------------------- */
+/* --- --------------------------------------------------------------------------------------------- */
 
 .banner-r{
 	min-height: 450px;
@@ -464,7 +471,8 @@ a:link.boton.boton-register{
 }
 
 
-/* --- horario ----*/
+/* ----------------------------------------- horario ----------------------------------------------------*/
+
 .banner-r .horario{
 	display: flex;
 	justify-content: center;
@@ -510,7 +518,9 @@ a:link.boton.boton-register{
 .banner-r .horario .content ul li span.time ul li{
 	font-size: 14px;
 }
-
+.banner-r .horario .content ul li span.time .more-times li{
+	font-size: 13px;
+}
 
 
 
@@ -670,7 +680,14 @@ ul.fil li.activeee a{
 }
 
 
-
+@media screen and (min-width: 768px){
+	.modall, .visible-som{
+		display: none;
+	}
+	.scroll{
+		overflow: auto;
+	}
+}
 
 @media screen and (max-width: 767px){
 	
@@ -849,6 +866,13 @@ ul.fil li.activeee a{
 }
 
 
+
+
+
+
+
+
+
 @media screen and (max-width: 490px){
 	
 	.banner img.pana{
@@ -886,11 +910,29 @@ ul.fil li.activeee a{
 	
 }
 
+
+
+
+
+
+
 @media screen and (max-width: 434px){
 	.p-no.p-no-min{
 		font-size: 12px;  /* estilo para cambiar el tamaño del texto de la barra superior en modo movil*/
 	}
+
+
+	.modall .horario .content ul li span.time .more-times li{
+		font-size: 13px;
+	}
+
+
 }
+
+
+
+
+
 
 @media screen and (max-width: 384px){
 
@@ -920,10 +962,44 @@ ul.fil li.activeee a{
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 350px){
+	.modall .horario .content h4 {
+	  margin-top: 15%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 344px){
 	.banner img.pana{
 		width: 80px;
 	}
+
+	.modall .horario .content ul li span.time .more-times li{
+		font-size: 11px;
+	}
+
 }
 
 

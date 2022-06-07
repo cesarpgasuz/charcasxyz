@@ -37,3 +37,6 @@ $('#closeH').on('click', function(){
 	$('body').removeClass('scroll');
 	$('.sombra').removeClass('visible-som');
 })
+
+
+
