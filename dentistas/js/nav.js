@@ -7,14 +7,16 @@ var tope = $('.banner-r').innerHeight();
 
 				if(scroll > tope){
 					$('.navv').addClass('blanca');
-					$('.flot-reverse').addClass('azul');
+					$('.flot-reverse').addClass('reverse-color');
 					$('.p-no').addClass('visible');
 				}else{
 					$('.navv').removeClass('blanca');
-					$('.flot-reverse').removeClass('azul');
+					$('.flot-reverse').removeClass('reverse-color');
 					$('.p-no').removeClass('visible');
 				}
 			});
+
+
 
 
 
@@ -37,6 +39,3 @@ $('#closeH').on('click', function(){
 	$('body').removeClass('scroll');
 	$('.sombra').removeClass('visible-som');
 })
-
-
-
