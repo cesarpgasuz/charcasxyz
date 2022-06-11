@@ -161,8 +161,14 @@ a{
 .home .content h1{
 	font-family: var(--fuentep);
 	color: var(--azulp);
-	font-size: 16px;
+	font-size: 32px;
 	margin-top: 24px;
+}
+.home .content h2{
+	font-family: var(--fuentep);
+	color: var(--azulp);
+	font-size: 18px;
+	margin-top: 15px
 }
 
 
@@ -698,6 +704,9 @@ a{
 
 @media screen and (max-width: 575px){
 	.home .content h1{
+		font-size: 18px;
+	}
+	.home .content h2{
 		font-size: 14px;
 	}
 	.ejemplos-items{
