@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+		<title>Tianguis Loma de Buenavista. Doctor Mora</title> 
+		<meta name="title" content="Tianguis Loma de Buenavista, Doctor Mora">
+		<meta name="description" content="Tianguis Loma de Buenavista, Doctor Mora" >
+	  
+		
+		<link rel="shortcut icon" href="images/icon.ico">
+		<link rel="apple-touch-icon" href="https://charcas.xyz/images/icon192n.png">
+			  
+			  
+		<!-- estilos css -->
+  		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet"> 
+		<link rel="stylesheet" href="css/bootstrap-icons.css">
+
+
+		<!-- scripts -->
+    	<script src="js/jquery-3.5.1.slim.min.js"></script>
+    	<script defer src="https://charcas.xyz/js/bootstrap.bundle.min.js"></script>
+   		<script defer src="https://charcas.xyz/js/app.js"></script>
+
+
+		<!-- progresive app -->
+		<meta name="theme-color" content="#f4f4f4" />
+	  	<link rel="manifest" href="./manifest.json" /> 
+	 
+
+
+
+
+
+
+    
+  </head>
+  <body>
+    <div class="sombra"></div>
+	  
+	  <nav class="navegacion">
+  
+    	<span class="logocharcas">
+			Charcas.xyz
+	  	</span>
+	  	<div class="menu-nav ocultos">
+	  		<ul>
+				<li><a href="/"><i class="bi bi-house"></i> Inicio</a></li>
+				<li><a href="acerca.html"><i class="bi bi-file-person"></i> Acerca de</a></li>
+				<li><a href="contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li>
+				
+			</ul>
+	  	</div>
+ 	<div id="hambur"><i class="bi bi-justify-right"></i></div>
+</nav>
+	  
+	  
+	  <section class="informationProyects">
+	  	<div class="container">
+			
+			
+			<button onclick="window.history.back();" class="reverse-link"><i class="bi bi-arrow-left-circle-fill reverse-link"></i></button>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="informationProyects__card">
+						<h1>Tianguis Loma de Buenavista</h1>
+						<ul class="informationProyects__items">
+							<li>Tianguis Loma de Buenavista invita a todos sus alrededores a disfrutar y degustar de nuestros sabores y tradiciones.</li>
+							<li><i class="bi bi-pin-map-fill"></i> <span>Calle Luis H. Ducoing, Loma de Buenavista, Doctor Mora.</span> </li>
+							<li><i class="bi bi-calendar-event"></i> <span>Todos los Sabados</span></li>
+							<li><i class="bi bi-clock"></i> <span>A partir de las 10:00 am</span></li>
+						</ul>
+						
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<div class="informationProyects__galeria">
+						<img src="images/proyects__tianguisloma/image-1.jpg" class="img-fluid" alt="">
+						<img src="images/proyects__tianguisloma/image-2.jpg" class="img-fluid" alt="">
+						<img src="images/proyects__tianguisloma/image-3.jpg" class="img-fluid" alt="">
+						<img src="images/proyects__tianguisloma/image-4.jpg" class="img-fluid" alt="">
+						<img src="images/proyects__tianguisloma/image-5.jpg" class="img-fluid" alt="">
+						<img src="images/proyects__tianguisloma/image-6.jpg" class="img-fluid" alt="">
+						<img src="images/proyects__tianguisloma/image-7.jpg" class="img-fluid" alt="" loading="lazy" decoding="async">
+						<img src="images/proyects__tianguisloma/image-8.jpg" class="img-fluid" alt="" loading="lazy" decoding="async">
+						<img src="images/proyects__tianguisloma/image-9.jpg" class="img-fluid" alt="" loading="lazy" decoding="async">
+						<img src="images/proyects__tianguisloma/image-10.jpg" class="img-fluid" alt="" loading="lazy" decoding="async">
+						<img src="images/proyects__tianguisloma/image-11.jpg" class="img-fluid" alt="" loading="lazy" decoding="async">
+						<img src="images/proyects__tianguisloma/image-12.jpg" class="img-fluid" alt="" loading="lazy" decoding="async">
+																									 
+					</div>
+				</div>
+			</div>
+		  </div>
+	  </section>
+	  
+	   
+	  
+	  <section class="navbottom">
+	  	<ul>
+			<li><a href="https://charcas.xyz/"><i class="bi bi-house"></i></a></li>  
+		</ul>
+	  </section>
+
+	  
+
+	 
+
+	  <script>
+		  
+		   $('#hambur').on('click', function(){
+			$('.navegacion .menu-nav').toggleClass('visibles');
+			$('body').toggleClass('scroll');
+			$('.sombra').toggleClass('visible-som');
+		})
+
+		  
+		  
+		  
+		$('.sombra').on('click', function(){
+			$('.navegacion .menu-nav').removeClass('visibles');
+			$('body').removeClass('scroll');
+			$('.sombra').removeClass('visible-som');
+		})
+
+		$('#closeH').on('click', function(){
+			$('.menu-nav').removeClass('visibles');
+			$('body').removeClass('scroll');
+			$('.sombra').removeClass('visible-som');
+		})
+
+
+
+
+
+		
+
+		  
+	  </script>
+	  
+	  
+	  
+  </body>
+</html>
