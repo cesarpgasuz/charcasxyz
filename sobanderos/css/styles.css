@@ -89,7 +89,7 @@ a:visited.btn-llamar{
 /* --- seccion banner para todas las paginas con tarjetas --- */
 /* //// solo se agrega la imagen y la posicion, la estructa esta en my.css */
 .banner{
-	background: url(../images/hamburguesa.jpg) center center no-repeat;
+	background: url(../images/cover.jpg) center center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -142,7 +142,7 @@ a:visited.boton-menu{
 }
 /* -- color para los botones que tengan la clase .boton */
 a:link.boton{
-	background: var(--cs1);
+	background: #00ABFF;
 	color: #fff;
 }
 
@@ -154,9 +154,9 @@ a:visited.boton.boton-register{
 }
 /* color de la sombra */
 a:link.boton.boton-register{
-	-webkit-box-shadow: 0px 15px 15px 0px rgba(255,27,0,0.26);
-	-moz-box-shadow: 0px 15px 15px 0px rgba(255,27,0,0.26);
-	box-shadow: 0px 15px 15px 0px rgba(255,27,0,0.26);
+	-webkit-box-shadow: 0px 15px 15px 0px #00ABFF;
+	-moz-box-shadow: 0px 15px 15px 0px #00ABFF;
+	box-shadow: 0px 15px 15px 0px #00ABFF;
 }
 
 
@@ -167,7 +167,7 @@ a:link.boton.boton-register{
 	color: var(--cp1);
 }
 .register .contenido h3 span{
-	color: var(--cs1);
+	color: #00ABFF;
 }
 .register .contenido p{
 	color: var(--cgris1);
