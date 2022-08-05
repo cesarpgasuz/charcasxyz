@@ -158,6 +158,7 @@ a:link.btn-llamar{
 	justify-content: center;
 	align-items: center;
 	line-height: 0;
+	z-index: 20;
 	
 }
 #horario i{
