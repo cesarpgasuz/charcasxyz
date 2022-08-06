@@ -158,7 +158,9 @@ a:link.boton{
 	background: var(--cs1);
 	color: #fff;
 }
-
+#vermore:active{
+	background: gray;
+}
 
 /* ///////// boton grande de registro  /////// */
 /* --- color para el boton grande cuando se visita ---*/

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>filtrado</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.contenedor{
+			background: pink;
+		}
+		.card{
+			background: yellow;
+		}
+		.listado{
+			background: orange;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="contenedor">
+
+	</div>
+
+	<script src="db.js"></script>
+
+	<script>
+
+		const contenedor = document.querySelector('.contenedor');
+		
+		let resultado;
+
+
+		//resultado = negocios.filter(negocio => negocio.id === 'neg02');
+
+		negocios.forEach(neg => {
+			const row = document.createElement('div');
+			row.classList.add('card');
+			row.innerHTML = `
+				<ul>
+					<li>${neg.id}</li>
+					<li>${neg.nombre}</li>
+					<li>${neg.direccion}</li>
+					<li>${neg.telefono}</li>
+					
+				</ul>
+			`;
+
+
+			contenedor.appendChild(row);
+
+
+		})
+
+	
+
+
+		
+		
+	</script>
+
+</body>
+</html>
