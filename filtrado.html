@@ -12,6 +12,14 @@
 		}
 		.contenedor{
 			background: pink;
+			
+		}
+		.contenedor__listado{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+		.contenedor__cat{
+			padding: 20px;
 		}
 		.card{
 			background: yellow;
@@ -24,45 +32,27 @@
 <body>
 
 	<div class="contenedor">
-
+		<div class="contenedor__listado">
+			<div class="contenedor__cat cat1">
+				<ul>
+					
+				</ul>
+			</div>
+			<div class="contenedor__cat cat2">
+				<ul>
+					
+				</ul>
+			</div>
+		</div>
 	</div>
 
 	<script src="db.js"></script>
-
-	<script>
-
-		const contenedor = document.querySelector('.contenedor');
-		
-		let resultado;
-
-
-		//resultado = negocios.filter(negocio => negocio.id === 'neg02');
-
-		negocios.forEach(neg => {
-			const row = document.createElement('div');
-			row.classList.add('card');
-			row.innerHTML = `
-				<ul>
-					<li>${neg.id}</li>
-					<li>${neg.nombre}</li>
-					<li>${neg.direccion}</li>
-					<li>${neg.telefono}</li>
-					
-				</ul>
-			`;
-
-
-			contenedor.appendChild(row);
-
-
-		})
+	<script src="script.js"></script>
 
 	
 
 
-		
-		
-	</script>
+
 
 </body>
 </html>
