@@ -1,9 +1,12 @@
 const contenedor = document.querySelector('.contenedor');
-		const contenedorListado = document.querySelector('.contenedor__listado');
-		const cat1 = document.querySelector('.cat1 ul');
-		const cat2 = document.querySelector('.cat2 ul');
-		
+const contenedorListado = document.querySelector('.contenedor__listado');
 
+const catTitle1 = document.querySelector('.cat1');
+const catTitle2 = document.querySelector('.cat2');
+const cat1Listado = document.querySelector('.cat1 ul');
+const cat2Listado = document.querySelector('.cat2 ul');
+		
+const card = document.querySelector('.card');
 
 		//resultado = negocios.filter(negocio => negocio.id === 'neg02');
 /*
@@ -55,7 +58,7 @@ const contenedor = document.querySelector('.contenedor');
 		const categorias = resultado.filter(categoria => categoria.servicios);
 
 		
-
+/* -----------------------------------------------*
 		categorias.forEach(item => {
 			item.servicios.forEach(valor => {
 				
@@ -77,7 +80,10 @@ const contenedor = document.querySelector('.contenedor');
 
 		})
 
+*/
 
+
+/*
 		function categoria1(valor){
 
 			for(let item of valor.tarea){
@@ -97,20 +103,61 @@ const contenedor = document.querySelector('.contenedor');
 	
 		}
 
+*/
 
+
+
+		categorias.forEach(item => {
+			item.servicios.forEach(valor => {
+				
+					const tarjeta = document.createElement('div');
+					const title = document.createElement('h4');
+					title.innerHTML = `${valor.id}`;
+					tarjeta.appendChild(title);
+
+					for(let item of valor.tarea){
+					const listado = document.createElement('p');
+					listado.innerHTML = `${item}`;
+					tarjeta.appendChild(listado)
+					}
+
+
+				card.appendChild(tarjeta)
+
+			})
+
+
+		})
+
+
+
+/******************************
+
+		function categoria1(valor){
+
+			const title = document.createElement('h4');
+			title.innerHTML = `${valor.id}`;
+			catTitle1.insertBefore(title, cat1Listado);
+
+			for(let item of valor.tarea){
+				const card = document.createElement('li');
+				card.innerHTML = `${item}`;
+				cat1Listado.appendChild(card)
+			}
+		}
+
+******/
 
 		function categoria2(valor){
+
+			const title = document.createElement('h4');
+			title.innerHTML = `${valor.id}`;
+			catTitle2.insertBefore(title, cat2Listado);
 			
 			for(let item of valor.tarea){
 				const card = document.createElement('li');
-			
-			card.innerHTML = `
-				
-					${item}
-				
-				
-			`;
-			cat2.appendChild(card);
+				card.innerHTML = `${item}`;
+				cat2Listado.appendChild(card);
 			}
 
 		}

@@ -6,7 +6,29 @@ const negocios = [
 		direccion: 'primera direccion',
 		telefono: '419'
 	},
+/*
+	{
+		id: 'neg02',
+		nombre: 'tienda 2',
+		direccion: 'segunda direccion',
+		telefono: '4222',
+		whatsapp: '4191389032',
+		servicios: [
+			{
+				id: 'papeleria',
+				tareas : [{nombre: 'cortar papel', id: 'papeleria'}, {nombre: 'triturar hojas', id: 'papleria'}, {nombre: 'colorear hojas', id: 'papeleria'} ]
+			},
+			{
+				id: 'celular',
+				tareas : [{nombre: 'reparar celular', id: 'celular'}, {nombre: 'pegar celular', id: 'celular'}, {nombre: 'entregar', id: 'celular'} ]
+			},
 
+		]
+			
+		},
+	
+
+*/
 	{
 		id: 'neg02',
 		nombre: 'tienda 2',
@@ -22,11 +44,18 @@ const negocios = [
 				id: 'celular',
 				tarea: ['recargar celular', 'romper celular', 'limpiar celular' ],
 			},
+			{
+				id: 'series',
+				tarea: ['pagar mensualidad', 'contratar servicio' ],
+			},
+			{
+				id: 'peliculas',
+				tarea: ['comprar dvd', 'reproducir dvd', 'guardar dvd' ],
+			},
 
 		]
 			
 		},
-	
 	
 
 
