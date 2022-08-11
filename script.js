@@ -112,7 +112,7 @@ const card = document.querySelector('.card');
 				
 					const tarjeta = document.createElement('div');
 					const title = document.createElement('h4');
-					title.innerHTML = `${valor.id}`;
+					title.textContent = `${valor.id}`;
 					tarjeta.appendChild(title);
 
 					for(let item of valor.tarea){
