@@ -61,21 +61,22 @@ const negocios = [
 
 	{
 		id: 'neg03',
-		nombre: 'tienda 2',
+		nombre: 'tienda 3',
 		direccion: 'tercera direccion',
 		telefono: '112',
+		whatsapp: 'xxx',
 		servicios: [
 			{
-				id: 'celular',
-				tarea: 'formatear celular',
+				id: 'xxx',
+				tarea: ['jaja', 'meee', 'cuas' ],
 			},
 			{
-				id: 'celular',
-				tarea: 'recargar celular',
+				id: 'xx',
+				tarea: ['vbv', 'vvvvv', 'ssss' ],
 			},
 			{
-				id: 'celular',
-				tarea: 'romper celular',
+				id: 'xxxd',
+				tarea: ['ttt', 'tttt', 'tttt' ],
 			},
 
 		]
