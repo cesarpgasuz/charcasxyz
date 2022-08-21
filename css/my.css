@@ -158,6 +158,7 @@ a:link.btn-llamar{
 	justify-content: center;
 	align-items: center;
 	line-height: 0;
+	z-index: 20;
 	
 }
 #horario i{
@@ -328,6 +329,7 @@ a:link.boton{
 	border-radius: 50px;
 	
 }
+
 /* --- tamaño y espaciado para el boton de las tarjetas ---*/
 a:link.boton.boton-menu{
 	padding: 4px 30px;
