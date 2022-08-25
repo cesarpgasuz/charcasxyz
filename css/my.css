@@ -37,7 +37,6 @@ body{
 	height: 30px;
 	width: 30px;
 	position: fixed;
-	opacity: 0;
 	background-color: #000D19;
 	right: 50px;
 	bottom: 50px;
@@ -59,10 +58,10 @@ body{
 }
 
 .spinner.activo{
-	display: block;
+	display: none;
 }
-.spinner.visible{
-	opacity: 1;
+.spinner.oculto{
+	display: block;
 }
 
 
