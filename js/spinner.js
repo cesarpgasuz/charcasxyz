@@ -11,7 +11,7 @@ const spinner = document.querySelector('.spinner');
 
 
 
-document.addEventListener('DOMContentLoaded', mostrarSpinner);
+window.addEventListener('onload', mostrarSpinner);
 
 function mostrarSpinner(){
      if(spinner.classList.contains('activo')){
@@ -32,15 +32,6 @@ abrirSpinner.forEach( spin => {
 })
 
 
-function GoBackWithRefresh(event) {
-    if ('referrer' in document) {
-        window.location = document.referrer;
-        /* OR */
-        //location.replace(document.referrer);
-    } else {
-        window.history.back();
-    }
-}
 
 
 
