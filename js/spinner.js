@@ -14,13 +14,14 @@ abrirSpinner.forEach( spin => {
 
         const spinner = document.createElement('div');
         spinner.classList.add('spinner');
+        spinner.style.display = 'block';
         document.body.insertBefore(spinner, document.querySelector('.navv'));
         
      })
 
 })
 
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
 
     const spin = document.querySelector('.spinner');
     if(spin){
