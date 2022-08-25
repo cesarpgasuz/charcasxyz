@@ -5,8 +5,11 @@ botonMenu.forEach(boton => {
 })
 
 
+
 const abrirSpinner = [...document.querySelectorAll('.visitar')];
 const spinner = document.querySelector('.spinner');
+
+
 
 
 
@@ -41,15 +44,13 @@ abrirSpinner.forEach( spin => {
 })
 
 
-if(spinner.classList.contains('activo')){
-    setTimeout(() => {
-            spinner.classList.remove('activo');
-            spinner.classList.add('oculto');
-    }, 1500);
-}
+const reverse = document.querySelector('.flot-anverse');
 
-
-
+reverse.addEventListener('click', () => {
+    history.back();
+    spinner.classList.remove('activo');
+    spinner.classList.add('oculto');
+})
 
 
 
