@@ -32,3 +32,11 @@ abrirSpinner.forEach( spin => {
      })
 
 })
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    if(spinner.classList.contains('activo')){
+        spinner.classList.remove('activo');
+        spinner.classList.add('oculto');
+    }
+})
