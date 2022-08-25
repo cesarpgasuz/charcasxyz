@@ -12,7 +12,7 @@ const spinner = document.querySelector('.spinner');
 
 console.log(abrirSpinner)
 
-window.addEventListener('DOMContentLoaded', mostrarSpinner);
+window.addEventListener('load', mostrarSpinner);
 
 function mostrarSpinner(){
      if(spinner.classList.contains('activo')){
@@ -22,17 +22,7 @@ function mostrarSpinner(){
         console.log('error...')
     }
 
-  
-
 }
-
- setTimeout(() => {
-        spinner.classList.remove('activo');
-        spinner.classList.add('oculto');
-}, 1500);
-
-
-
 abrirSpinner.forEach( spin => {
     spin.addEventListener('click', () => {
         spinner.classList.remove('oculto');
@@ -40,6 +30,18 @@ abrirSpinner.forEach( spin => {
      })
 
 })
+
+
+if(spinner.classList.contains('activo')){
+    setTimeout(() => {
+            spinner.classList.remove('activo');
+            spinner.classList.add('oculto');
+    }, 1500);
+}
+
+
+
+
 
 
 
