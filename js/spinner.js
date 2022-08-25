@@ -13,8 +13,7 @@ abrirSpinner.forEach( spin => {
     spin.addEventListener('click', () => {
 
         const spinner = document.createElement('div');
-        spinner.classList.add('spinner');
-        spinner.style.display = 'block';
+        spinner.classList.toggle('spinner');
         document.body.insertBefore(spinner, document.querySelector('.navv'));
         
      })
