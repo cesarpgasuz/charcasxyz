@@ -60,7 +60,7 @@
     border-bottom-color: #00F0FF;
 	border-radius: 100%;
 	box-shadow: 0px 0px 0px 5px #000D19;
-	
+	animation: rotation 0.5s linear infinite;
 }
 
 @keyframes rotation{
@@ -70,16 +70,6 @@
 	to{
 		transform: rotate(360deg);
 	}
-}
-
-.spinner.activo{
-	display: block;
-}
-.spinner.oculto{
-	display: none;
-}
-.spinner.activo.animacion{
-	animation: rotation 0.5s linear infinite;
 }
 
 
