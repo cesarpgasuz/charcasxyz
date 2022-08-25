@@ -15,8 +15,13 @@ document.addEventListener('DOMContentLoaded', mostrarSpinner);
 
 function mostrarSpinner(){
      if(spinner.classList.contains('activo')){
-        spinner.classList.remove('activo');
+        spinner.classList.remove('activo', 'animacion');
         spinner.classList.add('oculto');
+
+        // setTimeout(() => {
+        //     spinner.classList.remove('animacion')
+        // },1500)
+
     }else{
         console.log('error...')
     }
@@ -26,7 +31,7 @@ function mostrarSpinner(){
 abrirSpinner.forEach( spin => {
     spin.addEventListener('click', () => {
         spinner.classList.remove('oculto');
-        spinner.classList.add('activo');
+        spinner.classList.add('activo', 'animacion');
      })
 
 })
