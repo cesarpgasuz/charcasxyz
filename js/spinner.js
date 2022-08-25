@@ -21,6 +21,12 @@ function mostrarSpinner(){
     }else{
         console.log('error...')
     }
+
+    setTimeout(() => {
+        spinner.classList.remove('activo');
+        spinner.classList.add('oculto');
+    }, 1500)
+
 }
 
 
@@ -39,4 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
         spinner.classList.remove('activo');
         spinner.classList.add('oculto');
     }
+
+    setTimeout(() => {
+        spinner.classList.remove('activo');
+        spinner.classList.add('oculto');
+    }, 1500)
+
 })
+
+
+
