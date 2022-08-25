@@ -1,9 +1,18 @@
+const botonMenu = [...document.querySelectorAll('.boton-menu')];
+botonMenu.forEach(boton => {
+    console.log(boton)
+    boton.classList.add('visitar');
+})
+
+
 const abrirSpinner = [...document.querySelectorAll('.visitar')];
 const spinner = document.querySelector('.spinner');
 
+
+
 console.log(abrirSpinner)
 
-document.addEventListener('DOMContentLoaded', mostrarSpinner);
+window.addEventListener('load', mostrarSpinner);
 
 function mostrarSpinner(){
      if(spinner.classList.contains('activo')){
@@ -13,7 +22,8 @@ function mostrarSpinner(){
         console.log('error...')
     }
 }
-        
+
+
 
 abrirSpinner.forEach( spin => {
     spin.addEventListener('click', () => {
