@@ -3,7 +3,7 @@ const spinner = document.querySelector('.spinner');
 
 console.log(abrirSpinner)
 
-//document.addEventListener('DOMContentLoaded', mostrarSpinner);
+document.addEventListener('DOMContentLoaded', mostrarSpinner);
 
 function mostrarSpinner(){
      if(spinner.classList.contains('activo')){
