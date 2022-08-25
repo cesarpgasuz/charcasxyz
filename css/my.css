@@ -58,10 +58,10 @@ body{
 }
 
 .spinner.activo{
-	display: none;
+	display: block;
 }
 .spinner.oculto{
-	display: block;
+	display: none;
 }
 
 
