@@ -22,12 +22,14 @@ function mostrarSpinner(){
         console.log('error...')
     }
 
-    setTimeout(() => {
-        spinner.classList.remove('activo');
-        spinner.classList.add('oculto');
-    }, 1500)
+  
 
 }
+
+ setTimeout(() => {
+        spinner.classList.remove('activo');
+        spinner.classList.add('oculto');
+}, 1500);
 
 
 
