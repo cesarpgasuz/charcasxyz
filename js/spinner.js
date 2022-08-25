@@ -12,7 +12,16 @@ const spinner = document.querySelector('.spinner');
 
 console.log(abrirSpinner)
 
-window.addEventListener('load', mostrarSpinner);
+
+if (document.readyState == 'loading') {
+    // cargando todavía, esperar el evento
+    document.addEventListener('DOMContentLoaded', mostrarSpinner);
+  } else {
+    // DOM está listo!
+    console.log('listo....')
+  }
+
+
 
 function mostrarSpinner(){
      if(spinner.classList.contains('activo')){
