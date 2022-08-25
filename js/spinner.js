@@ -12,45 +12,14 @@ const spinner = document.querySelector('.spinner');
 
 
 
-
-console.log(abrirSpinner)
-
-
-if (document.readyState == 'loading') {
-    // cargando todavía, esperar el evento
-    document.addEventListener('DOMContentLoaded', mostrarSpinner);
-  } else {
-    // DOM está listo!
-    console.log('listo....')
-  }
-
-
-
-function mostrarSpinner(){
-     if(spinner.classList.contains('activo')){
-        spinner.classList.remove('activo');
-        spinner.classList.add('oculto');
-    }else{
-        console.log('error...')
-    }
-
-}
 abrirSpinner.forEach( spin => {
     spin.addEventListener('click', () => {
-        spinner.classList.remove('oculto');
-        spinner.classList.add('activo');
+        spinner.classList.add('visible');
      })
 
 })
 
 
-const reverse = document.querySelector('.flot-anverse');
-
-reverse.addEventListener('click', () => {
-    history.back();
-    spinner.classList.remove('activo');
-    spinner.classList.add('oculto');
-})
 
 
 
