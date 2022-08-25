@@ -11,7 +11,7 @@ const spinner = document.querySelector('.spinner');
 
 
 
-window.addEventListener('onload', mostrarSpinner);
+window.addEventListener('load', mostrarSpinner);
 
 function mostrarSpinner(){
      if(spinner.classList.contains('activo')){
