@@ -255,5 +255,16 @@
 	  
 	  
 	  <script src="https://charcas.xyz/js/spinner.js"></script> 
+
+	  <script>
+		setTimeout(() => {
+		if(spinner.classList.contains('activo')){
+			spinner.classList.remove('activo');
+			spinner.classList.add('oculto');
+		}
+		}, 1500);
+		
+	  </script>
+
   </body>
 </html>
