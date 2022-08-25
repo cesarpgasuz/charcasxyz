@@ -49,6 +49,7 @@
 	height: 30px;
 	width: 30px;
 	position: fixed;
+	opacity: 0;
 	background-color: #000D19;
 	right: 50px;
 	bottom: 50px;
@@ -72,8 +73,8 @@
 .spinner.activo{
 	display: block;
 }
-.spinner.oculto{
-	display: none;
+.spinner.visible{
+	opacity: 1;
 }
 
 
