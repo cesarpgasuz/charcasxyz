@@ -1,0 +1,44 @@
+const botonMenu = [...document.querySelectorAll('.boton-menu')];
+botonMenu.forEach(boton => {
+    console.log(boton)
+    boton.classList.add('visitar');
+})
+
+
+
+const abrirSpinner = [...document.querySelectorAll('.visitar')];
+const spinner = document.querySelector('.spinner');
+
+
+
+document.addEventListener('DOMContentLoaded', mostrarSpinner);
+
+function mostrarSpinner(){
+     if(spinner.classList.contains('activo')){
+        spinner.classList.remove('activo', 'animacion');
+        spinner.classList.add('oculto');
+
+        // setTimeout(() => {
+        //     spinner.classList.remove('animacion')
+        // },1500)
+
+    }else{
+        console.log('error...')
+    }
+}
+        
+
+abrirSpinner.forEach( spin => {
+    spin.addEventListener('click', () => {
+        spinner.classList.remove('oculto');
+        spinner.classList.add('activo', 'animacion');
+     })
+
+})
+
+
+
+
+
+
+
