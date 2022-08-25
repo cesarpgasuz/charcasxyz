@@ -7,34 +7,27 @@ botonMenu.forEach(boton => {
 
 
 const abrirSpinner = [...document.querySelectorAll('.visitar')];
-const spinner = document.querySelector('.spinner');
-
-
-
-document.addEventListener('DOMContentLoaded', mostrarSpinner);
-
-function mostrarSpinner(){
-     if(spinner.classList.contains('activo')){
-        spinner.classList.remove('activo', 'animacion');
-        spinner.classList.add('oculto');
-
-        // setTimeout(() => {
-        //     spinner.classList.remove('animacion')
-        // },1500)
-
-    }else{
-        console.log('error...')
-    }
-}
-        
+   
 
 abrirSpinner.forEach( spin => {
     spin.addEventListener('click', () => {
-        spinner.classList.remove('oculto');
-        spinner.classList.add('activo', 'animacion');
+
+        const spinner = document.createElement('div');
+        spinner.classList.add('spinner');
+        document.body.insertBefore(spinner, document.querySelector('.navv'));
+        
      })
 
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const spin = document.querySelector('.spinner');
+    if(spin){
+       spin.remove()
+    }
+    
+});
 
 
 
