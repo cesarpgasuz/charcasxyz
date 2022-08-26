@@ -4,20 +4,18 @@ botonMenu.forEach(boton => {
     boton.classList.add('visitar');
 })
 
-
+const contSpin = document.querySelector('.contSpin');
 
 const abrirSpinner = [...document.querySelectorAll('.visitar')];
-   
+
+limpiarSpin();
 
 abrirSpinner.forEach( spin => {
     spin.addEventListener('click', () => {
-
         const spinner = document.createElement('div');
-        spinner.classList.toggle('spinner');
-        document.body.insertBefore(spinner, document.querySelector('.navv'));
-        
+        spinner.classList.add('spinner');
+        contSpin.appendChild(spinner);
      })
-
 })
 
 window.addEventListener('load', () => {
@@ -29,6 +27,11 @@ window.addEventListener('load', () => {
     
 });
 
+function limpiarSpin(){
+    while(contSpin.firstChild){
+        contSpin.removeChild(contSpin.firstChild);
+    }
+   }
 
 
 
