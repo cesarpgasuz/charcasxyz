@@ -35,6 +35,7 @@ body{
 
 .spinner{
 	height: 30px;
+	width: 60px;
 	position: fixed;
 	background: url(https://charcas.xyz/images/source.gif) center center no-repeat;
 	-webkit-background-size: cover;
