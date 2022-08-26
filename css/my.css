@@ -35,10 +35,12 @@ body{
 
 .spinner{
 	height: 30px;
-	width: 60px;
 	position: fixed;
-	background: url(https://charcas.xyz/images/source.gif);
-	object-fit: cover;
+	background: url(https://charcas.xyz/images/source.gif) center center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	right: 50px;
 	bottom: 50px;
 	z-index: 1000;
@@ -744,7 +746,6 @@ ul.fil li.activeee a{
 		bottom: unset;
 		top: 12px;
 		height: 25px;	
-		width: 25px;
 	}
 	
 }
