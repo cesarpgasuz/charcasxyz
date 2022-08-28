@@ -16,8 +16,7 @@ const spinner = document.querySelector('.spinner');
 for(const irse of abrirSpinner){
     
     irse.addEventListener('click', () => {
-        spinner.classList.remove('oculto');
-        spinner.classList.add('activo');
+        spinner.style.display = 'block';
     })
 
 }
@@ -25,28 +24,31 @@ for(const irse of abrirSpinner){
 
 //document.addEventListener('DOMContentLoaded', ocultarSpinner);
 
-function ocultarSpinner(){
-    if(spinner.classList.contains('activo')){
-        spinner.style.display = 'none';
-    }
-}
 
 
-if (document.readyState == 'interactive') {
+if (document.readyState == 'loading') {
   // cargando todavía, esperar el evento
-  console.log('todavia no se lee')
-  document.addEventListener('DOMContentLoaded', ocultarSpinner);
+  console.log('cargando')
+  ocultarSpinner();
   
   //document.addEventListener('DOMContentLoaded', work);
-} else if(document.readyState == 'loading'){
-    console.log('cargando..')
-    spinner.style.display = 'none';
+} else if(document.readyState == 'interactive'){
+    console.log('listo')
+    ocultarSpinner();
   
 }else{
     // DOM está listo!
   console.log('leido')
-  spinner.style.display = 'none';
+  ocultarSpinner();
 
+}
+
+window.addEventListener('DOMContentLoaded', ocultarSpinner);
+document.addEventListener('DOMContentLoaded', ocultarSpinner);
+window.addEventListener('load', ocultarSpinner);
+
+function ocultarSpinner(){
+        spinner.style.display = 'none';
 }
 
 
