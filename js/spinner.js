@@ -1,6 +1,3 @@
-
-
-
 const botonMenu = [...document.querySelectorAll('.boton-menu')];
 botonMenu.forEach(boton => {
     console.log(boton)
@@ -45,7 +42,7 @@ if (document.readyState == 'loading') {
 
 window.addEventListener('DOMContentLoaded', ocultarSpinner);
 document.addEventListener('DOMContentLoaded', ocultarSpinner);
-window.addEventListener('load', ocultarSpinner);
+
 
 function ocultarSpinner(){
         spinner.style.display = 'none';
