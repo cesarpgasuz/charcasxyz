@@ -20,9 +20,9 @@
 
 		
 		<!-- scripts -->
-    	<script src="js/jquery-3.5.1.slim.min.js"></script>
     	<script defer src="https://charcas.xyz/js/bootstrap.bundle.min.js"></script>
     	<script defer src="https://charcas.xyz/js/app.js"></script>
+    	<script defer src="https://charcas.xyz/js/mscripts.js"></script>
 
 
 		<!-- progresive app -->
@@ -31,7 +31,7 @@
 	 
 	  
 	 	<!-- Open Graph data -->
-	  	<meta property="og:type" content="website">
+	  <meta property="og:type" content="website">
 		<meta property="og:title" content="Charcas.xyz">
 		<meta property="og:description" content="Tu directorio Virtual de Doctor Mora 👨‍💻">
 		<meta property="og:url" content="https://charcas.xyz/">
@@ -412,18 +412,7 @@
 	  </section>
 	  
 	  
-	  <!--
-	    <div class="modall">
-		  <i class="bi bi-chevron-compact-down" id="closeH"></i>
-			<div class="content">
-				<ul class="list-unstyled">
-					<li><a href="acerca.html">Acerca de</a></li>
-					<li><a href="mailto:dyxerteam@gmail.com">Contacto</a></li>
-				</ul>
-			</div>
-	  </div>
 	  
-	  -->
 	  
 	  
 	  
@@ -439,85 +428,7 @@
 	 
 
 	  
-	  <script>
-		 
-		  $('#hambur').on('click', function(){
-			$('.navegacion .menu-nav').toggleClass('visibles');
-			$('body').toggleClass('scroll');
-			$('.sombra').toggleClass('visible-som');
-		})
-
-		  
-		  
-		  
-		$('.sombra').on('click', function(){
-			$('.navegacion .menu-nav').removeClass('visibles');
-			$('body').removeClass('scroll');
-			$('.sombra').removeClass('visible-som');
-		})
-
-		$('#closeH').on('click', function(){
-			$('.menu-nav').removeClass('visibles');
-			$('body').removeClass('scroll');
-			$('.sombra').removeClass('visible-som');
-		})
-		  
-
-
-/*
-	const contenido = document.querySelector('#categorias');
-		 function cargarCategorias(){
-		 	fetch('categorias.json')
-		 		.then(respuesta => respuesta.json())
-		 		.then(categorias => {
-		 			categorias.forEach(categoria =>{
-		 				const div = document.createElement('div');
-		 				div.classList.add('content');
-		 				div.innerHTML += `
-		 					<a href="${categoria.link}" class="tarjet-cat">
-								<img src="images/${categoria.image}" class="img-fluid" alt="" loading="lazy">
-								<h3>${categoria.name}</h3>
-								<i class="bi bi-chevron-right"></i>
-							</a>
-
-		 				`;
-		 				contenido.appendChild(div);
-		 			});
-		 		})
-		 		.catch(error => console.log('hubo un error: ' + error.message))
-		 }
-		 cargarCategorias();
-
-
-
-		 	function filtrarCategorias(){
-		 		fetch('categorias.json')
-		 		.then(respuesta => respuesta.json())
-		 		.then(categorias =>{
-		 			const fil = categorias.filter(cat => cat.name === 'pizzas');
-		 			console.log(fil)
-		 		})
-		 	}
-		 	filtrarCategorias();
-			//let aprov = categorias.filter(ccat => ccat.name === 'tacos');
-			//console.log(aprov);
-
-
-
-*/
-
-
-
-
-
-	  </script>
-	  
-	  
-	  
-	  
-	  <!-- <script src="js/spinner.js"></script>  -->
-	  <script src="js/spinner.js"></script> 
-	  
+	
 		  
   </body>
 </html>

@@ -17,3 +17,35 @@
 		});
 	});
 }())
+
+
+/*
+const boxCat = [...document.querySelectorAll('.box-cat')];
+const listado = [...document.querySelectorAll('ul.fil li')];
+console.log(listado);
+//console.log(boxCat);
+const botonFiltro = [...document.querySelectorAll('.btn-fil')];
+//console.log(botonFiltro);
+
+for(const btnFiltro of botonFiltro){
+	btnFiltro.addEventListener('click', (e) => {
+		e.preventDefault();
+		const categoria = e.target.getAttribute('data-filter');
+		
+		const rest = boxCat.filter(box => {
+		 	if(box.classList.contains(categoria)){
+		 		box.classList.remove('nooo')
+		 			
+		 	}
+		 	else{
+				box.classList.add('nooo')
+		 	}
+		 });
+		 
+		
+	})
+}
+
+
+
+*/

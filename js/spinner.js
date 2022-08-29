@@ -1,6 +1,6 @@
 const botonMenu = [...document.querySelectorAll('.boton-menu')];
 botonMenu.forEach(boton => {
-    console.log(boton)
+    //console.log(boton)
     boton.classList.add('visitar');
 })
 
@@ -9,14 +9,16 @@ const abrirSpinner = [...document.querySelectorAll('.visitar')];
 const spinner = document.querySelector('.spinner');
 
 
-
-for(const irse of abrirSpinner){
+document.addEventListener('load', () =>{
+  for(const irse of abrirSpinner){
     
     irse.addEventListener('click', () => {
         spinner.style.display = 'block';
     })
 
 }
+});
+
 
 
 //document.addEventListener('DOMContentLoaded', ocultarSpinner);
@@ -26,7 +28,6 @@ for(const irse of abrirSpinner){
 if (document.readyState == 'loading') {
   // cargando todavía, esperar el evento
   console.log('cargando')
-  ocultarSpinner();
   
   //document.addEventListener('DOMContentLoaded', work);
 } else if(document.readyState == 'interactive'){
@@ -40,8 +41,7 @@ if (document.readyState == 'loading') {
 
 }
 
-window.addEventListener('DOMContentLoaded', ocultarSpinner);
-document.addEventListener('DOMContentLoaded', ocultarSpinner);
+
 
 
 function ocultarSpinner(){
