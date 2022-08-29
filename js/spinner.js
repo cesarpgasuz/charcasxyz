@@ -1,3 +1,5 @@
+
+
 const botonMenu = [...document.querySelectorAll('.boton-menu')];
 botonMenu.forEach(boton => {
     //console.log(boton)
@@ -47,32 +49,3 @@ if (document.readyState == 'loading') {
 function ocultarSpinner(){
         spinner.style.display = 'none';
 }
-
-
-
-
-
-/*
-window.addEventListener('unload', () => {
-    spinner.remove();
-})
-
-*/
-
-
-
-// abrirSpinner.forEach( spin => {
-//     spin.addEventListener('click', () => {
-//         const spinner = document.createElement('div');
-//         spinner.classList.add('spinner');
-//         document.body.insertBefore(spinner, document.querySelector('.navv'));
-//      })
-// })
-
-
-
-
-
-
-
-
