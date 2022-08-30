@@ -793,6 +793,13 @@ ul.fil li.activeee a{
 	#horario{
 		display: flex;
 	}
+
+	#horario:active{
+		background: #4a4a4a;
+	}
+	#horario:active i{
+		color: #fff;
+	}
 	
 	.banner .content p {
     	font-size: 16px;
