@@ -37,7 +37,10 @@ body{
 	height: 30px;
 	width: 30px;
 	position: fixed;
-	background-color: #000D19;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	right: 50px;
 	bottom: 50px;
 	z-index: 1000;
@@ -49,8 +52,9 @@ body{
 	border-radius: 100%;
 	box-shadow: 0px 0px 0px 5px #000D19;
 	animation: rotation 0.5s linear infinite;
-	display: none;
+	display: unset;
 }
+
 
 @keyframes rotation{
 	from{
@@ -60,7 +64,6 @@ body{
 		transform: rotate(360deg);
 	}
 }
-
 
 
 
@@ -367,6 +370,9 @@ a:link.boton.boton-menu{
 	padding: 4px 30px;
 	font-size: 16px;
 	font-weight: 400;
+}
+a:active.boton.boton-menu{
+	background: #999999;
 }
 
 
@@ -742,8 +748,8 @@ ul.fil li.activeee a{
 	.spinner{
 		bottom: unset;
 		top: 12px;
-		height: 25px;	
-		width: 25px;
+		height: 30px;
+		width: 30px;	
 	}
 	
 }
@@ -786,6 +792,13 @@ ul.fil li.activeee a{
 	}
 	#horario{
 		display: flex;
+	}
+
+	#horario:active{
+		background: #4a4a4a;
+	}
+	#horario:active i{
+		color: #fff;
 	}
 	
 	.banner .content p {
