@@ -17,6 +17,26 @@
 	
 }
 
+/* ------- note ---------*/
+.note{
+	color: var(--cp1);
+	font-size: 18px;
+	text-align: center;
+	margin: 50px 0px 120px;
+}
+
+/* ---- pedidos a domicilio ----*/
+.servicio__domicilio{
+	margin: 100px 0px 50px;
+	text-align: center;
+}
+.servicio__domicilio p{
+	font-size: 18px;
+}
+.servicio__domicilio img{
+	margin-right: 10px;
+	width: 45px;
+}
 
 /* ------ boton flotante llamar  -----------*/
 
@@ -601,6 +621,16 @@ h4.subtitles::before{
 		font-size: 14px;
 	}
 
+
+	/* ---- nota y servicio a domicilio -- */
+	.note, .servicio__domicilio p{
+		font-size: 16px;
+	}
+	.note{
+		margin-top: 30px;
+		margin-bottom: 60px;
+	}
+
 	
 	
 }
@@ -618,6 +648,14 @@ h4.subtitles::before{
 @media screen and (max-width: 384px){
 	h4.subtitles::before{
 		content: "";
+	}
+
+
+	.servicio__domicilio p{
+		font-size: 14px;
+	}
+	.servicio__domicilio img{
+		width: 30px;
 	}
 
 }
