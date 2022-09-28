@@ -2,10 +2,10 @@
 
 	--cp1: #0A191F; /* color principal 1 */
 	--cp2: #0D2128; /* color principal 2 */
-	--cs1: #FF1B00; /* color secundario 1 (--enlaces y botones) --*/
+	--cs1: #095DCA; /* color secundario 1 (--enlaces y botones) --*/
 	
 
-	--ct: #00DCBB; /* color terciario cyan */
+	--ct: #2A5D6F; /* color terciario cyan */
 	--cc: #D31F25; /* color cuarto marron*/
 
 	--cgris1: #111111; 
@@ -17,26 +17,6 @@
 	
 }
 
-/* ------- note ---------*/
-.note{
-	color: var(--cp1);
-	font-size: 18px;
-	text-align: center;
-	margin: 50px 0px 120px;
-}
-
-/* ---- pedidos a domicilio ----*/
-.servicio__domicilio{
-	margin: 100px 0px 50px;
-	text-align: center;
-}
-.servicio__domicilio p{
-	font-size: 18px;
-}
-.servicio__domicilio img{
-	margin-right: 10px;
-	width: 45px;
-}
 
 /* ------ boton flotante llamar  -----------*/
 
@@ -114,7 +94,7 @@ a:visited.btn-llamar{
 /* //// solo se agrega la imagen y la posicion, la estructa esta en my.css */
 
 .banner{
-	background: url(../images/pizza_b.jpg) center center no-repeat;
+	background: url(../images/banner.jpg) center center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -155,11 +135,20 @@ a:visited.btn-llamar{
 
 
 /* -----------------------------------  negocios personalizacion ------------------------------------- -------*/
+
+.neg .tarjeta .imagen img{
+	border-radius: 100px;
+}
+
+
 .neg .tarjeta .contenido ul li.title{
 	color: var(--cp1);
 }
 .neg .tarjeta .contenido ul li.telefono{
 	color: var(--ct);
+}
+.neg .tarjeta .contenido ul li.whatsapp{
+	color: #1cb39b;
 }
 a:visited.boton.boton-menu{
 	color: #fff;
@@ -178,21 +167,16 @@ a:visited.boton.boton-register{
 }
 /* color de la sombra */
 a:link.boton.boton-register{
-	-webkit-box-shadow: 0px 15px 15px 0px rgba(255,27,0,0.26);
-	-moz-box-shadow: 0px 15px 15px 0px rgba(255,27,0,0.26);
-	box-shadow: 0px 15px 15px 0px rgba(255,27,0,0.26);
+	-webkit-box-shadow: 0px 15px 15px 0px rgba(0, 88, 255, 0.4);
+	-moz-box-shadow: 0px 15px 15px 0px rgba(0, 88, 255, 0.4);
+	box-shadow: 0px 15px 15px 0px rgba(0, 88, 255, 0.4);
 }
 
 
 
 /* -----------------seccion registro -----------------*/
 /* aqui se agrego la imagen de pizza que esta al fondo  */
-.register{
-	background: url(../images/pizzapng.png);
-	background-repeat: no-repeat;
-	background-position: 90% center;
-	background-size: contain;
-}
+
 
 .register .contenido h3{
 	color: var(--cp1);
@@ -204,10 +188,6 @@ a:link.boton.boton-register{
 	color: var(--cgris1);
 }
 
-/* --- imagen de mesera  */
-.register img.girl{
-		width: 165px;
-}
 
 
 /* -----------------seccion contacto ---------------*/
@@ -255,10 +235,10 @@ a:link.boton.boton-register{
 	color: var(--cgris4);
 }
 
-.banner-r .information ul li.tel a:link{
+.banner-r .information ul li.tel a:link, .banner-r .information ul li.whatsapp a:link, .banner-r .information ul li.facebook a:link{
 	color: greenyellow;
 }
-.banner-r .information ul li.tel a:visited{
+.banner-r .information ul li.tel a:visited, .banner-r .information ul li.whatsapp a:visited, .banner-r .information ul li.facebook a:visited{
 	color: greenyellow;
 	text-decoration: none;
 }
@@ -272,7 +252,7 @@ a:link.boton.boton-register{
 	background: var(--cp1);
 }
 
-.banner-r .horario .content h4{
+.banner-r .horario .content h4, .banner-r .horario .content p{
 	color: yellow;
 }
 .banner-r .horario .content ul li{
@@ -281,155 +261,51 @@ a:link.boton.boton-register{
 .banner-r .horario .content ul li span.day{
 	color: var(--cgris4);
 	
-	
 }
 
 
 
 
-
-h4.subtitles{
-	color: var(--cs1);
-}
-h4.subtitles::before{
-	color: var(--cgris4);
+h4.subtitles-2{
+	color: var(--cp1);
 }
 
 
 
-/* -----------------------seccion pizzas ----------------*/
-.pizz{
-	width: 100%;
-	-webkit-box-shadow: 0px 0px 40px 0px rgba(194,194,194,0.4);
-	-moz-box-shadow: 0px 0px 40px 0px rgba(194,194,194,0.4);
-	box-shadow: 0px 0px 40px 0px rgba(194,194,194,0.4);
-	border-radius: 5px;
+
+/* -----------------------seccion services ----------------*/
+.services h5, .services p{
+	text-align: center;
+}
+.services h5{
+	font-size: 24px;
+	margin-bottom: 25px;
+}
+.services p strong{
+	border-bottom: 2px solid;
+}
+.sub__ser{
 	display: flex;
-	margin-bottom: 30px;
-	padding-left: 20px;
-	padding-right: 20px;
-	min-height: 160px;
-	font-family: var(--fuentep);
-}
-.pizz .image{
-	display: flex;
+	gap: 80px;
 	justify-content: center;
-	align-items: center;
-	margin-right: 20px;
-	width: 35%;
-	aspect-ratio: 1/1;
+	list-style: none;
+	padding: 0;
+	margin-bottom: 60px;
 }
-.pizz .ingre{
-	margin-top: 40px;
-	width: 65%;
+.sub__ser li i, .listado__servicios li i{
+	margin-right: 10px;
+	color: #1cb39b;
 }
-.pizz .ingre h5{
-	font-size: 18px;
-	color: var(--cc);
-	font-weight: 600;
-	text-transform: uppercase;
-	
+.listado__servicios{
+	display: grid;
+	justify-content: center;
 }
-.pizz .ingre p{
-	font-size: 14px;
-	color: var(--cgris1);
-	line-height: 25px;
-}
-.tamanos{
-	width: 100%;
-	height: auto;
-	
-}
-.tarjet{
-	display: flex;
-	margin-bottom: 30px;
-	padding-right: 60px;
-	font-family: var(--fuentep);
-}
-.tarjet img{
-	margin-right: 20px;
-	aspect-ratio: 1/1;
-}
-.tarjet .content{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	position: relative;
-}
-.tarjet .content::before{
-	border-bottom: 2px dotted var(--cgris3);
-	content: "";
-	position: absolute;
-	width: 100%;
+.listado__servicios li{
 	margin-top: 15px;
-	z-index: -1;
-}
-.tarjet .content .body{
-	background: #fff;
-}
-.tarjet .content .body span.name{
-	font-size: 24px;
-	font-weight: 700;
-	font-style: italic;
-	color: var(--cc);
-}
-.tarjet .content .body span.porcion{
-	color: #000;
-	font-weight: 700;
-	font-size: 18px;
-	font-style: italic;
-}
-.tarjet .content span.price{
-	font-size: 30px;
-	color: var(--ct);
-	font-weight: 700;
-	font-style: italic;
-	background: #fff;
 }
 
 
-.relleno h5{
-	font-size: 24px;
-	font-family: var(--fuentep);
-	color: var(--cp1);
-	font-weight: 700;
-	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 50px;
-	font-style: italic;
-}
 
-.extra{
-	padding-top: 60px;
-}
-.extra .content{
-	background: #f4f4f4;
-	display: flex;
-	padding: 20px 10px;
-	justify-content: space-evenly;
-	width: 100%;
-	border-radius: 5px;
-}
-.extra h5{
-	font-size: 18px;
-	font-family: var(--fuentep);
-	color: var(--cp1);
-	font-weight: 700;
-	text-align: center;
-	margin: 10px 0px;
-	font-style: italic;
-}
-.extra .content h6{
-	margin-bottom: 0px;
-	font-size: 18px;
-	font-family: var(--fuentep);
-	color: var(--cp1);
-	font-weight: 600;
-}
-.extra .content h6 span{
-	color: var(--cs1);
-}
 
 
 
@@ -441,19 +317,7 @@ h4.subtitles::before{
 
 @media screen and (max-width: 1199px){
 
-	/*--- pizzas precios ---*/
-	.tarjet{
-		padding-right: 30px;
-	}
-	.tarjet .content .body span.name {
-    	font-size: 18px;
-	}
-	.tarjet .content .body span.porcion{
-		font-size: 16px;
-	}
-	.tarjet .content span.price{
-		font-size: 24px;
-	}
+	
 	
 }
 
@@ -467,17 +331,8 @@ h4.subtitles::before{
 		width: 115px;
 	}
 	
-	/*--- pizzas precios ---*/
 	
-	.tarjet .content .body span.name {
-    	font-size: 24px;
-	}
-	.tarjet .content .body span.porcion{
-		font-size: 18px;
-	}
-	.tarjet .content span.price{
-		font-size: 30px;
-	}
+	
 	
 	
 	
@@ -498,33 +353,12 @@ h4.subtitles::before{
 	}
 	
 
-	
-	.register img.girl, .register img.boy{
-		display: none;
+	.sub__ser{
+		gap: 20px;
+		font-size: 14px;
 	}
-	
-	
 	
 
-
-
-	/*--- seccion pizzas ---*/
-	.pizz{
-		min-height: auto;
-		padding-top: 15px;
-		padding-bottom: 15px;
-		align-items: center;
-	}
-	
-	.pizz .image{
-		margin-right: 0px;
-	}
-	.pizz .ingre{
-		margin-top: 0px;
-	}
-	.pizz .ingre h5, .pizz .ingre p{
-		margin-bottom: 0px;
-	}
 	
 	
 }
@@ -566,71 +400,19 @@ h4.subtitles::before{
 		
 	
 	
+	/* estilos parrafos y titles */
 	
-	
-	h4.subtitles{
-		margin-bottom: 40px;
-	}
-	h4.subtitles::before{
-		content: "";
-	}
-
-	/* ---------- seccion pizzas -----------*/
-	.pizz{
-		box-shadow: none;
-		border: 1px solid var(--cgris4);
-		background: #FBFBFB;
-	}
-	.pizz .image{
-		width: 20%;
-	}
-	.pizz .ingre{
-		width: 80%;
-		padding-left: 5%;
-	}
-	
-	
-	
-	.tarjet img{
-		display: none;
-	}
-	
-	.tarjet {
-		padding-right: 10px;
-		padding-left: 10px;
-	}
-	
-	.tarjet .content .body span.name {
-    	font-size: 18px;
-	}
-	.tarjet .content .body span.porcion{
-		font-size: 14px;
-	}
-	.tarjet .content span.price{
+	.services h5{
 		font-size: 16px;
 	}
-	
-	
-	.extra .content{
-		flex-direction: column;
-		align-items: center;
-		padding: 10px 0;
+
+	.sub__ser{
+		display: grid;
 	}
-	.extra .content h6{
-		margin: 10px 0px;
+
+	.listado__servicios li{
 		font-size: 14px;
 	}
-
-
-	/* ---- nota y servicio a domicilio -- */
-	.note, .servicio__domicilio p{
-		font-size: 16px;
-	}
-	.note{
-		margin-top: 30px;
-		margin-bottom: 60px;
-	}
-
 	
 	
 }
@@ -645,18 +427,9 @@ h4.subtitles::before{
 
 
 
+
 @media screen and (max-width: 384px){
-	h4.subtitles::before{
-		content: "";
-	}
-
-
-	.servicio__domicilio p{
-		font-size: 14px;
-	}
-	.servicio__domicilio img{
-		width: 30px;
-	}
+	
 
 }
 
