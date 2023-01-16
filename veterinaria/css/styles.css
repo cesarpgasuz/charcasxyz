@@ -368,7 +368,7 @@ h4.subtitles-2{
 		width: 115px;
 	}
 	
-	
+	/* --- seccion servicios listado ---*/
 	.card__servicios h3{
 		font-size: 18px;
 	}
@@ -396,7 +396,7 @@ h4.subtitles-2{
 	}
 	
 	
-	
+	/* --- seccion servicios listado ---*/
 	.contenedor__servicios{
 		grid-template-columns: 1fr;
 	}
