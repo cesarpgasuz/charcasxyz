@@ -39,7 +39,10 @@ const options = {
 
 //creamos el observador
 const observador = new IntersectionObserver(callback, options)
-observador.observe(banner);
+if(banner){
+	observador.observe(banner);
+}
+
 
 
 
