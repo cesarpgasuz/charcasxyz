@@ -36,7 +36,7 @@
 		
 	  
   </head>
-  <body>
+  <body data-id="ele2">
 	 
      <div class="sombra"></div>
 	  
@@ -45,7 +45,7 @@
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-lg-12">
-				  	<i class="bi bi-arrow-left flot-reverse" onclick="window.history.back();"></i>
+				  	<i class="bi bi-arrow-left flot-reverse" id="go-back"></i>
 					  <h1 class="p-no p-no-min"></h1>
 				  </div>
 			  </div>
@@ -283,9 +283,6 @@
 	  </section>
 	  
 	<script src="../db.js"></script>
-	<script>
-	 	const filtrado = db.filter(data => data.id === 'ele2');
-	</script>
 	<script src="js/data.js"></script>
   
 

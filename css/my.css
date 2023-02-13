@@ -670,6 +670,9 @@ ul.fil{
 	gap: 25px;
 	padding: 20px 0px;
 	margin-bottom: 25px;
+	position: sticky;
+	top: 45px;
+	background-color: white;
 }
 
 ul.fil li a{

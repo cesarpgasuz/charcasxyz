@@ -26,7 +26,7 @@
    		<script defer src="https://charcas.xyz/js/mscripts.js"></script>
 
 
-		<script defer src="../js/filtro.js"></script> <!-- Resource jQuery -->
+		 <!--<script defer src="../js/filtro.js"></script> Resource jQuery -->
 
 		<!-- progresive app -->
 		<meta name="theme-color" content="#0A191F" />
@@ -35,6 +35,18 @@
 	  	.box-cat.nooo{
 	  		display: none;
 	  	}
+		#search{
+			position: absolute;
+			background-color: transparent;
+			height: 30px;
+			width: 30px;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+			z-index: 2000;
+			margin-top: -48px;
+		}
 	  </style>
     
   </head>
@@ -45,7 +57,7 @@
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-lg-12">
-				  	<i class="bi bi-arrow-left flot-anverse" onclick="window.history.back();"></i>
+				  	<i class="bi bi-arrow-left flot-reverse" id="go-back"></i>
 					  
 				  </div>
 			  </div>
@@ -78,17 +90,18 @@
 
 	  <!--- categorias -->
 	  <section class="neg catt">
+		<div id="search"></div>
 	  	<div class="container">
 		  	<div class="row justify-content-center">
 				<div class="col-lg-8 col-md-12 col-sm-12" id="negocioslista">
 
 
 						<ul class="fil list-unstyled">
-								<li class="activeee"><a href="#" class="btn-fil" data-filter="todos">Todos</a></li>
-								<li><a href="#" class="btn-fil" data-filter="accesorios">Accesorios</a></li>
-								<li><a href="#" class="btn-fil" data-filter="reparaciones">Reparaciones</a></li>
-								<li><a href="#" class="btn-fil" data-filter="ventaEquipos">Venta de Equipos</a></li>
-								<li><a href="#" class="btn-fil" data-filter="liberacion">Liberaciones</a></li>
+								<li class="activeee"><a href="#search" class="btn-fil" data-filter="todos">Todos</a></li>
+								<li><a href="#search" class="btn-fil" data-filter="accesorios">Accesorios</a></li>
+								<li><a href="#search" class="btn-fil" data-filter="reparaciones">Reparaciones</a></li>
+								<li><a href="#search" class="btn-fil" data-filter="ventaEquipos">Venta de Equipos</a></li>
+								<li><a href="#search" class="btn-fil" data-filter="liberacion">Liberaciones</a></li>
                 
                 
         
@@ -231,7 +244,8 @@
 		</ul>
 	  </section>
 	  
-	  
+	  <!-- <script src="../js/filtro-vanilla.js"></script> -->
+	  <script src="../js/filtro-vanilla-2.js"></script>
 	  
   </body>
 </html>

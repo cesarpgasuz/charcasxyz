@@ -8,7 +8,8 @@
         //     facebook: 'electronicasanchezdoctormora',
         //   imagen: 'electronica-sanchez.jpg'
         //     }
-
+const id = document.querySelector('body').dataset.id;
+const filtrado = db.filter(data => data.id === id);
 
 filtrado.forEach(filtro => {
 
