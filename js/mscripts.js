@@ -4,6 +4,8 @@ const title = document.querySelector('.p-no'); //titulo de la barra de navegacio
 const banner = document.querySelector('.banner-r'); //banner que observaremos para agregar los efectos a la nav, flecha y titulo
 const goBack = document.querySelector('#go-back');
 
+console.log(window.history.length);
+
 // funcion para regresar al index en caso de llegar directamente a una pagina
 // y no exista historial previo
 goBack.addEventListener('click',function(){
@@ -46,25 +48,37 @@ if(banner){
 
 
 
+const horario = document.querySelector('#horario');
+const modall = document.querySelector('.modall');
+const sombra = document.querySelector('.sombra');
+const closeH = document.querySelector('#closeH');
+
+
+if(horario){
+	horario.addEventListener('click', () => {
+		modall.classList.toggle("visible");
+		document.body.classList.toggle("scroll");
+		sombra.classList.toggle("visible-som");
+	});
+}
+
+if(sombra){
+	sombra.addEventListener('click', () => {
+		modall.classList.remove("visible");
+		document.body.classList.remove("scroll");
+		sombra.classList.remove("visible-som");
+	});
+}
+
+if(closeH){
+	closeH.addEventListener('click', () => {
+		modall.classList.remove("visible");
+		document.body.classList.remove("scroll");
+		sombra.classList.remove("visible-som");
+	});
+}
 
 
 
-document.querySelector('#horario').addEventListener('click', (e) => {
-	document.querySelector(".modall").classList.toggle("visible");
-	document.body.classList.toggle("scroll");
-	document.querySelector(".sombra").classList.toggle("visible-som");
-});
-
-document.querySelector(".sombra").addEventListener('click', (e) => {
-	document.querySelector(".modall").classList.remove("visible");
-	document.body.classList.remove("scroll");
-	document.querySelector(".sombra").classList.remove("visible-som");
-});
-
-document.querySelector('#closeH').addEventListener('click', (e) => {
-	document.querySelector(".modall").classList.remove("visible");
-	document.body.classList.remove("scroll");
-	document.querySelector(".sombra").classList.remove("visible-som");
-});
 
 

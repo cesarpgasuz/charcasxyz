@@ -36,14 +36,14 @@
         
         var siblings = [];
         var sibling = elem.parentNode.firstChild;
-        console.log(sibling);
+        // console.log(sibling);
        
 
         while (sibling) {
           if (sibling.nodeType === 1 && sibling !== elem) {
             
             siblings.push(sibling);
-            console.log(sibling);
+            // console.log(sibling);
           }
           sibling = sibling.nextSibling;
           
