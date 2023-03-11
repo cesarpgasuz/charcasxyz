@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
    		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
 
-		<title>Electronica Sanche</title> 
+		<title>Electronica Sanchez</title> 
 		<meta name="title" content="Electronica Sanche">
 		<meta name="description" content="Ventas de Equipos y Refacciones Electrónicas para Sonidos, Luces, TV, MP3, Computadoras, Etc." >
 
@@ -25,6 +25,7 @@
     	<!-- <script src="../js/jquery-3.5.1.slim.min.js"></script> -->
     	<script defer src="https://charcas.xyz/js/bootstrap.bundle.min.js"></script>
    		<script defer src="https://charcas.xyz/js/mscripts.js"></script>
+		
 
 
 
@@ -36,7 +37,7 @@
 		
 	  
   </head>
-  <body>
+  <body data-id="ele1">
 	 
      <div class="sombra"></div>
 	  
@@ -45,7 +46,8 @@
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-lg-12">
-				  	<i class="bi bi-arrow-left flot-reverse" onclick="window.history.back();"></i>
+				  	<i class="bi bi-arrow-left flot-reverse" id="go-back"></i>
+					
 					  <h1 class="p-no p-no-min"></h1>
 				  </div>
 			  </div>
@@ -76,11 +78,9 @@
 	  
 	  </div>
 	  
-<!--
-	  <a href="tel:+524191283278" class="btn-llamar"><i class="bi bi-telephone-outbound-fill"></i></a>
--->
+
 	  <div class="contenedor__llamada">
-	  
+			<div class="llamada"></div>
 		</div>
 
 
@@ -90,6 +90,12 @@
 					
 					<div class="col-lg-8 col-md-7 col-sm-12 col-12" id="datos">
 					<!-- info generada por js-->
+					
+
+
+
+
+
 					</div>
 					<div class="col-lg-4 col-md-5 col-sm-12">
 						<div class="horario">
@@ -282,59 +288,11 @@
 		</ul>
 	  </section>
 	  
-
-	  <script>
-	  	
-	  	const db = {
-	  			nombre: 'Electronica Sanchez',
-	  			direccion: 'Calle San luis de la Paz #24, Doctor Mora',
-	  			extracto: 'Ventas de Equipos y Refacciones Electrónicas para Sonidos, Luces, TV, MP3, Computadoras, Etc.',
-	  			telefono: '4681231545',
-	  			whatsapp: '4681231545',
-	  			facebook: 'electronicasanchezdoctormora',
-				imagen: 'electronica-sanchez.jpg'
-	  			}
-	  		
-	  	
-	  	const llamada = document.querySelector('.contenedor__llamada');
-	  	const contenedor = document.querySelector('#datos');
-	  	const data = document.createElement('div');
-	  	data.classList.add('information')
-	  	data.innerHTML = `
-
-						<img src="images/${db.imagen}" class="img-fluid log" alt="">
-							
-						<ul class="list-unstyled">
-							<li class="title">${db.nombre}</li>
-							<li><i class="bi bi-geo-alt-fill"></i> ${db.direccion}</li>
-							<li class="tel"><a href="tel:+52${db.telefono}"><i class="bi bi-telephone"></i> ${db.telefono}</a></li>
-							<li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=52${db.whatsapp}"><i class="bi bi-whatsapp"></i> ${db.whatsapp}</a></li>
-							<li class="facebook"><a href="https://www.facebook.com/${db.facebook}" target="_blank"><i class="bi bi-facebook"></i> fb.com/${db.facebook}</a></li>
-							<li class="disable"><a href="#" class="boton-promo">Promociones</a></li>
-						</ul>
-						
-
-	  	`;
-
-	  	const contacto = document.createElement('div');
-	  	contacto.classList.add('llamada');
-	  	contacto.innerHTML = `
-	  		<a href="tel:+52${db.telefono}"><i class="bi bi-telephone-outbound-fill"></i> Llamar</a>
-	  		<a href="https://api.whatsapp.com/send?phone=52${db.whatsapp}"><i class="bi bi-whatsapp"></i>Mandar Whatsapp</a>
-	  	`;
-
-	  	llamada.appendChild(contacto);
-
-	  	contenedor.appendChild(data);
-
-		const bannerInfo = document.querySelector('.p-no-min');
-		bannerInfo.innerHTML = `<img src="images/${db.imagen}" class="img-fluid" alt="" width="15px"> ${db.nombre}`;
-		
-
-	  </script>
+		<script src="../db.js"></script>
+	   <script src="../js/datos.js"></script>
 
 
-	  
+	  <!-- <script src="../js/mscripts.js"></script> -->
 
   </body>
 </html>

@@ -32,7 +32,7 @@
 
 	  
   </head>
-  <body>
+  <body data-id="securitynet">
 	 
      <div class="sombra"></div>
 	  
@@ -41,8 +41,8 @@
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-lg-12">
-				  	<i class="bi bi-arrow-left flot-reverse" onclick="window.history.back();"></i>
-					  <h1 class="p-no"><img src="images/security.jpg" class="img-fluid" alt="" width="15px"> SecurityNet</h1>
+				  	<i class="bi bi-arrow-left flot-reverse" id="go-back"></i>
+					  <h1 class="p-no p-no-min"></h1>
 				  </div>
 			  </div>
 		  </div>
@@ -72,25 +72,17 @@
 	  </div>
 	  
 	  
-	  <a href="tel:+524191561010" class="btn-llamar"><i class="bi bi-telephone-outbound-fill"></i></a>
+	  <div class="contenedor__llamada">
+		<div class="llamada"></div>
+  	</div>
+
 	  
 	  <section class="banner-r align-content-center align-items-center d-flex">
 		  	<div class="container">
 		  		<div class="row align-content-center align-items-center d-flex">
 					
-					<div class="col-lg-8 col-md-7 col-sm-12 col-12">
-						<div class="information">
-							<img src="images/security.jpg" class="img-fluid log" alt="">
-							
-						<ul class="list-unstyled">
-							<li class="title">SecurityNet</li>
-							<li><i class="bi bi-geo-alt-fill"></i> Calle Allende #10, Doctor Mora</li>
-							<li class="tel"><a href="tel:+524191561010"><i class="bi bi-telephone"></i> 419 156 1010</a></li>
-							<li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=524191809206"><i class="bi bi-whatsapp"></i> 419 180 9206</a></li>
-							<li class="facebook"><a href="https://www.facebook.com/enlazandotealmundo" target="_blank"><i class="bi bi-facebook"></i> fb.com/enlazandotealmundo</a></li>
-							<li class="disable"><a href="#" class="boton-promo">Promociones</a></li>
-						</ul>
-						</div>
+					<div class="col-lg-8 col-md-7 col-sm-12 col-12" id="datos">
+						
 					</div>
 					<div class="col-lg-4 col-md-5 col-sm-12">
 						<div class="horario">
@@ -277,6 +269,8 @@
 	  </section>
 	  
 	   
+	  <script src="../db.js"></script>
+	   <script src="../js/datos.js"></script>
 
 	  
   </body>

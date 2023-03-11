@@ -33,7 +33,7 @@
 
 	  
   </head>
-  <body>
+  <body data-id="gabyordunagomez">
 	 
      <div class="sombra"></div>
 	  
@@ -42,8 +42,8 @@
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-lg-12">
-				  	<i class="bi bi-arrow-left flot-reverse" onclick="window.history.back();"></i>
-					  <h1 class="p-no"><img src="images/cocinero.png" class="img-fluid" alt="" width="15px"> Gaby Orduña Gómez</h1>
+				  	<i class="bi bi-arrow-left flot-reverse" id="go-back"></i>
+					  <h1 class="p-no p-no-min"></h1>
 				  </div>
 			  </div>
 		  </div>
@@ -69,23 +69,17 @@
 	  </div>
 	  
 	  
-	  <a href="tel:+524191075701" class="btn-llamar"><i class="bi bi-telephone-outbound-fill"></i></a>
+	  <div class="contenedor__llamada">
+		<div class="llamada"></div>
+ 	 </div>
+
 	  
 	  <section class="banner-r align-content-center align-items-center d-flex">
 		  	<div class="container">
 		  		<div class="row align-content-center align-items-center d-flex">
 					
-					<div class="col-lg-8 col-md-7 col-sm-12 col-12">
-						<div class="information">
-							<img src="images/cocinero.png" class="img-fluid log" alt="">
-						<ul class="list-unstyled">
-							<li class="title">Gaby Orduña Gómez</li>
-							<li><i class="bi bi-geo-alt-fill"></i> La Noria, Doctor Mora</li>
-							<li class="tel"><a href="tel:+524191075701"><i class="bi bi-telephone"></i> 419 107 57 01</a></li>
-							<li class="tel"><a href="tel:+524191075702"><i class="bi bi-telephone"></i> 419 107 57 02</a></li>
-							<li class="disable"><a href="#" class="boton-promo">Promociones</a></li>
-						</ul>
-						</div>
+					<div class="col-lg-8 col-md-7 col-sm-12 col-12" id="datos">
+						
 					</div>
 					<div class="col-lg-4 col-md-5 col-sm-12">
 						<div class="horario">
@@ -294,7 +288,9 @@
 		</ul>
 	  </section>
 	  
-	  
+	  <script src="../db.js"></script>
+	   <script src="../js/datos.js"></script>
+
 	   
 	 
 	  

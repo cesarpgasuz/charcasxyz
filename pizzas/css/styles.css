@@ -255,10 +255,10 @@ a:link.boton.boton-register{
 	color: var(--cgris4);
 }
 
-.banner-r .information ul li.tel a:link{
+.banner-r .information ul li.tel a:link, .banner-r .information ul li.whatsapp a:link, .banner-r .information ul li.facebook a:link{
 	color: greenyellow;
 }
-.banner-r .information ul li.tel a:visited{
+.banner-r .information ul li.tel a:visited, .banner-r .information ul li.whatsapp a:visited, .banner-r .information ul li.facebook a:visited{
 	color: greenyellow;
 	text-decoration: none;
 }

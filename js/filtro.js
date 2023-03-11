@@ -1,51 +1,49 @@
-(function(){
-	$(document).ready(function(){
-		$(".btn-fil").click(function(e){
-			e.preventDefault();
-			var filtro = $(this).attr("data-filter");
+window.addEventListener('DOMContentLoaded', function(){
 
-			if (filtro == "todos") {
-				$(".box-cat").show(500);
+	//variables
+	let botonesFiltro = document.querySelectorAll(".btn-fil");
+	let categorias = document.querySelectorAll(".box-cat");
+
+
+	//funcion para mostrar y ocultar los cards
+	botonesFiltro.forEach( boton => {
+		boton.addEventListener('click', function(e){
+		
+
+			let filtro = this.dataset.filter;
+
+			if(filtro == 'todos'){
+				categorias.forEach( categoria => categoria.style.display = 'flex');
+				
 			} else {
-				$(".box-cat").not("."+filtro).hide(500);
-				$(".box-cat").filter("."+filtro).show(500);
+				categorias.forEach( categoria => {
+					if(categoria.classList.contains(filtro)){
+						categoria.style.display = 'flex';
+					} else {
+						categoria.style.display = 'none';
+					}
+				});
 			}
 		});
+	});
 
-		$("ul.fil li").click(function(){
-			$(this).addClass("activeee").siblings().removeClass("activeee");
+	///////////////////////////////////////////////
+
+	// funcione para colorear los elementos del menu de opciones
+	let filtros = document.querySelectorAll('.fil li');
+
+	filtros.forEach( filtro => {
+		filtro.addEventListener('click', function(){
+			this.classList.add('activeee');
+			let hermanos = this.parentElement.children;
+
+			for(let i = 0; i < hermanos.length; i++){
+				if(hermanos[i] !== this){
+					hermanos[i].classList.remove('activeee');
+				}
+			}
 		});
 	});
-}())
+	///////////////////////////////////////////////////////
 
-
-/*
-const boxCat = [...document.querySelectorAll('.box-cat')];
-const listado = [...document.querySelectorAll('ul.fil li')];
-console.log(listado);
-//console.log(boxCat);
-const botonFiltro = [...document.querySelectorAll('.btn-fil')];
-//console.log(botonFiltro);
-
-for(const btnFiltro of botonFiltro){
-	btnFiltro.addEventListener('click', (e) => {
-		e.preventDefault();
-		const categoria = e.target.getAttribute('data-filter');
-		
-		const rest = boxCat.filter(box => {
-		 	if(box.classList.contains(categoria)){
-		 		box.classList.remove('nooo')
-		 			
-		 	}
-		 	else{
-				box.classList.add('nooo')
-		 	}
-		 });
-		 
-		
-	})
-}
-
-
-
-*/
+});

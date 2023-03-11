@@ -32,7 +32,7 @@
 
 	  
   </head>
-  <body>
+  <body data-id="marthapichardoramirez">
 	 
      <div class="sombra"></div>
 	  
@@ -41,9 +41,8 @@
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-lg-12">
-				  	<i class="bi bi-arrow-left flot-reverse" onclick="window.history.back();"></i>
-					  <h1 class="p-no p-no-min"><img src="images/psicologia.png" class="img-fluid" alt="" width="15px"> Lic. Martha Píchardo Ramírez</h1>
-				  </div>
+				  	<i class="bi bi-arrow-left flot-reverse" id="go-back"></i>
+					  <h1 class="p-no p-no-min"></h1>
 			  </div>
 		  </div>
 	  </section>
@@ -73,7 +72,9 @@
 	  </div>
 	  
 	  
-	  <div class="contenedor__llamada"></div>
+	  <div class="contenedor__llamada">
+		<div class="llamada"></div>
+	  </div>
 	  
 	  <section class="banner-r align-content-center align-items-center d-flex">
 		  	<div class="container">
@@ -222,66 +223,8 @@
 	  </section>
 	  
 	  
-
-
-
-
-
-	  
-	  <script>
-	  	
-		const db = {
-				nombre: 'Lic. Martha Píchardo Ramírez',
-				direccion: 'Doctor Mora',
-				extracto: 'Atención Psicológica',
-				telefono: '4191982526',
-				whatsapp: '4191807961',
-				facebook: 'https://www.facebook.com/Veterinaria-Ree-106300607927170/'
-				}
-			
-		
-		const llamada = document.querySelector('.contenedor__llamada');
-		const contenedor = document.querySelector('#datos');
-		const data = document.createElement('div');
-		data.classList.add('information')
-		data.innerHTML = `
-
-
-						  <img src="images/psicologia.png" class="img-fluid log" alt="">
-						  
-					  <ul class="list-unstyled">
-						  <li class="title">${db.nombre}</li>
-						  <li><i class="bi bi-geo-alt-fill"></i> ${db.direccion}</li>
-						  <li class="tel"><a href="tel:+52${db.telefono}"><i class="bi bi-telephone"></i> ${db.telefono}</a></li>
-						  <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=52${db.whatsapp}"><i class="bi bi-whatsapp"></i> ${db.whatsapp}</a></li>
-						
-						  <li class="disable"><a href="#" class="boton-promo">Promociones</a></li>
-					  </ul>
-					  
-
-		`;
-
-		const contacto = document.createElement('div');
-		contacto.classList.add('llamada');
-		contacto.innerHTML = `
-			<a href="tel:+52${db.telefono}"><i class="bi bi-telephone-outbound-fill"></i> Llamar</a>
-			<a href="https://api.whatsapp.com/send?phone=52${db.whatsapp}"><i class="bi bi-whatsapp"></i>Mandar Whatsapp</a>
-		`;
-
-		llamada.appendChild(contacto);
-
-		contenedor.appendChild(data);
-
-
-	</script>
-
-
-
-
-
-
-
-
+	  <script src="../db.js"></script>
+	  <script src="../js/datos.js"></script>
 
 
 
