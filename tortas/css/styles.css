@@ -213,18 +213,20 @@ a:link.boton.boton-register{
 	background: var(--cp2);
 }
 
-
 .banner-r .information ul li{
 	color: var(--cgris3);
 }
+
 .banner-r .information ul li.title{
 	color: var(--cgris4);
 }
-.banner-r .information ul li.tel a:visited{
+
+.banner-r .information ul li.tel a:link, .banner-r .information ul li.whatsapp a:link, .banner-r .information ul li.facebook a:link{
 	color: greenyellow;
 }
-.banner-r .information ul li.tel a:link{
+.banner-r .information ul li.tel a:visited, .banner-r .information ul li.whatsapp a:visited, .banner-r .information ul li.facebook a:visited{
 	color: greenyellow;
+	text-decoration: none;
 }
 
 
@@ -242,7 +244,6 @@ a:link.boton.boton-register{
 .banner-r .horario .content ul li span.day{
 	color: var(--cgris4);
 }
-
 
 
 

@@ -1,27 +1,27 @@
 @font-face{
 	font-family: 'Poppins';
-	src: url("../fonts/Poppins-Regular.woff2");
+	src: url("../fonts/Poppins-Regular.ttf");
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
 }
 @font-face{
 	font-family: 'Poppins';
-	src: url("../fonts/Poppins-SemiBold.woff2");
+	src: url("../fonts/Poppins-SemiBold.ttf");
 	font-style: normal;
 	font-weight: 600;
 	font-display: swap;
 }
 @font-face{
 	font-family: 'Poppins';
-	src: url("../fonts/Poppins-Bold.woff2");
+	src: url("../fonts/Poppins-Bold.ttf");
 	font-style: normal;
 	font-weight: 700;
 	font-display: swap;
 }
 @font-face{
 	font-family: 'Poppins';
-	src: url("../fonts/Poppins-BoldItalic.woff2");
+	src: url("../fonts/Poppins-BoldItalic.ttf");
 	font-style: italic;
 	font-weight: 700;
 	font-display: swap;
@@ -508,6 +508,7 @@ a:link.boton.boton-register{
 	border-bottom: 1px dotted;
 	text-decoration: none;
 	margin-bottom: 20px;
+	word-break: break-all;
 }
 
 
@@ -670,6 +671,9 @@ ul.fil{
 	gap: 25px;
 	padding: 20px 0px;
 	margin-bottom: 25px;
+	position: sticky;
+	top: 45px;
+	background-color: white;
 }
 
 ul.fil li a{
@@ -703,7 +707,7 @@ ul.fil li.activeee a{
 	z-index: 10;
 }
 .llamada{
-	background: red;
+	/* background: red; */
 	width: 100%;
 	min-height: 50px;
 	display: flex;
@@ -715,22 +719,17 @@ ul.fil li.activeee a{
 	flex: 1;
 	text-decoration: none;
 	font-size: 12px;
-}
-.llamada a:nth-child(1){
-	background: var(--cs1);;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: white;
 }
-.llamada a:nth-child(2){
+.llamada a.telefono{
+	background: #095dca;
+	
+}
+.llamada a.whatsapp{
 	background: #44C153;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-
-
 }
 
 

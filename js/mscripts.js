@@ -1,7 +1,24 @@
+
+window.addEventListener('DOMContentLoaded', function(){
+
+
 const navv = document.querySelector('.navv');//barra de navegacion
 const arrowReverse = document.querySelector('.flot-reverse'); //flecha para retroceder
 const title = document.querySelector('.p-no'); //titulo de la barra de navegacion cuando se hace scrooll
 const banner = document.querySelector('.banner-r'); //banner que observaremos para agregar los efectos a la nav, flecha y titulo
+const goBack = document.querySelector('#go-back');
+
+console.log(window.history.length);
+
+// funcion para regresar al index en caso de llegar directamente a una pagina
+// y no exista historial previo
+goBack.addEventListener('click',function(){
+	if(history.length > 2){
+		history.back();
+	}else{
+		window.location.href = 'https://charcas.xyz';
+	}
+});
 
 
 
@@ -28,29 +45,48 @@ const options = {
 
 //creamos el observador
 const observador = new IntersectionObserver(callback, options)
-observador.observe(banner);
+if(banner){
+	observador.observe(banner);
+}
 
 
 
 
+const horario = document.querySelector('#horario');
+const modall = document.querySelector('.modall');
+const sombra = document.querySelector('.sombra');
+const closeH = document.querySelector('#closeH');
 
 
-document.querySelector('#horario').addEventListener('click', (e) => {
-	document.querySelector(".modall").classList.toggle("visible");
-	document.body.classList.toggle("scroll");
-	document.querySelector(".sombra").classList.toggle("visible-som");
+if(horario){
+	horario.addEventListener('click', () => {
+		modall.classList.toggle("visible");
+		document.body.classList.toggle("scroll");
+		sombra.classList.toggle("visible-som");
+	});
+}
+
+if(sombra){
+	sombra.addEventListener('click', () => {
+		modall.classList.remove("visible");
+		document.body.classList.remove("scroll");
+		sombra.classList.remove("visible-som");
+	});
+}
+
+if(closeH){
+	closeH.addEventListener('click', () => {
+		modall.classList.remove("visible");
+		document.body.classList.remove("scroll");
+		sombra.classList.remove("visible-som");
+	});
+}
+
+
+
+
 });
 
-document.querySelector(".sombra").addEventListener('click', (e) => {
-	document.querySelector(".modall").classList.remove("visible");
-	document.body.classList.remove("scroll");
-	document.querySelector(".sombra").classList.remove("visible-som");
-});
 
-document.querySelector('#closeH').addEventListener('click', (e) => {
-	document.querySelector(".modall").classList.remove("visible");
-	document.body.classList.remove("scroll");
-	document.querySelector(".sombra").classList.remove("visible-som");
-});
 
 
