@@ -37,14 +37,14 @@
 
 
   </head>
-  <body>
+  <body data-id="tacos">
 	 
 	  
 	  <section class="navv">
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-lg-12">
-				  	<i class="bi bi-arrow-left flot-anverse" onclick="window.history.back();"></i>
+				  	<i class="bi bi-arrow-left flot-reverse" id="go-back"></i>
 					  
 				  </div>
 			  </div>
@@ -75,116 +75,9 @@
 	  <section class="neg">
 	  	<div class="container">
 		  	<div class="row justify-content-center">
-				<div class="col-lg-8 col-md-12 col-sm-12">
-					<div class="tarjeta">
-						<div class="imagen">
-							<img src="images/pancho.svg" class="img-fluid" alt="" width="120">
-						</div>
-						<div class="contenido">
-							<ul class="list-unstyled">
-								<li class="title">Tacos los Panchos</li>
-								<li class="direction"><i class="bi bi-geo-alt-fill"></i> Calle Silao #46, Doctor Mora</li>
-								<li class="telefono"><i class="bi bi-telephone-fill"></i> 419 122 7225</li>
-								<li><a href="lospanchos.html" class="boton boton-menu">Ver Menu</a></li>
-							</ul>
-						</div>
-					</div>
-					
-					<div class="tarjeta">
-						<div class="imagen">
-							<img src="images/speed.png" class="img-fluid" alt="" width="120">
-						</div>
-						<div class="contenido">
-							<ul class="list-unstyled">
-								<li class="title">El Taco Veloz</li>
-								<li class="direction"><i class="bi bi-geo-alt-fill"></i> Plazuela Unión s/n, Doctor Mora</li>
-								<li class="telefono"><i class="bi bi-telephone-fill"></i> 419 107 9402</li>
-								<li><a href="tacoveloz.html" class="boton boton-menu">Ver Menu</a></li>
-							</ul>
-						</div>
-					</div>
-					
-					
-				
-					
-					<div class="tarjeta">
-						<div class="imagen">
-							<img src="images/412.jpg" class="img-fluid" alt="" width="120" loading="lazy" decoding="async">
-						</div>
-						<div class="contenido">
-							<ul class="list-unstyled">
-								<li class="title">Taqueria 4/12</li>
-								<li class="direction"><i class="bi bi-geo-alt-fill"></i> Calle Silao #40, Doctor Mora. <strong>Enfrente a la antena de Telmex</strong></li>
-								<li class="telefono"><i class="bi bi-telephone-fill"></i> 419 181 1956</li>
-								<li><a href="taqueria412.html" class="boton boton-menu">Ver Menu</a></li>
-							</ul>
-						</div>
-					</div>
+				<div class="col-lg-8 col-md-12 col-sm-12" id="datos-neg">
+					<!-- contenido generado por js-->
 
-
-					<div class="tarjeta">
-						<div class="imagen">
-							<img src="images/taco.png" class="img-fluid" alt="" width="120" loading="lazy" decoding="async">
-						</div>
-						<div class="contenido">
-							<ul class="list-unstyled">
-								<li class="title">Tacos el Karkis</li>
-								<li class="direction"><i class="bi bi-geo-alt-fill"></i> Doctor Mora</li>
-								<li class="telefono"><i class="bi bi-telephone-fill"></i> 419 105 6532</li>
-								<li><a href="tacoselkarkis.html" class="boton boton-menu">Ver Menu</a></li>
-							</ul>
-						</div>
-					</div>
-					
-
-					<div class="tarjeta">
-						<div class="imagen">
-							<img src="images/chascuis.png" class="img-fluid" alt="" width="120" loading="lazy" decoding="async">
-						</div>
-						<div class="contenido">
-							<ul class="list-unstyled">
-								<li class="title">Taqueria CHASCUIS</li>
-								<li class="direction"><i class="bi bi-geo-alt-fill"></i> Escalante. <strong>Enfrente del Campo DE FUTBOL</strong></li>
-								<li class="telefono"><i class="bi bi-telephone-fill"></i> 419 138 2655</li>
-								<li><a href="chascuis.html" class="boton boton-menu">Ver Menu</a></li>
-							</ul>
-						</div>
-					</div>
-
-
-					<div class="tarjeta">
-						<div class="imagen">
-							<img src="images/bulldogsdinner.jpg" class="img-fluid" alt="" width="120" loading="lazy" decoding="async">
-						</div>
-						<div class="contenido">
-							<ul class="list-unstyled">
-								<li class="title">Bulldog's Dinner</li>
-								<li class="direction"><i class="bi bi-geo-alt-fill"></i> Camino a Moris, Doctor Mora. <strong>A unos metros del Bazar Doctor Mora</strong></li>
-								<li class="telefono"><i class="bi bi-telephone-fill"></i> 419 118 3538</li>
-								<li><a href="bulldogs-dinner.html" class="boton boton-menu">Ver Menu</a></li>
-							</ul>
-						</div>
-					</div>
-
-
-
-					<div class="tarjeta">
-						<div class="imagen">
-							<img src="images/anciano.png" class="img-fluid" alt="" width="120" loading="lazy" decoding="async">
-						</div>
-						<div class="contenido">
-							<ul class="list-unstyled">
-								<li class="title">Tacos "El Viejón"</li>
-								<li class="direction"><i class="bi bi-geo-alt-fill"></i> Carretera Doctor Mora al  <strong>Escalante</strong></li>
-								<li class="telefono"><i class="bi bi-telephone-fill"></i> 419 123 8790</li>
-								<li><a href="tacos-el-viejon.html" class="boton boton-menu">Ver Menu</a></li>
-							</ul>
-						</div>
-					</div>
-
-					
-					
-				
 				</div>
 			</div>
 		  </div>
@@ -242,8 +135,8 @@
 	  </section>
 	  
 	  
-
-
+	  <script src="../db.js"></script>
+	  <script src="../js/catfilter.js"></script>
 	  
   </body>
 </html>
