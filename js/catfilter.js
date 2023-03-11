@@ -1,13 +1,5 @@
 	
-	  	// const db = {
-        //     nombre: 'Electronica Sanchez',
-        //     direccion: 'Calle San luis de la Paz #24, Doctor Mora',
-        //     extracto: 'Ventas de Equipos y Refacciones Electrónicas para Sonidos, Luces, TV, MP3, Computadoras, Etc.',
-        //     telefono: '4681231545',
-        //     whatsapp: '4681231545',
-        //     facebook: 'electronicasanchezdoctormora',
-        //   imagen: 'electronica-sanchez.jpg'
-        //     }
+	
         const id = document.querySelector('body').dataset.id;
         const filtrado = db.filter(data => data.categoria === id);
         const contenedor = document.querySelector('#datos-neg');

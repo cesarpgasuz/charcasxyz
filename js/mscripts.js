@@ -1,3 +1,7 @@
+
+window.addEventListener('DOMContentLoaded', function(){
+
+
 const navv = document.querySelector('.navv');//barra de navegacion
 const arrowReverse = document.querySelector('.flot-reverse'); //flecha para retroceder
 const title = document.querySelector('.p-no'); //titulo de la barra de navegacion cuando se hace scrooll
@@ -9,10 +13,10 @@ console.log(window.history.length);
 // funcion para regresar al index en caso de llegar directamente a una pagina
 // y no exista historial previo
 goBack.addEventListener('click',function(){
-	if(history.length > 0){
+	if(history.length > 2){
 		history.back();
 	}else{
-		window.location.replace('https://charcas.xyz');
+		window.location.href = 'https://charcas.xyz';
 	}
 });
 
@@ -78,6 +82,10 @@ if(closeH){
 	});
 }
 
+
+
+
+});
 
 
 
