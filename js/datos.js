@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function(){
         // telefono contenedor llamada
         const telefonoLlamada = document.createElement('A');
         telefonoLlamada.classList.add('telefono');
-        telefonoLlamada.href = `tel+52${telefono}`;
+        telefonoLlamada.href = `tel:+52${telefono}`;
         telefonoLlamada.innerHTML = `<i class="bi bi-telephone"></i> Llamar`;
 
         llamada.appendChild(telefonoLlamada);
