@@ -580,6 +580,17 @@ const db = [
         categoria: 'mecanicos',
         url: 'bruno-baeza-vargas.html'
     },
+    {   id: 'luxaria',
+        nombre: 'LUXARIA',
+        direccion: 'Calle Tarandacuao #109, Doctor Mora',
+        extracto: '',
+        telefono: '4191056013',
+        whatsapp: '',
+        facebook: 'luxaria.luxaria.1',
+        imagen: 'luxaria.jpg',
+        categoria: 'salonBelleza',
+        url: 'luxaria.html'
+    },
 
 
 
