@@ -50,8 +50,10 @@ document.addEventListener('DOMContentLoaded', function(){
         const negocioTelefono = document.createElement('LI');
         negocioTelefono.classList.add('tel');
 
+        const numeroDeTelefono = `tel:+52${telefono}`;
+
         const telefonoLink = document.createElement('A');
-        telefonoLink.href = `tel+52${telefono}`;
+        telefonoLink.href = numeroDeTelefono;
         const numeroFormateado = formatearNumero(telefono);
         telefonoLink.innerHTML = `<i class="bi bi-telephone"></i> ${numeroFormateado}`;
 
@@ -61,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function(){
         // telefono contenedor llamada
         const telefonoLlamada = document.createElement('A');
         telefonoLlamada.classList.add('telefono');
-        telefonoLlamada.href = `tel:+52${telefono}`;
+        telefonoLlamada.href = numeroDeTelefono;
         telefonoLlamada.innerHTML = `<i class="bi bi-telephone"></i> Llamar`;
 
         llamada.appendChild(telefonoLlamada);
