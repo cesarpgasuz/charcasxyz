@@ -78,6 +78,7 @@
 	  
 	  </div>
 	  
+	  
 <!--
 	  <a href="tel:+524191283278" class="btn-llamar"><i class="bi bi-telephone-outbound-fill"></i></a>
 -->
@@ -123,8 +124,8 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<h5>Servicios</h5>
-					
-
+					<a href="https://m.me/1966739550317710">Contactar por facebook messenger</a>
+					<div id="boton-compartir">Compartir en redes sociales</div>
 					<div class="contenedor__servicios">
 
 						<div class="card__servicios">
@@ -272,7 +273,8 @@
 		  </div>
 	  </section>
 	  
-	  
+	  <div id="boton-compartir-w">Compartir en redes sociales</div>
+	  <div id="boton-compartir-t">Compartir en telegram</div>
 	  <div class="dy">
 	  	<h6>DyxerTeam</h6>
 	  </div>
@@ -289,7 +291,80 @@
 	  <script src="../js/mscriptsPruebas.js"></script>
 
 
+
+	  <!-- Messenger plugin del chat Code -->
+	  <div id="fb-root"></div>
+
+	  <!-- Your plugin del chat code -->
+	  <div id="fb-customer-chat" class="fb-customerchat">
+	  </div>
+  
+	  <script>
+		var chatbox = document.getElementById('fb-customer-chat');
+		chatbox.setAttribute("page_id", "1966739550317710");
+		chatbox.setAttribute("attribution", "biz_inbox");
+	  </script>
+  
+	  <!-- Your SDK code -->
+	  <script>
+		window.fbAsyncInit = function() {
+		  FB.init({
+			xfbml            : true,
+			version          : 'v16.0'
+		  });
+		};
+  
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	  </script>
 	  
+
+	  <script>
+		// Función para compartir en Facebook
+		function compartirEnFacebook() {
+		  window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href));
+		}
+		
+		// Función para compartir en Twitter
+		function compartirEnTwitter() {
+		  window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(document.title) + "&url=" + encodeURIComponent(window.location.href));
+		}
+		
+		// Función para compartir en LinkedIn
+		function compartirEnLinkedIn() {
+		  window.open("https://www.linkedin.com/shareArticle?url=" + encodeURIComponent(window.location.href) + "&title=" + encodeURIComponent(document.title));
+		}
+
+		// Función para compartir en WhatsApp
+		function compartirEnWhatsApp() {
+    window.open("whatsapp://send?text=" + encodeURIComponent(document.title) + "%20" + encodeURIComponent(window.location.href));
+  }
+  
+  // Función para compartir en Telegram
+  function compartirEnTelegram() {
+    window.open("https://telegram.me/share/url?url=" + encodeURIComponent(document.title) + "&text=" + encodeURIComponent(window.location.href));
+  }
+
+		
+		// Agregar eventos click al botón de compartir
+		var botonCompartir = document.getElementById("boton-compartir");
+		botonCompartir.addEventListener("click", compartirEnFacebook);
+		botonCompartir.addEventListener("click", compartirEnTwitter);
+		botonCompartir.addEventListener("click", compartirEnLinkedIn);
+
+  		const compartirW = document.querySelector('#boton-compartir-w');
+  		const compartirT = document.querySelector('#boton-compartir-t');
+		compartirW.addEventListener('click', compartirEnWhatsApp);
+		compartirT.addEventListener('click', compartirEnTelegram);
+
+	  </script>
+
+
 
   </body>
 </html>

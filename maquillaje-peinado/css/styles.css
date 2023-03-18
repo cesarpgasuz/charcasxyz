@@ -184,6 +184,9 @@ a:link.boton.boton-register{
 .register .contenido h3 span{
 	color: var(--cs1);
 }
+.register .contenido h3 span:nth-child(2){
+	color: #f710db;
+}
 .register .contenido p{
 	color: var(--cgris1);
 }

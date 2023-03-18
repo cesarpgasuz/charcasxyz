@@ -591,6 +591,17 @@ const db = [
         categoria: 'salonBelleza',
         url: 'luxaria.html'
     },
+    {   id: 'distribuidoraeb',
+        nombre: 'Distribuidora EB',
+        direccion: 'Prolongación Silao #16, Doctor Mora',
+        extracto: '',
+        telefono: '4191564742',
+        whatsapp: '4191564742',
+        facebook: 'profile.php?id=100085147670882',
+        imagen: 'distribuidoraeb.jpg',
+        categoria: 'maquillaje',
+        url: 'distribuidora-eb.html'
+    },
 
 
 
