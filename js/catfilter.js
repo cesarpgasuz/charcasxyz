@@ -1,53 +1,105 @@
-	
-	
-        const id = document.querySelector('body').dataset.id;
-        const filtrado = db.filter(data => data.categoria === id);
-        const contenedor = document.querySelector('#datos-neg');
-        
-        console.log(filtrado);
-        filtrado.forEach(filtro => {
-            
-            console.log(filtro)
-          
-            const {url, direccion, imagen, nombre, telefono, whatsapp} = filtro;
-        
-            const nuevoNumero = telefono;
-            const sub1 = nuevoNumero.substring(0,3);
-            const sub2 = nuevoNumero.substring(3,6);
-            const sub3 = nuevoNumero.substring(6,8);
-            const sub4 = nuevoNumero.substring(8,10);
-            const telefonoD = [sub1,sub2,sub3,sub4].join(' ');
-        
-            const nuevoWhatsapp = whatsapp;
-            const subw1 = nuevoWhatsapp.substring(0,3);
-            const subw2 = nuevoWhatsapp.substring(3,6);
-            const subw3 = nuevoWhatsapp.substring(6,8);
-            const subw4 = nuevoWhatsapp.substring(8,10);
-            const whatsappD = [subw1,subw2,subw3,subw4].join(' ');
-        
-            const divTarjeta = document.createElement('DIV');
-            divTarjeta.classList.add('tarjeta');
-            divTarjeta.innerHTML = `
+import { db } from "../db.js";
+import { formatearNumero } from "./formatear.js";
 
-            <div class="imagen">
-            <img src="images/${imagen}" class="img-fluid" alt="" width="120">
-            </div>
-            <div class="contenido">
-                <ul class="list-unstyled">
-                    <li class="title">${nombre}</li>
-                    <li class="direction"><i class="bi bi-geo-alt-fill"></i> ${direccion}</li>
-                    <li class="telefono"><i class="bi bi-telephone-fill"></i> ${telefonoD}</li>
-                    <li><a href="${url}" class="boton boton-menu">Ver Menu</a></li>
-                </ul>
-            </div>
-            
-            
-            
-            `;
+filtrarNegocios();
 
-            contenedor.appendChild(divTarjeta);
+function filtrarNegocios(){
+
+    const id = document.querySelector('body').dataset.id;
+    const categorias = db.filter(data => data.categoria === id);
+    const contenedor = document.querySelector('#datos-neg');
+
+   
+    categorias.forEach(negocio => {
+
+        const {nombre, direccion, telefono, whatsapp, imagen, url} = negocio;
+
+        const tarjetaDiv = document.createElement('DIV');
+        tarjetaDiv.classList.add('tarjeta');
+
+        /// imagen del negocio
+        const contenedorImagen = document.createElement('DIV');
+        contenedorImagen.classList.add('imagen');
+
+        const negocioImagen = document.createElement('IMG');
+        negocioImagen.width = '120';
+        negocioImagen.classList.add('img-fluid');
+        negocioImagen.alt = `Imagen del negocio ${nombre}`;
+        negocioImagen.src = `images/${imagen}`;
         
-        });
+        contenedorImagen.appendChild(negocioImagen);
+
+
+        //contenedor con la informacion del negocio
+        const contenidoDiv = document.createElement('DIV');
+        contenidoDiv.classList.add('contenido');
+
+        const listadoUl = document.createElement('UL');
+        listadoUl.classList.add('list-unstyled');
+
+
+        // nombre del negocio
+        const negocioTitle = document.createElement('LI');
+        negocioTitle.classList.add('title');
+        negocioTitle.textContent = nombre;
         
+        // direccion del negocio
+        const negocioDireccion = document.createElement('LI');
+        negocioDireccion.classList.add('direction');
+        negocioDireccion.innerHTML = `<i class="bi bi-geo-alt-fill"></i> ${direccion}`;
+
+
+        listadoUl.appendChild(negocioTitle);
+        listadoUl.appendChild(negocioDireccion);
+
+        /// numero de telefono
+        if(telefono){
+            const negocioTelefono = document.createElement('LI');
+            negocioTelefono.classList.add('telefono');
+            const numeroFormateado = formatearNumero(telefono)
+            negocioTelefono.innerHTML = `<i class="bi bi-telephone-fill"></i> ${numeroFormateado}`;
+            listadoUl.appendChild(negocioTelefono);
+        }
+
+        if(whatsapp){
+            const negocioWhatsapp = document.createElement('LI');
+            negocioWhatsapp.classList.add('whatsapp');
+            const numeroFormateado = formatearNumero(whatsapp);
+            negocioWhatsapp.innerHTML = `<i class="bi bi-whatsapp"></i> ${numeroFormateado}`;
+            listadoUl.appendChild(negocioWhatsapp);
+        }
+
+        if(url){
+            const negocioUrl = document.createElement('LI');
+
+            const negocioA = document.createElement('A');
+            negocioA.href = url;
+            negocioA.classList.add('boton', 'boton-menu');
+            negocioA.textContent = 'Ver Información';
+
+            negocioUrl.appendChild(negocioA);
+            listadoUl.appendChild(negocioUrl);
+        }
         
-        
+
+
+        contenidoDiv.appendChild(listadoUl);
+
+
+
+
+        // agregamos a la tarjeta o card
+        tarjetaDiv.appendChild(contenedorImagen);
+        tarjetaDiv.appendChild(contenidoDiv);
+
+
+        // agregamos al html
+        contenedor.appendChild(tarjetaDiv);
+
+
+
+
+    });
+
+
+}

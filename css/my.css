@@ -351,7 +351,6 @@ a:link.btn-llamar{
 }
 .neg .tarjeta .contenido ul li.telefono, .neg .tarjeta .contenido ul li.whatsapp{
 	font-size: 16px;
-	font-weight: 700;
 }
 .neg .tarjeta .contenido ul li:last-child{
 	margin-top: 10px;
@@ -830,7 +829,7 @@ ul.fil li.activeee a{
 
 	/* -------page templates .----- paginas ---*/
 	.banner-r{
-		min-height: auto;
+		min-height: 400px;
 		padding-top: 100px;
 		padding-bottom: 50px;
 	}
@@ -941,6 +940,7 @@ ul.fil li.activeee a{
 	.banner-r {
 		padding-top: 60px;
 		padding-bottom: 20px;
+		min-height: 300px;
 	}
 	.banner-r .information img.log {
     	width: 50px;

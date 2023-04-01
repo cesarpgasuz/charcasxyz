@@ -4,7 +4,7 @@
 	--cs1: #FF1B00; /* color secundario 1 (--enlaces y botones) --*/
 	
 
-	--ct: #00DCBB; /* color terciario cyan */
+	--ct: #0371B3; /* color terciario cyan */
 	--cc: #D31F25; /* color cuarto marron*/
 
 	--cgris1: #111111; 
@@ -137,6 +137,11 @@ a:visited.btn-llamar{
 .neg .tarjeta .contenido ul li.telefono{
 	color: var(--ct);
 }
+
+.neg .tarjeta .contenido ul li.whatsapp{
+	color: #1cb39b;
+}
+
 a:visited.boton-menu{
 	color: #fff;
 }
