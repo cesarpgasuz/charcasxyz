@@ -5,7 +5,7 @@
 	--cs1: #122627; /* color secundario 1 (--enlaces y botones) --*/
 	
 
-	--ct: #A49B1A; /* color terciario cyan */
+	--ct: #0371B3; /* color terciario cyan */
 	--cc: #D31F25; /* color cuarto marron*/
 
 	--cgris1: #111111; 
@@ -94,7 +94,7 @@ a:visited.btn-llamar{
 /* //// solo se agrega la imagen y la posicion, la estructa esta en my.css */
 
 .banner{
-	background: url(../images/taxi.jpg) center center no-repeat;
+	background: url(../images/banner-2.jpg) center center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -148,7 +148,7 @@ a:visited.btn-llamar{
 	color: var(--ct);
 }
 a:visited.boton.boton-menu{
-	color: #fff;
+	color: #fffc3c;
 }
 /* -- color para los botones que tengan la clase .boton */
 a:link.boton{
