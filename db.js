@@ -21,7 +21,7 @@ export const db = [
     },
     {   id: 'mamalona01',
         nombre: 'La Mamalona Birria de Res Estilo Jalisco',
-        direccion: 'Derramadero del Sauz, Doctor Mora',
+        direccion: 'Derramadero del Sauz, <strong>Carretera Doctor Mora - Cerro Chato km 8</strong>, Doctor Mora',
         extracto: 'Deliciosa birria estilo jalisco, tacos blandos, dorados y quesabirrias, todos hechos con tortillas recien hechas a mano, en derramadero del sauz',
         telefono: '',
         whatsapp: '',
@@ -645,6 +645,17 @@ export const db = [
         imagen: 'uber.png',
         categoria: 'taxis',
         url: 'julio-cesar-amador.html'
+    },
+    {   id: 'nailsbrendiz',
+        nombre: 'Nails Brendiz',
+        direccion: 'Calle Guanajuato #22, Doctor Mora',
+        extracto: '',
+        telefono: '4681329395',
+        whatsapp: '4681329395',
+        facebook: 'brendizestradaa',
+        imagen: 'maquillista.png',
+        categoria: 'maquillaje',
+        url: 'nails-brendiz.html'
     },
 
 
