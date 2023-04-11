@@ -657,7 +657,17 @@ export const db = [
         categoria: 'maquillaje',
         url: 'nails-brendiz.html'
     },
-
+    {   id: 'bloquerajimenezelmau',
+        nombre: 'Bloquera Jiménez El Mau',
+        direccion: 'Calle 20 de Noviembre, <strong>Loma de Buenavista</strong>, Doctor Mora.',
+        extracto: '',
+        telefono: '4191915163',
+        whatsapp: '4191915163',
+        facebook: 'profile.php?id=100064227450495',
+        imagen: 'bloqueramau.jpg',
+        categoria: 'construccion',
+        url: 'bloquera-jimenez-el-mau.html'
+    },
 
 
 
