@@ -973,7 +973,15 @@ ul.fil li.activeee a{
 }
 
 
-
+@media screen and (max-width: 540px){
+	.p-no.p-no-min{
+		padding-left: 50px;
+		padding-right: 50px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}
 
 
 
@@ -1085,6 +1093,7 @@ ul.fil li.activeee a{
 	.modall .horario .content h4 {
 	  margin-top: 15%;
 	}
+	
 }
 
 

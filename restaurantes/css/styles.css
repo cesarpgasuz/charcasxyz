@@ -305,40 +305,14 @@ h4.subtitles::before{
 }
 .comidas-singles_item img{
 	width: 48px;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 .comidas-singles_item h4{
 	margin: 0;
 	font-size: 16px;
 	color: var(--cp1);
 	font-weight: bold;
-	text-transform: uppercase;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -478,7 +452,7 @@ h4.subtitles::before{
  /* ----- seccion comidas ------*/
  	/*--- seccion comidas ---*/
 	.comidas-title, .comidas-singles_item h4{
-		font-size: 16px;
+		font-size: 14px;
 	}
 	.comidas-items{
 		font-size: 12px;
@@ -490,6 +464,9 @@ h4.subtitles::before{
 		background: #FBFBFB;
 	}
 	
+	.comidas-singles_item{
+		padding: 10px 20px;
+	}
 	
 }
 

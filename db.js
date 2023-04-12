@@ -21,7 +21,7 @@ export const db = [
     },
     {   id: 'mamalona01',
         nombre: 'La Mamalona Birria de Res Estilo Jalisco',
-        direccion: 'Derramadero del Sauz, Doctor Mora',
+        direccion: 'Derramadero del Sauz, <strong>Carretera Doctor Mora - Cerro Chato km 8</strong>, Doctor Mora',
         extracto: 'Deliciosa birria estilo jalisco, tacos blandos, dorados y quesabirrias, todos hechos con tortillas recien hechas a mano, en derramadero del sauz',
         telefono: '',
         whatsapp: '',
@@ -646,7 +646,39 @@ export const db = [
         categoria: 'taxis',
         url: 'julio-cesar-amador.html'
     },
-
+    {   id: 'nailsbrendiz',
+        nombre: 'Nails Brendiz',
+        direccion: 'Calle Guanajuato #22, Doctor Mora',
+        extracto: '',
+        telefono: '4681329395',
+        whatsapp: '4681329395',
+        facebook: 'brendizestradaa',
+        imagen: 'maquillista.png',
+        categoria: 'maquillaje',
+        url: 'nails-brendiz.html'
+    },
+    {   id: 'bloquerajimenezelmau',
+        nombre: 'Bloquera Jiménez "El Mau"',
+        direccion: 'Calle 20 de Noviembre, <strong>Loma de Buenavista</strong>, Doctor Mora.',
+        extracto: '',
+        telefono: '4191915163',
+        whatsapp: '4191915163',
+        facebook: 'profile.php?id=100064227450495',
+        imagen: 'bloqueramau.jpg',
+        categoria: 'construccion',
+        url: 'bloquera-jimenez-el-mau.html'
+    },
+    {   id: 'acarreosymaterialeselgordo',
+        nombre: 'Acarreos y Materiales para Construcción "El Gordo"',
+        direccion: 'Carr. a Dr.Mora-San Miguel de Allende km.1 <strong>Casi enfrente al Polideportivo</strong>',
+        extracto: '',
+        telefono: '4191915256',
+        whatsapp: '',
+        facebook: 'profile.php?id=100027933234829',
+        imagen: 'elgordo.jpg',
+        categoria: 'construccion',
+        url: 'acarreos-y-materiales-el-gordo.html'
+    },
 
 
 
