@@ -658,7 +658,7 @@ export const db = [
         url: 'nails-brendiz.html'
     },
     {   id: 'bloquerajimenezelmau',
-        nombre: 'Bloquera Jiménez El Mau',
+        nombre: 'Bloquera Jiménez "El Mau"',
         direccion: 'Calle 20 de Noviembre, <strong>Loma de Buenavista</strong>, Doctor Mora.',
         extracto: '',
         telefono: '4191915163',
@@ -667,6 +667,17 @@ export const db = [
         imagen: 'bloqueramau.jpg',
         categoria: 'construccion',
         url: 'bloquera-jimenez-el-mau.html'
+    },
+    {   id: 'acarreosymaterialeselgordo',
+        nombre: 'Acarreos y Materiales para Construcción "El Gordo"',
+        direccion: 'Carr. a Dr.Mora-San Miguel de Allende km.1 <strong>Casi enfrente al Polideportivo</strong>',
+        extracto: '',
+        telefono: '4191915256',
+        whatsapp: '',
+        facebook: 'profile.php?id=100027933234829',
+        imagen: 'elgordo.jpg',
+        categoria: 'construccion',
+        url: 'acarreos-y-materiales-el-gordo.html'
     },
 
 
