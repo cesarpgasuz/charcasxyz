@@ -679,6 +679,17 @@ export const db = [
         categoria: 'construccion',
         url: 'acarreos-y-materiales-el-gordo.html'
     },
+    {   id: 'recintozarazua',
+        nombre: 'Recinto Funerario Zarazúa',
+        direccion: 'Calle Irapuato #78, Doctor Mora',
+        extracto: '',
+        telefono: '4191009336',
+        whatsapp: '',
+        facebook: 'recintofunerariozarazua.zarazua',
+        imagen: 'funerariazarazua.png',
+        categoria: 'funeraria',
+        url: 'recinto-funerario-zarazua.html'
+    },
 
 
 
