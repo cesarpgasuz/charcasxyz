@@ -632,6 +632,7 @@ h4.subtitles-2.paquetes-2{
 	width: 100%;
 	border-top: 1px solid #e6e6e6;
 	display: none;
+	z-index: 100;
 }
 .navbottom ul{
 	list-style: none;
@@ -703,7 +704,7 @@ ul.fil li.activeee a{
 	left: 0;
 	right: 0;
 	display: none;
-	z-index: 10;
+	z-index: 30;
 }
 .llamada{
 	/* background: red; */
