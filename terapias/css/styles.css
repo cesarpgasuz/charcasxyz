@@ -94,7 +94,7 @@ a:visited.btn-llamar{
 /* //// solo se agrega la imagen y la posicion, la estructa esta en my.css */
 
 .banner{
-	background: url(../images/antena.jpg) center center no-repeat;
+	background: url(../images/banner.jpg) center center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -252,7 +252,7 @@ a:link.boton.boton-register{
 	background: var(--cp1);
 }
 
-.banner-r .horario .content h4{
+.banner-r .horario .content h4, .banner-r .horario .content p{
 	color: yellow;
 }
 .banner-r .horario .content ul li{
@@ -261,94 +261,104 @@ a:link.boton.boton-register{
 .banner-r .horario .content ul li span.day{
 	color: var(--cgris4);
 	
-	
 }
-
 
 
 
 
 h4.subtitles-2{
 	color: var(--cp1);
-	line-height: 180%;
-}
-
-h4.subtitles-2 span{
-	font-size: 18px;
-	background: yellow;
-	padding: 5px 10px;
 }
 
 
 
 
-/* -----------------------seccion paquetes ----------------*/
-
-.paquetes .tarjeta{
-	display: flex;
-	align-items: center;
-	height: 100%;
-	width: 100%;
-	padding: 15px 5px 15px 20px;
-	font-family: var(--fuentep);
-	background: #f2f2f2;
-	color: var(--cp1);
-	border: 1px solid #e1e1e1;
-	border-radius: 5px;
+/* -----------------------seccion services ----------------*/
+.services h5, .services p{
+	text-align: center;
 }
-
-.paquetes .tarjeta i{
-	font-size: 38px;
-	margin-right: 20px;
-
-}
-
-.paquetes .tarjeta .contenido h6{
-	font-size: 18px;
+.services h5{
+	font-size: 24px;
 	font-weight: 700;
-	margin-bottom: 0px;
+	color: var(--cp1);
+}
+.services p strong{
+	border-bottom: 2px solid;
+}
+.services ul{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
+	margin-top: 80px;
+	gap: 35px;
 }
 
-.paquetes .tarjeta .contenido p{
-	margin-bottom: 0px;
-	font-size: 16px;
+.services ul li{
+	display: flex;
 }
-.paquetes .tarjeta.me2{
-	border-left: 6px solid #790bf1;
-}
-.paquetes .tarjeta.me3{
-	border-left: 6px solid #04AA91;
-}
-.paquetes .tarjeta.me4{
-	border-left: 6px solid #08bdf3;
-}
-.paquetes .tarjeta.me5{
-	border-left: 6px solid var(--cs1);
-}
-.paquetes .tarjeta.me8{
-	border-left: 6px solid #D00DB2;
-}
-.paquetes .tarjeta.me10{
-	border-left: 6px solid var(--cc);
+.services ul li i{
+	margin-right: 10px;
+	color: #03B31E;
 }
 
 
 
+/* paquetes funerarios */
+.paquetes{
+	padding-top: 120px;
+}
 .paquetes h5{
 	font-size: 24px;
 	font-weight: 700;
-	font-style: italic;
+	text-align: center;
+	margin-bottom: 80px;
+	color: var(--cp1);
 }
 
-.paquetes .tarjeta .contenido h6 span.bajada, .paquetes .tarjeta .contenido p.subida span{
-	font-size: 12px;
-	font-weight: 400;
-	margin-left: 5px;
+.paquetes-container{
+	display: grid;
+	/* grid-template-columns: repeat(2, 1fr); */
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+	gap: 30px;
 }
-
-.paquetes .tarjeta .contenido p.subida{
-	font-size: 16px;
+.paquete-card{
+	display: flex;
+	padding: 40px 20px;
+}
+.paquete-card img{
+	height: 60px;
+	aspect-ratio: 1/1;
+	margin-right: 25px;
+}
+.paquete-card-body h6{
+	font-size: 24px;
+	margin-bottom: 25px;
+}
+.paquete-card-body h6 strong{
+	color: var(--cp1);
+}
+.paquete-card-body ul{
+	padding-left: 15px;
+}
+.paquete-card-body ul li{
+	line-height: 200%;
+}
+.paquete-card-body ul li:first-child{
+	list-style: none;
 	font-weight: 700;
+}
+
+.phone-item{
+	list-style: none;
+	color: #095DCA;
+}
+.phone-item a:link{
+	text-decoration: none;
+}
+.phone-item a:visited{
+	color: #095DCA;
+}
+.phone-item a:hover{
+	border-bottom: 2px solid;
 }
 
 
@@ -358,20 +368,6 @@ h4.subtitles-2 span{
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
 
 @media screen and (max-width: 1199px){
-
-	/*--- pizzas precios ---*/
-	.tarjet{
-		padding-right: 30px;
-	}
-	.tarjet .content .body span.name {
-    	font-size: 18px;
-	}
-	.tarjet .content .body span.porcion{
-		font-size: 16px;
-	}
-	.tarjet .content span.price{
-		font-size: 24px;
-	}
 	
 }
 
@@ -385,20 +381,14 @@ h4.subtitles-2 span{
 		width: 115px;
 	}
 	
-	
-	
-	/* clase especial para separar las tarjeta de bjtecno*/
-	.sepa{
-		margin-top: 30px;
+	.paquetes-container{
+		gap: 30px;
 	}
-	.paquetes .tarjeta i.gi{
-		font-size: 38px;
+	.paquete-card img{
+		height: 40px;
 	}
 	
-
-	h4.subtitles-2 {
-		font-size: 28px;
-	}
+	
 	
 	
 }
@@ -416,14 +406,6 @@ h4.subtitles-2 span{
 		font-size: 24px;
 	}
 	
-
-	h4.subtitles-2 {
-		font-size: 18px;
-	}
-	
-	h4.subtitles-2 span{
-		font-size: 16px;
-	}
 	
 	
 
@@ -468,67 +450,34 @@ h4.subtitles-2 span{
 		
 	
 	
-	.paquetes .tarjeta{
-		border-radius: 10px;
-		flex-direction: column;
-		padding: 10px 5px;
-		color: white;
-		border: none;
-		box-shadow: none;
+	/* estilos parrafos y titles */
+	
+	
+	
+	.services h5, .services p{
+		margin: 0px 1.5%;
 	}
-	.paquetes .tarjeta i{
-		font-size: 26px;
-		margin-right: 0px;
+	.services h5, .paquetes h5{
+		font-size: 16px;
+		margin-bottom: 15px;
 	}
-	.paquetes .tarjeta .contenido{
-		text-align: center;
+	.services ul{
+		padding-left: 15%;
+		padding-right: 15%;
 	}
-	.paquetes .tarjeta .contenido h6, .paquetes .tarjeta .contenido p, .paquetes .tarjeta .contenido p.subida {
-		font-size: 12px;
-		font-weight: 400;
+	.services p, .services ul li{
+		font-size: 14px;
 	}
+	
 	.paquetes h5{
-		font-size: 20px;
-		font-style: normal;
+		margin-bottom: 35px;
 	}
-	.paquetes .tarjeta.me2{
-		border-left: 0px;
-		background: #790bf1;
+	.paquete-card-body h6{
+		font-size: 18px;
 	}
-	.paquetes .tarjeta.me3{
-		border-left: 0px;
-		background: #04AA91;
+	.paquete-card-body ul li{
+		font-size: 14px;
 	}
-	.paquetes .tarjeta.me4{
-		border-left: 0px;
-		background: #08bdf3;
-	}
-	.paquetes .tarjeta.me5 {
-		background: var(--cs1);
-		border-left: 0px;
-	}
-	.paquetes .tarjeta.me8{
-		background: #D00DB2;
-		border-left: 0px;
-	}
-	.paquetes .tarjeta.me10 {
-		background: var(--cc);
-		border-left: 0px;
-	}
-	
-
-		/* clase especial para separar las tarjeta de bjtecno*/
-	.sepa{
-		height: 0%;
-		margin-top: 15px;
-		
-	}
-	.paquetes .tarjeta{
-		padding-bottom: 20px;
-	}
-
-
-	
 }
 
 
@@ -541,8 +490,12 @@ h4.subtitles-2 span{
 
 
 
+
 @media screen and (max-width: 384px){
 	
+	.paquete-card-body ul li{
+		font-size: 12px;
+	}
 
 }
 

@@ -690,6 +690,28 @@ export const db = [
         categoria: 'funeraria',
         url: 'recinto-funerario-zarazua.html'
     },
+    {   id: 'craiminfantildoctormora',
+        nombre: 'Centro Recreativo Acuático Infantil Médico A.C',
+        direccion: 'Camino a la Presa #23, Colonia la Otra Banda, Doctor Mora',
+        extracto: '',
+        telefono: '4192651195',
+        whatsapp: '4192651195',
+        facebook: 'CRAIM05',
+        imagen: 'craimdoctormora.jpg',
+        categoria: 'terapiafisica',
+        url: 'craim-doctor-mora.html'
+    },
+    {   id: 'carpinterialostallers',
+        nombre: 'Carpintería los TallerS',
+        direccion: 'Calle Tarandacuao #138C, Doctor Mora',
+        extracto: '',
+        telefono: '4191009700',
+        whatsapp: '4191009700',
+        facebook: 'profile.php?id=100090584504449',
+        imagen: 'sierra.png',
+        categoria: 'carpinteria',
+        url: 'carpinteria-los-tallers.html'
+    },
 
 
 
