@@ -498,6 +498,13 @@ h4.subtitles-2{
 	.paquete-card-body ul li{
 		font-size: 12px;
 	}
+	.services ul{
+		padding: 0;
+	}
+	.services ul li{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 
 }
 

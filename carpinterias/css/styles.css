@@ -294,72 +294,13 @@ h4.subtitles-2{
 
 .services ul li{
 	display: flex;
+	align-items: center;
+	padding: 20px;
 }
-.services ul li i{
+.services ul li img{
 	margin-right: 10px;
-	color: #03B31E;
 }
 
-
-
-/* paquetes funerarios */
-.paquetes{
-	padding-top: 120px;
-}
-.paquetes h5{
-	font-size: 24px;
-	font-weight: 700;
-	text-align: center;
-	margin-bottom: 80px;
-	color: var(--cp1);
-}
-
-.paquetes-container{
-	display: grid;
-	/* grid-template-columns: repeat(2, 1fr); */
-	grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
-	gap: 30px;
-}
-.paquete-card{
-	display: flex;
-	padding: 40px 20px;
-}
-.paquete-card img{
-	height: 60px;
-	aspect-ratio: 1/1;
-	margin-right: 25px;
-}
-.paquete-card-body h6{
-	font-size: 24px;
-	margin-bottom: 25px;
-}
-.paquete-card-body h6 strong{
-	color: var(--cp1);
-}
-.paquete-card-body ul{
-	padding-left: 15px;
-}
-.paquete-card-body ul li{
-	line-height: 200%;
-}
-.paquete-card-body ul li:first-child{
-	list-style: none;
-	font-weight: 700;
-}
-
-.phone-item{
-	list-style: none;
-	color: #095DCA;
-}
-.phone-item a:link{
-	text-decoration: none;
-}
-.phone-item a:visited{
-	color: #095DCA;
-}
-.phone-item a:hover{
-	border-bottom: 2px solid;
-}
 
 
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
@@ -406,7 +347,9 @@ h4.subtitles-2{
 		font-size: 24px;
 	}
 	
-	
+	.services ul li img{
+		height: 48px;
+	}
 	
 
 	
@@ -469,15 +412,10 @@ h4.subtitles-2{
 		font-size: 14px;
 	}
 	
-	.paquetes h5{
-		margin-bottom: 35px;
+	.services ul li img{
+		height: 36px;
 	}
-	.paquete-card-body h6{
-		font-size: 18px;
-	}
-	.paquete-card-body ul li{
-		font-size: 14px;
-	}
+
 }
 
 
@@ -497,6 +435,9 @@ h4.subtitles-2{
 		font-size: 12px;
 	}
 
+	.services ul{
+		padding: 0;
+	}
 }
 
 @media screen and (max-width: 344px){
