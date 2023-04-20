@@ -503,7 +503,10 @@ a:link.boton.boton-register{
 	font-weight: 400;
 }
 
-.banner-r .information ul li.tel a:link, .banner-r .information ul li.whatsapp a:link, .banner-r .information ul li.facebook a:link {
+.banner-r .information ul li.tel a:link, 
+.banner-r .information ul li.whatsapp a:link, 
+.banner-r .information ul li.facebook a:link,
+.banner-r .information ul li.instagram a:link {
 	border-bottom: 1px dotted;
 	text-decoration: none;
 	margin-bottom: 20px;

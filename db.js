@@ -712,6 +712,19 @@ export const db = [
         categoria: 'carpinteria',
         url: 'carpinteria-los-tallers.html'
     },
+    {   id: 'labodegadeltaco',
+        nombre: 'La Bodega del Taco',
+        direccion: 'Prolongacion Silao #28, Colonia Ejidal, Doctor Mora',
+        extracto: '',
+        telefono: '4191223831',
+        whatsapp: '',
+        facebook: '',
+        instagram: 'la_bodega_del_taco',
+        imagen: 'labodegadeltaco.jpg',
+        categoria: 'tacos',
+        url: 'la-bodega-del-taco.html'
+    },
+
 
 
 
