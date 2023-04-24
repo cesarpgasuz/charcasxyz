@@ -14,7 +14,7 @@ function iniciarApp(){
     const contenedor = document.querySelector('#datos');
 
 
-    const {direccion, extracto, facebook, imagen, nombre, telefono, whatsapp} = filtrado[0];
+    const {direccion, extracto, facebook, imagen, nombre, telefono, whatsapp, instagram} = filtrado[0];
 
 
     /// liston top
@@ -112,6 +112,21 @@ function iniciarApp(){
 
         negocioFacebook.appendChild(facebookLink);
         informationListado.appendChild(negocioFacebook);
+    }
+
+    // facebook
+    if(instagram){
+        const negocioInstagram = document.createElement('LI');
+        negocioInstagram.classList.add('instagram');
+
+        const instagramLink = document.createElement('A');
+        instagramLink.href = `https://www.instagram.com/${instagram}`;
+        instagramLink.target = '_blank';
+        instagramLink.rel = 'noopener noreferrer';
+        instagramLink.innerHTML = `<i class="bi bi-instagram"></i> ig.com/${instagram}`;
+
+        negocioInstagram.appendChild(instagramLink);
+        informationListado.appendChild(negocioInstagram);
     }
 
 
