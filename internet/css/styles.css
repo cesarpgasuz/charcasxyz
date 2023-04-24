@@ -270,6 +270,13 @@ a:link.boton.boton-register{
 
 h4.subtitles-2{
 	color: var(--cp1);
+	line-height: 180%;
+}
+
+h4.subtitles-2 span{
+	font-size: 18px;
+	background: yellow;
+	padding: 5px 10px;
 }
 
 
@@ -388,6 +395,10 @@ h4.subtitles-2{
 		font-size: 38px;
 	}
 	
+
+	h4.subtitles-2 {
+		font-size: 28px;
+	}
 	
 	
 }
@@ -406,8 +417,13 @@ h4.subtitles-2{
 	}
 	
 
+	h4.subtitles-2 {
+		font-size: 18px;
+	}
 	
-	
+	h4.subtitles-2 span{
+		font-size: 16px;
+	}
 	
 	
 
