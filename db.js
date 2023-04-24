@@ -724,6 +724,31 @@ export const db = [
         categoria: 'tacos',
         url: 'la-bodega-del-taco.html'
     },
+    {   id: 'jocreando',
+        nombre: 'JOCreando',
+        direccion: 'Doctor Mora',
+        extracto: '',
+        telefono: '4191118621',
+        whatsapp: '4191118621',
+        facebook: 'JOCreando1',
+        instagram: '',
+        imagen: 'jocreando.jpg',
+        categoria: 'publimarket',
+        url: 'jocreando.html'
+    },
+    {   id: 'taquitosdonavicos',
+        nombre: 'Taquitos y Gorditas "Doña Vicos"',
+        direccion: 'Av. Guanajuato #50, Doctor Mora',
+        extracto: '',
+        telefono: '4191930306',
+        whatsapp: '',
+        facebook: 'groups/193640264725340/user/100000381170607',
+        instagram: '',
+        imagen: 'donavicos.jpg',
+        categoria: 'taquitosdorados',
+        url: 'taquitos-y-gorditas-dona-vicos.html'
+    },
+
 
 
 
