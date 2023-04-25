@@ -391,7 +391,7 @@ h4.subtitles-2{
 	}
 	.listado-instrucciones ul li,
 	.premio p{
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	
@@ -458,6 +458,11 @@ h4.subtitles-2{
 	.listado-instrucciones ul{
 		padding: 0;
 	}
+	.listado-instrucciones ul li,
+	.premio p{
+		font-size: 14px;
+	}
+
 	.listado-instrucciones ul li:not(li:last-child){
 		margin-bottom:  10px;
 	}
@@ -490,10 +495,10 @@ h4.subtitles-2{
 		border: 1px solid var(--cgris4);
 
 	}
-	.listado-instrucciones ul li,
+	/* .listado-instrucciones ul li,
 	.premio p{
 		font-size: 12px;
-	}
+	} */
 
 }
 
