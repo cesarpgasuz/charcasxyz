@@ -748,6 +748,18 @@ export const db = [
         categoria: 'taquitosdorados',
         url: 'taquitos-y-gorditas-dona-vicos.html'
     },
+    {   id: 'sicaru',
+        nombre: 'Sicarú',
+        direccion: 'Calle Irapuato #30, Doctor Mora',
+        extracto: '',
+        telefono: '4191166333',
+        whatsapp: '4191166333',
+        facebook: 'profile.php?id=100063938657410',
+        instagram: 'sicaru2511',
+        imagen: 'sicaru.jpg',
+        categoria: 'joyeriaybisuteria',
+        url: 'sicaru.html'
+    },
 
 
 
