@@ -32,7 +32,20 @@
 		<!-- progresive app -->
 		<meta name="theme-color" content="#0A191F" />
 
-	  
+	  	<style>
+			#search{
+			position: absolute;
+			background-color: transparent;
+			height: 30px;
+			width: 30px;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+			z-index: 2000;
+			margin-top: -48px;
+		}
+		</style>
     
   </head>
   <body>
@@ -75,14 +88,17 @@
 
 	  <!--- categorias -->
 	  <section class="neg catt">
+		<div id="search"></div>
 	  	<div class="container">
 		  	<div class="row justify-content-center">
 				<div class="col-lg-8 col-md-12 col-sm-12" id="negocioslista">
 
 
 						<ul class="fil list-unstyled">
-								<li class="activeee"><a href="#" class="btn-fil" data-filter="todos">Todos</a></li>
-								<li><a href="#" class="btn-fil" data-filter="shein">Shein</a></li>
+								<li class="activeee"><a href="#search" class="btn-fil" data-filter="todos">Todos</a></li>
+								<li><a href="#search" class="btn-fil" data-filter="shein">Shein</a></li>
+								<li><a href="#search" class="btn-fil" data-filter="price-shoes">Price Shoes</a></li>
+								<li><a href="#search" class="btn-fil" data-filter="vianney">Vianney</a></li>
 								
 						
                 
@@ -91,6 +107,24 @@
 						</ul>
 
 					
+
+						<div class="tarjeta box-cat shein shein-express price-shoes vianney">
+							<div class="imagen">
+								<img src="images/boutiqueqbonita.jpg" class="img-fluid" alt="" width="120" loading="lazy" decoding="async">
+							</div>
+							<div class="contenido">
+								<ul class="list-unstyled">
+									<li class="title">Boutique Q. Bonita</li>
+									<li class="direction"><i class="bi bi-geo-alt-fill"></i>  Loma de Buenavista, Doctor Mora</li>
+									<li class="telefono"><i class="bi bi-telephone-fill"></i> 419 113 76 36</li>
+									<li class="whatsapp"><i class="bi bi-whatsapp"></i> 419 113 76 36</li>
+								
+									<li><a href="boutique-q-bonita.html" class="boton boton-menu">Ver Servicios</a></li>
+								</ul>
+							</div>
+						</div>
+
+
 						
 
 					<div class="tarjeta box-cat shein shein-express">
@@ -177,22 +211,7 @@
 
 
 
-						<div class="tarjeta box-cat shein shein-express">
-						<div class="imagen">
-							<img src="images/lupita.png" class="img-fluid" alt="" width="120" loading="lazy" decoding="async">
-						</div>
-						<div class="contenido">
-							<ul class="list-unstyled">
-								<li class="title">Jiménez Lupita</li>
-								<li class="direction"><i class="bi bi-geo-alt-fill"></i> Doctor Mora</li>
-								<!--
-								<li class="telefono"><i class="bi bi-telephone-fill"></i> 419 129 0876</li>
-								<li class="whatsapp"><i class="bi bi-whatsapp"></i> 419 129 0876</li>
-							-->
-								<li><a href="jimenez-lupita.html" class="boton boton-menu">Ver Servicios</a></li>
-							</ul>
-						</div>
-					</div>
+						
 
 
 

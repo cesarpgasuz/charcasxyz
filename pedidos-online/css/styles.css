@@ -296,7 +296,7 @@ h4.subtitles-2{
 .services .listado ul{
 	list-style: none;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 1fr);
 	gap: 50px;
 	padding: 0px;
 }
@@ -306,9 +306,7 @@ h4.subtitles-2{
 	align-items: center;
 }
 .services .listado ul li img{
-	width: 65px;
-	margin-right: 10px;
-	aspect-ratio: 1/1;
+	width: 180px;
 }
 
 .pie-text{
@@ -316,8 +314,33 @@ h4.subtitles-2{
 }
 
 
+.instrucciones{
+	margin-top: 120px;
+}
+.listado-instrucciones{
+	display: flex;
+	justify-content: center;
+}
+.listado-instrucciones ul li{
+	list-style: none;
+	line-height: 30px;
+}
+.listado-instrucciones ul li:not(li:last-child){
+	border-bottom: 1px dotted var(--cgris4);
+	margin-bottom: 25px;
+	padding-bottom: 10px;
+}
 
-
+.premio{
+	margin-top: 80px;
+	display: flex;
+	justify-content: center;
+}
+.premio p{
+	display: inline-block;
+	padding: 15px 10px;
+	border-left: 5px solid #E149A3;
+}
 
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
@@ -363,12 +386,12 @@ h4.subtitles-2{
 
 	
 	/* --- seccion servicios listado ---*/
-	.services .listado ul{
-		gap: 40px;
-		grid-template-columns: 1fr 1fr;
+	.listado-instrucciones ul{
+		padding: 0;
 	}
-	.services .listado ul li img{
-		width: 50px;
+	.listado-instrucciones ul li,
+	.premio p{
+		font-size: 16px;
 	}
 
 	
@@ -416,37 +439,36 @@ h4.subtitles-2{
 	
 	
 	
-	.services h5, .services p{
-		margin: 0px 1.5%;
-	}
 	.services h5{
 		font-size: 18px;
-		margin-bottom: 50px;
-		border-bottom: 1px solid #ddd;
-		padding-bottom: 15px;
-		margin-right: 10%;
-		margin-left: 10%;
-	}
-	.services h5.parrafo{
-		margin-bottom: 50px;
+		margin-bottom: 40px;
+		border-left:  4px solid #F01A3D;
+		padding-left: 10px;
+		text-align: left;
+		display: inline-block;
 	}
 	
-	.services .listado ul{
-		grid-template-columns: 1fr;
+	.services .listado{
+		justify-content: start;
 	}
-	.services .listado ul li{
-		font-size: 14px;
-	}
+
 	.services .listado ul li img{
-		width: 50px;
+		width: 100px;
 	}
-	
-	.services .pie-text{
-		margin-top: 50px;
+	.listado-instrucciones ul{
+		padding: 0;
+	}
+	.listado-instrucciones ul li,
+	.premio p{
 		font-size: 14px;
 	}
-	
-	
+
+	.listado-instrucciones ul li:not(li:last-child){
+		margin-bottom:  10px;
+	}
+	.instrucciones{
+		margin-top: 65px;
+	}
 	
 }
 
@@ -462,7 +484,21 @@ h4.subtitles-2{
 
 
 @media screen and (max-width: 384px){
-	
+	.services h5{
+		font-size: 16px;
+	}
+	.services .listado ul{
+		gap: 10px;
+	}
+	.services .listado ul li{
+		padding: 10px;
+		border: 1px solid var(--cgris4);
+
+	}
+	/* .listado-instrucciones ul li,
+	.premio p{
+		font-size: 12px;
+	} */
 
 }
 
