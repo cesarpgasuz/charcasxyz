@@ -75,7 +75,7 @@ function filtrarNegocios(){
             const negocioA = document.createElement('A');
             negocioA.href = url;
             negocioA.classList.add('boton', 'boton-menu');
-            negocioA.textContent = 'Ver Información';
+            negocioA.textContent = 'Más Información';
 
             negocioUrl.appendChild(negocioA);
             listadoUl.appendChild(negocioUrl);
