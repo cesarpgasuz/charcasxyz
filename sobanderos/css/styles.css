@@ -89,7 +89,7 @@ a:visited.btn-llamar{
 /* --- seccion banner para todas las paginas con tarjetas --- */
 /* //// solo se agrega la imagen y la posicion, la estructa esta en my.css */
 .banner{
-	background: url(../images/cover.jpg) center center no-repeat;
+	background: url(../images/cover2.jpg) center center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
