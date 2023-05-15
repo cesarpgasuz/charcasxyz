@@ -302,6 +302,23 @@ h4.subtitles-2{
 	margin-bottom: 15px;
 }
 
+
+
+.servicios__lista{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
+	gap: 35px;
+	padding: 0;
+}
+.servicios__lista li{
+	list-style: none;
+	display: flex;
+}
+.servicios__lista li i{
+	margin-right: 10px;
+	color: #03B31E;
+}
+
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
@@ -425,6 +442,11 @@ h4.subtitles-2{
 	.redes h3{
 		margin-bottom: 20px;
 		font-size: 24px;
+	}
+
+	.servicios__lista{
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 	
 }

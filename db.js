@@ -760,21 +760,21 @@ export const db = [
         categoria: 'joyeriaybisuteria',
         url: 'sicaru.html'
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
+    {   id: 'mecanicoestracas',
+        nombre: 'Servicio automotriz “Estracas”',
+        direccion: 'Jesus Maria, Doctor Mora',
+        extracto: '',
+        telefono: '4191071359',
+        whatsapp: '4191183244',
+        facebook: 'profile.php?id=100083493246554',
+        instagram: '',
+        imagen: 'estracas.jpg',
+        categoria: 'mecanicos',
+        url: 'servicio-automotriz-estracas.html'
+    },
 
 
 ]
            
-       
+
+
