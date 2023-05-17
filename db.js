@@ -772,6 +772,18 @@ export const db = [
         categoria: 'mecanicos',
         url: 'servicio-automotriz-estracas.html'
     },
+    {   id: 'danzacitlalli',
+        nombre: 'Danza Citlalli Loma de Buenavista',
+        direccion: 'Loma de Buenavista, Doctor Mora',
+        extracto: '',
+        telefono: '4191130439',
+        whatsapp: '4191130439',
+        facebook: 'profile.php?id=100085213144033',
+        instagram: '',
+        imagen: 'danzacitlalli.jpg',
+        categoria: 'danzas',
+        url: 'danza-citlalli-loma-de-buenavista.html'
+    },
 
 
 ]
