@@ -94,7 +94,7 @@ a:visited.btn-llamar{
 /* //// solo se agrega la imagen y la posicion, la estructa esta en my.css */
 
 .banner{
-	background: url(../images/banner.jpg) center 25% no-repeat;
+	background: url(../images/banner-2.jpg) center 25% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
