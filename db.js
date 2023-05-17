@@ -760,21 +760,33 @@ export const db = [
         categoria: 'joyeriaybisuteria',
         url: 'sicaru.html'
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
+    {   id: 'mecanicoestracas',
+        nombre: 'Servicio automotriz “Estracas”',
+        direccion: 'Jesus Maria, Doctor Mora',
+        extracto: '',
+        telefono: '4191071359',
+        whatsapp: '4191183244',
+        facebook: 'profile.php?id=100083493246554',
+        instagram: '',
+        imagen: 'estracas.jpg',
+        categoria: 'mecanicos',
+        url: 'servicio-automotriz-estracas.html'
+    },
+    {   id: 'danzacitlalli',
+        nombre: 'Danza Citlalli Loma de Buenavista',
+        direccion: 'Loma de Buenavista, Doctor Mora',
+        extracto: '',
+        telefono: '4191130439',
+        whatsapp: '4191130439',
+        facebook: 'profile.php?id=100085213144033',
+        instagram: '',
+        imagen: 'danzacitlalli.jpg',
+        categoria: 'danzas',
+        url: 'danza-citlalli-loma-de-buenavista.html'
+    },
 
 
 ]
            
-       
+
+

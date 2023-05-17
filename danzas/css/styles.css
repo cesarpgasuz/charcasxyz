@@ -2,7 +2,7 @@
 
 	--cp1: #0A191F; /* color principal 1 */
 	--cp2: #0D2128; /* color principal 2 */
-	--cs1: #095DCA; /* color secundario 1 (--enlaces y botones) --*/
+	--cs1: #122627; /* color secundario 1 (--enlaces y botones) --*/
 	
 
 	--ct: #0371B3; /* color terciario cyan */
@@ -94,7 +94,7 @@ a:visited.btn-llamar{
 /* //// solo se agrega la imagen y la posicion, la estructa esta en my.css */
 
 .banner{
-	background: url(../images/banner.jpg) center 40px no-repeat;
+	background: url(../images/banner-2.jpg) center 25% no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -128,7 +128,7 @@ a:visited.btn-llamar{
 	font-weight: 400;
 }
 .banner .content p{
-	color: yellow;
+	color: #fffc3c;
 }
 
 
@@ -147,16 +147,13 @@ a:visited.btn-llamar{
 .neg .tarjeta .contenido ul li.telefono{
 	color: var(--ct);
 }
-.neg .tarjeta .contenido ul li.whatsapp{
-	color: #1cb39b;
-}
 a:visited.boton.boton-menu{
-	color: #fff;
+	color: #fffc3c;
 }
 /* -- color para los botones que tengan la clase .boton */
 a:link.boton{
 	background: var(--cs1);
-	color: #fff;
+	color: #fffc3c;
 }
 
 
@@ -167,9 +164,9 @@ a:visited.boton.boton-register{
 }
 /* color de la sombra */
 a:link.boton.boton-register{
-	-webkit-box-shadow: 0px 15px 15px 0px rgba(0, 88, 255, 0.4);
-	-moz-box-shadow: 0px 15px 15px 0px rgba(0, 88, 255, 0.4);
-	box-shadow: 0px 15px 15px 0px rgba(0, 88, 255, 0.4);
+	-webkit-box-shadow: 0px 15px 15px 0px rgb(202, 202, 202);
+	-moz-box-shadow: 0px 15px 15px 0px rgb(202, 202, 202);
+	box-shadow: 0px 15px 15px 0px rgb(202, 202, 202);
 }
 
 
@@ -182,7 +179,7 @@ a:link.boton.boton-register{
 	color: var(--cp1);
 }
 .register .contenido h3 span{
-	color: var(--cs1);
+	color: #A49B1A;
 }
 .register .contenido p{
 	color: var(--cgris1);
@@ -248,11 +245,12 @@ a:link.boton.boton-register{
 
 
 
+
 .banner-r .horario{
 	background: var(--cp1);
 }
 
-.banner-r .horario .content h4, .banner-r .horario .content p{
+.banner-r .horario .content h4{
 	color: yellow;
 }
 .banner-r .horario .content ul li{
@@ -266,6 +264,7 @@ a:link.boton.boton-register{
 
 
 
+
 h4.subtitles-2{
 	color: var(--cp1);
 }
@@ -274,49 +273,54 @@ h4.subtitles-2{
 
 
 /* -----------------------seccion servicios ----------------*/
-.contenedor__servicios{
-	padding: 80px 0;
-}
-.title__servicios{
-	font-size: 32px;
-    margin-bottom: 50px;
-    font-weight: 700;
+
+
+.services h5{
 	text-align: center;
+	font-size: 28px;
+	font-weight: 700;
+	color: var(--cp1);
+
 }
-.servicios__card{
+.services p{
+	text-align: center;
+	font-size: 18px;
+	color: var(--cp1);
+}
+.galeria{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(4, 1fr);
 	gap: 30px;
-}
-.servicio__item{
-	-webkit-box-shadow: 0px 0px 40px 0px rgb(194 194 194 / 40%);
-    -moz-box-shadow: 0px 0px 40px 0px rgba(194,194,194,0.4);
-    box-shadow: 0px 0px 40px 0px rgb(194 194 194 / 40%);
-    border-radius: 5px;
-    padding: 20px 30px;
-	display: flex;
-	flex-direction: column;
-}
-.servicio__item img{
-	width: 64px;
-	margin-bottom: 15px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
-
-
-.servicios__lista{
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
-	gap: 35px;
-	padding: 0;
+.galeria a{
+	width: auto;
+	height: 200px;
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(221,221,221,0.7);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(221,221,221,0.7);
+	box-shadow: 0px 0px 40px 0px rgba(221,221,221,0.7);
+	border-top: 4px;
+	border-right: 4px;
+	border-bottom: 16px;
+	border-left: 4px;
+	border-style: solid;
+	border-color: white;
+	text-decoration: none;
+	outline: none;
+	
 }
-.servicios__lista li{
-	list-style: none;
-	display: flex;
+.galeria a img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
-.servicios__lista li i{
-	margin-right: 10px;
-	color: #03B31E;
+
+.video{
+	margin-top: 80px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
@@ -326,7 +330,9 @@ h4.subtitles-2{
 
 @media screen and (max-width: 1199px){
 
-	
+	.services .content ul.lista {
+		column-gap: 200px;
+	}
 	
 }
 
@@ -343,8 +349,13 @@ h4.subtitles-2{
 	
 	
 	
+	.services-t2{
+		grid-template-columns: 1fr 1fr;
+	}
 	
-	
+	.galeria{
+		grid-template-columns: repeat(2, 1fr);
+	}
 	
 }
 
@@ -362,23 +373,17 @@ h4.subtitles-2{
 	}
 	
 
-	.contenedor__servicios{
-		padding-top: 50px;
-	}
-	.servicios__card{
-		grid-template-columns: 1fr;
-	}
-	.title__servicios{
+	/* servicios --- lista de pruebas --- */
+	.services h5{
 		font-size: 18px;
 	}
+	.services p{
+		font-size: 16px;
+	}
 	
-	.servicio__item{
-		border: 1px solid var(--cgris4);
-		box-shadow: none;
-	}
-	.servicio__item p{
-		font-size: 14px;
-	}
+	
+	
+
 	
 	
 }
@@ -420,37 +425,37 @@ h4.subtitles-2{
 		
 	
 	
-	/* estilos tarjetas redes sociales */
-	.redes a:link.tarjeta{
-		margin-bottom: 20px;
-	}
-	.redes a:link.tarjeta i{
-		position: absolute;
-		left: 10%;
-		font-size: 24px;
-		
+	
+	/* --- estilos servicios listado pruebas */
+	.services h5{
+		font-size: 16px;
 	}
 	
+	.service-item h6, .services p{
+		font-size: 14px;
+	}
+	.service-item figure img{
+		height: 40px;
+		width: 40px;
+	}
+
+
+	.galeria{
+		grid-template-columns: 1fr;
+	}
 	
+
 	
 }
 
 
 @media screen and (max-width: 490px){
 	
-	
-	.redes h3{
-		margin-bottom: 20px;
-		font-size: 24px;
-	}
-
-	.servicios__lista{
-		padding-left: 20px;
-		padding-right: 20px;
+	.services-m1{
+		grid-template-columns: 1fr;
 	}
 	
 }
-
 
 
 
@@ -460,18 +465,8 @@ h4.subtitles-2{
 }
 
 @media screen and (max-width: 344px){
+	
+	
+	
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
