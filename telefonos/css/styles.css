@@ -235,10 +235,16 @@ a:link.boton.boton-register{
 	color: var(--cgris4);
 }
 
-.banner-r .information ul li.tel a:link, .banner-r .information ul li.whatsapp a:link, .banner-r .information ul li.facebook a:link{
+.banner-r .information ul li.tel a:link, 
+.banner-r .information ul li.whatsapp a:link, 
+.banner-r .information ul li.facebook a:link,
+.banner-r .information ul li.instagram a:link{
 	color: greenyellow;
 }
-.banner-r .information ul li.tel a:visited, .banner-r .information ul li.whatsapp a:visited, .banner-r .information ul li.facebook a:visited{
+.banner-r .information ul li.tel a:visited, 
+.banner-r .information ul li.whatsapp a:visited, 
+.banner-r .information ul li.facebook a:visited,
+.banner-r .information ul li.instagram a:visited{
 	color: greenyellow;
 	text-decoration: none;
 }
