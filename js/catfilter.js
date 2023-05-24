@@ -1,16 +1,25 @@
 import { db } from "../db.js";
+
+import { seleccionarCat } from "./estractoRegistro.js";
 import { formatearNumero } from "./formatear.js";
+
+const extratoRegistro = document.querySelector('#estrato-registro');
+
 
 filtrarNegocios();
 
 function filtrarNegocios(){
 
-    const id = document.querySelector('body').dataset.id;
+    const id = parseInt(document.querySelector('body').dataset.id);
     const categorias = db.filter(data => data.categoria === id);
     const contenedor = document.querySelector('#datos-neg');
 
-   
+    // console.log(typeof id);
+    // console.log(categorias)
+
     categorias.forEach(negocio => {
+
+        
 
         const {nombre, direccion, telefono, whatsapp, imagen, url} = negocio;
 
@@ -102,4 +111,10 @@ function filtrarNegocios(){
     });
 
 
+    if(extratoRegistro){
+
+        const infoRegistro = seleccionarCat(id);
+        extratoRegistro.innerHTML = `${infoRegistro}`; 
+     }
 }
+

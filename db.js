@@ -8,7 +8,10 @@ export const db = [
         telefono: '4681231545',
         whatsapp: '4681231545',
         facebook: 'electronicasanchezdoctormora',
-        imagen: 'electronica-sanchez.jpg'
+        imagen: 'electronica-sanchez.jpg',
+        url: 'prueba1.html',
+        categoria: 3,
+        status: true
     },
     {   id: 'ele2',
         nombre: 'Dyxer Team',
@@ -17,7 +20,10 @@ export const db = [
         telefono: '4191389032',
         whatsapp: '4191389032',
         facebook: 'quizas92',
-        imagen: 'logo.jpg'
+        imagen: 'logo.jpg',
+        url: 'prueba2.html',
+        categoria: 3,
+        status: true
     },
     {   id: 'mamalona01',
         nombre: 'La Mamalona Birria de Res Estilo Jalisco',
@@ -27,8 +33,9 @@ export const db = [
         whatsapp: '',
         facebook: 'profile.php?id=100081923708294',
         imagen: 'lamamalona.jpg',
-        categoria: 'tacos',
-        url: 'la-mamalona-birria-de-res-estilo-jalisco.html'
+        url: 'la-mamalona-birria-de-res-estilo-jalisco.html',
+        categoria: 1,
+        status: true
     },
     // {   id: 'tacoslospanchos01',
     //     nombre: 'Tacos los Panchos',
@@ -49,8 +56,9 @@ export const db = [
         whatsapp: '',
         facebook: 'profile.php?id=100054372226315',
         imagen: 'speed.png',
-        categoria: 'tacos',
-        url: 'tacoveloz.html'
+        url: 'tacoveloz.html',
+        categoria: 1,
+        status: true
     },
     {   id: 'taqueria412',
         nombre: 'Taqueria 4/12',
@@ -60,8 +68,9 @@ export const db = [
         whatsapp: '',
         facebook: 'groups/193640264725340/user/100060205655712',
         imagen: '412.jpg',
-        categoria: 'tacos',
-        url: 'taqueria412.html'
+        url: 'taqueria412.html',
+        categoria: 1,
+        status: true
     },
     {   id: 'tacoskarkis',
         nombre: 'Tacos el Karkis',
@@ -71,8 +80,9 @@ export const db = [
         whatsapp: '',
         facebook: '',
         imagen: 'taco.png',
-        categoria: 'tacos',
-        url: 'tacoselkarkis.html'
+        url: 'tacoselkarkis.html',
+        categoria: 1,
+        status: true
     },
     // {   id: 'chascuis01',
     //     nombre: 'Taqueria CHASCUIS',
@@ -93,8 +103,9 @@ export const db = [
         whatsapp: '4191183538',
         facebook: 'profile.php?id=100077218492994',
         imagen: 'bulldogsdinner.jpg',
-        categoria: 'tacos',
-        url: 'bulldogs-dinner.html'
+        url: 'bulldogs-dinner.html',
+        categoria: 1,
+        status: true
     },
     {   id: 'viejon01',
         nombre: 'Tacos "El Viejón"',
@@ -104,8 +115,9 @@ export const db = [
         whatsapp: '',
         facebook: '',
         imagen: 'anciano.png',
-        categoria: 'tacos',
-        url: 'tacos-el-viejon.html'
+        url: 'tacos-el-viejon.html',
+        categoria: 1,
+        status: true
     },
     {   id: 'veterinariaree',
         nombre: 'Veterinaria Ree',
@@ -723,7 +735,9 @@ export const db = [
         instagram: 'la_bodega_del_taco',
         imagen: 'labodegadeltaco.jpg',
         categoria: 'tacos',
-        url: 'la-bodega-del-taco.html'
+        url: 'la-bodega-del-taco.html',
+        categoria: 1,
+        status: true
     },
     {   id: 'jocreando',
         nombre: 'JOCreando',

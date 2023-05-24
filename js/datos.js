@@ -1,7 +1,9 @@
 import {db} from '../db.js';
+
+import { seleccionarCat } from "./estractoRegistro.js";
 import {formatearNumero} from './formatear.js';
 
-
+const extratoRegistro = document.querySelector('#estrato-registro');
 
 iniciarApp();
 
@@ -14,8 +16,10 @@ function iniciarApp(){
     const contenedor = document.querySelector('#datos');
 
 
-    const {direccion, extracto, facebook, imagen, nombre, telefono, whatsapp, instagram} = filtrado[0];
 
+    const {direccion, extracto, facebook, imagen, nombre, telefono, whatsapp, instagram, categoria} = filtrado[0];
+
+    console.log(typeof categoria);
 
     /// liston top
     const bannerInfo = document.querySelector('.p-no-min');
@@ -138,11 +142,16 @@ function iniciarApp(){
         informationDiv.appendChild(informationListado);
 
         contenedor.appendChild(informationDiv);
+    
+        
+    // invitacion para el registro de negocios
+    if(extratoRegistro){
 
+        const infoRegistro = seleccionarCat(categoria);
+        extratoRegistro.innerHTML = `${infoRegistro}`; 
+    }
+        
 
 };
-
-
-
 
 

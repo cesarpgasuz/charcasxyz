@@ -395,7 +395,7 @@ a:link.boton.boton-register{
 	height: 100px;
 }
 /* ----------------------------------------------------------------*/
-/* -------------------------- seccion registro --------------------*/
+/* -------------------------- seccion registro /// se cambio por invitacion--------------------*/
 /* ----------------------------------------------------------------*/
 
 
@@ -425,46 +425,78 @@ a:link.boton.boton-register{
 	margin-bottom: 20px;
 }
 
-
-/* -----------------------------------------------------------------*/
-/* --------------------------- contacto-----------------------------*/
-/* -----------------------------------------------------------------*/
-
-
-.contacto{
-	width: 100%;
-	height: auto;
-	padding: 80px 0px;
-	text-align: center;
-	margin-top: 30px;
+.invitacion{
+	padding: 50px 10px;
 }
-
-.contacto a:link{
-	text-decoration: none;
-	outline: none;
-	padding: 15px 60px;
+.invitacion__container{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	background-color: #f9f9f9;
+	border: 1px solid #ececec;
+	padding: 20px;
+	border-radius: 10px;
+}
+.invitacion__texto p{
+	line-height: 200%;
 	font-size: 18px;
-	font-weight: 600;
-	font-family: var(--fuentep);
+	color: var(--cp1);
+	margin: 0;
+}
+.invitacion__button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.button__register{
+	text-decoration: none;
+	background-color: #095dca;
+	color: white;
+	padding: 10px 25px;
+	border: 2px solid transparent;
+	border-radius: 10px;
+}
+.button__register:hover{
+	border: 2px solid #095dca;
+	color: #095dca;
+	background-color: transparent;
 }
 
+@media screen and (max-width: 991px){
+	.invitacion__container{
+		grid-template-columns: 1fr;
+		gap: 15px;
+	}
+	.invitacion__texto p{
+		text-align: center;
+	}
+}
+@media screen and (max-width: 575px){
+	.invitacion__texto p, .button__register{
+		font-size: 14px;
+	}
+}
 
 
 
 /* ------------------------------------------------------------------*/
 /* ------------------------------footer -----------------------------*/
 /* ------------------------------------------------------------------*/
-.dy{
-	padding: 20px 0px;
-	text-align: center;
-	width: 100%;
-	height: auto;
+footer{
+	background-color: #0A191F;
+	padding: 25px 0px;
 }
-.dy h6{
+.copy{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.copy img{
+	width: 50px;
+}
+.copy p{
+	margin: 0;
 	font-size: 14px;
-	font-weight: 600;
-	margin-bottom: 0px;
-	font-family: var(--fuentep);
+	color: #bfbfbf;
 }
 
 
