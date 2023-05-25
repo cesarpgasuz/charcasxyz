@@ -1,11 +1,14 @@
 import { db } from "../db.js";
 
-import { seleccionarCat } from "./estractoRegistro.js";
+import { extractoCategoria } from "./extractoCategoria.js";
 import { formatearNumero } from "./formatear.js";
 
-const extratoRegistro = document.querySelector('#estrato-registro');
+//variables
 
+const invitacion = document.querySelector('.invitacion');
+const footer = document.querySelector('footer');
 
+ 
 filtrarNegocios();
 
 function filtrarNegocios(){
@@ -111,10 +114,93 @@ function filtrarNegocios(){
     });
 
 
-    if(extratoRegistro){
+    if(invitacion){
 
-        const infoRegistro = seleccionarCat(id);
-        extratoRegistro.innerHTML = `${infoRegistro}`; 
+
+        const container = document.createElement('DIV');
+        container.classList.add('container');
+
+        const row = document.createElement('DIV');
+        row.classList.add('row');
+
+        const invitacionContainer = document.createElement('DIV');
+        invitacionContainer.classList.add('invitacion__container');
+
+        const invitacionTexto = document.createElement('DIV');
+        invitacionTexto.classList.add('invitacion__texto');
+
+        const invitacionInfo = extractoCategoria(id);
+        const invitacionParrafo = document.createElement('P');
+        invitacionParrafo.innerHTML = `${invitacionInfo}`
+
+        const invitacionButton = document.createElement('DIV');
+        invitacionButton.classList.add('invitacion__button');
+
+        const invitacionEnlace = document.createElement('A');
+        invitacionEnlace.href = '../registro.html';
+        invitacionEnlace.classList.add('button__register');
+        invitacionEnlace.textContent = 'Quiero Registrarme';
+
+
+        
+        //agregagmos al html
+        invitacionTexto.appendChild(invitacionParrafo);
+        invitacionButton.appendChild(invitacionEnlace);
+
+        invitacionContainer.appendChild(invitacionTexto);
+        invitacionContainer.appendChild(invitacionButton);
+
+        row.appendChild(invitacionContainer);
+
+        container.appendChild(row);
+
+        invitacion.appendChild(container);
+
+
      }
+
+     if(footer){
+
+        const year = new Date().getFullYear();
+    
+        const container = document.createElement('DIV');
+        container.classList.add('container');
+
+        const row = document.createElement('DIV');
+        row.classList.add('row');
+
+        const copy = document.createElement('DIV');
+        copy.classList.add('copy');
+
+        const imagenCopy = document.createElement('IMG');
+        imagenCopy.src = 'https://charcas.xyz/images/icon192n.png';
+        imagenCopy.classList.add('img-fluid');
+        imagenCopy.loading = 'lazy';
+        imagenCopy.decoding = 'async';
+
+        const copyText = document.createElement('P');
+        copyText.innerHTML = `Copyright © <span class="year-page">${year}</span>`;
+
+        //agregamos al html
+        copy.appendChild(imagenCopy);
+        copy.appendChild(copyText);
+
+        row.appendChild(copy);
+
+        container.appendChild(row);
+
+        footer.appendChild(container);
+
+    }
+
+
+
+
+
+
+
+
+
+
 }
 

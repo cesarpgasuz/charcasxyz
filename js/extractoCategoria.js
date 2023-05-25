@@ -1,6 +1,6 @@
 import { categoria } from "../cat.js";
 
-export function seleccionarCat(id){
+export function extractoCategoria(id){
    
     const idCategoria = id;
     
@@ -13,4 +13,3 @@ export function seleccionarCat(id){
     return extracto;
 
 }
-

@@ -394,39 +394,18 @@ a:link.boton.boton-register{
 	width: 100%;
 	height: 100px;
 }
-/* ----------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------*/
 /* -------------------------- seccion registro /// se cambio por invitacion--------------------*/
-/* ----------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------*/
 
-
-.register{
-	width: 100%;
-	height: auto;
-	padding-bottom: 100px;
-	padding-top: 100px;
-}
-
-.register .contenido{
-	text-align: center;
-	font-family: var(--fuentep);
-}
-
-.register .contenido h3{
-	font-size: 36px;
-	font-weight: 700;
-}
-
-.register .contenido p{
-	font-size: 16px;
-	color: var(--cgris1);
-	line-height: 30px;
-	font-weight: 400;
-	margin-top: 10px;
-	margin-bottom: 20px;
-}
 
 .invitacion{
 	padding: 50px 10px;
+}
+@media screen and (max-width: 767px){
+	.invitacion{
+		margin-bottom: 120px;
+	}
 }
 .invitacion__container{
 	display: grid;
@@ -499,9 +478,86 @@ footer{
 	color: #bfbfbf;
 }
 
+@media screen and (max-width: 767px){
+	footer{
+		display: none;
+	}
+}
+
+
+/* --------------------- codigo temporal se eliminara cuando 
+se arregle el filtrado de negocios */
+
+
+.register{
+	width: 100%;
+	height: auto;
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+
+.register .contenido{
+	text-align: center;
+	font-family: var(--fuentep);
+}
+
+.register .contenido h3{
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.register .contenido p{
+	font-size: 16px;
+	color: var(--cgris1);
+	line-height: 30px;
+	font-weight: 400;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+
+/* -----------------------------------------------------------------*/
+/* --------------------------- contacto-----------------------------*/
+/* -----------------------------------------------------------------*/
+
+
+.contacto{
+	width: 100%;
+	height: auto;
+	padding: 80px 0px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.contacto a:link{
+	text-decoration: none;
+	outline: none;
+	padding: 15px 60px;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: var(--fuentep);
+}
 
 
 
+
+/* ------------------------------------------------------------------*/
+/* ------------------------------footer -----------------------------*/
+/* ------------------------------------------------------------------*/
+.dy{
+	padding: 20px 0px;
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+.dy h6{
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 0px;
+	font-family: var(--fuentep);
+}
+
+/*--------- fin codigo temporal ---*/
 
 /* --- ------------------------------------------------------------------------------------------- */
 /* --- --------------------------------------------------- template ----------------------------- */

@@ -6,13 +6,139 @@ export const categoria = [
     },
     {
         id: 2,
-        nombre: 'joyas',
-        extracto: '<h3>Quieres registrar tu Negocio de Venta de <span>Joyas, Collares, Pulseras, y Accesorios.</span> 💎💍</h3>'
+        nombre: 'laboratorio',
+        extracto: '¿Eres parte de un laboratorio y buscas promover tus servicios de calidad? Registra tu laboratorio y permite que más personas accedan a tus análisis clínicos, pruebas médicas y servicios de diagnóstico de vanguardia. Regístrate en charcas.xyz y eleva la visibilidad de tu laboratorio, atrayendo a nuevos clientes.'
     },
     {
         id: 3,
         nombre: 'electrodomesticos',
-        extracto: '<h3>Quieres registrar tus <span>Servicios de Reparación</span> 🛠️🪛🔩🧰📺</h3>'
+        extracto: '¿Eres un profesional en reparación de electrodomésticos y electrónica? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Amplía tu visibilidad, llega a más clientes y muestra tus habilidades en reparación.'
+    },
+    {
+        id: 4,
+        nombre: 'marketing',
+        extracto: '¿Tienes un negocio de publicidad y deseas aumentar tu visibilidad? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Llega a una audiencia más amplia, muestra tus servicios de calidad y promociona tu experiencia en publicidad'
+    },
+    {
+        id: 5,
+        nombre: 'autolavado',
+        extracto: '¿Eres propietario de un autolavado y deseas impulsar tu negocio? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Atrae a más clientes, muestra la calidad de tus servicios y promociona tus paquetes de lavado. '
+    },
+    {
+        id: 6,
+        nombre: 'carpinteria',
+        extracto: '¿Eres carpintero y buscas aumentar tus oportunidades de negocio? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Llega a más clientes, muestra tus habilidades y promociona tus creaciones únicas en madera.'
+    },
+    {
+        id: 7,
+        nombre: 'club',
+        extracto: '¿Eres parte de un club y quieres llegar a más personas apasionadas como tú? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Amplía tu alcance, promociona tus actividades y descubre nuevos miembros entusiastas.'
+    },
+    {
+        id: 8,
+        nombre: 'construccion',
+        extracto: '¿Tienes un negocio de construcción y/o venta de materiales para la construcción? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Llega a más clientes, muestra tu amplio catálogo de materiales y promociona tus servicios de construcción.'
+    },
+    {
+        id: 9,
+        nombre: 'danza',
+        extracto: '¿Formas parte de un grupo de danza prehispánica y quieres dar a conocer tu arte ancestral? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Llega a nuevos públicos, muestra tus impactantes actuaciones y promociona tu pasión por la danza prehispánica.'
+    },
+    {
+        id: 10,
+        nombre: 'dentista',
+        extracto: '¿Eres dentista y deseas expandir tu práctica dental? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Llega a más pacientes, muestra tus servicios dentales de calidad y promociona tu experiencia en el campo de la odontología.'
+    },
+    {
+        id: 11,
+        nombre: 'eventos-sociales',
+        extracto: '¿Ofreces servicios de decoración para eventos sociales y quieres que tu talento brille aún más? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Llega a un público más amplio, muestra tus creaciones únicas y promociona tus servicios de decoración para bodas, fiestas y eventos especiales. '
+    },
+    {
+        id: 12,
+        nombre: 'funeraria',
+        extracto: '¿Eres propietario de una funeraria y deseas brindar apoyo a las familias en momentos difíciles? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Llega a aquellos que necesitan tus servicios, muestra tu compromiso con la calidad y la compasión, y promociona tu experiencia en la organización de funerales y servicios conmemorativos. '
+    },
+    {
+        id: 13,
+        nombre: 'hamburguesa',
+        extracto: '¿Eres dueño de un negocio de hamburguesas y hotdogs y quieres deleitar a los amantes de la comida rápida? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Llega a más clientes, muestra tus jugosas hamburguesas y sabrosos hotdogs, y promociona tus opciones de menú variadas.'
+    },
+    {
+        id: 14,
+        nombre: 'informatica',
+        extracto: '¿Eres propietario de un negocio de informática y deseas brindar servicios profesionales a tus clientes? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Llega a más personas que necesitan soluciones informáticas, muestra tu experiencia y promociona tus servicios especializados.'
+    },
+    {
+        id: 15,
+        nombre: 'internet',
+        extracto: '¿Eres proveedor de servicios de internet y deseas conectar a más usuarios a la red de alta velocidad? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora.  Llega a más hogares y empresas, muestra la calidad de tu servicio y promociona tus planes de conexión rápida y estable. '
+    },
+    {
+        id: 16,
+        nombre: 'joyeriaybisuteria',
+        extracto: '¿Eres un apasionado vendedor de joyería y bisutería? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Destaca entre la competencia y permite que los amantes de la joyería descubran tus piezas únicas y elegantes. '
+    },
+    {
+        id: 17,
+        nombre: 'maquillaje',
+        extracto: '¿Tienes un negocio de peinado y maquillaje? Únete a charcas.xyz. Registra tu negocio y muestra tus increíbles servicios de peinado, maquillaje y productos de belleza. Conecta con clientes interesados y expande tu alcance en el mercado.'
+    },
+    {
+        id: 18,
+        nombre: 'mecanico',
+        extracto: '¿Tienes un taller mecánico y quieres destacar tus servicios? Únete a charcas.xyz, el directorio virtual de Doctor Mora. Registra tu negocio y muestra tus habilidades en reparación de vehículos, mantenimiento y servicios especializados.'
+    },
+    {
+        id: 19,
+        nombre: 'pedidosonline',
+        extracto: '¿Eres un proveedor de productos online y quieres alcanzar un mayor éxito? Únete a charcas.xyz, el directorio virtual de Doctor Mora. Promociona tus artículos únicos, conecta con clientes potenciales y haz crecer tu negocio en el mundo digital. '
+    },
+    {
+        id: 20,
+        nombre: 'pizza',
+        extracto: '¿Tienes un negocio de pizzas? Regístrate en charcas.xyz y muestra tus deliciosas creaciones a un público ávido de sabores. Destaca, promociona tus ofertas y conviértete en la opción preferida para los amantes de la pizza. ¡Únete hoy!'
+    },
+    {
+        id: 21,
+        nombre: 'psicologo',
+        extracto: '¿Ofreces servicios psicológicos? Regístrate en charcas.xyz y llega a aquellos que buscan apoyo emocional. Promociona tus servicios, brinda ayuda profesional y marca la diferencia en la vida de las personas. '
+    },
+    {
+        id: 22,
+        nombre: 'restaurante',
+        extracto: '¿Tienes un restaurante y quieres aumentar tu visibilidad? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Llega a más clientes, promociona tus platillos y destaca en la industria gastronómica. '
+    },
+    {
+        id: 23,
+        nombre: 'taquitosdorados',
+        extracto: '¿Te apasiona la comida mexicana? Registra tu negocio en charcas.xyz, el directorio virtual para los amantes de los tacos dorados, pambazos y enchiladas. Llega a más comensales, muestra tus deliciosos platillos y promociona tus especialidades culinarias.'
+    },
+    {
+        id: 24,
+        nombre: 'taxis',
+        extracto: '¿Eres conductor de taxi o Uber y quieres maximizar tus oportunidades de negocio? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Aumenta tu visibilidad, llega a más pasajeros y promociona tus tarifas competitivas. '
+    },
+    {
+        id: 25,
+        nombre: 'telefonos',
+        extracto: '¿Ofreces servicios de reparación y venta de celulares y deseas aumentar tu visibilidad? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Llega a más clientes, promociona tus servicios y destaca entre la competencia.'
+    },
+    {
+        id: 26,
+        nombre: 'terapiafisica',
+        extracto: '¿Ofreces servicios de terapias físicas y deseas llegar a más personas que necesitan tu ayuda? ? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Muestra tus habilidades, promociona tus servicios y ayuda a mejorar la salud y el bienestar de tus clientes. '
+    },
+    {
+        id: 27,
+        nombre: 'torta',
+        extracto: '¿Tienes un negocio de venta de tortas y quieres que tus deliciosas creaciones lleguen a más personas? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Atrae nuevos clientes, muestra tus variedades y sabores irresistibles.'
+    },
+    {
+        id: 28,
+        nombre: 'veterinaria',
+        extracto: '¿Eres propietario de una veterinaria y deseas brindar cuidado y atención de calidad a más mascotas? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Llega a una amplia audiencia, muestra tus servicios especializados, promociona tus consultas, vacunas y tratamientos. '
     }
+
 
 ]

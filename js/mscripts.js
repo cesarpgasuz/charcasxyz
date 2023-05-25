@@ -20,13 +20,7 @@ goBack.addEventListener('click',function(){
 	}
 });
 
-// fecha automatica
-const yearPage = new Date().getFullYear();
-const yearHTML = document.querySelector('.year-page');
 
-if(yearHTML){
-	yearHTML.textContent = yearPage;
-}
 
 //funcion activar los efectos
 const callback = (entries) => {
