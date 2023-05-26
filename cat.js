@@ -138,6 +138,11 @@ export const categoria = [
         id: 28,
         nombre: 'veterinaria',
         extracto: '¿Eres propietario de una veterinaria y deseas brindar cuidado y atención de calidad a más mascotas? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Llega a una amplia audiencia, muestra tus servicios especializados, promociona tus consultas, vacunas y tratamientos. '
+    },
+    {
+        id: 29,
+        nombre: 'web',
+        extracto: '¿Eres un diseñador web o un desarrollador en busca de expandir tu alcance y encontrar nuevos clientes? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Llega a un público más amplio, muestra tus habilidades creativas, promociona tus servicios de diseño, desarrollo y optimización web. '
     }
 
 

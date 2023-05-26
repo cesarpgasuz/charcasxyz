@@ -885,6 +885,19 @@ export const db = [
         categoria: 7,
         status: true
     },
+    {   id: 'dyxerteam',
+        nombre: 'Dyxer Team',
+        direccion: 'Doctor Mora',
+        extracto: '',
+        telefono: '',
+        whatsapp: '4191389032',
+        facebook: '',
+        instagram: '',
+        imagen: 'dyxerteam.jpg',
+        url: 'dyxerteam.html',
+        categoria: 29,
+        status: true
+    },
 
 
 ]
