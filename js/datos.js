@@ -1,9 +1,13 @@
 import {db} from '../db.js';
+
+import { extractoCategoria } from "./extractoCategoria.js";
 import {formatearNumero} from './formatear.js';
 
+//variables
+const invitacion = document.querySelector('.invitacion');
+const footer = document.querySelector('footer');
 
-
-iniciarApp();
+iniciarApp(); 
 
 function iniciarApp(){
 
@@ -14,8 +18,10 @@ function iniciarApp(){
     const contenedor = document.querySelector('#datos');
 
 
-    const {direccion, extracto, facebook, imagen, nombre, telefono, whatsapp, instagram} = filtrado[0];
 
+    const {direccion, extracto, facebook, imagen, nombre, telefono, whatsapp, instagram, categoria} = filtrado[0];
+
+    console.log(typeof categoria);
 
     /// liston top
     const bannerInfo = document.querySelector('.p-no-min');
@@ -138,11 +144,87 @@ function iniciarApp(){
         informationDiv.appendChild(informationListado);
 
         contenedor.appendChild(informationDiv);
+    
+        
+    // invitacion para el registro de negocios
+    if(invitacion){
 
+        const container = document.createElement('DIV');
+        container.classList.add('container');
+
+        const row = document.createElement('DIV');
+        row.classList.add('row');
+
+        const invitacionContainer = document.createElement('DIV');
+        invitacionContainer.classList.add('invitacion__container');
+
+        const invitacionTexto = document.createElement('DIV');
+        invitacionTexto.classList.add('invitacion__texto');
+
+        const invitacionInfo = extractoCategoria(categoria);
+        const invitacionParrafo = document.createElement('P');
+        invitacionParrafo.innerHTML = `${invitacionInfo}`
+
+        const invitacionButton = document.createElement('DIV');
+        invitacionButton.classList.add('invitacion__button');
+
+        const invitacionEnlace = document.createElement('A');
+        invitacionEnlace.href = '../registro.html';
+        invitacionEnlace.classList.add('button__register');
+        invitacionEnlace.textContent = 'Quiero Registrarme';
+
+
+        
+        //agregagmos al html
+        invitacionTexto.appendChild(invitacionParrafo);
+        invitacionButton.appendChild(invitacionEnlace);
+
+        invitacionContainer.appendChild(invitacionTexto);
+        invitacionContainer.appendChild(invitacionButton);
+
+        row.appendChild(invitacionContainer);
+
+        container.appendChild(row);
+
+        invitacion.appendChild(container);
+
+    }
+    
+    
+    if(footer){
+
+        const year = new Date().getFullYear();
+    
+        const container = document.createElement('DIV');
+        container.classList.add('container');
+
+        const row = document.createElement('DIV');
+        row.classList.add('row');
+
+        const copy = document.createElement('DIV');
+        copy.classList.add('copy');
+
+        const imagenCopy = document.createElement('IMG');
+        imagenCopy.src = 'https://charcas.xyz/images/icon192n.png';
+        imagenCopy.classList.add('img-fluid');
+        imagenCopy.loading = 'lazy';
+        imagenCopy.decoding = 'async';
+
+        const copyText = document.createElement('P');
+        copyText.innerHTML = `Copyright © <span class="year-page">${year}</span>`;
+
+        //agregamos al html
+        copy.appendChild(imagenCopy);
+        copy.appendChild(copyText);
+
+        row.appendChild(copy);
+
+        container.appendChild(row);
+
+        footer.appendChild(container);
+
+    }
 
 };
-
-
-
 
 

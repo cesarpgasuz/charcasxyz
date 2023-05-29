@@ -8,7 +8,10 @@ export const db = [
         telefono: '4681231545',
         whatsapp: '4681231545',
         facebook: 'electronicasanchezdoctormora',
-        imagen: 'electronica-sanchez.jpg'
+        imagen: 'electronica-sanchez.jpg',
+        url: 'prueba1.html',
+        categoria: 3,
+        status: true
     },
     {   id: 'ele2',
         nombre: 'Dyxer Team',
@@ -17,7 +20,10 @@ export const db = [
         telefono: '4191389032',
         whatsapp: '4191389032',
         facebook: 'quizas92',
-        imagen: 'logo.jpg'
+        imagen: 'logo.jpg',
+        url: 'prueba2.html',
+        categoria: 3,
+        status: true
     },
     {   id: 'mamalona01',
         nombre: 'La Mamalona Birria de Res Estilo Jalisco',
@@ -27,8 +33,9 @@ export const db = [
         whatsapp: '',
         facebook: 'profile.php?id=100081923708294',
         imagen: 'lamamalona.jpg',
-        categoria: 'tacos',
-        url: 'la-mamalona-birria-de-res-estilo-jalisco.html'
+        url: 'la-mamalona-birria-de-res-estilo-jalisco.html',
+        categoria: 1,
+        status: true
     },
     // {   id: 'tacoslospanchos01',
     //     nombre: 'Tacos los Panchos',
@@ -49,8 +56,9 @@ export const db = [
         whatsapp: '',
         facebook: 'profile.php?id=100054372226315',
         imagen: 'speed.png',
-        categoria: 'tacos',
-        url: 'tacoveloz.html'
+        url: 'tacoveloz.html',
+        categoria: 1,
+        status: true
     },
     {   id: 'taqueria412',
         nombre: 'Taqueria 4/12',
@@ -60,8 +68,9 @@ export const db = [
         whatsapp: '',
         facebook: 'groups/193640264725340/user/100060205655712',
         imagen: '412.jpg',
-        categoria: 'tacos',
-        url: 'taqueria412.html'
+        url: 'taqueria412.html',
+        categoria: 1,
+        status: true
     },
     {   id: 'tacoskarkis',
         nombre: 'Tacos el Karkis',
@@ -71,8 +80,9 @@ export const db = [
         whatsapp: '',
         facebook: '',
         imagen: 'taco.png',
-        categoria: 'tacos',
-        url: 'tacoselkarkis.html'
+        url: 'tacoselkarkis.html',
+        categoria: 1,
+        status: true
     },
     // {   id: 'chascuis01',
     //     nombre: 'Taqueria CHASCUIS',
@@ -93,8 +103,9 @@ export const db = [
         whatsapp: '4191183538',
         facebook: 'profile.php?id=100077218492994',
         imagen: 'bulldogsdinner.jpg',
-        categoria: 'tacos',
-        url: 'bulldogs-dinner.html'
+        url: 'bulldogs-dinner.html',
+        categoria: 1,
+        status: true
     },
     {   id: 'viejon01',
         nombre: 'Tacos "El Viejón"',
@@ -104,8 +115,9 @@ export const db = [
         whatsapp: '',
         facebook: '',
         imagen: 'anciano.png',
-        categoria: 'tacos',
-        url: 'tacos-el-viejon.html'
+        url: 'tacos-el-viejon.html',
+        categoria: 1,
+        status: true
     },
     {   id: 'veterinariaree',
         nombre: 'Veterinaria Ree',
@@ -115,8 +127,9 @@ export const db = [
         whatsapp: '4191059763',
         facebook: 'Veterinaria-Ree-106300607927170',
         imagen: 'veterinariaree.jpg',
-        categoria: 'veterinarias',
-        url: 'veterinariaree.html'
+        url: 'veterinariaree.html',
+        categoria: 28,
+        status: true
     },
     {   id: 'decorarteper',
         nombre: 'DecorArte Per',
@@ -126,8 +139,9 @@ export const db = [
         whatsapp: '4191311354',
         facebook: 'PerlaRodriguez13',
         imagen: 'decorarteperla.jpg',
-        categoria: 'eventos-sociales',
-        url: 'decorarte-per.html'
+        url: 'decorarte-per.html',
+        categoria: 11,
+        status: true
     },
     {   id: 'marthapichardoramirez',
         nombre: 'Lic. Martha Píchardo Ramírez',
@@ -137,8 +151,9 @@ export const db = [
         whatsapp: '4191807961',
         facebook: '',
         imagen: 'psicologia.png',
-        categoria: 'psicologos',
-        url: 'martha-pichardo-ramirez.html'
+        url: 'martha-pichardo-ramirez.html',
+        categoria: 21,
+        status: true
     },
     {   id: 'drcell',
         nombre: 'Dr.Cell',
@@ -148,8 +163,9 @@ export const db = [
         whatsapp: '4191173458',
         facebook: 'profile.php?id=100063837952875',
         imagen: 'drcell.jpg',
-        categoria: 'telefonos',
-        url: 'drcell.html'
+        url: 'drcell.html',
+        categoria: 25,
+        status: true
     },
     {   id: 'mobileshop',
         nombre: 'MOBILE SHOP',
@@ -160,8 +176,9 @@ export const db = [
         facebook: '',
         instagram: 'mobileshop_as',
         imagen: 'mobileshop.jpg',
-        categoria: 'telefonos',
-        url: 'mobile-shop.html'
+        url: 'mobile-shop.html',
+        categoria: 25,
+        status: true
     },
     {   id: 'javierchavarin',
         nombre: 'Javier Chavarin',
@@ -171,8 +188,9 @@ export const db = [
         whatsapp: '5552748822',
         facebook: '',
         imagen: 'boy.png',
-        categoria: 'telefonos',
-        url: 'javierchavarin.html'
+        url: 'javierchavarin.html',
+        categoria: 25,
+        status: true
     },
     {   id: 'charcasteck',
         nombre: 'Charcas Teck',
@@ -182,8 +200,9 @@ export const db = [
         whatsapp: '4191009822',
         facebook: 'CELULARESYACCESORIOSMATA',
         imagen: 'charcasteck.jpg',
-        categoria: 'telefonos',
-        url: 'charcas-teck.html'
+        url: 'charcas-teck.html',
+        categoria: 25,
+        status: true
     },
     {   id: 'dyst',
         nombre: 'DYST',
@@ -193,8 +212,9 @@ export const db = [
         whatsapp: '4191226199',
         facebook: 'DystDrMora',
         imagen: 'dyst.jpg',
-        categoria: 'informatica',
-        url: 'dyst.html'
+        url: 'dyst.html',
+        categoria: 14,
+        status: true
     },
     {   id: 'merlost',
         nombre: 'Merlo - Soporte Técnico',
@@ -204,8 +224,9 @@ export const db = [
         whatsapp: '',
         facebook: 'MerloST',
         imagen: 'merlo.jpg',
-        categoria: 'informatica',
-        url: 'merlost.html'
+        url: 'merlost.html',
+        categoria: 14,
+        status: true
     },
     {   id: 'autolavadochaparrito',
         nombre: 'Autolavado "El Chaparrito"',
@@ -215,8 +236,9 @@ export const db = [
         whatsapp: '',
         facebook: '',
         imagen: 'chaparrito.png',
-        categoria: 'autolavados',
-        url: 'autovalado-el-chaparrito.html'
+        url: 'autovalado-el-chaparrito.html',
+        categoria: 5,
+        status: true
     },
     {   id: 'taxisosa',
         nombre: 'Taxi Sosa',
@@ -226,8 +248,9 @@ export const db = [
         whatsapp: '',
         facebook: 'taxi.sosa',
         imagen: 'taxisosa.jpg',
-        categoria: 'taxis',
-        url: 'taxi-sosa.html'
+        url: 'taxi-sosa.html',
+        categoria: 24,
+        status: true
     },
     {   id: 'fabianrios',
         nombre: 'Fabian Rios',
@@ -237,8 +260,9 @@ export const db = [
         whatsapp: '',
         facebook: '',
         imagen: 'conductor-de-taxi.png',
-        categoria: 'taxis',
-        url: ''
+        url: '',
+        categoria: 24,
+        status: true
     },
     {   id: 'alexabolanos',
         nombre: 'Alexa Bolaños',
@@ -248,8 +272,9 @@ export const db = [
         whatsapp: '',
         facebook: 'izcheliithaboniitha.vargas',
         imagen: 'girl.png',
-        categoria: 'pedidosOnline',
-        url: 'alexa.html'
+        url: 'alexa.html',
+        categoria: 19,
+        status: true
     },
     {   id: 'karinaivethramirez',
         nombre: 'Karina Iveth Ramirez Lugo',
@@ -259,8 +284,9 @@ export const db = [
         whatsapp: '',
         facebook: 'karinaiveth.ramirezlugo',
         imagen: 'beauty.png',
-        categoria: 'pedidosOnline',
-        url: 'karina-iveth-ramirez-lugo.html'
+        url: 'karina-iveth-ramirez-lugo.html',
+        categoria: 19,
+        status: true
     },
     {   id: 'obloom',
         nombre: 'OBloom',
@@ -270,8 +296,9 @@ export const db = [
         whatsapp: '4426688221',
         facebook: 'orquideabtq',
         imagen: 'obloom.jpg',
-        categoria: 'pedidosOnline',
-        url: 'obloom.html'
+        url: 'obloom.html',
+        categoria: 19,
+        status: true
     },
     {   id: 'pedidossheinrb',
         nombre: 'Pedidos shein Dr Mora R&B',
@@ -281,8 +308,9 @@ export const db = [
         whatsapp: '4191290876',
         facebook: 'profile.php?id=100083225803672',
         imagen: 'pedidosheindoctormoraryb.jpg',
-        categoria: 'pedidosOnline',
-        url: 'pedidos-shein-dr-mora-ryb.html'
+        url: 'pedidos-shein-dr-mora-ryb.html',
+        categoria: 19,
+        status: true
     },
     {   id: 'ventasheindrmora',
         nombre: 'Venta shein dr mora',
@@ -292,8 +320,9 @@ export const db = [
         whatsapp: '',
         facebook: 'profile.php?id=100071211173387',
         imagen: 'pedidosheindoctormoraryb.jpg',
-        categoria: 'pedidosOnline',
-        url: 'venta-shein-dr-mora.html'
+        url: 'venta-shein-dr-mora.html',
+        categoria: 19,
+        status: true
     },
     {   id: 'boutiqueqbonita',
         nombre: 'Boutique Q. Bonita',
@@ -303,8 +332,9 @@ export const db = [
         whatsapp: '4191137636',
         facebook: 'maryguadalupejg',
         imagen: 'boutiqueqbonita.jpg',
-        categoria: 'pedidosOnline',
-        url: 'boutique-q-bonita.html'
+        url: 'boutique-q-bonita.html',
+        categoria: 19,
+        status: true
     },
     {   id: 'maritzalopez',
         nombre: 'Maritza Lopez',
@@ -314,8 +344,9 @@ export const db = [
         whatsapp: '',
         facebook: 'girazolzitha',
         imagen: 'maritza.png',
-        categoria: 'pedidosOnline',
-        url: 'maritza-lopez.html'
+        url: 'maritza-lopez.html',
+        categoria: 19,
+        status: true
     },
     {   id: 'latorteria',
         nombre: 'La Torteria',
@@ -325,8 +356,9 @@ export const db = [
         whatsapp: '',
         facebook: '',
         imagen: 'torteria.png',
-        categoria: 'restaurantes',
-        url: 'latorteria.html'
+        url: 'latorteria.html',
+        categoria: 22,
+        status: true
     },
     {   id: 'tortascontradicion',
         nombre: 'Tortas con Tradición',
@@ -336,8 +368,9 @@ export const db = [
         whatsapp: '',
         facebook: 'profile.php?id=100070528321340',
         imagen: 'cristo-rey.png',
-        categoria: 'tortas',
-        url: 'tortascontradicion.html'
+        url: 'tortascontradicion.html',
+        categoria: 27,
+        status: true
     },
     {   id: 'loncheriaelguero',
         nombre: 'Loncheria el Güero',
@@ -347,8 +380,9 @@ export const db = [
         whatsapp: '4191033370',
         facebook: 'Loncheria-el-Güero-1429585804015487',
         imagen: 'cocinero.png',
-        categoria: 'tortas',
-        url: 'loncheriaelguero.html'
+        url: 'loncheriaelguero.html',
+        categoria: 27,
+        status: true
     },
     {   id: 'tortaz',
         nombre: 'Tortaz Gigantes',
@@ -358,8 +392,9 @@ export const db = [
         whatsapp: '',
         facebook: 'profile.php?id=100070059787585',
         imagen: 'taz.jpg',
-        categoria: 'tortas',
-        url: 'tortaz.html'
+        url: 'tortaz.html',
+        categoria: 27,
+        status: true
     },
     {   id: 'gabyordunagomez',
         nombre: 'Gaby Orduña Gómez',
@@ -369,8 +404,9 @@ export const db = [
         whatsapp: '4191075701',
         facebook: 'wereja.gomez',
         imagen: 'cocinero.png',
-        categoria: 'pizzerias',
-        url: 'gaby.html'
+        url: 'gaby.html',
+        categoria: 20,
+        status: true
     },
     {   id: 'losdoscarnales',
         nombre: 'Los Dos Carnales Zarazua',
@@ -380,8 +416,9 @@ export const db = [
         whatsapp: '',
         facebook: 'losdoscarnales.zarazua.3',
         imagen: 'carnales.jpg',
-        categoria: 'pizzerias',
-        url: 'losdoscarnales.html'
+        url: 'losdoscarnales.html',
+        categoria: 20,
+        status: true
     },
     {   id: 'flavorexplosion',
         nombre: 'Flavor Explosión',
@@ -391,8 +428,9 @@ export const db = [
         whatsapp: '4191319976',
         facebook: 'profile.php?id=100064878108251',
         imagen: 'flavorexplosion.jpg',
-        categoria: 'pizzerias',
-        url: 'flavorexplosion.html'
+        url: 'flavorexplosion.html',
+        categoria: 20,
+        status: true
     },
     {   id: 'cactusburgergrill',
         nombre: 'Cactus Burger Grill',
@@ -402,8 +440,9 @@ export const db = [
         whatsapp: '4191250638',
         facebook: 'profile.php?id=100063548198298',
         imagen: 'cactus.svg',
-        categoria: 'pizzerias',
-        url: 'cactusburgergrill.html'
+        url: 'cactusburgergrill.html',
+        categoria: 20,
+        status: true
     },
     {   id: 'bufaloburger',
         nombre: 'Bufalo Burger',
@@ -413,8 +452,9 @@ export const db = [
         whatsapp: '4191919210',
         facebook: 'profile.php?id=100057368262891',
         imagen: 'bufalo.svg',
-        categoria: 'pizzerias',
-        url: 'bufaloburger.html'
+        url: 'bufaloburger.html',
+        categoria: 20,
+        status: true
     },
     {   id: 'kingpizza',
         nombre: 'King Pizza',
@@ -424,8 +464,9 @@ export const db = [
         whatsapp: '4191915949',
         facebook: 'profile.php?id=100063561131673',
         imagen: 'crowns.svg',
-        categoria: 'pizzerias',
-        url: 'kingpizza.html'
+        url: 'kingpizza.html',
+        categoria: 20,
+        status: true
     },
     {   id: 'pizzeriajimmy',
         nombre: 'Pizzeria Jimmy',
@@ -435,8 +476,9 @@ export const db = [
         whatsapp: '',
         facebook: 'profile.php?id=100063661146704',
         imagen: 'chico.png',
-        categoria: 'pizzerias',
-        url: 'pizzeriajimmy.html'
+        url: 'pizzeriajimmy.html',
+        categoria: 20,
+        status: true
     },
     {   id: 'pizzeriadoctormora',
         nombre: 'Pizzeria Doctor Mora',
@@ -446,8 +488,9 @@ export const db = [
         whatsapp: '',
         facebook: 'profile.php?id=100054465039199',
         imagen: 'rebanada.svg',
-        categoria: 'pizzerias',
-        url: 'pizzeriadoctormora.html'
+        url: 'pizzeriadoctormora.html',
+        categoria: 20,
+        status: true
     },
     {   id: 'moraburguer',
         nombre: 'Mora Burger',
@@ -457,8 +500,9 @@ export const db = [
         whatsapp: '4191005352',
         facebook: 'MoraBurger1',
         imagen: 'moraburguer.jpg',
-        categoria: 'hamburguesas',
-        url: 'moraburger.html'
+        url: 'moraburger.html',
+        categoria: 13,
+        status: true
     },
     {   id: 'toroloco',
         nombre: 'El Toro Loco',
@@ -468,8 +512,9 @@ export const db = [
         whatsapp: '',
         facebook: '',
         imagen: 'toro.svg',
-        categoria: 'hamburguesas',
-        url: ''
+        url: '',
+        categoria: 13,
+        status: true
     },
     {   id: 'merar',
         nombre: 'MERAR Dental Group',
@@ -479,8 +524,9 @@ export const db = [
         whatsapp: '4423185142',
         facebook: 'MERAR.Dental.Group',
         imagen: 'merar.jpg',
-        categoria: 'dentistas',
-        url: 'merar-dental-group.html'
+        url: 'merar-dental-group.html',
+        categoria: 10,
+        status: true
     },
     {   id: 'laboratoriogarval',
         nombre: 'Laboratorio Garval',
@@ -490,8 +536,9 @@ export const db = [
         whatsapp: '',
         facebook: 'profile.php?id=100044911286409',
         imagen: 'garval.jpg',
-        categoria: 'laboratorios',
-        url: 'garval.html'
+        url: 'garval.html',
+        categoria: 2,
+        status: true
     },
     {   id: 'laboratoriolc',
         nombre: 'Laboratorio de análisis clínicos LC.',
@@ -502,7 +549,9 @@ export const db = [
         facebook: 'profile.php?id=100064132989342',
         imagen: 'laboratoriolc.jpg',
         categoria: 'laboratorios',
-        url: 'laboratoriolc.html'
+        url: 'laboratoriolc.html',
+        categoria: 2,
+        status: true
     },
     {   id: 'laboratorioeva',
         nombre: 'EVA Laboratorio clínico',
@@ -513,7 +562,9 @@ export const db = [
         facebook: 'profile.php?id=100054420133820',
         imagen: 'eva.jpg',
         categoria: 'laboratorios',
-        url: 'evalaboratorioclinico.html'
+        url: 'evalaboratorioclinico.html',
+        categoria: 2,
+        status: true
     },
     {   id: 'sistnetworks',
         nombre: 'SIST networks',
@@ -523,8 +574,9 @@ export const db = [
         whatsapp: '4191209674',
         facebook: 'SIST.GTO',
         imagen: 'sist.jpg',
-        categoria: 'internet',
-        url: 'sist.html'
+        url: 'sist.html',
+        categoria: 15,
+        status: true
     },
     {   id: 'bjtecno',
         nombre: 'BJ TECNO',
@@ -534,8 +586,9 @@ export const db = [
         whatsapp: '4424904554',
         facebook: 'bjtecnoofi',
         imagen: 'bjtecno.jpg',
-        categoria: 'internet',
-        url: 'bjtecno.html'
+        url: 'bjtecno.html',
+        categoria: 15,
+        status: true
     },
     {   id: 'inttec',
         nombre: 'Inttec',
@@ -545,8 +598,9 @@ export const db = [
         whatsapp: '4191237607',
         facebook: 'inttec.online',
         imagen: 'inttec.jpg',
-        categoria: 'internet',
-        url: 'inttec.html'
+        url: 'inttec.html',
+        categoria: 15,
+        status: true
     },
     {   id: 'dmgnet',
         nombre: 'DMG NET',
@@ -556,8 +610,9 @@ export const db = [
         whatsapp: '4191000396',
         facebook: 'DMG.NETOfi',
         imagen: 'dmgnet.jpg',
-        categoria: 'internet',
-        url: 'dmgnet.html'
+        url: 'dmgnet.html',
+        categoria: 15,
+        status: true
     },
     {   id: 'capa3',
         nombre: 'CAPA3Internet',
@@ -567,8 +622,9 @@ export const db = [
         whatsapp: '4191208519',
         facebook: 'profile.php?id=100057262637269',
         imagen: 'capa3.jpg',
-        categoria: 'internet',
-        url: 'capa3internet.html'
+        url: 'capa3internet.html',
+        categoria: 15,
+        status: true
     },
     {   id: 'intercheap',
         nombre: 'INTERCHEAP',
@@ -578,8 +634,9 @@ export const db = [
         whatsapp: '',
         facebook: 'intercheapofi',
         imagen: 'intercheap.jpg',
-        categoria: 'internet',
-        url: 'intercheap.html'
+        url: 'intercheap.html',
+        categoria: 15,
+        status: true
     },
     {   id: 'securitynet',
         nombre: 'SecurityNet',
@@ -589,8 +646,9 @@ export const db = [
         whatsapp: '4191561010',
         facebook: 'enlazandotealmundo',
         imagen: 'security.jpg',
-        categoria: 'internet',
-        url: 'securitynet.html'
+        url: 'securitynet.html',
+        categoria: 15,
+        status: true
     },
     {   id: 'brunobaezavargas',
         nombre: 'Bruno Baeza Vargas',
@@ -600,8 +658,9 @@ export const db = [
         whatsapp: '',
         facebook: '',
         imagen: 'mecanico.png',
-        categoria: 'mecanicos',
-        url: 'bruno-baeza-vargas.html'
+        url: 'bruno-baeza-vargas.html',
+        categoria: 18,
+        status: true
     },
     {   id: 'luxaria',
         nombre: 'LUXARIA',
@@ -611,8 +670,9 @@ export const db = [
         whatsapp: '',
         facebook: 'luxaria.luxaria.1',
         imagen: 'luxaria.jpg',
-        categoria: 'maquillaje',
-        url: 'luxaria.html'
+        url: 'luxaria.html',
+        categoria: 17,
+        status: true
     },
     {   id: 'distribuidoraeb',
         nombre: 'Distribuidora EB',
@@ -622,8 +682,9 @@ export const db = [
         whatsapp: '4191564742',
         facebook: 'profile.php?id=100085147670882',
         imagen: 'distribuidoraeb.jpg',
-        categoria: 'maquillaje',
-        url: 'distribuidora-eb.html'
+        url: 'distribuidora-eb.html',
+        categoria: 17,
+        status: true
     },
     {   id: 'pizzasrio',
         nombre: 'Pizzas Rio',
@@ -633,8 +694,9 @@ export const db = [
         whatsapp: '',
         facebook: 'pizzariodmora',
         imagen: 'pajaro.svg',
-        categoria: 'pizzerias',
-        url: 'pizzasrio.html'
+        url: 'pizzasrio.html',
+        categoria: 20,
+        status: true
     },
     {   id: 'juliocesaramador',
         nombre: 'Julio Cesar Amador',
@@ -644,8 +706,21 @@ export const db = [
         whatsapp: '4191121316',
         facebook: '',
         imagen: 'uber.png',
-        categoria: 'taxis',
-        url: 'julio-cesar-amador.html'
+        url: 'julio-cesar-amador.html',
+        categoria: 24,
+        status: true
+    },
+    {   id: 'manuellopez',
+        nombre: 'Manuel Lopez',
+        direccion: 'Doctor Mora',
+        extracto: '',
+        telefono: '4191058262',
+        whatsapp: '',
+        facebook: '',
+        imagen: 'uber.png',
+        url: '',
+        categoria: 24,
+        status: true
     },
     {   id: 'nailsbrendiz',
         nombre: 'Nails Brendiz',
@@ -655,8 +730,9 @@ export const db = [
         whatsapp: '4681329395',
         facebook: 'brendizestradaa',
         imagen: 'maquillista.png',
-        categoria: 'maquillaje',
-        url: 'nails-brendiz.html'
+        url: 'nails-brendiz.html',
+        categoria: 17,
+        status: true
     },
     {   id: 'bloquerajimenezelmau',
         nombre: 'Bloquera Jiménez "El Mau"',
@@ -666,8 +742,9 @@ export const db = [
         whatsapp: '4191915163',
         facebook: 'profile.php?id=100064227450495',
         imagen: 'bloqueramau.jpg',
-        categoria: 'construccion',
-        url: 'bloquera-jimenez-el-mau.html'
+        url: 'bloquera-jimenez-el-mau.html',
+        categoria: 8,
+        status: true
     },
     {   id: 'acarreosymaterialeselgordo',
         nombre: 'Acarreos y Materiales para Construcción "El Gordo"',
@@ -677,8 +754,9 @@ export const db = [
         whatsapp: '',
         facebook: 'profile.php?id=100027933234829',
         imagen: 'elgordo.jpg',
-        categoria: 'construccion',
-        url: 'acarreos-y-materiales-el-gordo.html'
+        url: 'acarreos-y-materiales-el-gordo.html',
+        categoria: 8,
+        status: true
     },
     {   id: 'recintozarazua',
         nombre: 'Recinto Funerario Zarazúa',
@@ -688,8 +766,9 @@ export const db = [
         whatsapp: '',
         facebook: 'recintofunerariozarazua.zarazua',
         imagen: 'funerariazarazua.png',
-        categoria: 'funeraria',
-        url: 'recinto-funerario-zarazua.html'
+        url: 'recinto-funerario-zarazua.html',
+        categoria: 12,
+        status: true
     },
     {   id: 'craiminfantildoctormora',
         nombre: 'Centro Recreativo Acuático Infantil Médico A.C',
@@ -699,8 +778,9 @@ export const db = [
         whatsapp: '4192651195',
         facebook: 'CRAIM05',
         imagen: 'craimdoctormora.jpg',
-        categoria: 'terapiafisica',
-        url: 'craim-doctor-mora.html'
+        url: 'craim-doctor-mora.html',
+        categoria: 26,
+        status: true
     },
     {   id: 'carpinterialostallers',
         nombre: 'Carpintería los TallerS',
@@ -710,8 +790,9 @@ export const db = [
         whatsapp: '4191009700',
         facebook: 'profile.php?id=100090584504449',
         imagen: 'sierra.png',
-        categoria: 'carpinteria',
-        url: 'carpinteria-los-tallers.html'
+        url: 'carpinteria-los-tallers.html',
+        categoria: 6,
+        status: true
     },
     {   id: 'labodegadeltaco',
         nombre: 'La Bodega del Taco',
@@ -722,8 +803,9 @@ export const db = [
         facebook: '',
         instagram: 'la_bodega_del_taco',
         imagen: 'labodegadeltaco.jpg',
-        categoria: 'tacos',
-        url: 'la-bodega-del-taco.html'
+        url: 'la-bodega-del-taco.html',
+        categoria: 1,
+        status: true
     },
     {   id: 'jocreando',
         nombre: 'JOCreando',
@@ -734,8 +816,9 @@ export const db = [
         facebook: 'JOCreando1',
         instagram: '',
         imagen: 'jocreando.jpg',
-        categoria: 'publimarket',
-        url: 'jocreando.html'
+        url: 'jocreando.html',
+        categoria: 4,
+        status: true
     },
     {   id: 'taquitosdonavicos',
         nombre: 'Taquitos y Gorditas "Doña Vicos"',
@@ -746,8 +829,9 @@ export const db = [
         facebook: 'groups/193640264725340/user/100000381170607',
         instagram: '',
         imagen: 'donavicos.jpg',
-        categoria: 'taquitosdorados',
-        url: 'taquitos-y-gorditas-dona-vicos.html'
+        url: 'taquitos-y-gorditas-dona-vicos.html',
+        categoria: 23,
+        status: true
     },
     {   id: 'sicaru',
         nombre: 'Sicarú',
@@ -758,8 +842,9 @@ export const db = [
         facebook: 'profile.php?id=100063938657410',
         instagram: 'sicaru2511',
         imagen: 'sicaru.jpg',
-        categoria: 'joyeriaybisuteria',
-        url: 'sicaru.html'
+        url: 'sicaru.html',
+        categoria: 16,
+        status: true
     },
     {   id: 'mecanicoestracas',
         nombre: 'Servicio automotriz “Estracas”',
@@ -770,8 +855,9 @@ export const db = [
         facebook: 'profile.php?id=100083493246554',
         instagram: '',
         imagen: 'estracas.jpg',
-        categoria: 'mecanicos',
-        url: 'servicio-automotriz-estracas.html'
+        url: 'servicio-automotriz-estracas.html',
+        categoria: 18,
+        status: true
     },
     {   id: 'danzacitlalli',
         nombre: 'Danza Citlalli Loma de Buenavista',
@@ -782,8 +868,35 @@ export const db = [
         facebook: 'profile.php?id=100085213144033',
         instagram: '',
         imagen: 'danzacitlalli.jpg',
-        categoria: 'danzas',
-        url: 'danza-citlalli-loma-de-buenavista.html'
+        url: 'danza-citlalli-loma-de-buenavista.html',
+        categoria: 9,
+        status: true
+    },
+    {   id: 'bikerdrm',
+        nombre: 'Biker DRM',
+        direccion: 'Doctor Mora',
+        extracto: '',
+        telefono: '',
+        whatsapp: '',
+        facebook: 'groups/280013670201171',
+        instagram: 'bikerdrm',
+        imagen: 'biker.png',
+        url: 'bikerdrm.html',
+        categoria: 7,
+        status: true
+    },
+    {   id: 'dyxerteam',
+        nombre: 'Dyxer Team',
+        direccion: 'Doctor Mora',
+        extracto: '',
+        telefono: '',
+        whatsapp: '4191389032',
+        facebook: '',
+        instagram: '',
+        imagen: 'dyxerteam.jpg',
+        url: 'dyxerteam.html',
+        categoria: 29,
+        status: true
     },
 
 
