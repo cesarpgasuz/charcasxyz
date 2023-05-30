@@ -20,9 +20,9 @@ export const db = [
         telefono: '4191389032',
         whatsapp: '4191389032',
         facebook: 'quizas92',
-        imagen: 'logo.jpg',
+        imagen: '',
         url: 'prueba2.html',
-        categoria: 3,
+        categoria: 69,
         status: true
     },
     {   id: 'mamalona01',
