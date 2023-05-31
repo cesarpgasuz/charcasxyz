@@ -898,6 +898,19 @@ export const db = [
         categoria: 29,
         status: true
     },
+    {   id: 'imperiooriental',
+        nombre: 'Imperio Oriental',
+        direccion: 'Calle Guanajuato #22, Doctor Mora',
+        extracto: '',
+        telefono: '4191800224',
+        whatsapp: '4191800224',
+        facebook: 'profile.php?id=100083380057121',
+        instagram: '',
+        imagen: 'imperiooriental.jpg',
+        url: 'imperio-oriental.html',
+        categoria: 30,
+        status: true
+    },
 
 
 ]

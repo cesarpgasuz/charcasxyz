@@ -146,8 +146,13 @@ export const categoria = [
     },
     {
         id: 69,
-        nombre: 'web',
+        nombre: 'pruebas',
         extracto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id purus congue, facilisis libero sed, ultricies quam. Nullam vulputate congue massa, ut rhoncus leo gravida at.'
+    },
+    {
+        id: 30,
+        nombre: 'comida china',
+        extracto: '¡Tienes un negocio de comida china! Regístrate en charcas.xyz, el directorio virtual de Doctor Mora y llega a más amantes de la gastronomía oriental. ¡Promociona tus sabores únicos hoy!'
     }
 
 
