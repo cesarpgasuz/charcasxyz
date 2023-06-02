@@ -911,6 +911,32 @@ export const db = [
         categoria: 30,
         status: true
     },
+    {   id: 'piacomedor',
+        nombre: 'PIA comedor',
+        direccion: 'Doctor Mora',
+        extracto: '',
+        telefono: '4191059784',
+        whatsapp: '',
+        facebook: 'piacomedor',
+        instagram: '',
+        imagen: 'piacomedor.jpg',
+        url: 'pia-comedor.html',
+        categoria: 22,
+        status: true
+    },
+    {   id: 'macer',
+        nombre: 'MACER',
+        direccion: 'Calle Hidalgo #68, Doctor Mora',
+        extracto: '',
+        telefono: '4191287464',
+        whatsapp: '',
+        facebook: 'profile.php?id=100092835544321',
+        instagram: '',
+        imagen: 'macer.jpg',
+        url: 'macer.html',
+        categoria: 25,
+        status: true
+    },
 
 
 ]

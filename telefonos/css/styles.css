@@ -322,6 +322,16 @@ h4.subtitles-2{
 }
 
 
+.listado__pago--servicios ul{
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 80px), 1fr));
+	gap: 35px;
+	align-items: center;
+}
+.listado__pago--servicios ul li{
+	
+}
 
 
 
