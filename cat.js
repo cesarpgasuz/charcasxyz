@@ -143,6 +143,16 @@ export const categoria = [
         id: 29,
         nombre: 'web',
         extracto: '¿Eres un diseñador web o un desarrollador en busca de expandir tu alcance y encontrar nuevos clientes? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Llega a un público más amplio, muestra tus habilidades creativas, promociona tus servicios de diseño, desarrollo y optimización web. '
+    },
+    {
+        id: 69,
+        nombre: 'pruebas',
+        extracto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id purus congue, facilisis libero sed, ultricies quam. Nullam vulputate congue massa, ut rhoncus leo gravida at.'
+    },
+    {
+        id: 30,
+        nombre: 'comida china',
+        extracto: '¡Tienes un negocio de comida china! Regístrate en charcas.xyz, el directorio virtual de Doctor Mora y llega a más amantes de la gastronomía oriental. ¡Promociona tus sabores únicos hoy!'
     }
 
 
