@@ -37,7 +37,8 @@ function filtrarNegocios(){
         negocioImagen.width = '120';
         negocioImagen.classList.add('img-fluid');
         negocioImagen.alt = `Imagen del negocio ${nombre}`;
-        negocioImagen.src = `images/${imagen}`;
+        negocioImagen.src = imagen ? `images/${imagen}` : 'https://charcas.xyz/images/icon256n.png';
+        console.log(negocioImagen)
         
         contenedorImagen.appendChild(negocioImagen);
 
