@@ -3,24 +3,32 @@ import { db } from "../db.js";
 import { extractoCategoria } from "./extractoCategoria.js";
 import { formatearNumero } from "./formatear.js";
 
-//variables
 
-const invitacion = document.querySelector('.invitacion');
-const footer = document.querySelector('footer');
 
- 
-filtrarNegocios();
+document.addEventListener('DOMContentLoaded', function(){
 
-function filtrarNegocios(){
+    //variables
 
+    const invitacion = document.querySelector('.invitacion');
+    const footer = document.querySelector('footer');
+
+    
     const id = parseInt(document.querySelector('body').dataset.id);
     const categorias = db.filter(data => data.categoria === id);
     const contenedor = document.querySelector('#datos-neg');
 
+    spinner();
     // console.log(typeof id);
     // console.log(categorias)
 
-    categorias.forEach(negocio => {
+    filtrarNegocios(categorias);
+
+    function filtrarNegocios(categorias){
+
+
+        limpiarHTML();
+
+        categorias.forEach(negocio => {
 
         
 
@@ -38,7 +46,7 @@ function filtrarNegocios(){
         negocioImagen.classList.add('img-fluid');
         negocioImagen.alt = `Imagen del negocio ${nombre}`;
         negocioImagen.src = imagen ? `images/${imagen}` : 'https://charcas.xyz/images/icon256n.png';
-        console.log(negocioImagen)
+        // console.log(negocioImagen)
         
         contenedorImagen.appendChild(negocioImagen);
 
@@ -193,15 +201,39 @@ function filtrarNegocios(){
         footer.appendChild(container);
 
     }
-
-
-
-
-
-
-
-
-
-
 }
+
+
+    function spinner(){
+
+        limpiarHTML();
+
+        const spinner = document.createElement('DIV');
+        spinner.classList.add('spinnerN');
+        spinner.innerHTML = `
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        `;
+
+        contenedor.appendChild(spinner);
+    }
+
+
+    function limpiarHTML(){
+        while(contenedor.firstChild){
+            contenedor.removeChild(contenedor.firstChild);
+        }
+    }
+
+})
+
+
+
+
+   
+
+
+
+
 
