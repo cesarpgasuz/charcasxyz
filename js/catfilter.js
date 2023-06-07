@@ -1,118 +1,255 @@
 import { db } from "../db.js";
 
-import { extractoCategoria } from "./extractoCategoria.js";
+
+import { extractoCategoria, subcategorias } from "./extractoCategoria.js";
 import { formatearNumero } from "./formatear.js";
 
-//variables
 
-const invitacion = document.querySelector('.invitacion');
-const footer = document.querySelector('footer');
 
- 
-filtrarNegocios();
+document.addEventListener('DOMContentLoaded', function(){
 
-function filtrarNegocios(){
+    //variables
 
+    const invitacion = document.querySelector('.invitacion');
+    const footer = document.querySelector('footer');
+
+
+   
+
+    
     const id = parseInt(document.querySelector('body').dataset.id);
     const categorias = db.filter(data => data.categoria === id);
     const contenedor = document.querySelector('#datos-neg');
 
+    //comprobamos si la categoria tiene subcategorias
+    if(subcategorias(id)){
+        // console.log(subcategorias(id));
+        //extraemos el arreglo
+        const [subCat] = subcategorias(id)
+        // console.log(subCat)
+
+
+        const neg = contenedor.parentElement;
+
+        const paginaNegociosFilter = document.querySelector('.neg');
+        paginaNegociosFilter.style.paddingTop = '20px';
+
+        const barraSearch = document.createElement('DIV');
+        barraSearch.id = 'search';
+        paginaNegociosFilter.appendChild(barraSearch);
+
+            // console.log(neg)
+
+        const filtradoDiv = document.createElement('DIV');
+        filtradoDiv.classList.add('nav-filter-cat')
+
+
+        const buttonTodos = document.createElement('A');
+        buttonTodos.href = '#search'
+        buttonTodos.textContent = 'Todos';
+        buttonTodos.classList.add('btn-fil', 'activeee')
+        buttonTodos.onclick = () => {
+            filtrarNegocios(categorias);
+
+            buttonTodos.classList.add('activeee');
+            let hermanos = buttonTodos.parentElement.children;
+
+			for(let i = 0; i < hermanos.length; i++){
+				if(hermanos[i] !== buttonTodos){
+					hermanos[i].classList.remove('activeee');
+				}
+			}
+        }
+
+        filtradoDiv.appendChild(buttonTodos);
+
+        subCat.forEach(subcategoria => {
+
+
+
+        const {nombre, id:idC} = subcategoria;
+           
+        const buttonCategoria = document.createElement('A');
+        buttonCategoria.href = '#search';
+        buttonCategoria.textContent = nombre;
+        buttonCategoria.classList.add('btn-fil');
+        buttonCategoria.onclick = () => {
+            filtrarElementos(nombre);
+            buttonCategoria.classList.add('activeee');
+            let hermanos = buttonCategoria.parentElement.children;
+
+			for(let i = 0; i < hermanos.length; i++){
+				if(hermanos[i] !== buttonCategoria){
+					hermanos[i].classList.remove('activeee');
+				}
+			}
+        };
+
+
+            // console.log(buttonCategoria)
+
+            
+
+            
+
+            
+        filtradoDiv.appendChild(buttonCategoria);
+
+           
+
+        });
+       
+
+            
+
+         neg.insertBefore(filtradoDiv, contenedor);
+
+         
+        
+    }
+    // }else{
+    //     console.log('no hay subcategorias')
+    // }
+   
+    // funcion para filtrar los elementos por categorias
+    function filtrarElementos(nombre){
+        const nombreCategoria = nombre;
+        // console.log(typeof idSubCategoria)
+
+       const elementosFiltrados = db.filter(negocio => {
+
+            if(negocio.subcategorias){
+              return negocio.subcategorias.some(subcategoriasObj => subcategoriasObj.nombre === nombreCategoria); 
+            }
+
+            
+
+            
+            // const negocioSubCategoria = subCategoria.some(elemento => elemento.id === idSubCategoria);
+
+            // return negocioSubCategoria;
+       })
+        
+        
+
+        filtrarNegocios(elementosFiltrados)
+
+        
+    }
+
+
+    
     // console.log(typeof id);
     // console.log(categorias)
+spinner();
+    filtrarNegocios(categorias);
 
-    categorias.forEach(negocio => {
 
+    
+
+    function filtrarNegocios(categorias){
         
+        console.log('se ejecuto el filtrado')
 
-        const {nombre, direccion, telefono, whatsapp, imagen, url} = negocio;
+        limpiarHTML();
 
-        const tarjetaDiv = document.createElement('DIV');
-        tarjetaDiv.classList.add('tarjeta');
+        categorias.forEach(negocio => {
 
-        /// imagen del negocio
-        const contenedorImagen = document.createElement('DIV');
-        contenedorImagen.classList.add('imagen');
+            
 
-        const negocioImagen = document.createElement('IMG');
-        negocioImagen.width = '120';
-        negocioImagen.classList.add('img-fluid');
-        negocioImagen.alt = `Imagen del negocio ${nombre}`;
-        negocioImagen.src = imagen ? `images/${imagen}` : 'https://charcas.xyz/images/icon256n.png';
-        console.log(negocioImagen)
-        
-        contenedorImagen.appendChild(negocioImagen);
+            const {nombre, direccion, telefono, whatsapp, imagen, url} = negocio;
 
+            const tarjetaDiv = document.createElement('DIV');
+            tarjetaDiv.classList.add('tarjeta');
 
-        //contenedor con la informacion del negocio
-        const contenidoDiv = document.createElement('DIV');
-        contenidoDiv.classList.add('contenido');
+            /// imagen del negocio
+            const contenedorImagen = document.createElement('DIV');
+            contenedorImagen.classList.add('imagen');
 
-        const listadoUl = document.createElement('UL');
-        listadoUl.classList.add('list-unstyled');
-
-
-        // nombre del negocio
-        const negocioTitle = document.createElement('LI');
-        negocioTitle.classList.add('title');
-        negocioTitle.textContent = nombre;
-        
-        // direccion del negocio
-        const negocioDireccion = document.createElement('LI');
-        negocioDireccion.classList.add('direction');
-        negocioDireccion.innerHTML = `<i class="bi bi-geo-alt-fill"></i> ${direccion}`;
+            const negocioImagen = document.createElement('IMG');
+            negocioImagen.width = '120';
+            negocioImagen.classList.add('img-fluid');
+            negocioImagen.alt = `Imagen del negocio ${nombre}`;
+            negocioImagen.src = imagen ? `images/${imagen}` : 'https://charcas.xyz/images/icon256n.png';
+            // console.log(negocioImagen)
+            
+            contenedorImagen.appendChild(negocioImagen);
 
 
-        listadoUl.appendChild(negocioTitle);
-        listadoUl.appendChild(negocioDireccion);
+            //contenedor con la informacion del negocio
+            const contenidoDiv = document.createElement('DIV');
+            contenidoDiv.classList.add('contenido');
 
-        /// numero de telefono
-        if(telefono){
-            const negocioTelefono = document.createElement('LI');
-            negocioTelefono.classList.add('telefono');
-            const numeroFormateado = formatearNumero(telefono)
-            negocioTelefono.innerHTML = `<i class="bi bi-telephone-fill"></i> ${numeroFormateado}`;
-            listadoUl.appendChild(negocioTelefono);
-        }
-
-        if(whatsapp){
-            const negocioWhatsapp = document.createElement('LI');
-            negocioWhatsapp.classList.add('whatsapp');
-            const numeroFormateado = formatearNumero(whatsapp);
-            negocioWhatsapp.innerHTML = `<i class="bi bi-whatsapp"></i> ${numeroFormateado}`;
-            listadoUl.appendChild(negocioWhatsapp);
-        }
-
-        if(url){
-            const negocioUrl = document.createElement('LI');
-
-            const negocioA = document.createElement('A');
-            negocioA.href = url;
-            negocioA.classList.add('boton', 'boton-menu');
-            negocioA.textContent = 'Más Información';
-
-            negocioUrl.appendChild(negocioA);
-            listadoUl.appendChild(negocioUrl);
-        }
-        
+            const listadoUl = document.createElement('UL');
+            listadoUl.classList.add('list-unstyled');
 
 
-        contenidoDiv.appendChild(listadoUl);
+            // nombre del negocio
+            const negocioTitle = document.createElement('LI');
+            negocioTitle.classList.add('title');
+            negocioTitle.textContent = nombre;
+            
+            // direccion del negocio
+            const negocioDireccion = document.createElement('LI');
+            negocioDireccion.classList.add('direction');
+            negocioDireccion.innerHTML = `<i class="bi bi-geo-alt-fill"></i> ${direccion}`;
 
 
+            listadoUl.appendChild(negocioTitle);
+            listadoUl.appendChild(negocioDireccion);
+
+            /// numero de telefono
+            if(telefono){
+                const negocioTelefono = document.createElement('LI');
+                negocioTelefono.classList.add('telefono');
+                const numeroFormateado = formatearNumero(telefono)
+                negocioTelefono.innerHTML = `<i class="bi bi-telephone-fill"></i> ${numeroFormateado}`;
+                listadoUl.appendChild(negocioTelefono);
+            }
+
+            if(whatsapp){
+                const negocioWhatsapp = document.createElement('LI');
+                negocioWhatsapp.classList.add('whatsapp');
+                const numeroFormateado = formatearNumero(whatsapp);
+                negocioWhatsapp.innerHTML = `<i class="bi bi-whatsapp"></i> ${numeroFormateado}`;
+                listadoUl.appendChild(negocioWhatsapp);
+            }
+
+            if(url){
+                const negocioUrl = document.createElement('LI');
+
+                const negocioA = document.createElement('A');
+                negocioA.href = url;
+                negocioA.classList.add('boton', 'boton-menu');
+                negocioA.textContent = 'Más Información';
+
+                negocioUrl.appendChild(negocioA);
+                listadoUl.appendChild(negocioUrl);
+            }
+            
 
 
-        // agregamos a la tarjeta o card
-        tarjetaDiv.appendChild(contenedorImagen);
-        tarjetaDiv.appendChild(contenidoDiv);
-
-
-        // agregamos al html
-        contenedor.appendChild(tarjetaDiv);
+            contenidoDiv.appendChild(listadoUl);
 
 
 
 
-    });
+            // agregamos a la tarjeta o card
+            tarjetaDiv.appendChild(contenedorImagen);
+            tarjetaDiv.appendChild(contenidoDiv);
+
+
+            // agregamos al html
+            contenedor.appendChild(tarjetaDiv);
+
+
+
+
+        })
+    }   
+    
+    
+
 
 
     if(invitacion){
@@ -195,13 +332,45 @@ function filtrarNegocios(){
     }
 
 
+    //////////////////////
+    function spinner(){
+
+        console.log('se ejecuto el spinner')
+        limpiarHTML();
+
+        const spinner = document.createElement('DIV');
+        spinner.classList.add('spinnerN');
+        spinner.innerHTML = `
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        `;
+
+        contenedor.appendChild(spinner);
+    }
+   /////////////////////////////
+
+
+    //////////////////////////////////
+
+    function limpiarHTML(){
+        while(contenedor.firstChild){
+            contenedor.removeChild(contenedor.firstChild);
+        }
+    }
+
+    ////////////////////////////////////
+
+})
 
 
 
 
 
 
+   
 
 
-}
+
+
 
