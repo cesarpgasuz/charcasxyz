@@ -165,6 +165,12 @@ export const db = [
         imagen: 'drcell.jpg',
         url: 'drcell.html',
         categoria: 25,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'reparaciones',
+            }
+        ],
         status: true
     },
     {   id: 'mobileshop',
@@ -178,6 +184,16 @@ export const db = [
         imagen: 'mobileshop.jpg',
         url: 'mobile-shop.html',
         categoria: 25,
+        subcategorias: [
+            {
+                id: 2,
+                nombre: 'accesorios',
+            },
+            {
+                id: 3,
+                nombre: 'venta de equipos',
+            }
+        ],
         status: true
     },
     {   id: 'javierchavarin',
@@ -190,6 +206,20 @@ export const db = [
         imagen: 'boy.png',
         url: 'javierchavarin.html',
         categoria: 25,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'reparaciones',
+            },
+            {
+                id: 3,
+                nombre: 'venta de equipos',
+            },
+            {
+                id: 4,
+                nombre: 'liberaciones',
+            }
+        ],
         status: true
     },
     {   id: 'charcasteck',
@@ -202,6 +232,12 @@ export const db = [
         imagen: 'charcasteck.jpg',
         url: 'charcas-teck.html',
         categoria: 25,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'reparaciones',
+            }
+        ],
         status: true
     },
     {   id: 'dyst',
@@ -672,6 +708,16 @@ export const db = [
         imagen: 'luxaria.jpg',
         url: 'luxaria.html',
         categoria: 17,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'Maquillaje/Peinado',
+            },
+            {
+                id: 3,
+                nombre: 'venta de cosmeticos',
+            }
+        ],
         status: true
     },
     {   id: 'distribuidoraeb',
@@ -684,6 +730,12 @@ export const db = [
         imagen: 'distribuidoraeb.jpg',
         url: 'distribuidora-eb.html',
         categoria: 17,
+        subcategorias: [
+            {
+                id: 3,
+                nombre: 'venta de cosmeticos',
+            }
+        ],
         status: true
     },
     {   id: 'pizzasrio',
@@ -732,6 +784,16 @@ export const db = [
         imagen: 'maquillista.png',
         url: 'nails-brendiz.html',
         categoria: 17,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'Maquillaje/Peinado',
+            },
+            {
+                id: 2,
+                nombre: 'uñas',
+            }
+        ],
         status: true
     },
     {   id: 'bloquerajimenezelmau',
@@ -935,6 +997,20 @@ export const db = [
         imagen: 'macer.jpg',
         url: 'macer.html',
         categoria: 25,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'reparaciones',
+            },
+            {
+                id: 2,
+                nombre: 'accesorios',
+            },
+            {
+                id: 3,
+                nombre: 'venta de equipos',
+            }
+        ],
         status: true
     },
 
