@@ -186,6 +186,11 @@ export const categoria = [
         id: 30,
         nombre: 'comida china',
         extracto: '¡Tienes un negocio de comida china! Regístrate en charcas.xyz, el directorio virtual de Doctor Mora y llega a más amantes de la gastronomía oriental. ¡Promociona tus sabores únicos hoy!'
+    },
+    {
+        id: 31,
+        nombre: 'sobanderos',
+        extracto: '¿Eres experto en el arte del sobado? ¡Regístrate en charcas.xyz y muestra tus habilidades a quienes buscan profesionales como tú!'
     }
 
 
