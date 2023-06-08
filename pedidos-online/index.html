@@ -20,14 +20,11 @@
 		<link rel="stylesheet" href="../css/bootstrap-icons.css">
 
 		<!-- scripts -->
-    	<script src="../js/jquery-3.5.1.slim.min.js"></script>
+    	<!-- <script src="../js/jquery-3.5.1.slim.min.js"></script> -->
     	<script defer src="https://charcas.xyz/js/bootstrap.bundle.min.js"></script>
    		<script defer src="https://charcas.xyz/js/mscripts.js"></script>                                                               
    		<script defer src="https://www.googletagmanager.com/gtag/js?id=G-PHFNG8R7J5"></script>
 		<script defer src="https://charcas.xyz/js/analytics.js"></script>
-
-
-		<script src="../js/filtro.js"></script> <!-- Resource jQuery -->
 
 		<!-- progresive app -->
 		<meta name="theme-color" content="#0A191F" />
@@ -41,26 +38,9 @@
 
 
 
-
-
-
-	  	<style>
-			#search{
-			position: absolute;
-			background-color: transparent;
-			height: 30px;
-			width: 30px;
-			left: 0;
-			right: 0;
-			margin-left: auto;
-			margin-right: auto;
-			z-index: 2000;
-			margin-top: -48px;
-		}
-		</style>
     
   </head>
-  <body>
+  <body data-id="19">
 	 
 	  
 	  <section class="navv">
@@ -99,160 +79,11 @@
 
 
 	  <!--- categorias -->
-	  <section class="neg catt">
-		<div id="search"></div>
+	  <section class="neg">
 	  	<div class="container">
 		  	<div class="row justify-content-center">
-				<div class="col-lg-8 col-md-12 col-sm-12" id="negocioslista">
+				<div class="col-lg-8 col-md-12 col-sm-12" id="datos-neg">
 
-
-						<ul class="fil list-unstyled">
-								<li class="activeee"><a href="#search" class="btn-fil" data-filter="todos">Todos</a></li>
-								<li><a href="#search" class="btn-fil" data-filter="shein">Shein</a></li>
-								<li><a href="#search" class="btn-fil" data-filter="price-shoes">Price Shoes</a></li>
-								<li><a href="#search" class="btn-fil" data-filter="vianney">Vianney</a></li>
-								
-						
-                
-                
-        
-						</ul>
-
-					
-
-						<div class="tarjeta box-cat shein shein-express price-shoes vianney">
-							<div class="imagen">
-								<img src="images/boutiqueqbonita.jpg" class="img-fluid" alt="" width="120" loading="lazy" decoding="async">
-							</div>
-							<div class="contenido">
-								<ul class="list-unstyled">
-									<li class="title">Boutique Q. Bonita</li>
-									<li class="direction"><i class="bi bi-geo-alt-fill"></i>  Loma de Buenavista, Doctor Mora</li>
-									<li class="telefono"><i class="bi bi-telephone-fill"></i> 419 113 76 36</li>
-									<li class="whatsapp"><i class="bi bi-whatsapp"></i> 419 113 76 36</li>
-								
-									<li><a href="boutique-q-bonita.html" class="boton boton-menu">Ver Servicios</a></li>
-								</ul>
-							</div>
-						</div>
-
-
-						
-
-					<div class="tarjeta box-cat shein shein-express">
-						<div class="imagen">
-							<img src="images/girl.png" class="img-fluid" alt="" width="120">
-						</div>
-						<div class="contenido">
-							<ul class="list-unstyled">
-								<li class="title">Alexa Bolaños</li>
-								<!--
-								<li class="direction"><i class="bi bi-geo-alt-fill"></i> Prolongación Silao, Doctor Mora</li>
-								<li class="telefono"><i class="bi bi-telephone-fill"></i> 419 117 3458</li>
-								<li class="whatsapp"><i class="bi bi-whatsapp"></i> 419 122 6199</li>-->
-								<li><a href="alexa.html" class="boton boton-menu">Ver Servicios</a></li>
-							</ul>
-						</div>
-					</div>
-					
-			
-
-					<div class="tarjeta box-cat shein shein-express">
-						<div class="imagen">
-							<img src="images/beauty.png" class="img-fluid" alt="" width="120">
-						</div>
-						<div class="contenido">
-							<ul class="list-unstyled">
-								<li class="title">Karina Iveth Ramirez Lugo</li>
-								<!--<li class="direction"><i class="bi bi-geo-alt-fill"></i> Calle Allende esquina con Juventino Rosas, Doctor Mora </li>-->
-								<!--<li class="telefono"><i class="bi bi-telephone-fill"></i> 419 111 6565</li>-->
-								<!--<li class="whatsapp"><i class="bi bi-whatsapp"></i> 419 122 6199</li>-->
-								<li><a href="karina-iveth-ramirez-lugo.html" class="boton boton-menu">Ver Servicios</a></li>
-							</ul>
-						</div>
-					</div>
-					
-
-					<div class="tarjeta box-cat shein shein-express">
-						<div class="imagen">
-							<img src="images/obloom.jpg" class="img-fluid" alt="" width="120" loading="lazy" decoding="async">
-						</div>
-						<div class="contenido">
-							<ul class="list-unstyled">
-								<li class="title">OBloom</li>
-								<li class="direction"><i class="bi bi-geo-alt-fill"></i> Calle Hidalgo #8, Doctor Mora </li>
-								<li class="telefono"><i class="bi bi-telephone-fill"></i> 442 668 8221</li>
-								<li class="whatsapp"><i class="bi bi-whatsapp"></i> 442 668 8221</li>
-								<li><a href="obloom.html" class="boton boton-menu">Ver Servicios</a></li>
-							</ul>
-						</div>
-					</div>
-
-
-					<div class="tarjeta box-cat shein shein-express">
-						<div class="imagen">
-							<img src="images/pedidosheindoctormoraryb.jpg" class="img-fluid" alt="" width="120" loading="lazy" decoding="async">
-						</div>
-						<div class="contenido">
-							<ul class="list-unstyled">
-								<li class="title">Pedidos shein Dr Mora R&B</li>
-								<li class="direction"><i class="bi bi-geo-alt-fill"></i> Calle José Valencia Orduña, Doctor Mora</li>
-								<li class="telefono"><i class="bi bi-telephone-fill"></i> 419 129 0876</li>
-								<li class="whatsapp"><i class="bi bi-whatsapp"></i> 419 129 0876</li>
-								<li><a href="pedidos-shein-dr-mora-ryb.html" class="boton boton-menu">Ver Servicios</a></li>
-							</ul>
-						</div>
-					</div>
-				
-
-					<div class="tarjeta box-cat shein shein-express">
-						<div class="imagen">
-							<img src="images/camilalara.jpg" class="img-fluid" alt="" width="120" loading="lazy" decoding="async">
-						</div>
-						<div class="contenido">
-							<ul class="list-unstyled">
-								<li class="title">Venta shein dr mora</li>
-								<li class="direction"><i class="bi bi-geo-alt-fill"></i> Doctor Mora</li>
-								<!--<li class="telefono"><i class="bi bi-telephone-fill"></i> 419 129 0876</li>
-								<li class="whatsapp"><i class="bi bi-whatsapp"></i> 419 129 0876</li>-->
-								<li><a href="venta-shein-dr-mora.html" class="boton boton-menu">Ver Servicios</a></li>
-
-							</ul>
-						</div>
-					</div>
-
-
-
-						
-
-
-
-
-						<div class="tarjeta box-cat shein shein-express">
-						<div class="imagen">
-							<img src="images/maritza.png" class="img-fluid" alt="" width="120" loading="lazy" decoding="async">
-						</div>
-						<div class="contenido">
-							<ul class="list-unstyled">
-								<li class="title">Maritza Lopez</li>
-								<li class="direction"><i class="bi bi-geo-alt-fill"></i> Doctor Mora</li>
-								<!--
-								<li class="telefono"><i class="bi bi-telephone-fill"></i> 419 129 0876</li>
-								<li class="whatsapp"><i class="bi bi-whatsapp"></i> 419 129 0876</li>-->
-								<li><a href="maritza-lopez.html" class="boton boton-menu">Ver Servicios</a></li>
-							</ul>
-						</div>
-					</div>
-					
-					
-					
-					
-				
-
-
-
-
-					
 					
 					
 				
@@ -261,54 +92,22 @@
 		  </div>
 	  </section>
 	  
-	  
-	  <section class="divider"><a href="#" class="button-share" id="compartir__enlace">Compartir</a></section>
+	<section class="divider"><a href="#" class="button-share" id="compartir__enlace">Compartir</a></section>
 
 	  
-	  <section class="register">
-	  	<div class="container pizza-fondo">
-			<div class="row">
-				<div class="col-lg-2 col-md-2">
-					
-				</div>
-				<div class="col-lg-8 col-md-8 col-sm-12">
-					<div class="contenido">
-						<h3>Te dedicas a realizar <span>Pedidos Online</span> 🌎✈️ en páginas como <span>Shein</span>, <span>Shopee</span>, <span>aliexpress</span>, <span>Amazon</span>, etc...</h3>
-						<p>pues que esperas para registrarte y que toda la comunidad se entere de tus servicios.</p>
-						<a href="../registro.html" class="boton boton-register">Registrame</a>
-					</div>
-					
-				
-				</div>
-				<div class="col-lg-2 col-md-2">
-					
-				</div>
-			
-			</div>  
-		  
-		  
-		</div>
+	  <!--- invitacion -->
+	<section class="invitacion">
+	</section>
+	<!--- fin invitacion -->
 	  
+	<!-- footer -->
+	<footer></footer>
+	<!-- fin footer-->
 	  
-	  </section> <section class="contacto">
-	  	<div class="container">
-		  	<div class="row">
-				<div class="col-lg-12">
-					<a href="mailto:dyxerteam@gmail.com">Contacto</a>
-				</div>
-			</div>
-		  </div>
-	  </section>
-	  
-	  
-	  <div class="dy">
-	  	<h6>DyxerTeam</h6>
-	  </div>
-	  
-
-	  <div class="modal-sombra"></div>
+	<div class="modal-sombra"></div>
         <div class="modal-share" id="modal__compartir">
 	</div>
+	  
 	  
 	  
 	  
@@ -318,6 +117,8 @@
 		</ul>
 	  </section>
 	  
+
+	  <script src="../js/catfilter.js" type="module"></script>
 	  
 	  
   </body>

@@ -9,7 +9,7 @@ export const db = [
         whatsapp: '4681231545',
         facebook: 'electronicasanchezdoctormora',
         imagen: 'electronica-sanchez.jpg',
-        url: 'prueba1.html',
+        url: 'electronica-sanchez.html',
         categoria: 3,
         status: true
     },
@@ -300,6 +300,33 @@ export const db = [
         categoria: 24,
         status: true
     },
+    {   id: 'boutiqueqbonita',
+        nombre: 'Boutique Q. Bonita',
+        direccion: 'Loma de Buenavista, Doctor Mora',
+        extracto: '',
+        telefono: '4191137636',
+        whatsapp: '4191137636',
+        facebook: 'maryguadalupejg',
+        imagen: 'boutiqueqbonita.jpg',
+        url: 'boutique-q-bonita.html',
+        categoria: 19,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            }, 
+            {
+                id: 2,
+                nombre: 'price shoes',
+            },
+            {
+                id: 3,
+                nombre: 'vianney',
+            }
+        
+        ],
+        status: true
+    },
     {   id: 'alexabolanos',
         nombre: 'Alexa Bolaños',
         direccion: 'Doctor Mora',
@@ -310,6 +337,12 @@ export const db = [
         imagen: 'girl.png',
         url: 'alexa.html',
         categoria: 19,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            }
+        ],
         status: true
     },
     {   id: 'karinaivethramirez',
@@ -322,6 +355,12 @@ export const db = [
         imagen: 'beauty.png',
         url: 'karina-iveth-ramirez-lugo.html',
         categoria: 19,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            }
+        ],
         status: true
     },
     {   id: 'obloom',
@@ -334,6 +373,12 @@ export const db = [
         imagen: 'obloom.jpg',
         url: 'obloom.html',
         categoria: 19,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            }
+        ],
         status: true
     },
     {   id: 'pedidossheinrb',
@@ -346,6 +391,12 @@ export const db = [
         imagen: 'pedidosheindoctormoraryb.jpg',
         url: 'pedidos-shein-dr-mora-ryb.html',
         categoria: 19,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            }
+        ],
         status: true
     },
     {   id: 'ventasheindrmora',
@@ -355,21 +406,15 @@ export const db = [
         telefono: '',
         whatsapp: '',
         facebook: 'profile.php?id=100071211173387',
-        imagen: 'pedidosheindoctormoraryb.jpg',
+        imagen: 'camilalara.jpg',
         url: 'venta-shein-dr-mora.html',
         categoria: 19,
-        status: true
-    },
-    {   id: 'boutiqueqbonita',
-        nombre: 'Boutique Q. Bonita',
-        direccion: 'Loma de Buenavista, Doctor Mora',
-        extracto: '',
-        telefono: '4191137636',
-        whatsapp: '4191137636',
-        facebook: 'maryguadalupejg',
-        imagen: 'boutiqueqbonita.jpg',
-        url: 'boutique-q-bonita.html',
-        categoria: 19,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            }
+        ],
         status: true
     },
     {   id: 'maritzalopez',
@@ -382,6 +427,12 @@ export const db = [
         imagen: 'maritza.png',
         url: 'maritza-lopez.html',
         categoria: 19,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            }
+        ],
         status: true
     },
     {   id: 'latorteria',
@@ -806,6 +857,12 @@ export const db = [
         imagen: 'bloqueramau.jpg',
         url: 'bloquera-jimenez-el-mau.html',
         categoria: 8,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'Tabique/Block',
+            }
+        ],
         status: true
     },
     {   id: 'acarreosymaterialeselgordo',
@@ -818,6 +875,12 @@ export const db = [
         imagen: 'elgordo.jpg',
         url: 'acarreos-y-materiales-el-gordo.html',
         categoria: 8,
+        subcategorias: [
+            {
+                id: 2,
+                nombre: 'renta de maquinaria',
+            }
+        ],
         status: true
     },
     {   id: 'recintozarazua',
