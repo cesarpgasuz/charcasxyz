@@ -1193,6 +1193,50 @@ export const db = [
         categoria: 31,
         status: true
     },
+    {   id: 'taqueriacharquitas',
+        nombre: 'Taqueria Charquitas',
+        direccion: 'Calle camino a Morisquillas #17, Doctor Mora.',
+        extracto: '',
+        telefono: '4191034234',
+        whatsapp: '',
+        facebook: '',
+        instagram: '',
+        imagen: 'taqueriacharquitas.jpg',
+        url: 'taqueria-charquitas.html',
+        categoria: 1,
+        status: true
+    },
+    {   id: 'aricell',
+        nombre: 'AriCell',
+        direccion: 'Calle Jerecuaro #37, Doctor Mora.',
+        extracto: '',
+        telefono: '4191082020',
+        whatsapp: '',
+        facebook: '',
+        instagram: '',
+        imagen: 'aricell.jpg',
+        url: 'aricell.html',
+        categoria: 25,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'reparaciones',
+            },
+            {
+                id: 2,
+                nombre: 'accesorios',
+            },
+            {
+                id: 3,
+                nombre: 'venta de equipos',
+            },
+            {
+                id: 4,
+                nombre: 'liberaciones',
+            }
+        ],
+        status: true
+    },
     
 
 

@@ -7,6 +7,8 @@ const modalSombra = document.querySelector('.modal-sombra');
 const urlPagina = window.location.href;
 
 
+
+
 //funciones
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -133,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modalSombra.classList.toggle('active');
     }
     function copiarEnlace(){
-        const elementoTemporal = document.createElement('TEXTAREA');    
+        const elementoTemporal = document.createElement('TEXTAREA');
         elementoTemporal.value = urlPagina;
         document.body.appendChild(elementoTemporal);
         elementoTemporal.select();
