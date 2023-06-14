@@ -33,6 +33,116 @@ body{
 	font-family: 'Poppins', sans-serif;
 }
 
+
+/* spinner que se muestra antes de ver los negocios */
+
+.spinnerN {
+	margin: 100px auto 0;
+	width: 70px;
+	text-align: center;
+  }
+  
+  .spinnerN > div {
+	width: 18px;
+	height: 18px;
+	background-color: #333;
+  
+	border-radius: 100%;
+	display: inline-block;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  }
+  
+  .spinnerN .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+  }
+  
+  .spinnerN .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+  }
+  
+  @-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0) }
+	40% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bouncedelay {
+	0%, 80%, 100% { 
+	  -webkit-transform: scale(0);
+	  transform: scale(0);
+	} 40% { 
+	  -webkit-transform: scale(1.0);
+	  transform: scale(1.0);
+	}
+  }
+
+
+/* ---- estilos para el filtro de las categorias */
+.nav-filter-cat{
+	display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+    position: sticky;
+    top: 45px;
+    background-color: white;
+	z-index: 10;
+}
+
+@media screen and (max-width: 767px){
+	.nav-filter-cat {
+		margin-bottom: 10px;
+		overflow-x: scroll;
+		scroll-snap-type: x mandatory;
+		justify-content: start;
+		gap: 18px;
+	}
+}
+
+
+.btn-fil{
+	color: #686868;
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 14px;
+	text-transform: capitalize;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.btn-fil.activeee{
+	background: var(--cp2);
+    color: #fff;
+}
+
+
+
+#search {
+    position: absolute;
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    left: 0;
+    right: 0;
+	top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 5;
+}
+
+
+#datos-neg{
+	margin-top: 70px;
+}
+
+@media screen and (max-width: 767px){
+	#datos-neg {
+		margin-top: 45px;
+	  }
+}
+/*  -------------------*/
 .spinner{
 	height: 30px;
 	width: 30px;
@@ -302,8 +412,9 @@ a:link.btn-llamar{
 .neg{
 	height: auto;
 	width: 100%;
-	padding-top: 100px;
+	/* padding-top: 100px; */
 	padding-bottom: 100px;
+	position: relative;
 }
 .neg.catt{
 	padding-top: 25px;
@@ -641,6 +752,7 @@ se arregle el filtrado de negocios */
 }
 .banner-r .horario .content ul li span.day{
 	font-weight: 400;
+	color: var(--cgris4);
 }
 
 .banner-r .horario .content ul li span.time{
@@ -903,7 +1015,7 @@ ul.fil li.activeee a{
 
 	/* ------tarjetas negocios -------*/
 	.neg{
-		padding-top: 50px;
+		/* padding-top: 50px; */
 		padding-bottom: 50px;
 	}
 	.neg.catt{

@@ -20,14 +20,11 @@
 		<link rel="stylesheet" href="../css/bootstrap-icons.css">
 
 		<!-- scripts -->
-    	<script src="../js/jquery-3.5.1.slim.min.js"></script>
+    	<!-- <script src="../js/jquery-3.5.1.slim.min.js"></script> -->
     	<script defer src="https://charcas.xyz/js/bootstrap.bundle.min.js"></script>
    		<script defer src="https://charcas.xyz/js/mscripts.js"></script>                                                               
    		<script defer src="https://www.googletagmanager.com/gtag/js?id=G-PHFNG8R7J5"></script>
 		<script defer src="https://charcas.xyz/js/analytics.js"></script>
-
-
-		<script src="../js/filtro.js"></script> <!-- Resource jQuery -->
 
 		<!-- progresive app -->
 		<meta name="theme-color" content="#0A191F" />
@@ -43,7 +40,7 @@
 	  
     
   </head>
-  <body>
+  <body data-id="3">
 	 
 	  
 	  <section class="navv">
@@ -85,33 +82,8 @@
 	  <section class="neg">
 	  	<div class="container">
 		  	<div class="row justify-content-center">
-				<div class="col-lg-8 col-md-12 col-sm-12" id="negocioslista">
+				<div class="col-lg-8 col-md-12 col-sm-12" id="datos-neg">
 
-<!-- 
-						<ul class="fil list-unstyled">
-								<li class="activeee"><a href="#" class="btn-fil" data-filter="todos">Todos</a></li>
-								<li><a href="#" class="btn-fil" data-filter="audioyvideo">Audio y Video</a></li>
-								<li><a href="#" class="btn-fil" data-filter="electronica">Electrodomesticos</a></li>
-						</ul>
-
-					 -->
-						
-
-					<div class="tarjeta box-cat audioyvideo">
-						<div class="imagen">
-							<img src="images/electronica-sanchez.jpg" class="img-fluid" alt="" width="120">
-						</div>
-						<div class="contenido">
-							<ul class="list-unstyled">
-								<li class="title">Electronica Sanchez</li>
-								<li class="direction"><i class="bi bi-geo-alt-fill"></i> Calle San luis de la Paz #24, Doctor Mora</li>
-								<li class="telefono"><i class="bi bi-telephone-fill"></i> 468 123 15 45</li>
-								<li class="whatsapp"><i class="bi bi-whatsapp"></i> 468 123 15 45</li>
-								<li><a href="electronica-sanchez.html" class="boton boton-menu">Ver Servicios</a></li>
-							</ul>
-						</div>
-					</div>
-					
 		
 				
 				</div>
@@ -122,60 +94,30 @@
 	  
 	  <section class="divider"><a href="#" class="button-share" id="compartir__enlace">Compartir</a></section>
 
-	
 	  
-	
-
+	  <!--- invitacion -->
+	<section class="invitacion">
+	</section>
+	<!--- fin invitacion -->
 	  
-	  <section class="register">
-	  	<div class="container pizza-fondo">
-			<div class="row">
-				<div class="col-lg-2 col-md-2">
-					
-				</div>
-				<div class="col-lg-8 col-md-8 col-sm-12">
-					<div class="contenido">
-						<h3>Quieres registrar tus <span>Servicios de Reparación</span> 🛠️🪛🔩🧰📺</h3>
-						<p>pues que esperas para registrarte y que toda la comunidad se entere de tus servicios.</p>
-						<a href="../registro.html" class="boton boton-register">Registrame</a>
-					</div>
-					
-				
-				</div>
-				<div class="col-lg-2 col-md-2">
-					
-				</div>
-			
-			</div>  
-		  
-		  
-		</div>
+	<!-- footer -->
+	<footer></footer>
+	<!-- fin footer-->
 	  
-	  
-	  </section> <section class="contacto">
-	  	<div class="container">
-		  	<div class="row">
-				<div class="col-lg-12">
-					<a href="mailto:dyxerteam@gmail.com">Contacto</a>
-				</div>
-			</div>
-		  </div>
-	  </section>
-	  
-	  
-	  <div class="dy">
-	  	<h6>DyxerTeam</h6>
-	  </div>
-	  
-	  <div class="modal-sombra"></div>
+	<div class="modal-sombra"></div>
         <div class="modal-share" id="modal__compartir">
 	</div>
+
+
 	  
 	  <section class="navbottom">
 	  	<ul>
 			<li><a href="https://charcas.xyz/"><i class="bi bi-house"></i></a></li>  
 		</ul>
 	  </section>
+
+
+	  <script src="../js/catfilter.js" type="module"></script>
 	  
 	  
 	  

@@ -95,6 +95,11 @@ const modalSombra = document.querySelector('.modal-sombra');
 
 const urlPagina = window.location.href;
 
+if(urlPagina.indexOf('#search') !== -1){
+    const nuevaUrl = urlPagina.replace('#search', '');
+    window.history.replaceState(null, '', nuevaUrl);   
+}
+
 compartirButton.textContent = 'Compartir Categoria';
 
 if(modalCompartir){
