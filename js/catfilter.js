@@ -59,6 +59,10 @@ document.addEventListener('DOMContentLoaded', function(){
 					hermanos[i].classList.remove('activeee');
 				}
 			}
+
+            
+            
+
         }
 
         filtradoDiv.appendChild(buttonTodos);
@@ -107,9 +111,16 @@ document.addEventListener('DOMContentLoaded', function(){
          
         
     }
+
+
+
+
     // }else{
     //     console.log('no hay subcategorias')
     // }
+
+
+    
    
     // funcion para filtrar los elementos por categorias
     function filtrarElementos(nombre){
@@ -134,6 +145,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
         filtrarNegocios(elementosFiltrados)
 
+       
+
         
     }
 
@@ -141,13 +154,14 @@ document.addEventListener('DOMContentLoaded', function(){
     
     // console.log(typeof id);
     // console.log(categorias)
-spinner();
+    spinner();
     filtrarNegocios(categorias);
 
 
     
 
     function filtrarNegocios(categorias){
+
         
         console.log('se ejecuto el filtrado')
 
@@ -360,6 +374,9 @@ spinner();
     }
 
     ////////////////////////////////////
+
+
+    
 
 })
 

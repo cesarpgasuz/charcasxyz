@@ -752,6 +752,7 @@ se arregle el filtrado de negocios */
 }
 .banner-r .horario .content ul li span.day{
 	font-weight: 400;
+	color: var(--cgris4);
 }
 
 .banner-r .horario .content ul li span.time{

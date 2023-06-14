@@ -9,7 +9,7 @@ export const db = [
         whatsapp: '4681231545',
         facebook: 'electronicasanchezdoctormora',
         imagen: 'electronica-sanchez.jpg',
-        url: 'prueba1.html',
+        url: 'electronica-sanchez.html',
         categoria: 3,
         status: true
     },
@@ -300,6 +300,33 @@ export const db = [
         categoria: 24,
         status: true
     },
+    {   id: 'boutiqueqbonita',
+        nombre: 'Boutique Q. Bonita',
+        direccion: 'Loma de Buenavista, Doctor Mora',
+        extracto: '',
+        telefono: '4191137636',
+        whatsapp: '4191137636',
+        facebook: 'maryguadalupejg',
+        imagen: 'boutiqueqbonita.jpg',
+        url: 'boutique-q-bonita.html',
+        categoria: 19,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            }, 
+            {
+                id: 2,
+                nombre: 'price shoes',
+            },
+            {
+                id: 3,
+                nombre: 'vianney',
+            }
+        
+        ],
+        status: true
+    },
     {   id: 'alexabolanos',
         nombre: 'Alexa Bolaños',
         direccion: 'Doctor Mora',
@@ -310,6 +337,12 @@ export const db = [
         imagen: 'girl.png',
         url: 'alexa.html',
         categoria: 19,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            }
+        ],
         status: true
     },
     {   id: 'karinaivethramirez',
@@ -322,6 +355,12 @@ export const db = [
         imagen: 'beauty.png',
         url: 'karina-iveth-ramirez-lugo.html',
         categoria: 19,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            }
+        ],
         status: true
     },
     {   id: 'obloom',
@@ -334,6 +373,12 @@ export const db = [
         imagen: 'obloom.jpg',
         url: 'obloom.html',
         categoria: 19,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            }
+        ],
         status: true
     },
     {   id: 'pedidossheinrb',
@@ -346,6 +391,12 @@ export const db = [
         imagen: 'pedidosheindoctormoraryb.jpg',
         url: 'pedidos-shein-dr-mora-ryb.html',
         categoria: 19,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            }
+        ],
         status: true
     },
     {   id: 'ventasheindrmora',
@@ -355,21 +406,15 @@ export const db = [
         telefono: '',
         whatsapp: '',
         facebook: 'profile.php?id=100071211173387',
-        imagen: 'pedidosheindoctormoraryb.jpg',
+        imagen: 'camilalara.jpg',
         url: 'venta-shein-dr-mora.html',
         categoria: 19,
-        status: true
-    },
-    {   id: 'boutiqueqbonita',
-        nombre: 'Boutique Q. Bonita',
-        direccion: 'Loma de Buenavista, Doctor Mora',
-        extracto: '',
-        telefono: '4191137636',
-        whatsapp: '4191137636',
-        facebook: 'maryguadalupejg',
-        imagen: 'boutiqueqbonita.jpg',
-        url: 'boutique-q-bonita.html',
-        categoria: 19,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            }
+        ],
         status: true
     },
     {   id: 'maritzalopez',
@@ -382,6 +427,12 @@ export const db = [
         imagen: 'maritza.png',
         url: 'maritza-lopez.html',
         categoria: 19,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            }
+        ],
         status: true
     },
     {   id: 'latorteria',
@@ -806,6 +857,12 @@ export const db = [
         imagen: 'bloqueramau.jpg',
         url: 'bloquera-jimenez-el-mau.html',
         categoria: 8,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'Tabique/Block',
+            }
+        ],
         status: true
     },
     {   id: 'acarreosymaterialeselgordo',
@@ -818,6 +875,12 @@ export const db = [
         imagen: 'elgordo.jpg',
         url: 'acarreos-y-materiales-el-gordo.html',
         categoria: 8,
+        subcategorias: [
+            {
+                id: 2,
+                nombre: 'renta de maquinaria',
+            }
+        ],
         status: true
     },
     {   id: 'recintozarazua',
@@ -1013,6 +1076,168 @@ export const db = [
         ],
         status: true
     },
+    {   id: 'piacomedor',
+        nombre: 'PIA comedor',
+        direccion: 'Doctor Mora',
+        extracto: '',
+        telefono: '4191059784',
+        whatsapp: '',
+        facebook: 'piacomedor',
+        instagram: '',
+        imagen: 'piacomedor.jpg',
+        url: 'pia-comedor.html',
+        categoria: 22,
+        status: true
+    },
+    {   id: 'donamanuela',
+        nombre: 'Doña Manuela',
+        direccion: '<strong>Ejido Begoña</strong>, Doctor Mora',
+        extracto: '',
+        telefono: '',
+        whatsapp: '',
+        facebook: '',
+        instagram: '',
+        imagen: 'abuela1.png',
+        url: '',
+        categoria: 31,
+        status: true
+    },
+    {   id: 'donalupe',
+        nombre: 'Doña Lupe',
+        direccion: 'Preguntar por ella en las casas que están frente al registro civil, Doctor Mora.',
+        extracto: '',
+        telefono: '',
+        whatsapp: '',
+        facebook: '',
+        instagram: '',
+        imagen: 'abuela2.png',
+        url: '',
+        categoria: 31,
+        status: true
+    },
+    {   id: 'margarita',
+        nombre: 'Margarita',
+        direccion: '<strong>Vagui</strong>, Doctor Mora.',
+        extracto: '',
+        telefono: '',
+        whatsapp: '',
+        facebook: '',
+        instagram: '',
+        imagen: 'abuela3.png',
+        url: '',
+        categoria: 31,
+        status: true
+    },
+    {   id: 'donasantos',
+        nombre: 'Doña Santos',
+        direccion: '<strong>Derramadero de Enmedio</strong>, Doctor Mora.',
+        extracto: '',
+        telefono: '',
+        whatsapp: '',
+        facebook: '',
+        instagram: '',
+        imagen: 'abuela4.png',
+        url: '',
+        categoria: 31,
+        status: true
+    },
+    {   id: 'donvalerio',
+        nombre: 'Don Valerio',
+        direccion: '<strong>San Agustin</strong>, Doctor Mora.',
+        extracto: '',
+        telefono: '',
+        whatsapp: '',
+        facebook: '',
+        instagram: '',
+        imagen: 'abuelo5.png',
+        url: '',
+        categoria: 31,
+        status: true
+    },
+    {   id: 'donaelvira',
+        nombre: 'Doña Elvira',
+        direccion: '<strong>San Rafael</strong>, Doctor Mora.',
+        extracto: '',
+        telefono: '',
+        whatsapp: '',
+        facebook: '',
+        instagram: '',
+        imagen: 'abuelo6.png',
+        url: '',
+        categoria: 31,
+        status: true
+    },
+    {   id: 'donaflora',
+        nombre: 'Doña Flora',
+        direccion: '<strong>La Fortuna</strong>, Doctor Mora.',
+        extracto: '',
+        telefono: '',
+        whatsapp: '',
+        facebook: '',
+        instagram: '',
+        imagen: 'abuelo7.png',
+        url: '',
+        categoria: 31,
+        status: true
+    },
+    {   id: 'donapolita',
+        nombre: 'Doña Polita',
+        direccion: '<strong>Tulipanes #45, Colonia el Paraiso,</strong>, Doctor Mora.',
+        extracto: '',
+        telefono: '',
+        whatsapp: '',
+        facebook: '',
+        instagram: '',
+        imagen: 'abuelo8.png',
+        url: '',
+        categoria: 31,
+        status: true
+    },
+    {   id: 'taqueriacharquitas',
+        nombre: 'Taqueria Charquitas',
+        direccion: 'Calle camino a Morisquillas #17, Doctor Mora.',
+        extracto: '',
+        telefono: '4191034234',
+        whatsapp: '',
+        facebook: '',
+        instagram: '',
+        imagen: 'taqueriacharquitas.jpg',
+        url: 'taqueria-charquitas.html',
+        categoria: 1,
+        status: true
+    },
+    {   id: 'aricell',
+        nombre: 'AriCell',
+        direccion: 'Calle Jerecuaro #37, Doctor Mora.',
+        extracto: '',
+        telefono: '4191082020',
+        whatsapp: '',
+        facebook: '',
+        instagram: '',
+        imagen: 'aricell.jpg',
+        url: 'aricell.html',
+        categoria: 25,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'reparaciones',
+            },
+            {
+                id: 2,
+                nombre: 'accesorios',
+            },
+            {
+                id: 3,
+                nombre: 'venta de equipos',
+            },
+            {
+                id: 4,
+                nombre: 'liberaciones',
+            }
+        ],
+        status: true
+    },
+    
 
 
 ]

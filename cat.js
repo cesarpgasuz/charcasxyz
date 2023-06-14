@@ -37,7 +37,17 @@ export const categoria = [
     {
         id: 8,
         nombre: 'construccion',
-        extracto: '¿Tienes un negocio de construcción y/o venta de materiales para la construcción? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Llega a más clientes, muestra tu amplio catálogo de materiales y promociona tus servicios de construcción.'
+        extracto: '¿Tienes un negocio de construcción y/o venta de materiales para la construcción? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Llega a más clientes, muestra tu amplio catálogo de materiales y promociona tus servicios de construcción.',
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'Tabique/Block',
+            }, 
+            {
+                id: 2,
+                nombre: 'renta de maquinaria',
+            }
+        ]
     },
     {
         id: 9,
@@ -107,7 +117,22 @@ export const categoria = [
     {
         id: 19,
         nombre: 'pedidosonline',
-        extracto: '¿Eres un proveedor de productos online y quieres alcanzar un mayor éxito? Únete a charcas.xyz, el directorio virtual de Doctor Mora. Promociona tus artículos únicos, conecta con clientes potenciales y haz crecer tu negocio en el mundo digital. '
+        extracto: '¿Eres un proveedor de productos online y quieres alcanzar un mayor éxito? Únete a charcas.xyz, el directorio virtual de Doctor Mora. Promociona tus artículos únicos, conecta con clientes potenciales y haz crecer tu negocio en el mundo digital. ',
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            }, 
+            {
+                id: 2,
+                nombre: 'price shoes',
+            },
+            {
+                id: 3,
+                nombre: 'vianney',
+            }
+        
+        ]
     },
     {
         id: 20,
@@ -186,6 +211,11 @@ export const categoria = [
         id: 30,
         nombre: 'comida china',
         extracto: '¡Tienes un negocio de comida china! Regístrate en charcas.xyz, el directorio virtual de Doctor Mora y llega a más amantes de la gastronomía oriental. ¡Promociona tus sabores únicos hoy!'
+    },
+    {
+        id: 31,
+        nombre: 'sobanderos',
+        extracto: '¿Eres experto en el arte del sobado? ¡Regístrate en charcas.xyz y muestra tus habilidades a quienes buscan profesionales como tú!'
     }
 
 
