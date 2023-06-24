@@ -448,6 +448,28 @@ a:link.btn-llamar{
 	line-height: 32px;
 	font-size: 16px;
 }
+.neg .tarjeta .contenido ul li.telefono a:link,
+.neg .tarjeta .contenido ul li.whatsapp a:link{
+	text-decoration: none;
+	color: unset;
+	font-weight: 600;
+}
+.neg .tarjeta .contenido ul li.telefono a:visited,
+.neg .tarjeta .contenido ul li.whatsapp a:visited{
+	text-decoration: none;
+	color: unset;
+}
+.neg .tarjeta .contenido ul li.telefono a:active,
+.neg .tarjeta .contenido ul li.whatsapp a:active{
+	text-decoration: none;
+	color: unset;
+}
+
+.neg .tarjeta .contenido ul li.telefono,
+.neg .tarjeta .contenido ul li.whatsapp{
+	margin-bottom: 12px;
+}
+
 .neg .tarjeta .contenido ul li.title{
 	font-size: 30px;
 	font-weight: 700;

@@ -216,16 +216,29 @@ document.addEventListener('DOMContentLoaded', function(){
             if(telefono){
                 const negocioTelefono = document.createElement('LI');
                 negocioTelefono.classList.add('telefono');
+
+                const numeroDeTelefono = `tel:+52${telefono}`;
+                const telefonoLink = document.createElement('A');
+                telefonoLink.href = numeroDeTelefono;
+
                 const numeroFormateado = formatearNumero(telefono)
-                negocioTelefono.innerHTML = `<i class="bi bi-telephone-fill"></i> ${numeroFormateado}`;
-                listadoUl.appendChild(negocioTelefono);
+                telefonoLink.innerHTML = `<i class="bi bi-telephone-fill"></i> ${numeroFormateado}`;
+
+                negocioTelefono.appendChild(telefonoLink);
+                listadoUl.appendChild(negocioTelefono); 
             }
 
             if(whatsapp){
                 const negocioWhatsapp = document.createElement('LI');
                 negocioWhatsapp.classList.add('whatsapp');
+
+                const whatsappLink = document.createElement('A');
+                whatsappLink.href = `https://api.whatsapp.com/send?phone=52${whatsapp}`
+
                 const numeroFormateado = formatearNumero(whatsapp);
-                negocioWhatsapp.innerHTML = `<i class="bi bi-whatsapp"></i> ${numeroFormateado}`;
+                whatsappLink.innerHTML = `<i class="bi bi-whatsapp"></i> ${numeroFormateado}`;
+
+                negocioWhatsapp.appendChild(whatsappLink);
                 listadoUl.appendChild(negocioWhatsapp);
             }
 
