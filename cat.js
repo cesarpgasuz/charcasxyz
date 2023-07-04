@@ -105,14 +105,18 @@ export const categoria = [
             {
                 id: 3,
                 nombre: 'venta de cosmeticos',
+            },
+            {
+                id: 4,
+                nombre: 'spa'
             }
         
         ]
     },
     {
         id: 18,
-        nombre: 'mecanico',
-        extracto: '¿Tienes un taller mecánico y quieres destacar tus servicios? Únete a charcas.xyz, el directorio virtual de Doctor Mora. Registra tu negocio y muestra tus habilidades en reparación de vehículos, mantenimiento y servicios especializados.'
+        nombre: 'mecanicos-automotrices',
+        extracto: '¿Tienes un taller mecánico automotriz y quieres destacar tus servicios? Únete a charcas.xyz, el directorio virtual de Doctor Mora. Registra tu negocio y muestra tus habilidades en reparación de vehículos, mantenimiento y servicios especializados.'
     },
     {
         id: 19,
@@ -216,7 +220,12 @@ export const categoria = [
         id: 31,
         nombre: 'sobanderos',
         extracto: '¿Eres experto en el arte del sobado? ¡Regístrate en charcas.xyz y muestra tus habilidades a quienes buscan profesionales como tú!'
-    }
+    },
+    {
+        id: 32,
+        nombre: 'mecanicos-motocicletas',
+        extracto: '¿Tienes un taller mecánico de motocicletas y quieres destacar tus servicios? Únete a charcas.xyz, el directorio virtual de Doctor Mora. Registra tu negocio y muestra tus habilidades en reparación de vehículos, mantenimiento y servicios especializados.'
+    },
 
 
 ]
