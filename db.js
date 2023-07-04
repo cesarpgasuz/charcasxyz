@@ -736,7 +736,7 @@ export const db = [
         url: 'securitynet.html',
         categoria: 15,
         status: true
-    },
+    }, 
     {   id: 'brunobaezavargas',
         nombre: 'Bruno Baeza Vargas',
         direccion: 'Obrajitos de Abajo, Doctor Mora',
@@ -1224,7 +1224,58 @@ export const db = [
         ],
         status: true
     },
-    
+    {   id: 'mecanicazama',
+        nombre: 'Mecanica ZaMa',
+        direccion: 'Doctor Mora',
+        extracto: '',
+        telefono: '4794071672',
+        whatsapp: '4191398581',
+        facebook: 'profile.php?id=100090024434582',
+        imagen: 'mecanicazama.jpg',
+        url: 'mecanica-zama.html',
+        categoria: 32,
+        status: true
+    },
+    {   id: 'moramotor',
+        nombre: 'Mora Motor',
+        direccion: 'Doctor Mora',
+        extracto: '',
+        telefono: '4191001178',
+        whatsapp: '',
+        facebook: 'MoraMotorsDoctorMora',
+        imagen: 'moramotor.jpg',
+        url: 'mora-motor.html',
+        categoria: 18,
+        status: true
+    },
+    {   id: 'grupoziba',
+        nombre: 'Grupo Zibá',
+        direccion: 'Av. Guanajuato #48, Doctor Mora',
+        extracto: '',
+        telefono: '4191058221',
+        whatsapp: '4191058221',
+        facebook: 'zibadoctormora',
+        instagram: 'grupoziba2022',
+        imagen: 'grupoziba.jpg',
+        url: 'grupo-ziba.html',
+        categoria: 17,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'Maquillaje/Peinado',
+            },
+            {
+                id: 2,
+                nombre: 'uñas',
+            },
+            {
+                id: 4,
+                nombre: 'spa',
+            }
+        ],
+        status: true,
+        
+    },
 
 
 ]
