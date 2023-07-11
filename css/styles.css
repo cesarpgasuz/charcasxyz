@@ -27,7 +27,16 @@
 	font-display: swap;
 }
 
-
+.line{
+	background: red;
+	width: 1px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
 
 :root{
 	--azulp: #0A191F;
@@ -565,34 +574,45 @@ footer p{
 
 .navbottom{
 	background: #f4f4f4;
-	height: 48px;
+	min-height: 48px;
+	height: auto;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	border-top: 1px solid #e6e6e6;
 	display: none;
+	padding-block: 4px;
 }
 .navbottom ul{
 	list-style: none;
 	height: 100%;
 	width: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	margin: 0px;
 	padding: 0px;
 }
-.navbottom ul li a:link {
-	font-size: 26px;
+
+.navbottom ul li a{
+	font-size: 12px;
 	text-decoration: none;
 	color: var(--azulp);
-	padding: 5px 50px;
 	border-radius: 50px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	width: 90px;
+}
+.navbottom ul li i{
+	font-size: 20px;
+	padding-inline: 25px;
+	border-radius: 25px;
 }
 .navbottom ul li a:visited{
 	color: var(--azulp);
 }
-.navbottom ul li a:active{
+.navbottom ul li a i:active{
 	background: #d7d7d7;
 }
 
