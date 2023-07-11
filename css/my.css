@@ -890,7 +890,7 @@ h4.subtitles-2.paquetes-2{
 .navbottom ul li a:visited{
 	color: #0A191F;
 }
-.navbottom ul li a:active{
+.navbottom ul li a i:active{
 	background: #d7d7d7;
 }
 
