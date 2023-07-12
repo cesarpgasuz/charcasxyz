@@ -65,7 +65,7 @@ export const db = [
         direccion: 'Calle Silao #40, Doctor Mora. <strong>Enfrente a la antena de Telmex</strong>',
         extracto: '',
         telefono: '4191811956',
-        whatsapp: '',
+        whatsapp: '4191811956',
         facebook: 'groups/193640264725340/user/100060205655712',
         imagen: '412.jpg',
         url: 'taqueria412.html',
