@@ -134,6 +134,10 @@ export const categoria = [
             {
                 id: 3,
                 nombre: 'vianney',
+            },
+            {
+                id: 4,
+                nombre: 'mercado libre'
             }
         
         ]

@@ -377,6 +377,28 @@ export const db = [
             {
                 id: 1,
                 nombre: 'shein',
+            },
+            {
+                id: 4,
+                nombre: 'mercado libre',
+            }
+        ],
+        status: true
+    },
+    {   id: 'linava',
+        nombre: 'Li Nava',
+        direccion: 'Ejido Vagui, Doctor Mora',
+        extracto: '',
+        telefono: '',
+        whatsapp: '',
+        facebook: 'LiLibobna',
+        imagen: 'linava.png',
+        url: 'li-nava.html',
+        categoria: 19,
+        subcategorias: [
+            {
+                id: 4,
+                nombre: 'mercado libre',
             }
         ],
         status: true
@@ -1273,6 +1295,48 @@ export const db = [
                 nombre: 'spa',
             }
         ],
+        status: true,
+        
+    },
+    {   id: 'serviciomecanicorubio',
+        nombre: 'Servicio Eléctrico y Mecánico Rubio',
+        direccion: 'Calle Silao #9, Doctor Mora. <strong>(Por la casa del Jubilado)</strong>',
+        extracto: '',
+        telefono: '',
+        whatsapp: '4191184544',
+        facebook: 'profile.php?id=100077533279275',
+        instagram: '',
+        imagen: 'servicio.png',
+        url: 'servicio-electrico-y-mecanico-rubio.html',
+        categoria: 18,
+        status: true,
+        
+    },
+    {   id: 'lataqueria',
+        nombre: 'La Taqueria',
+        direccion: 'Libramiento León s/n, Doctor Mora. <strong>(una cuadra adelante de los viveros)</strong>',
+        extracto: '',
+        telefono: '4191313730',
+        whatsapp: '',
+        facebook: 'groups/193640264725340/user/1396416422/',
+        instagram: '',
+        imagen: 'lataqueria.png',
+        url: 'la-taqueria.html',
+        categoria: 1,
+        status: true,
+        
+    },
+    {   id: 'servicioautomotrizpeque',
+        nombre: 'Servicio Automotriz Peque Esch',
+        direccion: 'Los Sauces #100, La Fortuna',
+        extracto: '',
+        telefono: '',
+        whatsapp: '4191056484',
+        facebook: '',
+        instagram: '',
+        imagen: 'peque.png',
+        url: 'servicio-automotriz-peque-esch.html',
+        categoria: 18,
         status: true,
         
     },
