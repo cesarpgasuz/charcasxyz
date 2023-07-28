@@ -1340,6 +1340,55 @@ export const db = [
         status: true,
         
     },
+    {   id: 'serviciodecosturarivera',
+        nombre: 'Servicio de Costura Rivera',
+        direccion: 'Prolongación Ocampo Sur #6, Colonia Centro, Doctor Mora',
+        extracto: '',
+        telefono: '',
+        whatsapp: '',
+        facebook: 'profile.php?id=100088522262765',
+        instagram: '',
+        imagen: 'maquina-de-coser.png',
+        url: 'servicio-de-constura-rivera.html',
+        categoria: 33,
+        status: true,
+        
+    },
+    {   id: 'bienestarclinicadefisioterapia',
+        nombre: 'BienStar Clinica de fisioterapia',
+        direccion: 'Calle Hidalgo #62, Colonia Centro, Doctor Mora',
+        extracto: '',
+        telefono: '4423381201',
+        whatsapp: '4423381201',
+        facebook: 'profile.php?id=100083178146105',
+        instagram: '',
+        imagen: 'bienestar.jpg',
+        url: 'bienestar-clinica-de-fisioterapia.html',
+        categoria: 26,
+        status: true,
+    },
+    {   id: 'ximenavelazquezbeauty',
+        nombre: 'Ximena Velazquez',
+        direccion: 'Doctor Mora',
+        extracto: '',
+        telefono: '',
+        whatsapp: '',
+        facebook: 'profile.php?id=100094111582029',
+        imagen: 'ximenavelazquezbeauty.jpg',
+        url: 'ximena-velazquez-beauty.html',
+        categoria: 17,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'Maquillaje/Peinado',
+            },
+            {
+                id: 2,
+                nombre: 'uñas',
+            }
+        ],
+        status: true
+    },
 
 
 ]

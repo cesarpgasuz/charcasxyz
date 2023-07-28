@@ -230,6 +230,11 @@ export const categoria = [
         nombre: 'mecanicos-motocicletas',
         extracto: '¿Tienes un taller mecánico de motocicletas y quieres destacar tus servicios? Únete a charcas.xyz, el directorio virtual de Doctor Mora. Registra tu negocio y muestra tus habilidades en reparación de vehículos, mantenimiento y servicios especializados.'
     },
+    {
+        id: 33,
+        nombre: 'servicio-costura',
+        extracto: '¿Tienes habilidades excepcionales en costura y deseas promocionar tus servicios? ¡Únete a charcas.xyz, el directorio virtual de Doctor Mora! Registra tu negocio y resalta tu experiencia en confección, arreglos y servicios especializados de costura. '
+    },
 
 
 ]
