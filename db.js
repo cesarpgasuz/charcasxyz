@@ -11,6 +11,30 @@ export const db = [
         imagen: 'electronica-sanchez.jpg',
         url: 'electronica-sanchez.html',
         categoria: 3,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'electronica',
+            },
+        ],
+        status: true
+    },
+    {   id: 'multiserviciosvazquez',
+        nombre: 'Multiservicios Vazquez',
+        direccion: 'Calle Abasolo #38 Colonia Centro, Doctor Mora',
+        extracto: '',
+        telefono: '4191146547',
+        whatsapp: '4191146547',
+        facebook: 'jorgeluis.velazquez.71',
+        imagen: 'multiserviciosvazquez.jpg',
+        url: 'multiservicios-vazquez.html',
+        categoria: 3,
+        subcategorias: [
+            {
+                id: 2,
+                nombre: 'electrodomesticos'
+            },
+        ],
         status: true
     },
     {   id: 'ele2',
