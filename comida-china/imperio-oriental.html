@@ -58,15 +58,9 @@
 	  	<div class="horario">
 							<div class="content">
 								<h4>Horario</h4>
-								<ul class="list-unstyled">
+								<ul class="list-unstyled horario-js">
 								
-									<li><span class="day">Lunes</span><span class="time">1:00 pm - 10:00 pm</span></li>
-									<li><span class="day">Martes</span><span class="time">1:00 pm - 10:00 pm</span></li>
-									<li><span class="day">Miercoles</span><span class="time">Cerrado</span></li>
-									<li><span class="day">Jueves</span><span class="time">1:00 pm - 10:00 pm</span></li>
-									<li><span class="day">Viernes</span><span class="time">1:00 pm - 10:00 pm</span></li>
-									<li><span class="day">Sabado</span><span class="time">1:00 pm - 10:00 pm</span></li>
-									<li><span class="day">Domingo</span><span class="time">1:00 pm - 10:00 pm</span></li>
+									
 									
 								</ul>
 							</div>
@@ -96,15 +90,9 @@
 						<div class="horario">
 							<div class="content">
 								<h4><i class="bi bi-alarm"></i> Horario</h4>
-								<ul class="list-unstyled">
+								<ul class="list-unstyled horario-js">
 									
-									<li><span class="day">Lunes</span><span class="time">1:00 pm - 10:00 pm</span></li>
-									<li><span class="day">Martes</span><span class="time">1:00 pm - 10:00 pm</span></li>
-									<li><span class="day">Miercoles</span><span class="time">Cerrado</span></li>
-									<li><span class="day">Jueves</span><span class="time">1:00 pm - 10:00 pm</span></li>
-									<li><span class="day">Viernes</span><span class="time">1:00 pm - 10:00 pm</span></li>
-									<li><span class="day">Sabado</span><span class="time">1:00 pm - 10:00 pm</span></li>
-									<li><span class="day">Domingo</span><span class="time">1:00 pm - 10:00 pm</span></li>
+		
 									
 								</ul>
 							</div>
@@ -386,6 +374,28 @@
 	   <script src="../js/datos.js" type="module"></script>
 
 	  
+	   <script>
+		const horarioJS = document.querySelectorAll('.horario-js');
+
+		horarioJS.forEach(horario => {
+
+			horario.innerHTML = `
+
+				<li><span class="day">Lunes</span><span class="time">2:00 pm - 9:30 pm</span></li>
+				<li><span class="day">Martes</span><span class="time">2:00 pm - 9:30 pm</span></li>
+				<li><span class="day">Miercoles</span><span class="time">Cerrado</span></li>
+				<li><span class="day">Jueves</span><span class="time">2:00 pm - 9:30 pm</span></li>
+				<li><span class="day">Viernes</span><span class="time">2:00 pm - 9:30 pm</span></li>
+				<li><span class="day">Sabado</span><span class="time">4:00 pm - 10:00 pm</span></li>
+				<li><span class="day">Domingo</span><span class="time">2:00 pm - 6:00 pm</span></li>
+
+			`;
+		});
+
+
+	  </script>
+
+
 
   </body>
 </html>
