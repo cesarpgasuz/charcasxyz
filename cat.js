@@ -12,7 +12,17 @@ export const categoria = [
     {
         id: 3,
         nombre: 'electrodomesticos',
-        extracto: '¿Eres un profesional en reparación de electrodomésticos y electrónica? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Amplía tu visibilidad, llega a más clientes y muestra tus habilidades en reparación.'
+        extracto: '¿Eres un profesional en reparación de electrodomésticos y electrónica? Regístrate en charcas.xyz, el directorio virtual de Doctor Mora. Amplía tu visibilidad, llega a más clientes y muestra tus habilidades en reparación.',
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'electronica',
+            }, 
+            {
+                id: 2,
+                nombre: 'electrodomesticos',
+            }
+        ]
     },
     {
         id: 4,
