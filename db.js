@@ -1348,8 +1348,8 @@ export const db = [
         status: true,
         
     },
-    {   id: 'lataqueria',
-        nombre: 'La Taqueria',
+    {   id: 'taqueriaelarbolito',
+        nombre: 'Taqueria "El Arbolito"',
         direccion: 'Libramiento León s/n, Doctor Mora. <strong>(una cuadra adelante de los viveros)</strong>',
         extracto: '',
         telefono: '4191313730',
@@ -1357,7 +1357,7 @@ export const db = [
         facebook: 'groups/193640264725340/user/1396416422/',
         instagram: '',
         imagen: 'lataqueria.png',
-        url: 'la-taqueria.html',
+        url: 'taqueria-el-arbolito.html',
         categoria: 1,
         status: true,
         
