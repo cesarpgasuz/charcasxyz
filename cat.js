@@ -148,6 +148,18 @@ export const categoria = [
             {
                 id: 4,
                 nombre: 'mercado libre'
+            },
+            {
+                id: 5,
+                nombre: 'amazon'
+            },
+            {
+                id: 6,
+                nombre: 'mary kay'
+            },
+            {
+                id: 7,
+                nombre: 'betterware'
             }
         
         ]
@@ -244,6 +256,26 @@ export const categoria = [
         id: 33,
         nombre: 'servicio-costura',
         extracto: '¿Tienes habilidades excepcionales en costura y deseas promocionar tus servicios? ¡Únete a charcas.xyz, el directorio virtual de Doctor Mora! Registra tu negocio y resalta tu experiencia en confección, arreglos y servicios especializados de costura. '
+    },
+    {
+        id: 34,
+        nombre: 'papelerias',
+        extracto: '¿Tienes una papelería y deseas promocionar tus servicios? ¡Únete a charcas.xyz, el directorio virtual de Doctor Mora! Registra tu negocio y destaca tus productos y servicios de papelería. ¡Aprovecha esta oportunidad para llegar a más clientes!'
+    },
+    {
+        id: 35,
+        nombre: 'tramites-servicios',
+        extracto: '¿Ofreces servicios jurídicos y administrativos? ¡Únete a charcas.xyz, el directorio virtual de Doctor Mora! Registra tu negocio y destaca tus servicios legales, administrativos y contables. ¡Aprovecha esta oportunidad para llegar a más clientes!'
+    },
+    {
+        id: 36,
+        nombre: 'bomberos',
+        extracto: '¿Ofreces servicios de emergencia? ¡Únete a charcas.xyz, el directorio virtual de Doctor Mora!'
+    },
+    {
+        id: 37,
+        nombre: 'doctores',
+        extracto: '¿Ofreces servicios médicos y deseas promocionarlos? ¡Únete a charcas.xyz, el directorio virtual de Doctor Mora! Registra tu negocio y destaca tu experiencia en atención médica especializada y servicios de salud.'
     },
 
 

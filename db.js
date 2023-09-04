@@ -941,6 +941,18 @@ export const db = [
         categoria: 12,
         status: true
     },
+    {   id: 'elparaisoserviciosfunerarios',
+        nombre: 'El Paraíso Servicios Funerarios',
+        direccion: 'Av. Hidalgo #24, Doctor Mora <strong>(Frente a la parada de los taxis)</strong>',
+        extracto: '',
+        telefono: '4191034590',
+        whatsapp: '',
+        facebook: '',
+        imagen: 'elparaiso.jpg',
+        url: 'el-paraiso-servicios-funerarios.html',
+        categoria: 12,
+        status: true
+    },
     {   id: 'craiminfantildoctormora',
         nombre: 'Centro Recreativo Acuático Infantil Médico A.C',
         direccion: 'Camino a la Presa #23, Colonia la Otra Banda, Doctor Mora',
@@ -1350,6 +1362,20 @@ export const db = [
         status: true,
         
     },
+    {   id: 'tacoswicha',
+        nombre: 'Tacos WiCha',
+        direccion: 'El Carmen, Doctor Mora',
+        extracto: '',
+        telefono: '4192974662',
+        whatsapp: '4192974662',
+        facebook: '',
+        instagram: '',
+        imagen: 'tacoswicha.svg',
+        url: 'tacos-wicha.html',
+        categoria: 1,
+        status: true,
+        
+    },
     {   id: 'servicioautomotrizpeque',
         nombre: 'Servicio Automotriz Peque Esch',
         direccion: 'Los Sauces #100, La Fortuna',
@@ -1411,6 +1437,137 @@ export const db = [
                 nombre: 'uñas',
             }
         ],
+        status: true
+    },
+    {   id: 'barbyunasymas',
+        nombre: 'Barby "Uñas y más"',
+        direccion: 'Libramiento León #6, Doctor Mora',
+        extracto: '',
+        telefono: '4191200828',
+        whatsapp: '4191200828',
+        facebook: 'profile.php?id=100063787040052',
+        instagram: 'barby_unas_y_mas',
+        imagen: 'barby.jpg',
+        url: 'barby-unas-y-mas.html',
+        categoria: 17,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'Maquillaje/Peinado',
+            },
+            {
+                id: 2,
+                nombre: 'uñas',
+            },
+            {
+                id: 4,
+                nombre: 'spa',
+            }
+        ],
+        status: true
+    },
+    {   id: 'salonross',
+        nombre: 'Salón Ross',
+        direccion: 'Calle Yuriria #7, Col. Ejidal José Orduña, Doctor Mora',
+        extracto: '',
+        telefono: '4191396427',
+        whatsapp: '4191396427',
+        instagram: 'salon_ross91',
+        imagen: 'salonros.jpg',
+        url: 'salon-ross.html',
+        categoria: 17,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'Maquillaje/Peinado',
+            },
+            {
+                id: 2,
+                nombre: 'uñas',
+            }
+        ],
+        status: true
+    },
+    {   id: 'abarrotesypapelerialospena',
+        nombre: 'Abarrotes & Papelería "Los Peña"',
+        direccion: 'Calle Guanajuato #6, Loma de Buenavista, Doctor Mora',
+        extracto: '',
+        telefono: '4191319968',
+        whatsapp: '4191319968',
+        facebook: 'SPJAPJ',
+        imagen: 'lospena.jpg',
+        url: 'abarrotes-y-papeleria-los-pena.html',
+        categoria: 34,
+        status: true
+    },
+    {   id: 'abarrotesypapelerialospenaonline',
+        nombre: 'Abarrotes & Papelería "Los Peña"',
+        direccion: 'Calle Guanajuato #6, Loma de Buenavista, Doctor Mora',
+        extracto: '',
+        telefono: '4191319968',
+        whatsapp: '4191319968',
+        facebook: 'SPJAPJ',
+        imagen: 'lospena.jpg',
+        url: 'abarrotes-y-papeleria-los-pena.html',
+        categoria: 19,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            },
+            {
+                id: 4,
+                nombre: 'mercado libre'
+            },
+            {
+                id: 5,
+                nombre: 'amazon'
+            },
+            {
+                id: 6,
+                nombre: 'mary kay'
+            },
+            {
+                id: 7,
+                nombre: 'betterware'
+            }
+        ],
+        status: true
+    },
+    {   id: 'tramitesyserviciosap',
+        nombre: 'Trámites & Servicios AP',
+        direccion: 'Calle Guanajuato #6, Loma de Buenavista, Doctor Mora',
+        extracto: '',
+        telefono: '4191561810',
+        whatsapp: '4191561810',
+        facebook: 'lic.anahipj',
+        imagen: 'tramitesap.jpg',
+        url: 'tramites-y-servicios-ap.html',
+        categoria: 35,
+        status: true
+    },
+    {   id: 'doctorandresperez',
+        nombre: 'Consultorio Médico Dr. Andrés Pérez Olvera',
+        direccion: 'Calle San Francisco #7, Colonia José Orduña, Doctor Mora',
+        extracto: '',
+        telefono: '4101003302',
+        whatsapp: '4101003302',
+        facebook: '',
+        imagen: 'doctor.png',
+        url: 'dr-andres-perez-olvera.html',
+        categoria: 37,
+        status: true
+    },
+    {   id: 'bomberosdoctormora',
+        nombre: 'Bomberos Voluntarios Dr Mora A.C',
+        direccion: 'Privada Vicente Fox s/n, Col. El Paraíso, Doctor Mora',
+        extracto: '',
+        telefono: '4191224150',
+        whatsapp: '',
+        facebook: 'profile.php?id=100086019640580',
+        imagen: 'bomberosdoctormora.jpg',
+        url: 'bomberos-voluntarios-dr-mora.html',
+        categoria: 36,
         status: true
     },
 

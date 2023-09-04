@@ -5,7 +5,9 @@ export function extractoCategoria(id){
     const idCategoria = id;
     
     const infoCategoria = categoria.filter(datos => datos.id === idCategoria);
-
+    
+   
+    console.log(infoCategoria)
     // console.log(infoCategoria)
 
     const {extracto} = infoCategoria[0] || infoCategoria;
