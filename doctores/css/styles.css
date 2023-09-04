@@ -1,7 +1,8 @@
 :root{
+
 	--cp1: #0A191F; /* color principal 1 */
 	--cp2: #0D2128; /* color principal 2 */
-	--cs1: #FF1B00; /* color secundario 1 (--enlaces y botones) --*/
+	--cs1: #095DCA; /* color secundario 1 (--enlaces y botones) --*/
 	
 
 	--ct: #0371B3; /* color terciario cyan */
@@ -13,7 +14,9 @@
 	--cgris4: #dddddd;
 
 	--fuentep: 'Poppins', sans-serif;
+	
 }
+
 
 /* ------ boton flotante llamar  -----------*/
 
@@ -28,11 +31,11 @@ a:visited.btn-llamar{
 
 /* ------ fin boton flotante llamar  -----------*/
 
+
 /* -------- barra top fixed ----- */
 .navv{
 	background: var(--cp2);
 }
-
 
  /* se cambia la barra top fixed a color blanco con esta regla css */
 .blanca{
@@ -44,7 +47,6 @@ a:visited.btn-llamar{
 	box-shadow: 0px 10px 16px -8px rgba(0, 0, 0, 0.1);
 	*/
 }
-
 
 /* --- estilos para la flecha de retroceso en la barra top fixed  ---*/
 .flot-reverse{
@@ -67,8 +69,6 @@ a:visited.btn-llamar{
 	cursor: pointer;
 }
 
-
-
 /* --- colores para el boton de horario en version movil ---- */
 /* ---la estructura original esta en may.css --- */
 #horario{
@@ -86,8 +86,13 @@ a:visited.btn-llamar{
 
 
 
+
+
+
+
 /* --- seccion banner para todas las paginas con tarjetas --- */
 /* //// solo se agrega la imagen y la posicion, la estructa esta en my.css */
+
 .banner{
 	background: url(../images/banner.jpg) center center no-repeat;
 	-webkit-background-size: cover;
@@ -129,15 +134,23 @@ a:visited.btn-llamar{
 
 
 
-
 /* -----------------------------------  negocios personalizacion ------------------------------------- -------*/
+
+.neg .tarjeta .imagen img{
+	border-radius: 100px;
+}
+
+
 .neg .tarjeta .contenido ul li.title{
 	color: var(--cp1);
 }
 .neg .tarjeta .contenido ul li.telefono{
 	color: var(--ct);
 }
-a:visited.boton-menu{
+.neg .tarjeta .contenido ul li.whatsapp{
+	color: #1cb39b;
+}
+a:visited.boton.boton-menu{
 	color: #fff;
 }
 /* -- color para los botones que tengan la clase .boton */
@@ -154,15 +167,17 @@ a:visited.boton.boton-register{
 }
 /* color de la sombra */
 a:link.boton.boton-register{
-	-webkit-box-shadow: 0px 15px 15px 0px rgba(255,27,0,0.26);
-	-moz-box-shadow: 0px 15px 15px 0px rgba(255,27,0,0.26);
-	box-shadow: 0px 15px 15px 0px rgba(255,27,0,0.26);
+	-webkit-box-shadow: 0px 15px 15px 0px rgba(0, 88, 255, 0.4);
+	-moz-box-shadow: 0px 15px 15px 0px rgba(0, 88, 255, 0.4);
+	box-shadow: 0px 15px 15px 0px rgba(0, 88, 255, 0.4);
 }
 
 
 
+/* -----------------seccion registro -----------------*/
+/* aqui se agrego la imagen de pizza que esta al fondo  */
 
-/* --------------- seccion registro -----------*/
+
 .register .contenido h3{
 	color: var(--cp1);
 }
@@ -176,6 +191,7 @@ a:link.boton.boton-register{
 
 
 /* -----------------seccion contacto ---------------*/
+
 .contacto{
 	background: var(--cp2);
 }
@@ -189,16 +205,14 @@ a:link.boton.boton-register{
 }
 
 
-
-
 /* ------------------seccion footer -------------------*/
 .dy{
 	background: var(--cp1);
 }
 .dy h6{
 	color: var(--cgris4);
-	font-family: var(--fuentep);
 }
+
 
 
 
@@ -213,13 +227,14 @@ a:link.boton.boton-register{
 	background: var(--cp2);
 }
 
-
 .banner-r .information ul li{
 	color: var(--cgris3);
 }
+
 .banner-r .information ul li.title{
 	color: var(--cgris4);
 }
+
 .banner-r .information ul li.tel a:link, .banner-r .information ul li.whatsapp a:link, .banner-r .information ul li.facebook a:link{
 	color: greenyellow;
 }
@@ -231,139 +246,83 @@ a:link.boton.boton-register{
 
 
 
+
+
 .banner-r .horario{
 	background: var(--cp1);
 }
-.banner-r .horario .content h4{
+
+.banner-r .horario .content h4, .banner-r .horario .content p{
 	color: yellow;
 }
 .banner-r .horario .content ul li{
 	color: var(--cgris3);
 }
-.banner-r .horario .content ul li.day{
+.banner-r .horario .content ul li span.day{
 	color: var(--cgris4);
+	
 }
 
 
 
 
-
-h4.subtitles{
-	color: var(--cs1);
-}
-h4.subtitles::before{
-	color: var(--cgris4);
-}
-
-
-/* -------------------------- seccion comida -----------------------*/
-.comida__categoria{
-	margin-bottom: 80px;
-}
-.comida__categoria h5{
+h4.subtitles-2{
 	color: var(--cp1);
-	font-size: 42px;
-	font-weight: 700;
-	margin-bottom: 50px;
-    border-bottom: 1px solid #ededed;
-	/* padding-top: 25px; */
-	padding-bottom: 15px;
-	/* position: sticky;
-	top: 50px;
-	z-index: 50;
-
-	background-color: white; */
-}
-
-@media screen and (max-width: 767px){
-	.comida__categoria h5{
-		font-size: 32px;
-	}
-}
-
-@media screen and (max-width: 575px){
-	.comida__categoria h5{
-		font-size: 18px;
-		margin-bottom: 30px;
-		position: sticky;
-		top: 48px;
-		z-index: 25;
-		padding-top: 15px;
-		background-color: #eaeaea;
-		text-align: center;
-	}
 }
 
 
-.comida__container{
+
+
+/* -----------------------seccion services ----------------*/
+
+.services h5{
+	font-size: 24px;
+	text-align: center;
+	font-weight: 600;
+
+}
+.servicesDentista{
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 50px;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+	padding: 80px 0px;
 }
-
-@media screen and (max-width: 767px){
-	.comida__container{
-		grid-template-columns: 1fr 1fr;
-	}	
+.servicesDentista__image{
+	height: 60px;
+	margin-right: 15px;
 }
-
-@media screen and (max-width: 575px){
-	.comida__container{
-		grid-template-columns: 1fr;
-		gap:30px;
-
-	}	
-}
-.comida__item{
-	background-color: white;
-	position: relative;
-	padding: 20px;
+.servicesDentista__card{
 	display: flex;
-	align-items: center;
-	box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
-    border-radius: 5px;
-	border: 1px solid #e9e9e9;
+	padding: 20px 15px;
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(194,194,194,0.4);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(194,194,194,0.4);
+	box-shadow: 0px 0px 40px 0px rgba(194,194,194,0.4);
+	border-radius: 5px;
 }
-@media screen and (max-width: 575px){
-	.comida__item{
-		box-shadow: none;
-		border: 1px solid var(--cgris4);
-		background: #FBFBFB;
-		padding-top: 15px;
-		padding-bottom: 15px;
-	}
-}
-
-.comida__item p{
-	margin: 0;
-	color: var(--cp1);
+.servicesDentista__title{
+	font-size: 18px;
 	font-weight: 700;
-	text-transform: capitalize;
 }
-@media screen and (max-width: 575px){
-	.comida__item p{
-		font-size: 14px;
-	}
-}
-
-
-.comida__item span{
-	position: absolute;
-	background-color: black;
-	color: white;
-	padding: 5px 10px;
-	border-radius: 15px;
-	right: -15px;
-	top: -15px;
+.servicesDentista__parrafo{
+	line-height: 2em;
+	font-size: 14px;
+	margin: 0;
 }
 
-@media screen and (max-width: 575px){
-	.comida__item span{
-		position: unset;
-		margin-left: auto;
-	}	
-}
 
+
+.consulta{
+	text-align: center;
+	margin-top: 45px;
+	padding-inline: 25px;
+	
+}
+.consulta p{
+	font-size: 18px;
+	border-bottom: 2px solid;
+	display: inline;
+	line-height: 250%;
+}
 
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
@@ -371,34 +330,25 @@ h4.subtitles::before{
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
 
 @media screen and (max-width: 1199px){
-	.tarjet{
-		padding-right: 30px;
-	}
-	.tarjet .content .body span.name {
-    	font-size: 18px;
-	}
-	.tarjet .content .body span.porcion{
-		font-size: 16px;
-	}
-	.tarjet .content span.price{
-		font-size: 24px;
-	}
+
+	
 	
 }
 
 
 @media screen and (max-width: 991px){
-	
-	.comidas-title{
-		font-size: 18px;
-	}
-	.comidas-items{
-		font-size: 14px;
-	}
-	.comidas-singles{
-		grid-template-columns: repeat(2 , 1fr);
-	}
 
+	.register{
+		background: none;
+	}
+	.register img.girl{
+		width: 115px;
+	}
+	
+	
+	
+	
+	
 	
 	
 }
@@ -409,37 +359,31 @@ h4.subtitles::before{
 @media screen and (max-width: 767px){
 	
 
-
-
 	.banner .content h1 span.title{
 		font-size: 48px;
 	}
 	.banner .content h1 span.title2{
 		font-size: 24px;
 	}
+	
 
 	
-	.register img.girl, .register img.boy{
-		display: none;
-	}
 	
-	.grid_1{
+	.servicesDentista{
 		grid-template-columns: 1fr;
 	}
+
+	.servicesDentista__card{
+		border: 1px solid var(--cgris4);
+		background: #FBFBFB;
+		box-shadow: none;
+	}
+	.servicesDentista__title{
+		font-size: 16px;
+	}
+	
 	
 
-
-
-	/*--- seccion comidas ---*/
-	.comidas-title{
-		font-size: 18px;
-	}
-	.comidas-items{
-		font-size: 14px;
-	}
-	.comidas, .comidas-singles{
-		grid-template-columns: 1fr;
-	}
 	
 	
 }
@@ -460,6 +404,7 @@ h4.subtitles::before{
 	
 	
 	
+	
 	.banner .content h1 span.title{
 		font-size: 32px;
 	}
@@ -467,52 +412,41 @@ h4.subtitles::before{
 		font-size: 20px;
 	}
 	
-	
 	.banner .content p {
     	font-size: 12px;
 		margin-right: 40%;
 	}
-
 	
 	/* ------tarjetas negocios -------*/
 	.neg .tarjeta{
 		border: 1px solid var(--cgris4);
 		background: #FBFBFB;
 	}
+		
+	
+	
+	/* estilos parrafos y titles */
 	
 	
 	
-	
-	
-	
-	h4.subtitles{
-		margin-bottom: 40px;
+	.services h5, .services p{
+		margin: 0px 1.5%;
 	}
-	h4.subtitles::before{
-		content: "";
+	.services h5{
+		font-size: 16px;
+		margin-bottom: 15px;
 	}
 
-
-
- /* ----- seccion comidas ------*/
- 	/*--- seccion comidas ---*/
-	.comidas-title, .comidas-singles_item h4{
+	.consulta p{
 		font-size: 14px;
 	}
-	.comidas-items{
-		font-size: 12px;
-	}
+
+
+
 	
-	.comidas-card, .comidas-singles_item{
-		box-shadow: none;
-		border: 1px solid var(--cgris4);
-		background: #FBFBFB;
-	}
+
 	
-	.comidas-singles_item{
-		padding: 10px 20px;
-	}
-	
+
 }
 
 
@@ -520,18 +454,17 @@ h4.subtitles::before{
 	
 	
 	
+	
 }
+
 
 
 
 @media screen and (max-width: 384px){
-	h4.subtitles::before{
-		content: "";
-	}
-
 	
+
 }
 
 @media screen and (max-width: 344px){
-	
+
 }
