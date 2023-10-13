@@ -871,6 +871,18 @@ export const db = [
         categoria: 24,
         status: true
     },
+    {   id: 'donbeto',
+        nombre: 'Don Beto',
+        direccion: 'Doctor Mora',
+        extracto: '',
+        telefono: '4191052858',
+        whatsapp: '4191052858',
+        facebook: '',
+        imagen: 'uber.png',
+        url: 'don-beto.html',
+        categoria: 24,
+        status: true
+    },
     {   id: 'nailsbrendiz',
         nombre: 'Nails Brendiz',
         direccion: 'Calle Guanajuato #22, Doctor Mora',
