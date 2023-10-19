@@ -1582,6 +1582,32 @@ export const db = [
         categoria: 36,
         status: true
     },
+    {   id: 'redisena',
+        nombre: 'Rediseña',
+        direccion: 'Calle Guanajuato #25, Zona Centro, Doctor Mora',
+        extracto: '',
+        telefono: '4191151368',
+        whatsapp: '4191151368',
+        facebook: 'renato.redisena',
+        instagram: 'linkin.sji',
+        imagen: 'redisena.jpg',
+        url: 'redisena.html',
+        categoria: 38,
+        status: true
+    },
+    {   id: 'renatopachecobalderas',
+        nombre: 'Renato Pacheco Balderas',
+        direccion: 'Calle Guanajuato #25, Zona Centro, Doctor Mora',
+        extracto: '',
+        telefono: '4191151368',
+        whatsapp: '4191151368',
+        facebook: 'redisena.fotos',
+        instagram: 'redisena.fotos',
+        imagen: 'renato.png',
+        url: 'renato-pacheco-balderas.html',
+        categoria: 39,
+        status: true
+    },
 
 
 ]
