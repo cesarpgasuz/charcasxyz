@@ -277,6 +277,16 @@ export const categoria = [
         nombre: 'doctores',
         extracto: '¿Ofreces servicios médicos y deseas promocionarlos? ¡Únete a charcas.xyz, el directorio virtual de Doctor Mora! Registra tu negocio y destaca tu experiencia en atención médica especializada y servicios de salud.'
     },
+    {
+        id: 38,
+        nombre: 'personalizacion',
+        extracto: '¿Ofreces servicios de personalización, diseños publicitarios, lonas, volantes, carteles, logotipos y más? ¡Únete a charcas.xyz, el directorio virtual de Doctor Mora! Registra tu negocio y destaca tu experiencia en servicios de diseño de calidad.'
+    },
+    {
+        id: 39,
+        nombre: 'videoyfotografia',
+        extracto: '¿Ofreces servicios de video, fotografía y más? ¡Únete a charcas.xyz, el directorio virtual de Doctor Mora! Registra tu negocio y destaca tu experiencia en servicios de video y fotografía de calidad.'
+    },
 
 
 ]
