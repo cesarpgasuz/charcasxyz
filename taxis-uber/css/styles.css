@@ -325,7 +325,31 @@ h4.subtitles-2{
 	gap: 10px;
 }
 
-
+.services-content-images{
+	padding-top: 35px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+	gap: 30px;
+	justify-content: center;
+}
+.services-content-images div{
+	width: auto;
+	height: 250px;
+    -webkit-box-shadow: 0px 0px 40px 0px rgba(221,221,221,0.7);
+    -moz-box-shadow: 0px 0px 40px 0px rgba(221,221,221,0.7);
+    box-shadow: 0px 0px 40px 0px rgba(221,221,221,0.7);
+    border-top: 4px;
+    border-right: 4px;
+    border-bottom: 16px;
+    border-left: 4px;
+    border-style: solid;
+    border-color: white;
+}
+.services-content-images div img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
 
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
 /* ----------------------------------------------------------responsive ------------------------------------------------*/

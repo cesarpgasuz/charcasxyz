@@ -47,7 +47,7 @@ function iniciarApp(){
     //nombre negocio
     const negocioTitle = document.createElement('LI');
     negocioTitle.classList.add('title');
-    negocioTitle.textContent = nombre;
+    negocioTitle.innerHTML = nombre;
      
     //direccion del negocio
     const negocioDireccion = document.createElement('LI');
