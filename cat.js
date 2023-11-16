@@ -160,6 +160,14 @@ export const categoria = [
             {
                 id: 7,
                 nombre: 'betterware'
+            },
+            {
+                id: 8,
+                nombre: 'temu'
+            },
+            {
+                id: 9,
+                nombre: 'shopee'
             }
         
         ]

@@ -82,21 +82,20 @@ body{
 /* ---- estilos para el filtro de las categorias */
 .nav-filter-cat{
 	display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 25px;
     padding: 20px;
     position: sticky;
     top: 45px;
     background-color: white;
 	z-index: 10;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
 }
 
 @media screen and (max-width: 767px){
 	.nav-filter-cat {
 		margin-bottom: 10px;
-		overflow-x: scroll;
-		scroll-snap-type: x mandatory;
-		justify-content: start;
 		gap: 18px;
 	}
 }
