@@ -1572,6 +1572,74 @@ export const db = [
         ],
         status: true
     },
+    {   id: 'detodoparatodos',
+        nombre: 'De Todo Para Todos',
+        direccion: 'Doctor Mora',
+        extracto: '',
+        telefono: '4426059128',
+        whatsapp: '4426059128',
+        facebook: 'Siempremoda14',
+        imagen: 'detodoparatodos.jpg',
+        url: 'de-todo-para-todos.html',
+        categoria: 19,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            },
+            {
+                id: 4,
+                nombre: 'mercado libre'
+            },
+            {
+                id: 5,
+                nombre: 'amazon'
+            },
+            {
+                id: 8,
+                nombre: 'temu'
+            },
+            {
+                id: 9,
+                nombre: 'shopee'
+            }
+        ],
+        status: true
+    },
+    {   id: 'loliisreyna',
+        nombre: 'Loliis Reyna',
+        direccion: 'Doctor Mora',
+        extracto: '',
+        telefono: '4191248776',
+        whatsapp: '4191248776',
+        facebook: 'maria.reynaponce21',
+        imagen: 'loliisreyna.jpg',
+        url: 'loliis-reyna.html',
+        categoria: 19,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'shein',
+            },
+            {
+                id: 4,
+                nombre: 'mercado libre'
+            },
+            {
+                id: 5,
+                nombre: 'amazon'
+            },
+            {
+                id: 8,
+                nombre: 'temu'
+            },
+            {
+                id: 9,
+                nombre: 'shopee'
+            }
+        ],
+        status: true
+    },
     {   id: 'tramitesyserviciosap',
         nombre: 'Trámites & Servicios AP',
         direccion: 'Calle Guanajuato #6, Loma de Buenavista, Doctor Mora',
