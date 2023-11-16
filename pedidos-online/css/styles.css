@@ -381,6 +381,20 @@ h4.subtitles-2{
 	color: #36bf36;
 	margin-right: 10px;
 }
+
+
+.pedidos__container--2{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 30px;
+}
+.pedido__item--2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
 /* ----------------------------------------------------------responsive ------------------------------------------------*/
@@ -443,6 +457,10 @@ h4.subtitles-2{
 		width: 120px;
 	}
 	
+	.pedidos__container--2{
+		grid-template-columns: 1fr 1fr;
+		gap: 80px;
+	}
 	
 }
 
@@ -516,6 +534,14 @@ h4.subtitles-2{
 	}
 	.instrucciones{
 		margin-top: 65px;
+	}
+
+
+	.pedidos__container--2{
+		grid-template-columns: 1fr;
+	}
+	h5.title-pedido-3{
+		font-size: 18px;
 	}
 	
 }
