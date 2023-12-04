@@ -288,7 +288,21 @@ export const categoria = [
     {
         id: 38,
         nombre: 'personalizacion',
-        extracto: '¿Ofreces servicios de personalización, diseños publicitarios, lonas, volantes, carteles, logotipos y más? ¡Únete a charcas.xyz, el directorio virtual de Doctor Mora! Registra tu negocio y destaca tu experiencia en servicios de diseño de calidad.'
+        extracto: '¿Ofreces servicios de personalización, diseños publicitarios, lonas, volantes, carteles, logotipos y más? ¡Únete a charcas.xyz, el directorio virtual de Doctor Mora! Registra tu negocio y destaca tu experiencia en servicios de diseño de calidad.',
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'sublimacion',
+            }, 
+            {
+                id: 2,
+                nombre: 'vinil',
+            },
+            {
+                id: 3,
+                nombre: 'bordado',
+            }
+        ]
     },
     {
         id: 39,

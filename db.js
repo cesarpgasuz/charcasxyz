@@ -1687,7 +1687,44 @@ export const db = [
         imagen: 'redisena.jpg',
         url: 'redisena.html',
         categoria: 38,
-        status: true
+        status: true,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'sublimacion',
+            },
+            {
+                id: 2,
+                nombre: 'vinil'
+            }
+        ]
+    },
+    {   id: 'bordadosbegona',
+        nombre: 'Bordados Begoña',
+        direccion: 'Lázaro Cárdenas #43, <strong>Ejido Begoña</strong>, Doctor Mora',
+        extracto: '',
+        telefono: '4191233017',
+        whatsapp: '4191233017',
+        facebook: 'olga.sanchezvelazquez.1',
+        instagram: '',
+        imagen: 'bordadosbegona.jpg',
+        url: 'bordados-begona.html',
+        categoria: 38,
+        status: true,
+        subcategorias: [
+            {
+                id: 1,
+                nombre: 'sublimacion',
+            },
+            {
+                id: 2,
+                nombre: 'vinil'
+            },
+            {
+                id: 3,
+                nombre: 'bordado'
+            }
+        ]
     },
     {   id: 'renatopachecobalderas',
         nombre: 'Renato Pacheco Balderas',
