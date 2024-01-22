@@ -847,6 +847,18 @@ export const db = [
         categoria: 20,
         status: true
     },
+    {   id: 'pizzeriaelpariente',
+        nombre: 'Pizzeria el Pariente',
+        direccion: 'Calle Silao #34, Doctor Mora. <strong>Frente al Ciber DMG</strong>',
+        extracto: '',
+        telefono: '4191129833',
+        whatsapp: '4191129833',
+        facebook: '',
+        imagen: 'elpariente.jpg',
+        url: 'pizzeria-el-pariente.html',
+        categoria: 20,
+        status: true
+    },
     {   id: 'juliocesaramador',
         nombre: 'Julio Cesar Amador',
         direccion: 'Doctor Mora',
